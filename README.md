@@ -2,10 +2,14 @@
 # Ant's Game Maker Game Archive
 
 This archive contains many Game Maker Games made in early versions of Game Maker.
+
 (Anything before the Game Maker Studio versions.)
-There is no specific category these games fit in and are just games I've come across and put into this archive
+
+There is no specific category these games fit in and are just random games I've come across and put into this archive.
 
 I am excluding most of the games from the YoYo Games Archive since it's pretty complete but I might put the games from there into here soon.
+
+Hope you enjoy! :D
 
 Here's credit to other archive that are a part of this one:
 
