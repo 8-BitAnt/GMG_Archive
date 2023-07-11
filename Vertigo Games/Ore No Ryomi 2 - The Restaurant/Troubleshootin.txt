@@ -1,0 +1,25 @@
+Q:-Im a bit confused on how to play this game.
+A:-Play the game, study the tutorials, and read the included
+starter guide. Be sure you have played the original ONR! 
+Visit www.vertigogaming.net to get it.
+
+Q:-I get a canvas error of some sort when I run the game.
+A:- This new version 1.4 should help. If not, do the following:
+
+*Restart your computer, defrag if necessary
+*After restart, close all programs (virus scanners, etc).
+*Now run the game. If it still doesnt work, then you need a 
+computer with more memory. Email me at chubigans3@yahoo.com
+
+Q:-I hear no sounds at all.
+A:-Almost everything in this game is MP3 encoded. Make sure
+you have the latest version of Windows Media installed.
+
+Q:-Can I start a new game without erasing my saved game?
+A:-Not in game, no. But you can store the onr2save file 
+elsewhere, and the game will create a new one. When you want
+to "load" the old version, just swap save files.
+
+Q:-There is an error popup window during the game.
+A:-QUICK! EMAIL ME AT chubigans3@yahoo.com! But this game has
+been tested, so you should not recieve any problems.

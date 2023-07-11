@@ -1,0 +1,8 @@
+global.map_name = 'Ortiga 13.stm'
+global.map_players = 4;
+global.map_description = 'As the war rages on, the Aproxion fleets gets more and more shattered through out the Universes. Now, a battle of great importance is about to take place. The battle for Ortiga 13, one of the few sectors left, that are not under Ruler controll.';
+global.rebellstart = 1;
+global.rulerstart = 0;
+global.preitostart = 0;
+global.wendstart = 0;
+global.egyptstart = 0;

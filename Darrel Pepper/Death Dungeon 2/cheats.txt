@@ -1,0 +1,13 @@
+-- Death Dungeon cheats --
+
+During game play press control +
+
+H = restore health to 100
+F = put fireballs up to 10
+M = put money up to 60
+D = die
+
+
+-- Death Dungeon 2 cheats --
+
+ctrl + shift = skip level

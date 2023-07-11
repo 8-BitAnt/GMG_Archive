@@ -1,0 +1,53 @@
+                                         :Help:
+
+                              READ THIS FIRST BUDDY!
+
+Game Font: 
+**************************YOU MUST INSTALL THE ADVENTURE FONT***********************************
+
+With this game is a font file called "Adventure " The game uses this font and *MUST be in your font folder.
+**Directions - 
+   Go to "Start" - "Settings" - "Control Panel" - a folder called "Fonts", open it.
+    Now go to "File" - "Install New Font" - find the "Adventure " and install.
+
+If you have problems and can't find your font folder, go to "start" then "search" search for "Fonts"
+
+Please look at the help in the game for more game info!!
+
+have fun!!
+Yeah homie!!--------?
+
+:)
+
+
+
+                                  
+
+
+
+
+   Matcher Catcher
+© 2003 Morphosis Enter-Active/Morphosis Games - 
+   John Hempstead:
+    Graphics
+    Programming
+    Design
+    Concept
+    Audio (Not all music)
+
+    Contact me:
+    morphosisgames@aol.com
+
+   Visit me:
+   Morphosis Enter-Active web site
+   http://galileo.spaceports.com/~morphea/
+   Mr. Fun Z's Lounge web site
+    http://funzlounge.cjb.net 
+    (not live yet)
+
+   Developed with Game Maker by Mark Overmars.
+    Please visit him @ http://www.cs.uu.nl/~markov/gmaker/index.html
+
+
+                                                
+

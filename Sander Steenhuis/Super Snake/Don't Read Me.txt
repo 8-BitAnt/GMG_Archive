@@ -1,0 +1,172 @@
+==========================================================================================
+		Super Snake (a RED Software production)
+Don't Read Me info file			Saturday, March 26, 2002
+==========================================================================================
+© Copyright 2001 - 2002 Sander Steenhuis AKA Mr.Red
+http://members.home.nl/mr.red/
+
+Thanks for reading the Super Snake Don't Read Me file.
+After a LONG wait, Super Snake is finally ready!
+
+I hope you enjoy playing it as much as I enjoy eating pizza.
+Or nassi.
+Or tomato soup, for that matter.
+You see, what you eat is what you are. What you make is what you are.
+So, if you eat something disgusting, you'll probably make something disgusting too.
+------------------------------------------------------------------------------------------
+
+CONTENTS
+1.	Getting Started
+2.	The Game
+3.	Troubleshooting
+4.	A Word From The Maker
+5.	Legal Stuff
+6.	Thanks
+7.	Version History
+------------------------------------------------------------------------------------------
+
+	_______________
+1.	Getting Started
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+1a.	System requirements
+	-=-=-=-=-=-=-=-=-=-
+I think Super Snake requires the following computer specs:
+
+	· Pentium II (or compatible) 300 MHz
+	· 32 MB RAM
+	· WINDOWS 95, 98, 2000, ME, NT4 or XP
+	· DirectX (7.0 or later, probably)
+	· Some disk space
+	· DirectX Certified Video Card with ± 4 MB of video RAM.
+		Must support at least 800x600 at 16bit or 32bit color.
+	· DirectX Certified Sound Card
+	· 100% Microsoft(tm) compatible Keyboard
+
+Super Snake was made on a Pentium II 266 MHz with 128 MB RAM.
+Even though I have plenty of memory, some levels ran quite slow during testing.
+
+
+1b.	Running Super Snake
+	-=-=-=-=-=-=-=-=-=-
+After you extracted all the files to a specific folder, e.g. C:\SSnake, run the file
+called SSnake.exe.
+You can also create a link in the start menu manually. To do that, right-click on the
+taskbar, click [properties], select the TAB [Programs in Start menu], click on [Add...]
+and browse to wherever you installed Super Snake.
+The reason why I didn't make that happen automaticly is that I hate those install programs
+that mess with your Operating System without permission.
+
+1c.	Super Snake Website
+	-=-=-=-=-=-=-=-=-=-
+For any information about Super Snake, visit the RED's Place website at:
+http://members.home.nl/mr.red/
+Click on the [MEDIA] button. From there, you can go to the Super Snake page.
+Visit the site regulary to see if any of the info/software is updated.
+------------------------------------------------------------------------------------------
+
+	________
+2.	The Game
+	¯¯¯¯¯¯¯¯
+
+2a.	The Story
+	-=-=-=-=-
+What kind of great story do you expect for a Snake game? You are captured and put in some
+sort of evil dungeons. You must find your way to freedom!
+
+
+2b.	Playing Super Snake
+	-=-=-=-=-=-=-=-=-=-
+Use the cursor keys to steer the Snake. When you make it to another level, you are given a
+password. WRITE IT DOWN! With this password, you can continue in the same level some other
+time. Since it is impossible to finish the game in one try, the goal is to get the highest
+score before you die. Your score must be higher than that of your friends! Otherwise you'll
+look like a sissy!
+
+2c.	Easter Eggs
+	-=-=-=-=-=-
+Some people tend to believe in the easter bunny. He is supposed to lay eggs.
+I must disappoint you: Bunny's don't lay no eggs. Santa Claus is also a hoax.
+
+2d.	Additional Credits
+	-=-=-=-=-=-=-=-=-=
+Sander Steenhuis	Testing thoroughly
+Camiel Steenhuis	Testing (Level 1 and 2!!)
+Wouter vd Meulen Kunee	Testing
+------------------------------------------------------------------------------------------
+
+	_______________
+3.	Troubleshooting
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+3a.	Known Issues
+	-=-=-=-=-=-=
+When either the music or the sound is too soft or loud compared to the other, you probably
+haven't got your soundcard's volume equally divided over WAVE and MIDI.
+Open your soundcard's mixer, and set the volume for BOTH to 100%.
+
+The quality of the MIDI music is soundcard dependent. MIDI doesn't 'suck', but your
+soundcard might. If your soundcard is WaveTable and/or WaveSynth incapable, the music will
+probably sound awful. WaveSynth sounds ok. If you have a WaveTable, be sure to load the 
+biggest and best GM(!)* SoundFont your soundcard can handle.
+
+*GM = General Midi
+
+3b.	Feedback
+	-=-=-=-=
+If you hear feedback while playing the game, disconnect your microphone or turn it off in
+your soundcard's mixer.
+Also, if you experience any bugs or other problems while playing Super Snake, you might
+want to let me know. You can contact me via my website:
+http://members.home.nl/mr.red/
+------------------------------------------------------------------------------------------
+
+	_____________________
+4.	A Word From The Maker
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Game making concists of more then just programming. A good game has good gameplay, good 
+sounds, good music and good graphics.
+I have made all of these things to make Super Snake a complete audiovisual experience.
+I composed my own music in MIDI format for the game, made a cool sound system and made my
+own stunning graphics.
+A GM game has never been so complete.
+------------------------------------------------------------------------------------------
+	___________
+5.	Legal Stuff
+	¯¯¯¯¯¯¯¯¯¯¯
+
+Only the installation file (SSSetup.exe) may be distributed freely, as long as the archive
+is left intact.
+I am not responsible for any damage running the game does to you and/or your equipment.
+Run Super Snake at your own risk!
+------------------------------------------------------------------------------------------
+
+	______
+6.	Thanks
+	¯¯¯¯¯¯
+
+6a. 	Additional Thanks
+	-=-=-=-=-=-=-=-=-
+I would sincerely like to thank the following people:
+	My Mother		Catering
+	My Father		Constantly reminding me that Super Snake was not ready yet,
+				ever since november 2001
+	Ian Miller		Supporting me from wherever far away he lives
+
+6b.	Additional NOT thanks
+	-=-=-=-=-=-=-=-=-=-=-
+With regret I have to say that these people have been a pain in the ass:
+	God			Making my body mallfunction whenever I can't use problems.
+
+------------------------------------------------------------------------------------------
+
+	_______________
+7.	Version History
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+Super Snake v0.6 BETA:
+	· First release
+	· 4 of 6 episodes fully functional
+	· No 2P support
+
+© Copyright 2001 - 2002 Sander Steenhuis AKA Mr.Red

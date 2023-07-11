@@ -1,0 +1,3 @@
+room_goto(25)
+global.track = 1
+global.creator = Mordeus

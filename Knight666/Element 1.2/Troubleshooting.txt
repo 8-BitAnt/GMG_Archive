@@ -1,0 +1,19 @@
+FFFFFFFF  AAAAAAAA   QQQQQQ
+FFFF      AA    AA  QQ    QQ
+FFFFFF    AAAAAAAA  QQ    QQ
+FFFF      AA    AA  QQ  Q QQ
+FFFF      AA    AA  QQ   QQQ
+FFFF      AA    AA   QQQQQ Q
+
+Q: I keep getting the error about a .dll not found.
+A: Make sure you have the latest version of DirectX installed.
+Go to www.microsoft.com to check for the latest version.
+Currently, it's 9.0c.
+
+Q: Every time I try to load the game, it gives an 'unexpected' error.
+A: Try rebooting the computer. It should work fine then.
+
+If you find any other bugs, mail them to knight666@gmail.com ASAP!
+
+Copyright (C) Knight666 Productions 2004-2005
+All rights preserved

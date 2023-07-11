@@ -1,0 +1,4 @@
+This version fixes all the bugs, as well as fixing the code to 
+help it run better on older computers. 
+
+Thanks!  -Mr.Chubigans

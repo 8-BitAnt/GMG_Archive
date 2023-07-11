@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>2.01</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>PADGen 2.0.1.17 http://www.padgen.org</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>Lunchbox Games</Company_Name>
+		<Address_1>PO BOX 0022</Address_1>
+		<Address_2 />
+		<City_Town>Perrysburg</City_Town>
+		<State_Province>OH</State_Province>
+		<Zip_Postal_Code>43551</Zip_Postal_Code>
+		<Country>United States</Country>
+		<Company_WebSite_URL>http://www.lunchboxgames.com</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>Dale</Author_First_Name>
+			<Author_Last_Name>Krausnick</Author_Last_Name>
+			<Author_Email>lunchbox@lunchboxgames.com</Author_Email>
+			<Contact_First_Name>Dale</Contact_First_Name>
+			<Contact_Last_Name>Krausnick</Contact_Last_Name>
+			<Contact_Email>lunchbox@lunchboxgames.com</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>lunchbox@lunchboxgames.com</Sales_Email>
+			<Support_Email>lunchbox@lunchboxgames.com</Support_Email>
+			<General_Email>lunchbox@lunchboxgames.com</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>Super Happy Fun Space Game</Program_Name>
+		<Program_Version>1</Program_Version>
+		<Program_Release_Month>06</Program_Release_Month>
+		<Program_Release_Day>21</Program_Release_Day>
+		<Program_Release_Year>2004</Program_Release_Year>
+		<Program_Cost_Dollars>1</Program_Cost_Dollars>
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Shareware</Program_Type>
+		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_OS_Support>Win95,Win98,WinME,WinNT 3.x,WinNT 4.x,Windows2000,WinXP</Program_OS_Support>
+		<Program_Language>English</Program_Language>
+		<Program_Change_Info />
+		<Program_Specific_Category />
+		<Program_Category_Class>Games &amp; Entertainment::Arcade</Program_Category_Class>
+		<Program_Categories />
+		<Program_System_Requirements>P3 - 667 Mhz</Program_System_Requirements>
+		<Includes_JAVA_VM>N</Includes_JAVA_VM>
+		<Includes_VB_Runtime>N</Includes_VB_Runtime>
+		<Includes_DirectX>N</Includes_DirectX>
+		<File_Info>
+			<Filename_Versioned />
+			<Filename_Previous />
+			<Filename_Generic />
+			<Filename_Long />
+			<File_Size_Bytes>2832236</File_Size_Bytes>
+			<File_Size_K>2765</File_Size_K>
+			<File_Size_MB>2.70</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On>Days</Expire_Based_On>
+			<Expire_Other_Info />
+			<Expire_Month>06</Expire_Month>
+			<Expire_Day>21</Expire_Day>
+			<Expire_Year>2004</Expire_Year>
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>game, action, arcade, shooter</Keywords>
+			<Char_Desc_45>Pilot your ship to destroy the enemy base.</Char_Desc_45>
+			<Char_Desc_80>Pilot your ship to destroy the enemy base in this addictive shareware game.</Char_Desc_80>
+			<Char_Desc_250>Pilot your ship to destroy the enemy base in this addictive shareware game.  Each level, the enemy becomes more powerful.  You have to decide whether to attack or defend.  Intercept the enemy’s rocket and you have the best of both worlds!</Char_Desc_250>
+			<Char_Desc_450>Pilot your ship to destroy the enemy base in this addictive shareware game.  Each level, the enemy becomes more powerful.  You have to decide whether to attack or defend.  Intercept the enemy’s rocket and you have the best of both worlds!  
+
+Flying becomes treacherous as broken parts of your base and the opponents base begin to clutter the battlefield.  Capture the MegaGlue power-up and repair your base!</Char_Desc_450>
+			<Char_Desc_2000>Pilot your ship to destroy the enemy base in this addictive shareware game.  Each level, the enemy becomes more powerful.  You have to decide whether to attack or defend.  Intercept the enemy’s rocket and you have the best of both worlds!  
+
+Flying becomes treacherous as broken parts of your base and the opponents base begin to clutter the battlefield.  Capture the MegaGlue power-up and repair your base!
+
+Capture the shield power-up and attack without worry!  Capture the gun power-up to increase your firepower.  Watch out for mines around the enemy base.  Use your ship’s shield to destroy them without damage.  Destroy the enemy’s rocket as it screams towards your base.  Intercept the enemy’s rocket and watch it decimate his own base.
+
+If your ship is destroyed, you have to sit back and watch your opponent mercilessly attack you for five excruciating seconds.
+
+Destroy the enemy base and move on to the next level.  There’s no limit to the number of levels.  The game keeps getting harder and harder until you can’t take it anymore.  Watch out for the enemy rocket as it becomes so powerful that a single hit will destroy your base!
+</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>http://www.lunchboxgames.com</Application_Info_URL>
+			<Application_Order_URL />
+			<Application_Screenshot_URL>http://www.lunchboxgames.com/images/SHFSG_Screenshot.jpg</Application_Screenshot_URL>
+			<Application_Icon_URL />
+			<Application_XML_File_URL />
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>http://www.lunchboxgames.com</Primary_Download_URL>
+			<Secondary_Download_URL />
+			<Additional_Download_URL_1 />
+			<Additional_Download_URL_2 />
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions>Lunchbox Games authorizes Super Happy Fun Game to be distributed in any fashion as long as it is distributed in its entirety.
+
+This includes both the file SHFSG.EXE and README.TXT</Distribution_Permissions>
+		<EULA>Lunchbox Games hereby gives you a non-exclusive license to use the software 
+Super Happy Fun Space Game. 
+For evaluation, the license is granted, and is time-limited.  
+For registered release you have to pay a license fee, by following instructions 
+prompted by the program. 
+ 
+You may:  
+- use the Software on any single computer;  
+- use the Software on a second computer so long as the primary user of each copy is
+ the same person and more than one copy is not simultaneously;  
+- copy the Software for archival purposes, provided any copy
+ contains all of the original Software's proprietary notices.  
+ 
+You may not:  
+- permit other individuals to use the Software except under the terms listed above;  
+- modify, translate, reverse engineer, decompile, disassemble (except to the extent
+ applicable laws specifically prohibit such restriction),  
+- create derivative works based on the Software;  
+- copy the Software (except as specified above);  
+- rent, lease, transfer or otherwise transfer rights to the Software;  
+- remove any proprietary notices or labels on the Software.  
+ 
+TERMINATION.  
+The license will terminate automatically if you fail to comply with the limitations
+ described above. On termination, you must destroy all copies of the Software and 
+Documentation.  
+ 
+DISCLAIMER OF WARRANTY  
+--------------------------------------------- 
+The Software is provided on an AS IS basis, without warranty of any kind, including 
+without limitation the warranties of merchantability, fitness for a particular purpose 
+and non-infringement.  
+The entire risk as to the quality and performance of the Software is borne by you.  
+Should the Software prove defective, you and not Lunchbox Games assume the entire cost 
+of any service and repair.  
+ 
+Lunchbox Games IS NOT RESPONSIBLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR 
+CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR 
+LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL 
+OTHER COMMERCIAL DAMAGES OR LOSSES.  
+ 
+Title, ownership rights and intellectual property rights in and to the Software 
+shall remain in Lunchbox Games. The Software is protected by international copyright treaties.  
+</EULA>
+	</Permissions>
+	<ASP>
+		<ASP_FORM>Y</ASP_FORM>
+		<ASP_Member>N</ASP_Member>
+		<ASP_Member_Number />
+	</ASP>
+</XML_DIZ_INFO>
