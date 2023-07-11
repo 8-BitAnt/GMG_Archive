@@ -1,0 +1,21 @@
+HEROES OF THE STONE AGE - Version History
+
+-------------------------------------------------------------------
+
+last update 2003-jul-02
+
+-------------------------------------------------------------------
+
+VERSION 0.92b
+
+- added 2-language-support (english/german).
+- added automatically generated .ini file to store user data (at the  
+  moment this is only the preferred language).
+
+-------------------------------------------------------------------
+
+VERSION 0.9b
+
+- first public beta release.
+
+-------------------------------------------------------------------

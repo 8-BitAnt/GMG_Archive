@@ -1,0 +1,39 @@
+O   O   O     O  O       O   O  OOOOOOO
+O  O     O   O   O         O       O 
+O O       OOO    O        O O      O
+O O        O     O       O   O     O
+O  O       O     O       OOOOO     O
+O   O      O     O       O   O     O
+O    O     O     OOOOOO  O   O     O           by Sampe 
+
+
+("Kylät" is the finnish word for the english word "The villages")
+
+This game was made for the three word competition on GMG and here's how I used those three words in my game:
+
+DEEP - The game area locates very deep, it's a cave under an ocean.
+
+WING - The main problem of the game is wings, you'll see when you start to play. :P
+
+BREAK - You have to break the problems. This is also something that'll come clear to you 
+        during the game.
+_____________________________________________________________________________________________
+
+The controls are:
+
+LEFT ARROW - Move left
+RIGHT ARROW - Move right
+UP ARROW - Use doors and select
+DOWN ARROW - Select
+C - Jump
+Z - Attack and confirm your selecting
+X - Use your shield
+ENTER - Skip the cutscenes
+ESCAPE - You'll get back to the menu(but you've to start the game all over, if you do this)
+
+_____________________________________________________________________________________________
+
+Inspired by some of Darthlupi's games. I'd also like to thank my brother for some great tips.
+_____________________________________________________________________________________________
+
+That's all I've got to say. Now, PLAY! :)

@@ -1,0 +1,2 @@
+this game was created in 2006.the music,story,.graphics and programming are by me.ifyou feel like you need to talk to someone about your problems, my e-mail adress is full_cream_cheese@hotmail.com
+thanks

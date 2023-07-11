@@ -1,0 +1,22 @@
+HEROES OF THE STONE AGE - KNOWN BUGS
+
+--------------------------------------------------------------------------------
+
+This list contains any known bugs of the current version of HOTSA.
+
+--------------------------------------------------------------------------------
+
+VERSION 0.9b
+
+- In some cases the program cited "Unexpected error occured when running the 
+  game" on WinME and Win98 second edition. No function. And we don't have a 
+  clue what that is (working on it).
+- When reaching a ladder holding down the UP key, you need to press again to 
+  climb up.
+- Sometimes if you jump up diagonally having a collision directly at the 
+  UP/LEFT or UP/RIGHT tile, you stick to the ceiling until you reach a gap 
+  (very rarely).
+- if you touch a spider being on a ladder just above it, the spider dies
+
+--------------------------------------------------------------------------------
+last updated 2003-jun-23 

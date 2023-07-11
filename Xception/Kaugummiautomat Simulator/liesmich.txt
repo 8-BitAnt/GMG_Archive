@@ -1,0 +1,17 @@
+Kaugummiautomat Simulator
+
+Autor: ich (Xception)
+
+Story:
+Du hast das Rauchen aufgegeben.
+Glückwunsch!
+Was jetzt?
+Du brauchst ein anderes Laster.
+Zum Glück steht da ein Kaugummiautomat um die Ecke.
+Wenn deine Hand nur nicht so zittern würde...
+
+Anleitung:
+"Space" : Geld einzuwerfen.
+"Escape": Escape :)
+
+Purebasic Sourcecode gibt es gratis.(kas.pb)
