@@ -1,0 +1,18 @@
+Max The Wonderdog
+-created by Matt Aldrige/TheAnemic
+-apotheoria@hotmail.com
+
+Controls
+-X=Drop brick
+-Z=Drop Bomb
+
+Objective
+-Guide Ed through each level by making and clearing paths for him.
+
+Versions
+-2003
+-v1.0		//Major Bug on level 4.
+-v1.1		//Fixed Bug.  Added this text file.
+-v1.2		//Added Easy, Normal, Hard difficulties.
+
+This game is freeware.  All graphics are copyright.
