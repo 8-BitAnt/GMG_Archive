@@ -1,0 +1,7 @@
+
+By this time you should already have your zip program open.  Now to play the game you will need to extract all of these files to the same place (ie desktop).
+
+In WinZip:
+select "Action" at the top and tick "All Files".  Lastly, choose a destination, and click extract.  The game should now be playable in the "Goat Bean Golf 2005" folder located where you extracted the files.
+
+In anyother zip archive programs you may have, just make sure you extract ALL of the files to the same place.

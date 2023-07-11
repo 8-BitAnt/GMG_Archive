@@ -1,0 +1,184 @@
+<html>
+
+<head>
+<title>Goat Bean Golf 2005 ReadMe</title>
+</head>
+
+<body bgcolor="#000000" text="#FFFFFF" vlink="red" alink="red">
+
+
+<script language="JavaScript1.2">
+
+/******************************************
+* Snow Effect Script- By Altan d.o.o. (snow@altan.hr, http://www.altan.hr/snow/index.html)
+* Visit Dynamic Drive (http://www.dynamicdrive.com/) for full source code
+* Modified Dec 31st, 02' by DD. This notice must stay intact for use
+******************************************/
+  
+
+  //Configure below to change URL path to the snow image
+  var snowsrc="golfball.gif"
+  // Configure below to change number of snow to render
+  var no = 10;
+
+  var ns4up = (document.layers) ? 1 : 0;  // browser sniffer
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+  var dx, xp, yp;    // coordinate and position variables
+  var am, stx, sty;  // amplitude and step variables
+  var i, doc_width = 800, doc_height = 600;
+  
+  if (ns4up||ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = document.body.clientWidth;
+    doc_height = document.body.clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;                        // set coordinate variables
+    xp[i] = Math.random()*(doc_width-50);  // set position variables
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;         // set amplitude variables
+    stx[i] = 0.02 + Math.random()/10; // set step variables
+    sty[i] = 0.7 + Math.random();     // set step variables
+    if (ns4up) {                      // set layers
+      if (i == 0) {
+        document.write("<layer name=\"dot"+ i +"\" left=\"15\" top=\"15\" visibility=\"show\"><a href=\"http://dynamicdrive.com/\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/layer>");
+      } else {
+        document.write("<layer name=\"dot"+ i +"\" left=\"15\" top=\"15\" visibility=\"show\"><img src='"+snowsrc+"' border=\"0\"><\/layer>");
+      }
+    } else if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      }
+    }
+  }
+  
+  function snowNS() {  // Netscape main animation function
+    for (i = 0; i < no; ++ i) {  // iterate for every dot
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+        doc_width = self.innerWidth;
+        doc_height = self.innerHeight;
+      }
+      dx[i] += stx[i];
+      document.layers["dot"+i].top = yp[i];
+      document.layers["dot"+i].left = xp[i] + am[i]*Math.sin(dx[i]);
+    }
+    setTimeout("snowNS()", 10);
+  }
+
+  function snowIE_NS6() {  // IE and NS6 main animation function
+    for (i = 0; i < no; ++ i) {  // iterate for every dot
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+        doc_width = ns6up?window.innerWidth : document.body.clientWidth;
+        doc_height = ns6up?window.innerHeight : document.body.clientHeight;
+      }
+      dx[i] += stx[i];
+      if (ie4up){
+      document.all["dot"+i].style.pixelTop = yp[i];
+      document.all["dot"+i].style.pixelLeft = xp[i] + am[i]*Math.sin(dx[i]);
+      }
+      else if (ns6up){
+      document.getElementById("dot"+i).style.top=yp[i];
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i]);
+      }   
+    }
+    setTimeout("snowIE_NS6()", 10);
+  }
+
+  if (ns4up) {
+    snowNS();
+  } else if (ie4up||ns6up) {
+    snowIE_NS6();
+  }
+
+</script>
+<center><font face="Old English Text MT" size="12" color="white">
+Goat Bean Golf 2005
+</font><br><font  size="3">
+By  S. Patel (Beanjo) -  beanjo@goatbean.com<br> Goat Bean Games, Goat Bean Sports  <a href="http://www.goatbean.com"target=_blank>http://www.goatbean.com</a></center>
+</font><br><br><hr width="75%"style="border: white 1px dashed;"><br><br>
+
+<font size=6>I. A</font>bout<br><br><br>
+<font size=6>II. C</font>ontrols<br><br><br><br>
+<font size=6>III. T</font>rouble Shooting / Help<br><br><br>
+<font size=6>IV. C</font>redits<br><br><br><br><br><br><br><br><br><br>
+
+<center><font size=5>I. About</font></center><br><br>
+The Goat Bean Golf 2005 creation process started back in March 2004 as sort of a side/test project, but over time became my main project; the game was released in late December of 2004.  It was a slow and painfully boring creation process, with months on end skipped due to lack interest :)  It is a <b>golf</b> game after all!  Mini-golf games have always been fun for me, so I thought it would be fun to make my own.  I just hope it is enjoyable for you to play. :) <br><br><br><br>What program did you use to create this game?<br>Game Maker.  Amazing program, you should try it if you haven't already.<br><br>So, what's with the "2005"?<br> No there isn't a 2004 or 2003; this is actually the first game I've created in 2 years, and the first "real" game I've ever created.<br><br>Will there be a 2006!?<br>  Probably not.  I have a few ideas, but I don't know yet.  If you enjoy this version, and would like to play more, clicking the advertisements on the bottom of the pages at goatbean.com every time you visit would increase the chances.  Hey, it's a free game! :)
+<br><br>Poonta?<br>Yes! <br><br><br>
+
+<center><font size=5>II. Controls</font></center><br><br><br>
+<b>Menus</b><br>
+[up/down] - navigate<br>[space]/[enter] - select<br>[f2] - Load Song<br>[f3] - Stop Song<br><br>
+<b>Game</b><br>
+[arrow keys] - move ball on matt, rotate putter, set spin on ball.<br>
+[enter] - place ball on matt<br>
+[shift] - slow down putter rotation (hold while rotating)<br>
+[space] - set swing power (hold, release to shoot)<br>
+[ctrl] - move hole and subtract 10 seconds in hot shot<br>
+[q] - quit game (no comfirmation screens)<br><br>
+<b>Editor</b><br>
+[f1] - display/remove editor controls<br>
+[arrow keys] - move cursor, toggle through items while holding shift<br>
+[z] - hold to slow down cursor (arrow jets)<br>
+[shift] - show item menu, release to select current object<br>
+[alt] -  drag object cursor is over (arrow keys)<br>
+[ctrl]/[bksp] - delete current object<br>
+[c] - clear entire level<br>
+[enter] - test/save current level<br>
+[esc] - exit<br><br><br>
+<center><font size=5>III. Trouble Shooting and Help</font></center><br><br><br>
+-I can't submit my levels!<br>Either the host is down, or you need to re-download "settings.ini" which should be available on  <a href="http://www.goatbean.com"target=_blank>http://www.goatbean.com</a>'s Goat Bean Golf 2005 page.<br><br>
+-Why isn't my level on the level web page?<br>It's sooo bad that it would be a crime to allow someone else to download, or the levels page hasn't been updated yet.<br><br>
+-I want credit for my level!!<br>Skip a few lines from the bottom and write your name.<br><br>
+-Why can't I submit my scores?<br>You more than likely aren't online.  If you're talking about the money submission, you need 1000 more than the previous submission for it to work.<br><br>
+-The game won't run.<br>You're crazy, or not on a Windows computer.<br><br>
+-I can't get my course to work.<br>Make sure you named the levels correctly, you course folder is in the user_courses folder and you typed its name in correctly when loading it.  For more information, there is a help file in the user courses folder.<br><br>
+-I can't read the text at the bottom of the screen.<br>This is because of your resolution.  Try Selecting fulls creen in the options menu or change your monitor's resolution.<br>
+If you find any other problems with the game please e-mail me.<br><br>
+<b>Help!</b><br><br>
+-I'm horrible and can't win any money.<br>Keep practicing, or ask your pal for the cheats, cheater.  The key to being decent at this game is planning out your shot beforehand.  You'll get better as you play.<br><br>
+
+<center><font size=5>IV. Credits</font></center><br><br>
+Game design, programming and graphics by Beanjo<br>Developed with Mark Overmars' Game Maker<br><br>
+<b>Others' Contributions</b><br><br>
+Carl Gustafsson - Level Editor scripts<br>
+<center>Chinhippy (Tim) - Metal Gear style items<br></center>
+Darthlupi - Voice Acting<br>
+<center>DT - Browser Dll<br></center>
+EricDB - Online High Score Tables<br>
+<center>Ih8censorship - FTP Dll<br></center>
+Yuugi - Online Money Leaders Table<br>
+<center>tdgc - Inspiration in graphic style and gameplay<br></center>
+Xception - File Info Dll<br>
+
+
+<br><hr width="75%"style="border: white 1px dashed;">
+
+
+</body>
+
+</html>

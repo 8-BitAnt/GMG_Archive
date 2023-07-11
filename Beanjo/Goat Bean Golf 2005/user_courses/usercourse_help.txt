@@ -1,0 +1,5 @@
+These are where the user courses are stored.
+Simply drag and drop the level you would like, that was created in "user_levels" folder here.
+Name the 1st hole "1.txt", second "2.txt"...and so on.  The max is 18, but fewer is allowed as well.
+
+To load the user course simply type its folder's name when you go to load a course.
