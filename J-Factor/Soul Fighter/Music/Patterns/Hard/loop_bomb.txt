@@ -1,0 +1,11 @@
+[enemy.create]
+scr_pattern_path(path_circle,2,0);
+
+[enemy.action]
+repeat (36) scr_pattern_fire_rotate(bullet1,10,0);
+
+scr_pattern_wait(500);
+if (path_index <> -1) scr_pattern_loop(-1);
+
+[bullet1.create]
+speed = 4;

@@ -1,0 +1,16 @@
+[enemy.create]
+n = 0;
+s = -1;
+dir = point_direction(x,y,global.player_x,global.player_y);
+id1 = scr_pattern_beam(x - lengthdir_x(40,dir+90),y - lengthdir_y(40,dir+90),dir);
+id2 = scr_pattern_beam(x + lengthdir_x(40,dir+90),y + lengthdir_y(40,dir+90),dir);
+
+[enemy.action]
+n += 1;
+if (n == 15) {for (i = 0; i < 1; i += 0.16) scr_pattern_fire_sd_ext(x + lengthdir_x(40*i*s,dir + 90),y + lengthdir_y(40*i*s,dir + 90),bullet1,8,dir); s = -s; n = 0;}
+
+scr_pattern_wait(30);
+scr_pattern_loop(240);
+
+id1.destroy = 1;
+id2.destroy = 1;

@@ -1,0 +1,22 @@
+[enemy.create]
+n = 0;
+
+[enemy.action]
+y = min(y + 2,ycenter);
+scr_pattern_wait(1);
+if (y <> ycenter) scr_pattern_loop(-1);
+
+scr_pattern_repeat_begin(240);
+dir = point_direction(x,y,global.player_x,global.player_y);
+scr_pattern_fire_sd_ext(x,y,bullet1,6,dir + sin(degtorad(n))*90);
+
+n += 10;
+scr_pattern_wait(15);
+scr_pattern_repeat_end();
+
+scr_pattern_repeat_begin(-1);
+y = max(y - 2,ystart);
+scr_pattern_wait(1);
+
+if (y == ystart) scr_pattern_repeat_break();
+scr_pattern_repeat_end();

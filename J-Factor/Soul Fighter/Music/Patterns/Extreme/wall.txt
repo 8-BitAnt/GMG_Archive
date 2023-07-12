@@ -1,0 +1,16 @@
+[enemy.create]
+scr_pattern_beam(x,y,0);
+scr_pattern_beam(x,y,180);
+
+[enemy.action]
+n = floor(random(game_width/50))*40;
+n = max(min(n,game_width - game_width/40*3),game_width/40*3);
+for (i = 0; i <= game_width; i += game_width/40) if (i < n - game_width/40) or (i > n + game_width/40) scr_pattern_fire_ext(i,y,bullet1);
+
+scr_pattern_wait(1000);
+scr_pattern_loop(8);
+
+scr_pattern_destroy_beams();
+
+[bullet1.create]
+vspeed = 4;

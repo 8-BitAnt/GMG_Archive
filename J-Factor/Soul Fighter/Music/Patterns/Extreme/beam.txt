@@ -1,0 +1,43 @@
+[enemy.create]
+n = 0;
+
+[enemy.action]
+y = min(y + 2,ycenter);
+scr_pattern_wait(1);
+if (y <> ycenter) scr_pattern_loop(-1);
+
+dir = point_direction(x,y,global.player_x,global.player_y);
+id1 = scr_pattern_beam(x,y,dir+45);
+id2 = scr_pattern_beam(x,y,dir+225);
+id3 = scr_pattern_beam(x,y,dir-45);
+id4 = scr_pattern_beam(x,y,dir-225);
+
+scr_pattern_repeat_begin(180);
+dir += 1;
+id1.direction = dir+45;
+id2.direction = dir+225;
+id3.direction = dir-45;
+id4.direction = dir-225;
+
+rand = random(1)
+rdir = dir+45*choose(1,-1);
+
+n += 1;
+
+if (n == 2) {scr_pattern_fire_sd_ext(x + lengthdir_x(game_width/2*rand,rdir),y + lengthdir_y(game_width/2*rand,rdir),bullet1,3,dir); n = 0;}
+
+scr_pattern_wait(30);
+scr_pattern_repeat_end();
+scr_pattern_destroy_beams();
+
+scr_pattern_repeat_begin(-1);
+y = max(y - 2,ystart);
+scr_pattern_wait(1);
+
+if (y == ystart) scr_pattern_repeat_break();
+scr_pattern_repeat_end();
+
+[bullet1.action]
+direction += 1;
+scr_pattern_wait(30);
+scr_pattern_loop(-1);

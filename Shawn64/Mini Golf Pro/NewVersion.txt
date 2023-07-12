@@ -1,0 +1,26 @@
+Version 1.1 changes:
+Game is now freeware
+
+Version 1.06 changes:
+
+Custom Level load error does not return you to the menu while online.
+Neutral Ball hitting transporter error fixed
+Reset Level and Collision setting when new player joins taken out
+Shots are sent when your ball stops now too.
+Multiplayer Balls do not appear until it is their turn now
+Fixed A bug with the editor when clicking the "New" button.  The game did not recognize levels after clicking this.
+
+Version 1.05 changes:
+
+Game Changes:
+save ball collision settings when return to setup
+save level setting when return to setup
+collision on is now default
+# key on chat has been corrected
+Left conveyer belts now affect neutral balls
+Bridge now has slight transparency when under it
+
+Editor Changes:
+Custom backgrounds have been fixed
+Transport holes sound bug fixed
+Object depths are now loaded into the editor correctly

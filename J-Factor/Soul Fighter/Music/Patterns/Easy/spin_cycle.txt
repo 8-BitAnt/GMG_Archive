@@ -1,0 +1,26 @@
+[enemy.action]
+y = min(y + 2,ycenter);
+scr_pattern_wait(1);
+if (y <> ycenter) scr_pattern_loop(-1);
+
+scr_pattern_repeat_begin(36);
+
+scr_pattern_fire_rotate(bullet1,90,0);
+scr_pattern_fire_rotate(bullet1,90,0);
+scr_pattern_fire_rotate(bullet1,90,0);
+scr_pattern_fire_rotate(bullet1,90,0);
+
+scr_pattern_fire_rotate_it(11);
+
+scr_pattern_wait(100);
+scr_pattern_repeat_end();
+
+scr_pattern_repeat_begin(-1);
+y = max(y - 2,ystart);
+scr_pattern_wait(1);
+
+if (y == ystart) scr_pattern_repeat_break();
+scr_pattern_repeat_end();
+
+[bullet1.create]
+speed = 4;

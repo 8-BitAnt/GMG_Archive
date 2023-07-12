@@ -1,0 +1,26 @@
+[enemy.create]
+n = 1;
+k = 0;
+d = 1;
+
+[enemy.action]
+with (scr_pattern_fire(bullet1)) {hspeed = 4*other.n; k = other.k}
+n = -n;
+
+k += d;
+if (abs(k) == 10) d = -d;
+scr_pattern_wait(60);
+scr_pattern_loop(60);
+
+[bullet1.create]
+image_blend = c_lime;
+
+[bullet1.action]
+scr_pattern_wait(500);
+n = k;
+repeat (4) {(scr_pattern_fire(bullet2)).direction = 225 + n; n += 90/4}
+
+instance_destroy();
+
+[bullet2.create]
+speed = 4;

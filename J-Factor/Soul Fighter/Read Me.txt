@@ -1,0 +1,36 @@
+SOUL FIGHTER
+------------
+
+Test your skills against the core in the ultimate battle of agility and dexterity.
+
+
+INSTRUCTIONS
+------------
+
+Arrow Keys : Move
+Ctrl       : Shoot
+Shift      : Speed (move faster)
+
+Ctrl + Tab : Boss Key (Hides game - press again to show)
+
+
+MINIMUM REQUIREMENTS
+--------------------
+
+- Microsoft Windows 98 SE, Windows 2000, Windows ME, or Windows XP.
+- DirectX 8+
+- DirectX 8 compatible graphics card with at least 32MB of video memory.
+- 64mb of RAM.
+- 500mhz processor.
+- DirectX 8 compatible sound card.
+- 800x600 (or more) screen resolution with 16-bit or 32-bit colors.
+
+
+NOTES
+-----
+
+Music is Royalty Free and originally located at http://modarchive.com/
+
+Have fun! :)
+
+ ~ J-Factor [j-factor.com]

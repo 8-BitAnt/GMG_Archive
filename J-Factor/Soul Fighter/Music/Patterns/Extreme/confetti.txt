@@ -1,0 +1,10 @@
+[enemy.action]
+scr_pattern_fire_sd_ext(x,y,bullet1,7,random(360));
+scr_pattern_fire_sd_ext(x,y,bullet1,7,random(360));
+
+scr_pattern_wait(8);
+scr_pattern_loop(675);
+
+[bullet1.create]
+image_blend = scr_pattern_random_color();
+sprite_index = spr_enemy_shot_color;

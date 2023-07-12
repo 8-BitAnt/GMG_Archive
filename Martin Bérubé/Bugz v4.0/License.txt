@@ -1,0 +1,42 @@
+
+                         License Agreement.
+
+      This agreement is valid for freeware and shareware.
+
+THE FOLLOWING IS A LEGAL AGREEMENT. PLEASE READ IT CAREFULLY. INSTALLATION OR USE OF THE SOFTWARE PROVIDED WITH THIS AGREEMENT CONSTITUTES ACCEPTANCE OF THE TERMS OF THIS AGREEMENT. IF YOU
+DO NOT AGREE WITH ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT, YOU MUST IMMEDIATELY CEASE USING THE SOFTWARE, DESTROY ALL COPIES OF THE SAME, INCLUDING ANY COPIES STORED ON YOUR HARD DRIVE, ANY ARCHIVAL COPIES AND UNINSTALL THIS SOFTWARE AND ALL OF ITS COMPONENTS.
+
+1. You may install one copy of the Software onto a hard disk.
+2. For future reference, a copy of the Agreement is included in the folder of the software.
+3. You may make one backup copy of the Software, provided your backup copy is not installed or used on any computer. 
+4. You agree not to modify, adapt or translate the Software. You also agree not to reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the Software.
+5. This license is PERSONAL TO YOU, and neither your rights hereunder nor any copy of the Software, may be sold, assigned, distributed, transferred or sublicensed to any other person, in any media (including electronic media), without the prior written consent of the author.
+6. You are using this software at your own risk. We are not responsable for any damage or loss of data that might result in using this software. WE DO NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE.
+7. This Agreement does not grant you any intellectual property rights in the Software.
+8. All images, sounds, musics included with this software, as well as the software itself, are copyrighted.
+
+This software was made using a Pentium III 667Mhz with 128Mb Ram. We can't assure you that this software will work on an older computer. You will need Window 95 or greater and DirectX 5 or greater.
+
+www.bugz-interactive.com
+
+____________________________________________
+
+
+                       Contrat de licence.
+
+      Ce contrat est valide pour les freewares et les sharewares.
+
+CE QUI SUIT CONSTITUE UN CONTRAT DE LICENCE. SVP LE LIRE ATTENTIVEMENT. L'INSTALLATION OU L'UTILISATION DU LOGICIEL FOURNI AVEC CE CONTRAT CONSTITUE UNE APPROBATION DES TERMES DE CE CONTRAT. SI VOUS N'ÊTES PAS EN ACCORD AVEC TOUS LES TERMES ET CONDITIONS DE CE CONTRAT, VOUS DEVEZ IMMÉDIATEMMENT CESSER L'UTILISATION DE CE LOGICIEL, DÉTRUIRE TOUTES LES COPIES DE CE LOGICIEL, INCLUANT TOUTES COPIES ENREGISTRÉES SUR VOTRE DISQUE DUR, TOUTES COPIES ARCHIVÉES ET DÉSINSTALLEÉS LE LOGICIEL ET TOUTES SES COMPOSANTES.
+
+1. Vous pouvez installer une copie de ce logiciel sur votre disque dur.
+2. Pour des références futur, une copie de ce contrat est inclus dans le dossier du logiciel. 
+3. Vous pouvez faire une copie de sauvegarde du logiciel, en autant que cette copie ne soit pas installée ou utilisée sur un ordinateur.
+4. Vous acceptez de ne pas modifier, adapter ou traduire ce logiciel. Vous acceptez aussi de ne pas décompiler, démonter ou de quelques façon que ce soit essayer de découvrir le code source de ce logiciel.
+5. Cette licence est PERSONNELLE À VOUS, et ni vos droits sur le logiciel ainsi qu'aucune copie de ce logiciel ne peut être vendu, assigné, distribué, transféré ou sous-licencié à aucune autre personne, dans n'importe quel média (média électronique inclus), sans le consentement écrit de l'auteur.
+6. Vous utilisez ce logiciel à vos propres risques. Nous ne sommes pas responsable des dommages ou pertes de données qui pourraient découler de l'utilisation de ce logiciel. NOUS NE POUVONS GARANTIR QUE CE LOGICIEL EST EXEMPT D'ERREUR.
+7. Ce contrat ne vous donne aucune propriété intellectuelle sur ce logiciel.
+8. Toutes les images, sons et musiques inclus avec le logiciel, tout comme le logiciel lui-même, sont protégés par les droits d'auteurs.
+
+Ce logiciel a été fait avec un Pentium III 667Mhz avec 128Mb de Ram. Nous ne pouvons vous garantir que ce logiciel fonctionnera sur un ordinateur plus ancien. Vous aurez besoin au minimum de Windows 95 ainsi que de DirectX 5.
+
+www.bugz-interactive.com

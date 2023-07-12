@@ -1,0 +1,31 @@
+Outbreak
+v1.2
+
+created by Matt Aldridge
+
+-Controls
+(walking)
+up=jump
+x=shoot
+z=use grenade
+enter=talk
+
+(swimming)
+up=swim up
+x=shoot
+z=grenade
+
+(driving)
+left=speed up
+right=slow down
+x=shoot
+up/down=angle turret
+
+Contact me at:
+Full_Cream_Cheese@hotmail.com
+
+Go to my website
+www.milkcheese.cjb.net
+
+Send me money (contact me first)
+Full_Cream_Cheese@hotmail.com

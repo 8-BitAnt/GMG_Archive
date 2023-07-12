@@ -1,0 +1,14 @@
+This is an example of how to export a file.
+my best scores are:
+15: 97;
+breakout: 4600;
+bsnake: 750;
+pacman: 7400;
+pong: 16;
+roller: 151;
+shoot: 210;
+space_invaders: 2340;
+tetris: 2500;
+vegeta: 680;
+volley: 8;
+I know these aren't great scores, but I don't spend much time playing this games.

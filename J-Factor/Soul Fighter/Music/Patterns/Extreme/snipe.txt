@@ -1,0 +1,14 @@
+[enemy.create]
+n = 0;
+
+[enemy.action]
+n += 1;
+if (n == 20) {n = 0; scr_pattern_fire_sd_ext(game_width,global.player_y,bullet1,(game_width - global.player_x)/30,180); scr_pattern_fire_sd_ext(0,global.player_y,bullet1,global.player_x/30,0); scr_pattern_fire_sd_ext(global.player_x,game_height,bullet1,(game_height - global.player_y)/30,90); scr_pattern_fire_sd_ext(global.player_x,0,bullet1,global.player_y/30,270);}
+
+scr_pattern_wait(30);
+scr_pattern_loop(240);
+
+[bullet1.action]
+if (obj_controller_pattern.done) speed = min(speed + 0.2,8);
+scr_pattern_wait(1);
+scr_pattern_loop(-1);

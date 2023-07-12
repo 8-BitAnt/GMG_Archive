@@ -1,0 +1,20 @@
+[enemy.action]
+scr_pattern_repeat_begin(100);
+
+var n; n = floor(random(5)) - 2;
+
+scr_pattern_fire_rotate(bullet1,10 + n,0);
+(scr_pattern_fire_rotate(bullet1,10 + n,0)).direction += 180;
+
+scr_pattern_fire_rotate(bullet2,10 + n,0);
+(scr_pattern_fire_rotate(bullet2,10 + n,0)).direction += 180;
+
+scr_pattern_wait(15);
+
+scr_pattern_repeat_end();
+
+[bullet1.create]
+speed = 8;
+
+[bullet2.create]
+speed = 10;
