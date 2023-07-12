@@ -1,0 +1,22 @@
+BYTEALITY TOWER DEFENSE -- BY ERIK LEPPEN -- SUMMER, 2008
+
+Thank you for downloading and playing ByteAlity Tower Defense. This game is freeware, so you can use it freely and share it with your friends. I hope you enjoy playing this game just as much as I enjoyed making it. Below you find information on how to use the game, although most of it will probably be self-explanatory.
+
+BEFORE YOU PLAY...
+Be sure you extract the .zip archive to play; you cannot play directly from the zip file. Extract in a separate folder for convenience, as the game consists of multiple files and has subfolders.
+
+HOW TO PLAY
+It is recommended to first play the tutorial to get used to how the game works.
+
+For the campaign, and for custom maps, you need a user account. You can simply create this in-game. This is just an offline account, you don't need to be connected to the Internet. The account only holds on your computer, unless you copy the file in the Accounts folder manually to the same folder on another computer.
+
+CUSTOM MAPS
+When you unlock new maps of the campaign, you also unlock new towers. You can only play (and make) custom maps that contain towers you have unlocked in the campaign. Custom maps are saved in the subfolder /Maps/Custom/ of the game folder. You can copy custom maps to other computers or share them with others to play your maps.
+
+HOW TO MAKE MAPS
+Check "Tower Defense Editor Help.txt" for an explanation of how to make your own maps.
+
+CUSTOMIZING THE GAME
+From the main menu, you can go to the settings screen to change things to your likings. If the game is too dark or too bright, change the percentages in the graphics part. You an also set the game to full screen, this will change the screen resolution to 640 x 480. You can change colors that you find hard to distinguish at the right hand side: use the mouse wheel to change red, green and blue values. If the game runs slow, try disabling all effects and also the wave progress bars and enemy hitpoints in the visual settings.
+
+Press Escape, or click the button on the right hand edge of the screen, to confirm settings. Settings are saved in a settings.ini file whenever you change something, so if you changed something that screwed up the game, you can manually change it back using the settings.ini file, or remove the settings.ini file to restore all settings.

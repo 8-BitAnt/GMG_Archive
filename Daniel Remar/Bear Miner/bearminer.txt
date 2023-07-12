@@ -1,0 +1,41 @@
+BEAR MINER
+
+Design, code, graphics: Daniel Remar and Joel Nyström
+Music and announcer voices: Erik Sjöstrand
+
+
+
+NOTE: On some computers the game may crash or not play the music, try removing music.mp3 if that happens. On some computers the game may also jump directly to the victory screen when starting.
+
+Featuring the most obnoxious music and worst water effects ever (the blue stuff is rain), Bear Miner was made for the No More Sweden 30-hour game compo in 2008. The words we were given to work with were "bear", "climb" and "you have to". The working title was simply "You have to climb the bear"...
+
+You're trying to stop the other dwarfs from mining the giant bear, and steal the bear they've mined in the process. Get enough bear in your bear vial to win, but if the bear is drained dry of its bear, the game is over. Just try to swat the other dwarfs as quickly and stylishly as possible. Also, you won't lose if you hit the ground with the chainaxe attached to the bear.
+
+The game is partly a spiritual mini-sequel to Garden Gnome Carnage, and partly relies on a humorously exaggerated "manly" stereotype, what with the chain-axe and breaking the backs of innocent crying reindeer to save yourself from hitting the ground. The sound effects are rather gruesome as well.
+
+The music was made with nothing but Erik's own voice. You should play the game at least once just to hear it!
+
+
+
+CONTROLS
+
+Arrows: Move
+Z: Chain-axe
+Control: Overdrive (keep pressing to fire rockets)
+F4: Toggle fullscreen
+Escape: Quit
+
+
+
+FAQ
+
+Q: What are the song lyrics?
+A: Swing your axe, get the bear, this is the way of the miner dwarf, broken backs of reindeers can help from falling down, you must never hit that ground, cause then you will lose the game
+
+Q: What are the secret style bonuses?
+A: Flying Dwarf - Fly around unattached for ten seconds straight
+Backbreaker - Crush several reindeer in a short period of time
+Stylish - Hit a dwarf with the axe after flying unattached for at least 1.5 seconds
+Impressive - Hit a dwarf with the axe after flying unattached for at least 5 seconds
+Denied - Kick a dwarf down at the bottom of the bear
+Long shot - Hit an enemy with a rocket after the rocket has flown for 1.5 seconds

@@ -1,0 +1,15 @@
+SUPER CAKE GAME II TURBO
+
+Design, code, graphics: Daniel Remar
+
+
+
+A one-hour "game" made for reallyjoel (way before Portal, thank you). To win, you must clear a single difficult jump three times in a row.
+
+
+
+CONTROLS
+
+Arrows left/right: Run
+Arrow up: Jump
+Escape: Quit

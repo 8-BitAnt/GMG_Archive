@@ -1,0 +1,19 @@
+HOW TO MAKE YOUR OWN MAPS
+
+GETTING TO THE EDITOR
+Choose the middle option in the main menu and choose an account to go to the list of custom maps. Click the + to create a new map or select a map and click the edit button on the far left.
+
+DRAWING THE ENEMY'S ATTACK ROUTES
+In the editor, at the left bottom, change your build mode. First, place nodes on the grid in node placement mode. The number on a node is its percentage it is along the route: value 0 is an initial point and value 100 is a terminal point and points in between should have values in between. Hold your mouse over a node and roll the mouse wheel to change these values.
+
+Go to line drawing mode to drag lines from node to node. Right click on a line to make it two-way, reverse it or remove it.
+
+Go to building drawing mode to place buildings. Use mouse wheel to change building hitpoints. This changes the hitpoints according to the file mapeditor_numerical_range.txt, so if you think it changes too little or too much with each click of your mouse wheel, remove or add some values in that file manually.
+
+OTHER SETTINGS
+On the top left, select towers you want to have available in this map. At the right top, change the map time. At the center bottom, change the starting money. Directly below the available towers list, click the Edit button to change the map name.
+
+Use the buttons at the right hand edge to save your map, clear everything, or leave the editor. If your map is invalid, it will not be saved and you will get a message telling you what the problems are.
+
+SHARING MAPS
+Maps are saved in the /Maps/Custom/ folder. To play downloaded custom maps, put them in this folder manually. 

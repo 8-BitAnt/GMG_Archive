@@ -1,0 +1,26 @@
+BAAD GRINGOS
+
+Design, code, graphics and SFX: Daniel Remar
+Design, graphics and Music: Joel Nyström
+Voice of sheep: Joel Nyström
+Voice of thief: Jacob Michelsen
+
+
+
+Note: if the game slows down, try the other exe file.
+
+A two-player versus game made at No More Sweden 2011. Our words were "confuse", "rest" and "control", but we didn't use them much.
+
+The game's pretty unbalanced and it's technically over as soon as the thief gets 50 points. Therefore it's best to take turns playing the two characters and see how many points you can get as the thief.
+
+
+
+CONTROLS
+
+Mouse: Aim with shepherd
+Left mouse button: Move shepherd towards cursor (can't move while reloading)
+Right mouse button: Fire with shepherd (automatic reload after 2 shots)
+WASD: Move thief
+
+Escape: Quit
+F4: Fullscreen/windowed setting

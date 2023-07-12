@@ -1,0 +1,31 @@
+BROMANCING SAGA2: BROFESSIONAL MANSASSINS
+
+Design, code, graphics and SFX: Daniel Remar
+Voice of A.G.: Per Jonasson
+Voice of D.J.: Troy Darc
+Music: Chris Geehan
+
+
+
+A two-player cooperative game made at No More Sweden 2012. It consists of three mini-games. The controls purposefully require the players to nestle their hands on the keyboard.
+
+In the first game, the players must communicate with each other (in real life) and extend their arms with the right timing to get a fist bump.
+
+In the second game, the left player simply aims at the enemies. The big ones are worth more points. The second player gets a choice between a small face with a checkmark and one with a heart; choosing the checkmark increases player 1's firepower, while the heart distracts him from shooting for a while. The dialogue choices can switch randomly at any time.
+
+In the third game, the player must tap their "pat" button as fast as possible and avoid pressing the "rub" button. However, the buttons can suddenly change randomly.
+
+Trivia: In each minigame, the bro points (broints) earned are player 1's score plus player 2's score, multiplied by their sync rate. The sync rate is reduced by missing a fist bump or saying the wrong thing, while in the third minigame the sync rate is better the lower the difference is between both player's number of pats. Skilled and synchronized players can get scores over 40'000.
+
+Obviously, the game is a parody of co-op shooters with burly men, but also the macho culture. The controls are meant to reveal if the players find close contact awkward in real life, as the awkwardness of the game itself steadily increases. The ending shows the characters giving up on hiding their real emotions behind their macho exterior, and is meant to be positive.
+
+
+
+CONTROLS
+
+Space: Start
+Left player: A, G
+Right player: D, J
+
+Escape: Quit
+F4: Fullscreen/windowed setting

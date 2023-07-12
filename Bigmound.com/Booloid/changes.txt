@@ -1,0 +1,12 @@
+Booloid Change Log
+
+v 1.5.1
+- Fixed a small bug with the ending
+
+v 1.5
+- Added cutscenes
+- Added a new ship
+- Removed a saving exploit
+
+v 1.01
+- Fixed small bug dealing with crate placement and percentage

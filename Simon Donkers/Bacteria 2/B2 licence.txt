@@ -1,0 +1,16 @@
+ --== General ==--
+
+  Bacteria 2 is created by Simon Donkers, www.simondonkers.com. All rights reserved.
+
+
+ --== Redistribution ==--
+
+  It is not allowed to redistribute the source code of Bacteria 2 without my prior personal 
+  permission. Websites are free to link to the Bacteria 2 site but please contact me if you want
+  to distribute it yourself. I am very open to media inquiries about spreading Bacteria 2 on cover
+  CD's and things like that. Contact me at bacteria@simondonkers.com
+
+ --== Legal matters ==--
+
+  Bacteria 2 is created with Game Maker which is made by Mark Overmars. You are not allowed to 
+  decompile or reverse engineer the game files nor to permit anyone else to do so.

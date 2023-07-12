@@ -1,0 +1,27 @@
+BAG OF SUNSHINE
+
+Design, code, additional graphics: Daniel Remar
+Design, portraits and interface graphics: Anton Nilsson
+
+
+
+A prototype for a humorous visual novel inspired by games like Marmalade Boy on Super Famicom, but without all the story since it's just a prototype. All you can really do is study for the tests and increase your dream world stats, which will not affect anything. Oh well.
+
+You must plan three activities for each day. When you study, your fatigue increases, which increases the chance of you loafing around when attempting to study. Decrease fatigue by playing games or eating ice cream.
+
+Every five days, you get 500 crowns in allowance from your parents. Use the money in the online shop to buy games, which raise different dream world stats when played, and figurines that make studying less fatiguing.
+
+When a character is talking, left-clicking the dialogue box will immediately skip to the next one. When performing the daily activities, holding the left mouse button will fast forward.
+
+The original idea was for the dream world to advance one week for every real-world day that passes. Most events in the dream world correspond to a Swedish holiday of some sort, such as Midsummer being "Frog jumping day" due to one of its traditional songs, and Easter being "Children's heathen cosplay day" due to kids often dressing up as witches. Ultimately, me and Anton weren't really happy with the idea that Fluorine lives a lonely real life but a socially active imaginary life - it felt a bit cliché and easily led to unfortunate implications, and it would be more fun having her live a "real-world" life full of bizarre events instead.
+
+Also, Våfflan is Swedish for "the waffle".
+
+
+
+CONTROLS
+
+Mouse: Select
+Esc: Quit game
+F2: Restart
+F4: Toggle bordered fullscreen

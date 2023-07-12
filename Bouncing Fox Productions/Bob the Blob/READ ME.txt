@@ -1,0 +1,3 @@
+The file 'Gareth's Fans.lvl' must be kept in the same folder as the application 'Bob the Blob.exe'
+
+Or instant death will occur.

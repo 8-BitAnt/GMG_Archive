@@ -1,0 +1,58 @@
+======================================================================
+VERSION HISTORY
+======================================================================
+
+This documents all the changes made to the game for each version since
+the original release, Version 1.0. The updates are from newest-oldest.
+
+If you have any suggestions for the game, experience any glitches, or
+see some places in which the game can be tweaked and improved, feel
+free to email me to say so, and your suggestions are like to show up
+in the next version.
+
+happytrash@gmail.com
+
+======================================================================
+VERSION 1.10 - SEPTEMBER 3, 2009
+======================================================================
+
+	+ Fixed tiling issue with certain tiles next to spikes.
+
+	+ Added ambient background track courtesy of Ronan McGrath.
+
+======================================================================
+VERSION 1.07 - SEPTEMBER 2, 2009
+======================================================================
+
+	+ Spikes now do not kill you if you touch them from the side.
+
+	+ Some more difficulty tweaks made to the later rooms.
+
+======================================================================
+VERSION 1.05 - SEPTEMBER 1, 2009
+======================================================================
+
+	+ Your progress is now automatically saved each time you enter
+	a new room. If you quit at any time (or the game crashes on
+	you), you can restart it later and will have the option to
+	continue from the room where you left off. Be aware that if
+	you choose NOT to resume your previous game, your previous
+	progress will be overwritten. I don't really see the need for
+	multiple save slots now, but will add them if I get requests.
+
+	+ Tweaked the difficulty in the final two stages to make them
+	less annoying for people on their first run of the game. Later
+	versions will feature a harder mode, but for now I want	more
+	people to be able to play through the full game without	just
+	quitting out of frustration and missing the ending.
+
+	+ Cropped the loading image, because I didn't like the extra
+	black around the bottom. Minor change, not really worth noting.
+
+	+ Added two new creatures you will encounter, and placed some
+	more of the existing creatures in some of the rooms.
+
+	+ Added one new sound effect.
+
+	- Fixed: Escape now actually leaves the pause menu, like it says
+	it does in-game.
