@@ -1,0 +1,43 @@
+var i, j, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    sprFlyGuy=sprite_add(global.homeDir+"\Stages\YoshiIsland3\FlyGuy.png",4,0,1,0,0,18,36)
+    sprite_set_bbox_mode(sprFlyGuy,2)
+    sprite_set_bbox(sprFlyGuy,4,10,32,38)
+}else if (type == STEP){
+    if (random(350)<1){
+        k=choose(0,1) //0=going left; 1=going right
+        j=-20
+        if (k){
+            i=instance_create(j,random(320-100)+100,objProjectile)
+        }else{
+            i=instance_create(room_width-j,random(350-100)+100,objProjectile)
+        }
+
+        i.sprite_index=sprFlyGuy
+        i.depth=25
+        i.ignoreWalls=true
+        i.activated=true
+        i.warmupTimer=0
+        i.noDamage=true
+        i.appearanceFrame=INVALID
+        i.theHSpeed=random(0.5)+1.5
+        i.deathTimerMax=400
+        i.unreflectable=true
+//        i.hitMax=3
+//        i.bounceMax=INVALID
+        i.theVWave=true
+        i.theVWaveOffset=choose(0,0,0,1,2,3)
+        i.theVWaveDivisor=choose(20,25,30,35,40,45,50)
+        i.pNum=-2 //stage projectile
+
+        if (!k){
+            i.image_xscale*=-1
+            i.theHSpeed*=-1
+        }
+    }
+}else if (type == UNLOAD){
+    if (sprite_exists(sprFlyGuy)){ sprite_delete(sprFlyGuy) }
+}

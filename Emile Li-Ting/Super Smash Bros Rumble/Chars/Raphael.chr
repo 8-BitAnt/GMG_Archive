@@ -1,0 +1,153 @@
+[Smash Bros Rumble - Character Definition]
+name=Raphael
+path=.\Chars\Raph\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 0 64 80
+{0 0 127 159}
+Idle
+25 0 1 0 1 26 64
+{20 10 48 63}
+StockIcon
+2 0 1 0 0 11 15
+{0 4 29 25}
+8BitIdle
+1 0 1 0 0 9 40
+{3 4 17 39}
+8BitWalk
+4 0 1 0 0 9 38
+{3 4 17 37}
+8BitAttack
+7 0 1 0 0 9 40
+{15 12 37 30}
+Guard
+5 0 1 0 0 26 60
+{11 6 42 59}
+Hit
+12 0 1 0 0 26 60
+{11 6 42 59}
+Hit2
+1 0 1 0 0 26 60
+{11 6 42 59}
+Hit3
+6 0 1 0 0 26 60
+{11 7 42 59}
+Electrocuted
+2 0 1 0 0 29 59
+{Idle}
+Burned
+1 0 1 0 0 14 58
+{Idle}
+Frozen
+1 0 1 0 0 28 51
+{Idle}
+Crushed
+1 0 1 0 0 31 20
+{Idle}
+Crouch
+1 0 1 0 0 26 58
+{11 16 42 57}
+Walk
+4 0 1 0 0 24 62
+{8 10 38 61}
+Run
+4 0 1 0 0 24 60
+{8 10 38 59}
+SlideTurn
+1 0 1 0 0 24 63
+{9 10 38 62}
+Jump
+1 0 1 0 0 18 65
+{4 10 33 64}
+Jump2
+7 0 1 0 0 20 55
+{5 0 35 54}
+Fall
+1 0 1 0 0 19 67
+{5 12 35 66}
+Roll
+6 0 1 0 0 28 76
+{8 16 45 75}
+AirDodge
+7 0 1 0 0 20 55
+{5 0 35 54}
+LedgeGrab
+1 0 1 0 0 17 65
+{3 10 32 64}
+Attack
+3 0 1 0 0 44 68
+{35 10 80 60}
+Attack2
+4 0 1 0 0 29 64
+{25 7 85 45}
+Attack3
+3 0 1 0 0 25 61
+{30 5 78 35}
+Attack4
+3 0 1 0 0 36 53
+{30 5 64 30}
+AttackSide
+5 0 1 0 0 26 61
+{49 8 99 56}
+AttackUp
+3 0 1 0 0 33 78
+{23 0 70 35}
+AttackDown
+3 0 1 0 0 29 60
+{20 18 72 60}
+RunAttack
+6 0 1 0 0 25 64
+{25 17 49 54}
+AirAttack
+4 0 1 0 0 25 77
+{25 35 55 70}
+AirAttackUp
+5 0 1 0 0 25 64
+{25 5 52 55}
+AirAttackDown
+6 0 1 0 0 21 56
+{15 30 60 60}
+Smash
+9 0 1 0 0 25 61
+{40 8 99 56}
+SmashUp
+7 0 1 0 0 29 83
+{30 5 84 55}
+SmashDown
+7 0 1 0 0 44 68
+{32 10 83 60}
+Special
+5 0 1 0 0 19 53
+{5 0 40 53}
+Special2
+4 0 1 0 0 47 66
+{0 15 99 36}
+SpecialSide
+5 0 1 0 0 25 64
+{10 15 62 40}
+SpecialUp
+5 0 1 0 0 39 56
+{28 7 66 48}
+SpecialDown
+8 0 1 0 0 47 66
+{0 15 99 36}
+Grab
+6 0 1 0 0 18 58
+{25 5 45 35}
+GrabSuccess
+3 0 1 0 0 18 58
+{25 5 45 35}
+ThrowFront
+4 0 1 0 0 20 59
+{Idle}
+ThrowUp
+4 0 1 0 0 34 62
+{Idle}
+ThrowDown
+14 0 1 0 0 45 59
+{}
+ThrowBack
+5 0 1 0 0 44 54
+{Idle}

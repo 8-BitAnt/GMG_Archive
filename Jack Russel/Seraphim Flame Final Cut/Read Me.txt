@@ -1,0 +1,80 @@
+Trouble Shooting
+
+-This is the Final Cut version of Seraphim flame, which has been released as of the 4th of March. 
+ Save files from the earlier version may not work on this.
+
+-This game requires Windows to play,
+
+-It may be important to read the in-game instructions. This can be done by pressing F1
+
+-I can be contacted at flying_squire@hotmail.com
+
+-This file must be unzipped for the game to function fully.
+
+-This game requires DirectX 8.0 or higher to run (this is already provided with XP or higher computers)
+
+-Recommended computer stats:
+ -256MB RAM or higher
+ -1.6 GHz Processing whatever (I suck at computer stuff)
+ -decent sound
+
+-The game's resolution is 640*480, It is recommended to have your resolution set at 800*600 or higher to operate this game.
+
+
+------------------------------------------------------------------------------------------------------------------------------
+Legal Info:
+
+-Also, you can't modify the game, sell the game, or use graphics from the game without my permission.
+
+-The game has various sound files which I collected from sites, these sites are in my credits. These sounds were freeware.
+ 
+-A final note just to say that this game was made with gamemaker, which is a programme produced by Mark Overmars. (www.gamemaker.nl)
+
+--------------------------------------
+Copyright/Permissions:
+--------------------------------------
+
+Story script is original and any similarities to an actual event is purely coincidental,
+However, various characters are based on Classics figures.
+
+Copyright Seraphim Flame, Robert Edward Hoani Bryson(JackRussel) 2004-2006
+All rights reserved.
+
+(1) Seraphim Flame may not be sold or resold, distributed as a part of any
+commercial package, used in a commercial environment, used or distributed in
+support of a commercial service, or used or distributed to support any kind of
+profit-generating activity. 
+
+(2)Seraphim Flame is a game created by Robert Edward Hoani Bryson(JackRussel) You may not claim it as your own.
+
+(3) Robert Edward Hoani Bryson(JackRussel) retains the right to modify these terms at any time, and
+without prior notice.
+
+---------------------------------------
+End of notice
+---------------------------------------
+
+
+
+---------------------------------------
+Liability Notice
+---------------------------------------
+
+I am not to be held responsible for any kind of damage this game could cause on your system,
+it is to be played at your own risk.
+
+Even though I have Scanned The game for your protection, there are still no guarantees, and
+I recommend that you scan the programme yourself with a programme you trust if you have any
+doubts of how safe this programme is.
+
+---------------------------------------
+End of notice
+---------------------------------------
+
+
+Robert Edward Hoani Bryson(JackRussel) would also like to acknowledge he likes this game alot. More than all 
+specimens of potato chips and some alcoholic beverages. He hopes you will feel a similar affection to this game :)
+
+K, Bye!
+
+

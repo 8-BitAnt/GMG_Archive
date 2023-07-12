@@ -1,0 +1,42 @@
+
+	JUMPER THREE
+
+	VERSION INFO
+
+
+=============================
+[ v0.99 ] -- [ 08 / 20 / 08 ]
+=============================
+	-First release.
+
+=============================
+[ v1.00 ] -- [ 08 / 22 / 08 ]
+=============================
+	-Lowered 5 medal target times.
+	-Fixed a coin being impossible to reach.
+	-Fixed some formatting errors in stats files.
+	-Fixed crash at start of first sector with music muted.
+	-Fixed crash at ogmo unlock with music muted.
+	-Fixed crash at stage complete with music muted.
+	-Made spawn point wait until button released to spawn.
+	-Optimized timer start/end to help prevent miscalculation.
+	-Removed no-hover time immediately after spawn for Pink Ogmo.
+	-Made game return to Ogmo Select rather than Stage Select upon death
+		or completion of an already-completed stage.
+	-Made it so no Ogmo will wall jump if you are holding the DOWN key (primarily
+		to make it easier for Pink Ogmo to hover against walls).
+	-Added option to use frametime timer rather than realtime timer, for computers
+		that have trouble keeping a constant 60 FPS.
+	-Added sound effect for beating your best time on a stage, but not earning
+		a medal.
+	-Increased friction slightly for Pink Ogmo while hovering.
+	-Fixed exploit where you could hover below stage with Pink Ogmo.
+	-Fixed falling off stage and dieing if you stopped one pixel short of finishing.
+	-Fixed springs not giving one Ogmo back his double jump.
+	-Changed stage 2-7 slightly to make it easier for Green Ogmo.
+	-Added ability to pay coins to skip stages.
+	-Added coin total display to Ogmo Select screen.
+	-Added Arcade Mode.
+	-Fixed bug where you could pick an unlocked Ogmo, then quit and load a file
+		without that Ogmo unlocked and still play as him.
+	-Placed some missing tiles in stage 3-3.

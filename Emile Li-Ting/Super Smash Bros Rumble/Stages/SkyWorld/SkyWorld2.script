@@ -1,0 +1,21 @@
+var i, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    conveyRight=-1
+}else if (type == STEP){
+    if (random(300)<1){
+        conveyRight=choose(-1,1,0)
+        with (objBottomWall){
+            xSpeed=random(4)
+            xSticky=1
+            goRight=other.conveyRight
+            conveyorBelt=1
+        }
+    }
+    if (conveyRight == 1){
+    }else if (conveyRight == 0){
+    }
+}else if (type == UNLOAD){
+}

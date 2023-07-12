@@ -1,0 +1,21 @@
+//--------------AERIAL BATTLE---------------//
+
+var i, j, type;
+
+type=global.theArgument0; //PRELOAD=0; STEP=1; UNLOAD=2
+
+if (type == PRELOAD){
+    with (objBottomWall){ instance_destroy() }
+    with (objSpring){ instance_destroy() }
+    with (objTopWall){ instance_destroy() }
+    with (objLeftWall){ instance_destroy() }
+    with (objRightWall){ instance_destroy() }
+    with (objLedgeLeft){ instance_destroy() }
+    with (objLedgeRight){ instance_destroy() }
+
+    mainPlatform=instance_create(room_width/2, room_height/2, objBottomWall)
+    mainPlatform.image_xscale=0.5
+    mainPlatform.visible=true
+
+    maxAirJumps=-1
+}

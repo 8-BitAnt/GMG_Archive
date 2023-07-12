@@ -1,0 +1,430 @@
+var charAction,i,j,k;
+
+charAction=global.theArgument0;
+
+if (charAction == HASBEENHIT){ exit
+}else if (charAction == HASBEENGRABBED){ exit
+}else if (eightBitTimer > 0) && (charAction >= ATTACK) && (charAction <= SPECIALSMASHDOWN){
+    SetAttackBoxParameters();
+    movementModifier=1
+    exit
+}
+
+switch(charAction)
+{
+case ATTACK:
+    SetAttackBoxParameters(2,4);
+    if (comboCount<=0){
+        theAttack.attackFrameStart=1
+        theAttack.attackFrameEnd=2
+        theAttack.hAttackSpeed=0.7
+        theAttack.hSpeedSet=true
+        theAttack.hSpeedMinReq=false
+        theAttack.vAttackSpeed=1.5
+        theAttack.comboCount=choose(1,1,2)
+    }else if (comboCount > 0) && (comboCount <= 1){
+        theAttack.sprite_index=sprAttack2
+        theAttack.hAttackSpeed=0.7
+        theAttack.hSpeedSet=true
+        theAttack.hSpeedMinReq=false
+        theAttack.vAttackSpeed=1.5
+        theAttack.comboCount=choose(2,2,3)
+    }else if (comboCount > 1){
+        theAttack.sprite_index=sprAttack3
+        theAttack.attackFrameStart=3
+        theAttack.attackFrameEnd=4
+        theAttack.comboCount=0
+    }
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=0
+    break
+    
+case ATTACKSIDE:
+    i=choose(0,0,0,1) //1 out of 4 chance to do attack combo
+    if (i == 1){
+        ActionScript(global.character[pNum], ATTACK);
+    }else{
+        SetAttackBoxParameters(1,2);
+        theAttack.sprite_index=sprAttack3
+        theAttack.hAttackSpeed=0
+        theAttack.vAttackSpeed=5.5
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+    }
+    break
+        
+case ATTACKUP: ActionScript(global.character[pNum], ATTACK); break
+case ATTACKDOWN: ActionScript(global.character[pNum], ATTACK); break
+case RUNATTACK: ActionScript(global.character[pNum], ATTACK); break
+    
+case AIRATTACK:
+    SetAttackBoxParameters(1,6);
+    theAttack.endOnGround=true
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=0
+    break
+        
+case AIRATTACKSIDE:
+    SetAttackBoxParameters(2,2);
+    theAttack.endOnGround=true
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=0
+    break
+    
+case AIRATTACKUP:
+    SetAttackBoxParameters(2,2);
+    theAttack.endOnGround=true
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=0
+    break
+
+case AIRATTACKDOWN:
+    SetAttackBoxParameters(4,5);
+    theAttack.endOnGround=true
+    if (random(2)<1){
+        theAttack.multiHit[0]=2;
+        theAttack.multiVSpeedMinReq=false
+        theAttack.multiVSpeedMin=3
+        theAttack.multiVHitSpeed=3
+        theAttack.multiAttackPower=2.5*attackMultiplier
+        theAttack.multiStunningPower=7
+    }else{
+        theAttack.sprite_index=sprAirAttack2
+        theAttack.attackFrameStart=4
+        theAttack.attackFrameStart=5
+    }
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=0
+    break
+
+case SMASHSIDE:
+    SetAttackBoxParameters(4,5);
+    theAttack.attackPower=15*attackMultiplier
+    theAttack.chargeDmgMax=21*attackMultiplier
+//    theAttack.image_speed=0.65
+    theAttack.multiHSpeedFrame[0]=3
+    theAttack.multiHSpeed[0]=2
+    theAttack.hAttackSpeed=6.25
+    theAttack.vAttackSpeed=6.5
+    theAttack.chargeFrameStart=0
+    theAttack.chargeFrameEnd=1
+    theAttack.cooldownTimer=4
+    if (random(1)<10){
+        theAttack.reflectProjectiles=true
+    }
+    theAttack.hitSound=soundSmash
+    theAttack.whiffFrame=3
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=2
+    break
+    
+case SMASHUP:
+    SetAttackBoxParameters(4,9);
+//    theAttack.image_speed=0.75
+    theAttack.attackPower=21*attackMultiplier
+    theAttack.chargeDmgMax=29*attackMultiplier
+    theAttack.chargeFrameStart=0
+    theAttack.chargeFrameEnd=1
+    theAttack.whiffFrame=3
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=2
+    break
+
+case SMASHDOWN:
+    SetAttackBoxParameters(10,14);
+    theAttack.multiHit[0]=4;
+    theAttack.multiHit[1]=8;
+    theAttack.multiVSpeedMinReq=false
+    theAttack.multiVSpeedMin=3
+    theAttack.multiVHitSpeed=3
+    theAttack.multiAttackPower=2.5*attackMultiplier
+    theAttack.multiStunningPower=7
+    
+    theAttack.image_speed=0.75
+    theAttack.chargeFrameStart=2
+    theAttack.chargeFrameEnd=2
+    theAttack.whiffFrame=3
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=3
+    break
+    
+case SPECIAL:
+    if (specialState != INSTANTPRESSED){ break }
+    if (finalSmash){
+        hspeed=0
+        vspeed=0
+        suspendGravity=true
+        suspendFriction=true
+        friction=0
+        gravity=0        
+        
+        SetAttackBoxParameters(-1,-1);
+        theAttack.sprite_index=sprSpecial
+        theAttack.image_speed=0.1
+        theAttack.finalSmash=true
+        theAttack.warmupTimer=14//3
+        theAttack.endSuspendGravity=true
+        theAttack.whiffSound=soundSpecial4
+        sound_volume2(theAttack.whiffSound,0.875)
+    
+        for (i=0;i<20;i+=1){
+            SetProjectileParameters()
+            theProjectile.x=random(room_width)
+            theProjectile.y=0
+            theProjectile.sprite_index=sprProjectile5
+            theProjectile.image_xscale=abs(image_xscale)+0.5
+            theProjectile.image_yscale=theProjectile.image_xscale
+            theProjectile.image_alpha=0.9
+            theProjectile.attackPower=14*attackMultiplier
+            theProjectile.stunningPower=20
+            theProjectile.spawnOnOwnerX=false
+            theProjectile.spawnOnOwnerY=false
+            
+            theProjectile.deathTimer=200
+            theProjectile.hAttackSpeed=3
+            theProjectile.vAttackSpeed=4
+            theProjectile.rotateOnDirection=true
+            theProjectile.alphaDecay=true
+            theProjectile.decayOnImpact=true
+            theProjectile.appearanceFrame=choose(0,1,2,3)
+            theProjectile.ignoreWalls=true
+            theProjectile.ignoreGuard=true
+            theProjectile.hitMax=INVALID
+    
+            theProjectile.maxHSpeed=MAXRUNSPEED*2
+            theProjectile.maxVSpeed=MAXRUNSPEED*2
+            theProjectile.speedIncrease=0.04
+            theProjectile.theSpeed=choose(7,8,9,10)
+            theProjectile.theDirection=270
+            theProjectile.unreflectable=true
+        }
+        exit
+    }
+    
+    //PK freeze
+    k=1
+    if (projectileCount[k] > 0){
+        exit
+    }
+    projectileCount[k]+=1
+    
+    SetAttackBoxParameters(-1,-1);
+    theAttack.waitForProjectile=true
+    theAttack.destroyProjectileOnHit=true
+
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*0.9
+    SetProjectileParameters(0,j)
+    theProjectile.sprite_index=sprProjectile3
+    theProjectile.image_xscale=image_xscale*1.1
+    theProjectile.image_yscale=theProjectile.image_xscale
+    
+    theProjectile.elementalType='ice'
+    theProjectile.destroyOnObject=theAttack
+    theProjectile.attackPower=10*attackMultiplier
+    theProjectile.deathTimer=100
+    theProjectile.controlledExplode=true
+    theProjectile.controlledH=true
+    theProjectile.controlledV=true
+    theProjectile.controlledSpeedInc=0.15
+    theProjectile.maxHSpeed=5.5//ness=6
+    theProjectile.chargeDmgModifier=0.4//ness=0.5
+    theProjectile.chargeDmgMax=20
+    theProjectile.decayTimer=20
+    theProjectile.decayTimerMax=20
+    theProjectile.explodeSprite=sprProjectile4
+    theProjectile.smokeSprite=NessSpark
+    theProjectile.smokeSprite2=NessSpark2
+    theProjectile.smokePositionalVariance=5//ness=15
+    theProjectile.smokeFrequency=4//ness=5
+    theProjectile.smokeXScale=0.5
+    theProjectile.smokeYScale=0.5
+    theProjectile.smokeSizeVariance=0.1
+    theProjectile.stunningPower=20
+    theProjectile.hAttackSpeed=2
+    theProjectile.vAttackSpeed=1
+    theProjectile.alphaDecay=true
+    theProjectile.decayOnImpact=true
+    theProjectile.noDamageOnDecay=false
+    theProjectile.appearanceFrame=3
+    theProjectile.bounceVSpeed=0
+    theProjectile.theHSpeed=4
+    theProjectile.theVSpeed=-5.5
+    theProjectile.fall=true
+    theProjectile.theGravity=0.2
+    theProjectile.projectileCountNum=k
+    
+    theAttack.whiffSound=soundSpecial3
+    sound_volume2(theAttack.whiffSound,0.8)
+    break
+case SPECIALSIDE:
+    //PK fire
+    k=0
+    if (projectileCount[k] > 0){
+        exit
+    }
+    projectileCount[k]+=1
+    
+    SetAttackBoxParameters(-1,-1);
+    theAttack.whiffSound=soundSpecial
+    sound_volume2(theAttack.whiffSound,0.9)
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)*0.6
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*0.5
+    SetProjectileParameters(i,j)
+    theProjectile.image_xscale=image_xscale*1.1
+    theProjectile.image_yscale=theProjectile.image_xscale
+    theProjectile.elementalType='fire'
+
+    theProjectile.deathTimer=22
+    theProjectile.rotateOnDirection=true
+    theProjectile.attackPower=5*attackMultiplier
+    theProjectile.stunningPower=9
+    theProjectile.hAttackSpeed=2
+    theProjectile.vAttackSpeed=1
+    theProjectile.alphaDecay=true
+    theProjectile.explodeSprite=NessExplode
+    theProjectile.explodeRotateOnDirection=false
+    theProjectile.explodeAlwaysUp=true
+    theProjectile.decayOnImpact=true
+    theProjectile.appearanceFrame=3
+    theProjectile.bounceVSpeed=0
+    theProjectile.projectileCountNum=k
+    theProjectile.theHSpeed=5.5
+    
+    theProjectile.hitSound=soundProjectile
+    sound_volume2(theProjectile.hitSound,0.9)
+    break
+case SPECIALUP:
+    //pk thunder
+    if (!jumpCheck(true)){ exit }
+    
+    k=1
+    if (projectileCount[k] > 0){
+        exit
+    }
+    projectileCount[k]+=1
+
+    hspeed=0
+    vspeed=0    
+    suspendGravity=true
+    gravity=0.15
+    suspendFriction=true
+    friction=0.05
+    SetAttackBoxParameters(-1,-1);
+    theAttack.sprite_index=sprSpecial
+    theAttack.waitForProjectile=true
+    theAttack.destroyProjectileOnHit=true
+    theAttack.endSuspendGravity=true
+    theAttack.endSuspendFriction=true
+//    theAttack.guardCancelCooldown=5//<<<< causes problems when trying to recover
+//    theAttack.cooldownTimer=4
+    
+    theAttack.whiffSound=soundSpecial2
+    sound_volume2(theAttack.whiffSound,0.9)
+
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*0.9
+    SetProjectileParameters(0,j)
+    theProjectile.sprite_index=sprProjectile2
+    theProjectile.image_xscale=image_xscale*1.1
+    theProjectile.image_yscale=theProjectile.image_xscale
+    if (random(3)<1){ theProjectile.elementalType='electric' }
+    theProjectile.selfHitTimer=15//ness=10
+    theProjectile.destroyOnObject=theAttack
+    theProjectile.deathTimer=85
+    theProjectile.attackPower=10*attackMultiplier
+    theProjectile.destroyOnLeaveScreen=false
+    theProjectile.controlled=true
+    theProjectile.controlledSpeedInc=0.185//ness=2
+    theProjectile.turnRadius=15//ness=10
+    theProjectile.stunningPower=9
+    theProjectile.hAttackSpeed=2
+    theProjectile.vAttackSpeed=1
+    theProjectile.alphaDecay=true
+    theProjectile.rotateOnDirection=true
+    theProjectile.decayOnImpact=true
+    theProjectile.hitMax=3
+    theProjectile.boostSelf=true
+    theProjectile.boostSprite=sprAirSpecialUp//pk cannonball
+    theProjectile.boostDamage=(21+random(5))*attackMultiplier
+    theProjectile.boostYOffset=-(bbox_bottom-bbox_top)*0.5
+    theProjectile.smokePositionalVariance=10//ness=5 or defaultValue
+    theProjectile.smokeSprite=NessSpark
+    theProjectile.smokeSprite2=NessSpark2
+    theProjectile.speedBoost=13//15
+    theProjectile.hBoostAttackSpeed=6.5
+    theProjectile.vBoostAttackSpeed=6.5
+    theProjectile.appearanceFrame=3
+    theProjectile.bounceVSpeed=0
+    theProjectile.theVSpeed=-3
+    theProjectile.projectileCountNum=k
+    break
+case SPECIALDOWN:
+    //PSI Magnet
+    SetAttackBoxParameters(14,16);
+    theAttack.image_speed=0.75
+    theAttack.attackPower=9*attackMultiplier
+    theAttack.stunningPower=0
+    if (random(4)<1){ theProjectile.elementalType='electric' }
+    theAttack.absorbProjectiles=true
+    theAttack.destroyProjectiles=true
+    theAttack.reflectFrameStart=5
+    theAttack.reflectFrameEnd=20
+    theAttack.hAttackSpeed=2.5
+    theAttack.vAttackSpeed=0.5
+
+    theAttack.chargeSpecial=true
+    theAttack.chargeTimerMax=INVALID
+    theAttack.chargeFrameStart=9
+    theAttack.chargeFrameEnd=12
+    theAttack.chargeSparks=false
+
+    theAttack.cooldownTimer=0
+
+    theAttack.whiffFrame=0
+//    theAttack.whiffSound=soundSpecial3
+//    sound_volume2(theAttack.whiffSound,0.8)
+    break
+
+case AIRSPECIAL: ActionScript(global.character[pNum], SPECIAL); break
+case AIRSPECIALSIDE: ActionScript(global.character[pNum], SPECIALSIDE); break
+case AIRSPECIALUP: ActionScript(global.character[pNum], SPECIALUP); break
+case AIRSPECIALDOWN: ActionScript(global.character[pNum], SPECIALDOWN); break
+    
+case SPECIALSMASHSIDE: ActionScript(global.character[pNum], SPECIALSIDE); break
+case SPECIALSMASHUP: ActionScript(global.character[pNum], SPECIALUP); break
+case SPECIALSMASHDOWN: ActionScript(global.character[pNum], SPECIALDOWN); break
+
+case ROLL:
+case AIRDODGE: SetAttackBoxParameters(); break
+case INITCHAR:
+    sprXScale=0.9
+    sprYScale=0.9
+    gender='m'
+    runAnimSpeed=0.9
+    moveSpeed=MOVESPEED*1.01
+    maxRunSpeed=MAXRUNSPEED*0.915
+    jumpSpeed=JUMPSPEED*0.985
+    fallGravity=FALLGRAVITY*0.775
+    maxAirSpeed=MAXAIRSPEED*0.985
+    hDamageSpeedMultiplier=0.975//heavier in general
+    vDamageSpeedMultiplier=0.975
+    hHitDistanceEquation=HHITDISTANCEEQUATION*1.025//lighter when damaged
+    vHitDistanceEquation=VHITDISTANCEEQUATION*1.025
+    
+    soundDies=      'Lucas Death.wav'
+    soundIsHit=     'Lucas Hit.wav'
+    soundIsHit2=    'Lucas Hit2.wav'
+    soundIsHit3=    'Lucas Hit3.wav'
+    soundIsHit4=    'Lucas Hit4.wav'
+    soundAttack=    'Lucas Attack.wav'
+    soundAttack2=   'Lucas Attack2.wav'
+    soundAttack3=   'Lucas Attack4.wav'
+    soundAttack4=   'Lucas Attack5.wav'
+    soundSmash=     'Smash Ping.wav'
+    soundSpecial=   'Lucas PKFire.wav'
+    soundProjectile='Acid Fire.wav'
+    soundSpecial2=  'Lucas PKThunder.wav'
+    soundSpecial3=  'Lucas PKFreeze.wav'
+    soundSpecial4=  'Lucas PKStarstorm.wav'
+    break
+}

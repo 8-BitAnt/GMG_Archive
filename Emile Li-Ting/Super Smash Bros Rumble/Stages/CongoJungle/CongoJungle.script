@@ -1,0 +1,42 @@
+var i, j, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    sprPlatform=sprite_add(global.homeDir+"\Stages\CongoJungle\Platform.gif",1,0,1,0,0,40,4)
+    sprite_set_bbox_mode(sprPlatform,2)
+    sprite_set_bbox(sprPlatform,2,4,78,15)
+
+    j=choose(0,1)//clockwise/counter-clockwise
+    i=instance_create(590, 300, objJumpBlock)
+    global.a=i
+    i.sprite_index=sprPlatform
+    i.image_xscale*=choose(-1,1)
+    i.xSpeed=1
+    i.ySpeed=1
+    i.xSticky=1
+    i.ySticky=1
+    i.clockwise=j
+    i.minX=470
+    i.maxX=590
+    i.minY=250
+    i.maxY=450
+    i.visible=true
+
+    i=instance_create(470, 400, objJumpBlock)
+    i.sprite_index=sprPlatform
+    i.image_xscale*=choose(-1,1)
+    i.xSpeed=1
+    i.ySpeed=1
+    i.xSticky=1
+    i.ySticky=1
+    i.clockwise=j
+    i.minX=470
+    i.maxX=590
+    i.minY=250
+    i.maxY=450
+    i.visible=true
+}else if (type == STEP){
+}else if (type == UNLOAD){
+    if (sprite_exists(sprPlatform)){ sprite_delete(sprPlatform) }
+}

@@ -1,0 +1,9 @@
+ERROR in
+action number 2
+of Create Event
+for object Control:
+
+Error in code at line 16:   
+portraits = ds_list_create();at position 14: This function is only available in the Pro Edition.
+
+

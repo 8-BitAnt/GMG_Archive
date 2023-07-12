@@ -1,0 +1,168 @@
+[Smash Bros Rumble - Character Definition]
+name=Yoshi
+path=.\Chars\Yoshi\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 0 64 80
+{0 0 127 159}
+Idle
+8 0 1 0 1 16 32
+{3 0 29 31}
+Intro
+27 0 1 0 0 41 48
+{25 18 55 47}
+StockIcon
+1 0 1 0 0 15 15
+{0 2 29 27}
+8BitIdle
+1 0 1 0 0 8 25
+{2 2 17 25}
+8BitWalk
+4 0 1 0 0 8 25
+{2 2 17 25}
+8BitAttack
+6 0 1 0 0 8 25
+{15 8 45 20}
+Hit
+1 0 1 0 0 16 34
+{4 2 28 33}
+Hit2
+1 0 1 0 0 13 42
+{3 8 22 42}
+Crouch
+1 0 1 0 0 16 32
+{5 16 28 31}
+Guard
+1 0 1 0 0 13 32
+{2 8 25 31}
+Shield
+1 0 1 0 0 30 30
+{}
+Roll
+6 0 1 0 0 14 33
+{2 8 25 32}
+AirDodge
+6 0 1 0 0 16 32
+{5 6 30 31}
+Walk
+12 0 1 0 0 16 32
+{4 1 29 31}
+Run
+2 0 1 0 0 16 32
+{5 6 30 31}
+SlideTurn
+1 0 1 0 0 16 32
+{5 6 30 31}
+Jump
+1 0 1 0 0 16 32
+{5 6 30 31}
+Jump2
+6 0 1 0 0 16 32
+{5 6 30 31}
+Fall
+1 0 1 0 0 16 32
+{5 6 30 31}
+LedgeGrab
+1 0 1 0 0 8 46
+{0 14 22 45}
+Attack
+7 0 1 0 0 16 31
+{18 3 35 30}
+Attack2
+5 0 1 0 0 13 31
+{18 3 35 30}
+AttackUp
+8 0 1 0 0 18 39
+{0 0 25 30}
+AttackDown
+8 0 1 0 0 21 31
+{0 15 47 30}
+RunAttack
+5 0 1 0 0 15 36
+{16 7 40 38}
+AirAttack2
+6 0 1 0 0 16 32
+{5 6 30 31}
+AirAttackUp
+9 0 1 0 0 13 44
+{10 0 23 30}
+AirAttackDown
+7 0 1 0 0 13 37
+{5 20 20 44}
+Smash
+10 0 1 0 0 16 31
+{14 13 44 30}
+SmashUp
+10 0 1 0 0 15 44
+{0 0 30 30}
+SmashDown
+11 1 1 0 0 25 31
+{0 15 50 32}
+Special
+10 0 1 0 0 12 26
+{26 0 58 23}
+SpecialSuccess
+10 0 1 0 0 14 34
+{-5 0 14 34}
+SpecialSide
+10 0 1 0 0 18 53
+{5 25 30 52}
+SpecialUp
+8 0 1 0 0 20 32
+{5 6 30 31}
+SpecialDown
+12 0 1 0 0 16 32
+{5 6 30 35}
+Projectile
+8 0 1 0 0 19 20
+{11 10 26 25}
+Projectile2
+8 1 1 0 0 19 20
+{11 10 26 25}
+Egged
+13 0 1 0 0 16 27
+{0 0 30 26}
+GrabSuccess
+3 0 1 0 0 13 28
+{Idle}
+ThrowAttack
+9 0 1 0 0 15 34
+{Idle}
+ThrowFront
+9 0 1 0 0 22 33
+{Idle}
+ThrowUp
+9 0 1 0 0 15 32
+{Idle}
+ThrowBack
+10 0 1 0 0 15 32
+{Idle}
+ThrowDown
+13 0 1 0 0 14 37
+{Idle}
+SuperDragonIdle
+8 0 1 0 1 16 33
+{3 1 29 32}
+SuperDragonJump
+4 0 1 0 0 16 32
+{SuperDragonIdle}
+SuperDragonJump2
+4 0 1 0 0 16 32
+{SuperDragonIdle}
+SuperDragonFall
+4 0 1 0 0 16 32
+{SuperDragonIdle}
+SuperDragonSpecial
+8 0 1 0 0 13 29
+{SuperDragonIdle}
+SuperDragonProjectile
+3 0 1 0 0 8 8
+{ }
+SuperDragonChangeTo
+11 0 1 0 0 16 32
+{SuperDragonIdle}
+SuperDragonChangeBack
+11 0 1 0 0 16 32
+{SuperDragonIdle}

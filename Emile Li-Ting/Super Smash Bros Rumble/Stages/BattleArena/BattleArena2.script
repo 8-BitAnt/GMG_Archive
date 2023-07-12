@@ -1,0 +1,60 @@
+//-------------RANDOM PLATFORMS----------------//
+
+var i, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    with (objBottomWall){
+        instance_destroy()
+    }
+    with (objLedgeLeft){
+        instance_destroy()
+    }
+    with (objLedgeRight){
+        instance_destroy()
+    }
+    
+    if (variable_global_exists('theSeed')){
+        if (is_string(global.theSeed)){
+            global.theSeed=real(global.theSeed);
+        }
+        if (global.theSeed != INVALID){
+            random_set_seed(global.theSeed)
+        }
+    }
+    
+    j=random(20)+12
+    for (i=0; i<j; i+=1){
+        if (i==0){
+            k=instance_create(0,0,objBottomWall)
+        }else{
+            k=instance_create(0,0,choose(objBottomWall,objBottomWall,objJumpBlock,objLeftWall,objRightWall))
+        }
+        if (k.object_index == objLeftWall) || (k.object_index == objRightWall){
+            k.image_yscale=4+random(6)
+        }else{
+            k.image_xscale=4+random(10)
+            if (i==0){
+                k.image_xscale+=6
+            }
+        }
+        with (k){
+            xSpeed=choose(0,0,random(4)+0.2)
+            ySpeed=choose(0,0,random(4)+0.2)
+            goRight=choose(0,1)
+            goDown=choose(0,1)
+            xSticky=choose(0,1)
+            ySticky=choose(0,1)
+            minX=random(room_width)
+            minY=random(room_height)
+            maxX=random(room_width-minX -10)+minX +10
+            maxY=random(room_height-minY -10)+minY +10
+            x=minX+random(maxX-minX)
+            y=minY+random(maxY-minY)
+            visible=true
+        }
+
+}else if (type == STEP){
+}else if (type == UNLOAD){
+}

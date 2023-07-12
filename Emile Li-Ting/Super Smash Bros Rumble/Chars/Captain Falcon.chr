@@ -1,0 +1,114 @@
+[Smash Bros Rumble - Character Definition]
+name=Captain Falcon
+path=.\Chars\CptFalcon\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+8 0 1 0 1 22 63
+{5 6 39 62}
+StockIcon
+1 0 1 0 0 15 15
+{3 0 27 29}
+Hit
+1 0 1 0 0 38 69
+{21 5 55 72}
+Crouch
+1 0 1 0 1 24 57
+{7 8 41 56}
+Guard
+1 0 1 0 0 24 54
+{7 2 41 53}
+Roll
+6 0 1 0 0 25 62
+{8 15 42 61}
+AirDodge
+6 0 1 0 0 22 62
+{5 2 39 61}
+Walk
+6 0 1 0 0 21 61
+{4 3 38 60}
+Run
+6 0 1 0 0 37 63
+{20 8 54 62}
+SlideTurn
+1 0 1 0 0 25 54
+{5 0 46 53}
+Jump
+2 0 1 0 0 21 69
+{4 9 38 68}
+Jump2
+4 0 1 0 0 24 65
+{8 5 41 64}
+Fall
+3 0 1 0 0 22 62
+{5 2 39 61}
+LedgeGrab
+1 1 1 0 0 21 67
+{4 12 38 66}
+Attack
+10 0 1 0 0 28 59
+{35 10 70 40}
+AttackUp
+7 0 1 0 0 19 76
+{5 0 45 44}
+AttackDown
+6 0 1 0 0 21 52
+{30 15 94 54}
+RunAttack
+5 0 1 0 0 24 57
+{20 10 50 59}
+AirAttack
+4 0 1 0 0 22 62
+{25 20 79 55}
+AirAttackSide
+6 0 1 0 0 22 62
+{25 20 64 55}
+AirAttackUp
+7 0 1 0 0 28 97
+{17 5 80 70}
+AirAttackDown
+8 0 1 0 0 22 69
+{20 20 82 70}
+Smash
+8 0 1 0 0 35 59
+{38 10 74 38}
+SmashUp
+11 0 1 0 0 19 76
+{5 0 45 44}
+SmashDown
+9 0 1 0 0 22 81
+{30 25 125 89}
+Special
+20 0 1 0 0 43 70
+{50 3 141 84}
+Special2
+5 0 1 0 0 37 39
+{3 3 78 84}
+SpecialSide
+8 0 1 0 0 22 71
+{5 14 39 70}
+SpecialUp
+8 0 1 0 0 20 67
+{20 26 55 80}
+SpecialUpSuccess
+8 0 1 0 0 22 47
+{8 2 44 45}
+SpecialDown
+8 0 1 0 0 21 52
+{30 15 94 54}
+AirSpecialDown
+9 0 1 0 0 20 67
+{20 26 55 80}
+Projectile
+1 1 1 0 0 12 4
+{4 0 21 6}
+Projectile2
+1 1 1 0 0 336 280
+{ }
+Taunt
+6 0 1 0 0 14 61
+{Idle}

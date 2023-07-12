@@ -1,0 +1,13 @@
+//--------------INFINITY PIT---------------//
+
+var i, j, type;
+
+type=global.theArgument0; //PRELOAD=0; STEP=1; UNLOAD=2
+
+if (type == PRELOAD){
+    with (objBottomWall){ instance_destroy() }
+    with (objLedgeLeft){ instance_destroy() }
+    with (objLedgeRight){ instance_destroy() }
+
+    bottomWrap=true
+}

@@ -1,0 +1,19 @@
+//--------------X WRAPPING---------------//
+
+var i, j, type;
+
+type=global.theArgument0; //PRELOAD=0; STEP=1; UNLOAD=2
+
+if (type == PRELOAD){
+    mainPlatform=instance_create(-600, room_height*0.775, objBottomWall)
+    mainPlatform.image_xscale=120
+    mainPlatform.visible=true
+
+    mainPlatform.xSpeed=1
+    mainPlatform.xSticky=8
+    mainPlatform.goRight=choose(0,1)
+    mainPlatform.conveyorBelt=1
+
+
+    xWrap=true
+}

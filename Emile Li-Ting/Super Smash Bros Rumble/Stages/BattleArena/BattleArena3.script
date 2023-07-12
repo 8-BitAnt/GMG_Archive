@@ -1,0 +1,86 @@
+//--------------CAPTAIN FALCON BIG BLUE TYPE STAGE---------------//
+
+var i, j, type;
+
+type=global.theArgument0; //PRELOAD=0; STEP=1; UNLOAD=2
+
+if (type == PRELOAD){
+    sprTaxi=sprite_add(global.homeDir+"\Stages\Onett\Taxi.png",3,0,1,0,0,40,48)
+    sprite_set_bbox_mode(sprTaxi,2)
+    sprite_set_bbox(sprTaxi,36,40,44,45)
+
+    with (objBottomWall){ instance_destroy() }
+    with (objLedgeLeft){ instance_destroy() }
+    with (objLedgeRight){ instance_destroy() }
+
+    mainPlatform=instance_create(-500, room_height*0.8, objBottomWall)
+    mainPlatform.image_xscale=100
+    mainPlatform.xSpeed=1
+    mainPlatform.xSticky=25
+    mainPlatform.goRight=choose(0,1)
+    mainPlatform.conveyorBelt=1
+    mainPlatform.visible=true
+
+    i=instance_create(room_width/2 - 15*7, room_height*0.75, objBottomWall)
+    i.image_xscale=20
+    i.visible=true
+
+    i=instance_create(room_width*0.7, room_height/2+choose(1,-1)*random(50), objJumpBlock)
+    i.image_xscale=8
+    i.ySpeed=3
+    i.ySticky=1
+    i.goDown=choose(0,1)
+    i.minY=room_height*0.3
+    i.maxY=room_height*0.7
+    i.visible=true
+
+    i=instance_create(room_width*0.3, room_height/2+choose(1,-1)*random(50), objJumpBlock)
+    i.image_xscale=8
+    i.ySpeed=3
+    i.ySticky=1
+    i.goDown=choose(0,1)
+    i.minY=room_height*0.3
+    i.maxY=room_height*0.7
+    i.visible=true
+
+    i=instance_create(100, room_height*0.5+choose(1,-1)*random(50), objJumpBlock)
+    i.image_xscale=8
+    i.xSpeed=2
+    i.xSticky=1
+    i.goRight=choose(0,1)
+    i.minX=50
+    i.maxX=room_width-50
+    i.visible=true
+
+    i=instance_create(room_width-100, room_height*0.7+choose(1,-1)*random(50), objJumpBlock)
+    i.image_xscale=8
+    i.xSpeed=2
+    i.xSticky=1
+    i.goRight=choose(0,1)
+    i.minX=50
+    i.maxX=room_width-50
+    i.visible=true
+
+}else if (type == STEP){
+    if (mainPlatform.goRight!=-1){
+        if (random(100)<1){
+            j=25
+            if (mainPlatform.goRight=0){
+                j=room_width-25
+            }
+            i=instance_create(j,room_height*0.8 + random(5),Effect)
+            i.sprite_index=sprTaxi
+            i.image_blend=c_ltgray
+            i.image_xscale=0.5
+            i.image_yscale=0.5
+            if (mainPlatform.goRight==1){
+                i.hspeed=5+random(4)
+                i.image_xscale*=-1
+            }else if (mainPlatform.goRight==0){
+                i.hspeed=-(5+random(4))
+            }
+        }
+    }
+}else if (type == UNLOAD){
+    if (sprite_exists(sprTaxi)){ sprite_delete(sprTaxi) }
+}

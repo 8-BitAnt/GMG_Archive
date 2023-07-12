@@ -1,0 +1,331 @@
+Hover Tank 3D
+By: Martin Crownover (FredFredrickson)
+Final Version 8.7 -  January 14, 2006
+
+Contents:
+1. Introduction & Features
+2. Controls
+3. Gameplay Information
+4. System Requirements
+5. Credits
+6. Terms of Use
+
+
+
+
+1. Introduction & Features
+
+Welcome to Hover Tank 3D, a 3D game made with Game Maker 6.1 (by Mark Overmars).  Hover Tank 3D is a tank vs. tank game where you duel the enemy through various modes of play and numerous arenas.  The goal of each mode is simple: score higher than your opponent can, by whatever means you can.
+
+Hover Tank 3D's look was inspired by my younger days of playing games like StarFox and Stunt Race FX (SNES), and imagining these worlds being taken one step further.  Since then, these ideas have been carried many steps further by the video game industry, but sometimes it is fun to just get back to our roots (or find something new, if you are not old enough to remember the first years of 16-bit 3D home entertainment!).
+
+With all this in mind, and some old memories of drawings I made of a 3-Dimensional tank, I constructed Hover Tank 3D, as homage to all the great (and simple) 3D games of the past.
+
+I hope you enjoy playing it as much as I did making it!
+
+Hover Tank 3D currently features:
+-4 modes of play for the single player, including Missions, Deathmatch, Power War, and Capture the Flag
+-41 different arenas, each with a different look and layout
+-Online multiplayer mode, with 6 deathmatch arenas, and online statistics
+-2 learning modes, a tutorial and target practice
+-Tank customization, including your tank color, and player name, which is all saved for later use
+-Full range of options to tweak gameplay, graphics, and audio settings
+-Statistics tracking and saving accross all single player modes
+-3D graphics, with realtime lighting
+
+
+
+
+2. Controls
+
+W & S - Control forward and backward movement of the tank
+A & D - Turn the tank left or right
+Q & E - Move the view to see the left and right sides of the tank
+F - Toggle turret lock on / off (turret will move with the tank when moved)
+C - Toggle crosshairs
+SPACE BAR - Press and hold to reduce friction and coast
+MOUSE - Move the turret with the mouse, LEFT MB fires & activates tow line (mission 1), SCROLL WHEEL zooms in & out
+F4 - Toggle full screen
+F9 - Take a screenshot
+ESC - Menu back / Exit Arena
+
+When viewing production notes, concept art, etc.:
+W, A, S, & D - Move the position of the image
+Q & E - Rotate the image
+MOUSE - SCROLL WHEEL zooms in & out on the image, MIDDLE CLICK resets the position of the image
+
+
+
+
+3. Gameplay Information
+
+
+Tutorial:
+
+The game will set up a plain arena, and you will be given basic instructions in tank operation, in movement, combat, and other controls.  If you have never played before, use this mode to familiarize yourself with the way the Hover Tank handles, and learn extra controls that you may not have known about!
+
+
+Single player modes:
+
+Target Practice - Taking place in the same arena as the tutorial, this time you will face hordes of harmless target cubes, to practice your aim while roaming around the 3D environment.  The HUD will show you your hits and accuracy as you play, but the statistics from Target Practice will not be added to your overall stats.  When the round ends, it will continue cycling at the beginning, so you can ocntinue your target practice if you like.
+
+Missions - In the Mission mode, you will face 12 different challenges, each in a unique locale, accross the planet Polychron, and beyond.  Throughout these missions, the story of the player will unfold, as he works his way from Hover Tow driver, to Hover Tank master.  Once a mission is completed, the next mission in the line will be unlocked for you to start at, at any time.  Each mission is introduced in the menu with a brief bit of text and an image of a memorable part of that level.
+
+Power War - Each player starts on an opposite end of the arena, with a Power Generator Base, and one Regeneration Pod located nearby.  As long as a player's base is intact, it will continue generating the power needed to run that player's Regeneration Pod, bringing that player back to life each time his or her tank is destroyed.  The goal of this mode is to destroy the opposing player's base, and then destroy the opponent, once his or her Regeneration Pod has been disabled.  The goal is also to defend one's own base, so a player must balance time between defending and attacking the enemy's base and tank.  The winner of the round is determined by who is able to defeat the other first, after the enemy's base has been destroyed.  It is impossible to tie in Power War.
+
+Deathmatch - Again, each player starts on an opposite side of the arena, and is out for one thing, and one thing only - to destroy the other player's tank.  Rounds last 5 minutes, and arenas in Deathmatch feature a power-up pod in the center of the playfield.  Power-ups regenerate every minute, and will refill a tank's health when touched.  The game ends when the time limit is up, and the winner is determined by how many kills each player scored during the match.  A player is awarded a kill whenever an opponent's tank is destroyed, even if the tank's destruction is the result of crashing into a wall.  It is possible to tie in this mode, so if the timer is nearing it's limit, make sure you come out on top!  Also not that Regeneration Pods in Deathmatch do not care who they regenerate.  When your tank is destroyed, you will regenerate at the farthest possible point from your opponent.
+
+Capture the Flag - Each player starts on an opposite side of the arena, with a flag pod nearby.  The object of this mode is to grab your opponent's flag and return it to your flag's base, while your flag still rests there.  Of course, your opponent will constantly be trying to grab your flag as well.  If your flag is not resting at it's base when you return with your opponent's flag, you must destroy your opponent and touch your own flag to return it to it's base.  The enemy will be trying to do the same thing, and many time it is the victor of these mini skirmishes who will ultimately score points returning his or her opponent's flag.  Flags do not reset position until a point has been scored, so if you drop your flag and the enemy does not return it to it's base, you can run back over to it after regenerating, pick it up, and continue to bring it to your base.  Capture the Flag rounds last 5 minutes, and can be tied.  Final score in Capture the Flag is a sum of your opponent's deaths and your total flag captures.  Regeneration Pods in Capture the Flag also do not care who they regenerate.  When your tank is destroyed, you will regenerate at the farthest possible point from your opponent.
+
+
+Multiplayer:
+
+Multiplayer games are 5 minute long deathmatches, played over the internet.  This menu will give you the option of hosting (virtually) a game, or joining a game that is already being hosted.  If you are to be the host, just click the Create Multiplayer Game button, and wait for someone to join.  If you are joining, simply refresh the server listings, find a suitable game to join, highlight it, and click Join Multiplayer Game.  Once everyone has decided which map they want to play (or is done taunting each other), check the small check box to the left of your player color to signal that you are ready.  Once both players are ready, the host player can click the large check box at the bottom of the screen to start the game.  Your ping to the other player is displayed next to your name, along with send / receive boxes, indicating when data is being sent and received.
+
+NOTE: The player with the faster of the two computers should always host.  The game's timing mechanism is determined by the frames rendered, and thus a 5 minute game may last much longer than 5 minutes if the host's computer cannot render the game at full speed.  If you are planning on playing multiplayer in general, you should make sure your settings for the game and your system are set to maximize performance, if you have performance issues.
+
+It is also highly recommended that the person with the fastest internet speed host.  Hover Tank 3D is designed for a high speed connection, but has been tested on a broad range of speeds.  Most 128 kbps and above will work just fine, however the slower you go, the higher your latency will be, resulting in shots that do not register, strange movement issues, and incorrect scores at the end of the match.
+
+Multiplayer games are set up using 39ster's Winsock, and require certain ports to be open / unblocked on your computer and / or router.  The following ports must be open and enabled to host and connect to other people in HT3D: TCP - 25787, UDP - 25788 - 25789.  You can obtain more help for configuring your game at: http://games.martincrownover.com/forum/viewtopic.php?t=8
+
+
+Customize Tank:
+
+Using the tank customization screen, you can change your in-game tank to any color you like.  Color presets are available, as either a final color or a starting point for the color you really want.  You can use the red, gree, and blue bars on the left side of the screen to tweak the color values manually, or you can click the button with the "?" question mark symbol for a randomly generated color.  The color you choose for your tank is reflected in other parts of the game as well, such as the color of your base glow in Power War and the color of the rings that flow from the Regneration Pods throughout the different modes.
+You can also specify your in-game name at the customization screen.  This name will be used in all HUD update messages, will be saved with your profile, and will also be used in multiplayer games.
+
+
+Game Options:
+
+The options screen lets you tweak different settings that may help the game run better on your system, or may just let you make the game the way you want it.  The options include:
+
+AI Difficulty - This slider will make the AI of the CPU tanks in the game more or less challenging for you.  Specifically, this slider will decrease the CPU's in-game tank speed, rate of fire, and chance to fire bursts of shots.  Using this, you can adjust the difficulty of the game so that it matches your current skill level.
+
+Object Draw Distance - This slider adjusts how close an object has to be to your tank before it fades into view.  In most modes, you won't notice a difference changing this slider, because it only applies to rooms with lots of objects, such as the Target Practice arena.  If you lower the slider, you will notice that you will no longer be able to see the target practice boxes from all the way accross the arena.  This may improve your system performance when using the Target Practice mode.
+
+Scenery Draw Distance - Like the previous option, this slider will adjust the distance at which certain objects are drawn.  Scenery includes all the buildings and boxes that are placed throughout the arenas, and a lower setting will decrease the distance at which these objects fade into view.  This may improve system performance accross all modes, but may also make the game slightly harder to play, as you won't see many objects that you can crash into into they are close.  This setting will also make the fog in the game move slightly closer to the player, obscuring details in the distance.
+
+Draw Particles - Particles in Hover Tank 3D are the little triangles that fly out everywhere when your projectiles land, your tank hits a wall, an object explodes, etc.  Unchecking this box will turn off particles, and will possibly improve your system performance, since there will be much less objects being created and drawn.
+
+Master Volume - This option does just what it says; controls the master volume of all sound in the game.
+
+Background Music - This checkbox controls whether or not background music is played while the game is running.  This option will only apply if you have downloaded the music pack for Hover Tank 3D.
+
+Cedits - Displays the credits for Hover Tank 3D.
+
+The current Hover Tank 3D version number is also drawn in the lower left corner of the options screen, which can be handy for troubleshooting your game.
+
+
+Statistics:
+
+All of your stats, from wins and losses for each mode, grand totals for wins and losses, shots fired, shots hit, shot accuracy, kills and deaths can be viewed here.  This information is saved with your profile, and is always loaded when the game starts.  If you would like to clear your information, and start anew, just find the directory Hover Tank 3D is located in, and delete the file ht3d.cfg.
+
+Extras:
+
+This section includes all the bonus content that you have unlocked while playing Hover Tank 3D.  Check back here after beating certain missions and accomplishing certain goals in the single player modes.
+
+
+
+
+4. System Requirements
+
+Hover Tank 3D should RUN on the following setup:
+2Ghz PIII or equivalent, running Windows 98se, ME, 2000, or XP
+512 Mb RAM
+64 MB Video Card, with DirectX8
+
+If you have this setup (or something near it) please contact me and tell me how the game runs, so that I may update this information with something a little more accurate.
+
+Hover Tank 3D was developed with the following setup:
+3Ghz P4, WinXP
+2 Gb RAM (Dual Channel)
+256 Mb GeForce 6800 GT, with DirectX9
+
+If you are experiencing problems with system compatibility, please make sure you are running the correct and most up-to-date drivers for your video card.
+
+If you are experiencing problems with multiplayer, please refer tot he multiplyer section above.
+
+
+
+
+5. Credits
+
+Created with Game Maker 6.1
+
+Programming, Graphics, Original Concept, etc.:
+Martin Crownover ( FredFredrickson )
+
+Programming Assistance:
+Mark Overmars
+Rave
+ThatGamesGuy
+Fox-NL
+39ster
+
+Sound System:
+tsg1zzn
+
+Encryption:
+John Leffingwell
+
+Network System:
+39ster
+
+Old Network System:
+THE Stefan
+
+Multiplayer Testing:
+Fox-NL
+39ster
+Doomed
+Coolgames
+Tikas
+
+Final Version Testing:
+Dracodragon
+Fox-NL
+Tikas
+Kasper
+Dregnought
+Neur0n
+Static
+
+Additional Concept & Playtesting:
+Dracodragon
+Rave
+SektorZ
+Ryguydavis
+Obiki San
+Battlegorge
+HaRRiKiRi
+Breakingbenjamin
+IceMetalPunk
+FoxBlitzz
+BoostedGames
+Metroid48
+Doktor Format
+NEED HELP sorta
+apjjm
+Chromegod
+schplurg
+Onyx
+OmicronGamer
+Arkano
+Dark Plasma
+Richardsoft
+xxdemzxx
+Toni12
+KernelLinaze
+Doom Hacker
+Motherbrain
+Blue123
+Calipso
+Slothien483
+Zarthas
+Gamingdl'er
+Chessmasterriley
+Fairagorn
+BenRK
+CHFD_113
+grandhighgamer
+Mechman
+davidp222
+Blake198
+Sheik06
+th15
+Bravesaturn
+Seco Xekko
+Rave
+THE Stefan
+tsg1zzn
+John Leffingwell
+GoronSlayer99
+dany25
+Doomed
+darkpulsaromega
+bling
+sub
+Richard90
+Boomerang
+froggut198
+hyperknux2000
+zigzagchris
+Harry
+Zmurf
+GamesSquad
+DoomHacker
+Gamer_21
+coolgames
+Ghostkeeper
+mitchbbaker
+Robsta
+GovernorofArizona
+mr.cooljamesbond
+Escapader
+emwearz
+BadAssX
+knight666
+scooternew
+Fox-NL
+39ster
+YlonNikral
+chromegod
+DesertFox
+necromancer_productions
+AlphaMan
+Pixel_Outlaw
+ubard2003
+alepanda
+Senar
+Potassium_mammoth
+kamen
+Gerfuggery
+Hermit_Crab
+ashley
+stealthx37
+jsentinalgold
+Aqwilla
+Mothflavour2
+Joshoakley
+monkey dude
+master123467
+BBaller
+Canilash
+paniak17
+shadowdog
+blake198
+Day Of Doom Games
+Battlegrounds01
+p3980
+AnathemaRaptor
+blue123
+sonic 101
+Jimmy Grey
+Andrew Gelber
+Spencer Crownover
+Ryan Fandell
+
+Resources:
+www.findsounds.com
+www.modarchive.com
+
+HT3D © 2005 Martin Crownover
+
+
+
+
+
+
+6. Terms of Use
+
+By unzipping and using this program, you agree to the following terms:
+
+1. You, the user, claim any and all responsibility for any damages that might occur, including, physical, emotional, and / or material by using this software.
+
+2. This program is not guaranteed to run on any system.  If you are experiencing problems, please refer to the system requirements section in this file.
+
+3. No part of this package may be altered or changed in any way, without prior written consent from the original author of this software.
+
+4. No part of this project shall be sold without prior written consent from the original author.
+
+5. Hover Tank 3D is ©2005 Martin Crownover, and all work contained within that was not created by Martin Crownover should be considered copyrighted by it's respective author.

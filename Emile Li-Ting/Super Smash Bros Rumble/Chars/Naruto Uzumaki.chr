@@ -1,0 +1,207 @@
+[Smash Bros Rumble - Character Definition]
+name=Naruto Uzumaki
+path=.\Chars\Naruto\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+9 0 1 0 1 18 48
+{3 6 32 47}
+StockIcon
+1 0 1 0 0 14 15
+{0 0 29 29}
+Guard
+5 0 1 0 0 19 48
+{5 8 34 47}
+Hit
+1 0 1 0 0 17 48
+{3 8 32 47}
+Hit2
+1 0 1 0 0 22 48
+{8 8 37 47}
+Hit3
+1 0 1 0 0 21 48
+{7 8 36 47}
+Crouch
+1 0 1 0 0 18 48
+{5 15 32 47}
+Walk
+6 0 1 0 0 18 48
+{4 5 32 47}
+Run
+8 0 1 0 0 27 48
+{10 6 43 47}
+SlideTurn
+1 1 1 0 0 19 48
+{4 9 34 47}
+Jump
+2 0 1 0 0 21 48
+{9 3 35 47}
+Jump2
+6 0 1 0 0 21 48
+{4 4 37 47}
+Fall
+3 0 1 0 0 21 48
+{6 8 36 47}
+Roll
+6 0 1 0 0 32 50
+{16 8 54 47}
+AirDodge
+6 0 1 0 0 21 58
+{6 8 36 57}
+LedgeGrab
+13 0 1 0 0 8 45
+{-5 3 25 44}
+Attack
+6 0 1 0 0 18 51
+{22 8 48 45}
+AttackUp
+6 0 1 0 0 19 62
+{1 0 46 30}
+AttackDown
+5 0 1 0 0 19 59
+{1 20 55 60}
+RunAttack
+7 0 1 0 0 20 46
+{25 5 68 46}
+AirAttack
+6 0 1 0 0 23 57
+{25 5 57 40}
+AirAttackUp
+6 0 1 0 0 22 52
+{0 0 58 40}
+AirAttackDown
+7 0 1 0 0 22 52
+{0 25 62 59}
+Smash
+7 0 1 0 0 42 54
+{30 0 84 54}
+SmashUp
+8 0 1 0 0 20 54
+{0 1 44 30}
+SmashDown
+8 0 1 0 0 19 53
+{4 30 35 54}
+Special
+7 1 1 0 0 31 56
+{15 10 47 55}
+SpecialSide
+6 0 1 0 0 17 50
+{2 3 30 49}
+SpecialUp
+9 0 1 0 0 19 68
+{0 2 49 55}
+SpecialDown
+12 0 1 0 0 19 50
+{4 3 34 50}
+AirSpecial
+6 0 1 0 0 22 52
+{0 25 62 59}
+Projectile
+2 0 1 0 0 17 7
+{0 0 38 13}
+Projectile2
+12 1 1 0 0 17 47
+{0 1 55 53}
+Projectile3
+2 0 1 0 0 26 54
+{23 25 50 59}
+Projectile4
+2 0 1 0 0 18 59
+{10 35 45 59}
+Projectile5
+8 0 1 0 0 25 59
+{2 2 47 58}
+Projectile6
+1 0 1 0 0 25 54
+{12 19 36 53}
+FinalSmash
+20 0 1 0 0 41 55
+{45 15 88 45}
+FinalProjectile
+14 0 1 0 0 63 63
+{ }
+2Idle
+6 0 1 0 0 41 45
+{21 12 61 44}
+2Crouch
+1 0 1 0 0 24 58
+{2Idle}
+2Walk
+8 0 1 0 0 51 43
+{2Idle}
+2AirDodge
+4 0 1 0 0 58 39
+{2Idle}
+2Roll
+6 0 1 0 0 30 49
+{2Idle}
+2SlideTurn
+1 0 1 0 0 28 57
+{2Idle}
+2Jump
+2 0 1 0 0 38 48
+{2Idle}
+2Jump2
+4 0 1 0 0 30 56
+{2Idle}
+2Fall
+2 0 1 0 0 39 64
+{2Idle}
+2Guard
+6 0 1 0 0 33 63
+{2Idle}
+2LedgeGrab
+6 0 1 0 0 12 68
+{1 15 29 70}
+2Hit
+3 0 1 0 0 38 56
+{2Idle}
+2Hit2
+5 0 1 0 0 42 55
+{2Idle}
+2Hit3
+1 0 1 0 0 35 56
+{2Idle}
+2Attack
+6 0 1 0 0 30 57
+{40 35 83 62}
+2AttackSide
+8 0 1 0 0 34 56
+{44 35 114 56}
+2AttackDown
+6 0 1 0 0 39 57
+{40 20 86 58}
+2AttackUp
+6 0 1 0 0 34 58
+{17 5 64 36}
+2AirAttack
+6 0 1 0 0 31 64
+{40 35 88 89}
+2Special
+7 0 1 0 0 35 59
+{44 7 96 66}
+2SpecialSide
+11 0 1 0 0 34 54
+{45 20 159 48}
+2SpecialDown
+11 0 1 0 0 43 73
+{65 20 125 65}
+2SpecialUp
+14 0 1 0 0 51 68
+{2 0 99 68}
+2AirSpecialDown
+10 0 1 0 0 41 74
+{6 25 71 78}
+2FinalSmash
+13 0 1 0 0 58 83
+{0 0 89 83}
+2Projectile
+10 0 1 0 0 79 102
+{ }
+2ChangeBack
+11 0 1 0 0 43 55
+{2Idle}

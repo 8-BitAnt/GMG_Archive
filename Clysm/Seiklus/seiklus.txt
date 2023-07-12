@@ -1,0 +1,112 @@
+
+seiklus
+v1.7
+
+----------
+
+A freeware exploration/adventure game by clysm  [ http://autofish.net ]
+
+Contents:
+
+1. General Information
+2. Included Files
+3. Version History
+4. Keyboard Functions
+5. Tips
+
+----------
+
+1. General Information
+
+  This game is free. You can play it all you want and copy it for other people, but you 
+  can't modify it, sell it, or use graphics from it without express permission.
+
+  If you like seiklus and want to support future projects (or persuade me to work on a 
+  sequel), you can donate two or three dollars or something through Paypal using the 
+  following address. You can also use this address just to contact me. 
+ 
+  [ seiklus@autofish.net ]
+
+----------
+    
+2. Included Files
+
+  These files are included in seiklus17.zip:
+
+  . seiklus.exe		the game itself (not an installer)
+  . seiklus.txt		the file you are reading now
+
+  seiklus doesn't have any music of its own. However, I've included a few songs that I 
+  think suit the game and I've configured the game to recognize and play these songs if 
+  they are in the same folder as seiklus.exe. As far as I know, these files are all 
+  freely distributable in this way. If you know otherwise, please let me know.
+
+  . yoghurtf.xm		"Yoghurt Factory," by Radix
+  . rainysum.mod	"Rainy Summerdays," by Radix
+  . sanxion.mod		"Sanxion," composed by Rob Hubbard and arranged by Dreamfish
+  . believei.xm		"Believe in Yourself," composed by Emax and arranged by Stalker
+  . driller.mod		"Driller," composed by Matt Gray and arranged by Warwick Gaetjens
+  . puzzlega.mod	"Puzzle Game 3," by Søren Gessele (a.k.a. Front 6)
+  . wingsofd.xm		"Wings of Death," composed by Jochen Hippel and arranged by Wire
+
+  These two files allow seiklus to play the included music files:
+
+  . fmod.dll		FMOD by Firelight Technologies
+  . jbfmod.dll		JBFMOD by M. Rijks
+
+----------
+
+3. Version History
+
+  2003.07.29 _ 0.1 Testing Build
+  2003.08.04 _ 0.2 Testing Build
+  2003.08.06 _ 0.3 Testing Build
+  2003.08.09 _ 0.4 Testing Build (BAD)
+  2003.08.09 _ 0.5 Testing Build
+  2003.08.11 _ 0.6 Testing Build
+  2003.08.14 _ 1.0 Release Build
+  2003.08.18 _ 1.1 Maintenance Build
+  2003.08.30 _ 1.2 Maintenance Build
+  2005.05.17 _ 1.3 Maintenance Build
+  2005.05.25 _ 1.4 Maintenance Build
+  2006.07.13 _ 1.5 Maintenance Build (BAD)
+  2006.10.15 _ 1.6 Maintenance Build
+  2007.05.20 _ 1.7 Maintenance Build
+
+----------
+
+4. Keyboard Functions
+
+  . Use the arrow keys to move and to jump.
+
+  . Press <Space> during the game to see the status screen.
+
+  . Press <Q> or <Esc> at any time to quit.
+
+  . Press <C> to capture a screenshot. Screenshots are saved as BMP files in your seiklus
+    folder.
+
+  . Press <S> to save your game. The game cannot be saved on the subscreen or in certain
+    other places.
+
+  . The <W> key has a special function within the game, but it is not available right away.
+
+  . Press <Ctrl> + <R> to change the resolution.
+
+----------
+
+5. Tips
+
+  . Watch your surroundings closely for hints.
+
+  . It is possible to get 100% and to reach all of the treasure chests.
+
+  . If you want to erase one of your saved games, delete the corresponding 
+    "seiklus#.sav" file in your seiklus folder.
+
+  . If you replace seiklus with a newer version, your old game save files may no 
+    longer work.
+
+----------
+
+End of file

@@ -1,0 +1,171 @@
+/*
+    Pro editor writes and reads this creation code.
+    don't modify it too much or pro editor won't read it, or maybe even screw up your level.
+    
+    to edit this level: copy this code, load it into pro editor using "Load Code Clipboard" under "file"
+    
+    Ctrl + A selects all text
+    Ctrl + C copies selected text
+*/
+
+with instance_create(0,0,objSomething)
+{
+    x=80.87
+    y=115.85
+    z=4.56
+    qw=1
+    qx=0
+    qy=0
+    qz=0
+    rotx=0
+    roty=0
+    rotz=0
+    scalex=4
+    scaley=4
+    scalez=0.70
+    model=modBlock
+    texture=backBlock
+    event_user(0)
+}
+
+with instance_create(0,0,objTree)
+{
+    x=377.14
+    y=328.52
+    z=55.45
+    qw=1
+    qx=0
+    qy=0
+    qz=0
+    rotx=0
+    roty=0
+    rotz=0
+    scalex=1
+    scaley=1
+    scalez=1
+    model=modTree
+    texture=backTree
+    event_user(0)
+}
+
+with instance_create(0,0,objTree)
+{
+    x=333.74
+    y=136.64
+    z=40.01
+    qw=1
+    qx=0
+    qy=0
+    qz=0
+    rotx=0
+    roty=0
+    rotz=0
+    scalex=1
+    scaley=1
+    scalez=1
+    model=modTree
+    texture=backTree
+    event_user(0)
+}
+
+with instance_create(0,0,objTree)
+{
+    x=341.44
+    y=182.73
+    z=40.01
+    qw=1
+    qx=0
+    qy=0
+    qz=0
+    rotx=0
+    roty=0
+    rotz=0
+    scalex=1
+    scaley=1
+    scalez=1
+    model=modTree
+    texture=backTree
+    event_user(0)
+}
+
+with instance_create(0,0,objTree)
+{
+    x=282.38
+    y=370.56
+    z=55.45
+    qw=1
+    qx=0
+    qy=0
+    qz=0
+    rotx=0
+    roty=0
+    rotz=0
+    scalex=1
+    scaley=1
+    scalez=1
+    model=modTree
+    texture=backTree
+    event_user(0)
+}
+
+with instance_create(0,0,objTree)
+{
+    x=375.67
+    y=280.09
+    z=55.45
+    qw=1
+    qx=0
+    qy=0
+    qz=0
+    rotx=0
+    roty=0
+    rotz=0
+    scalex=1
+    scaley=1
+    scalez=1
+    model=modTree
+    texture=backTree
+    event_user(0)
+}
+
+with instance_create(0,0,objSomething)
+{
+    x=268.58
+    y=260.91
+    z=33.83
+    qw=1
+    qx=0
+    qy=0
+    qz=0
+    rotx=0
+    roty=0
+    rotz=0
+    scalex=4
+    scaley=4
+    scalez=0.70
+    model=modBlock
+    texture=backBrick
+    event_user(0)
+}
+
+with instance_create(0,0,objSomething)
+{
+    x=232.35
+    y=119.25
+    z=19.11
+    qw=1
+    qx=0
+    qy=0
+    qz=0
+    rotx=0
+    roty=0
+    rotz=0
+    scalex=4
+    scaley=4
+    scalez=0.70
+    model=modBlock
+    texture=backBlock
+    creationCode="this is creation code"
+    event_user(0)
+}
+

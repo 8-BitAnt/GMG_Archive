@@ -1,0 +1,17 @@
+You may find he ingame help useful. This can be done by pressing F1
+
+I can be contacted at flying_squire@hotmail.com or reh60@student.canterbury.ac.nz
+
+This file must be unzipped for the game to function fully.
+
+Legal Info:
+The game is free. You can play it all you want without giving me any money or bribes. 
+
+You may not modify the game, sell the game, or use graphics from the game without my permission. If you do I will be very cross.
+
+The game has various sound files which I collected from sites, these sources are in a seperate readme in this folder. These sounds were freeware. 
+
+A final note just to say that this game was made with Game Maker, which is a programme produced by Mark Overmars. (www.gamemaker.nl)
+
+
+

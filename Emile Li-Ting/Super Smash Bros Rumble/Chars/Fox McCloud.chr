@@ -1,0 +1,111 @@
+[Smash Bros Rumble - Character Definition]
+name=Fox McCloud
+path=.\Chars\Fox\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+9 0 1 0 1 14 40
+{2 1 28 39}
+StockIcon
+1 0 1 0 0 15 15
+{0 0 29 29}
+Hit
+1 0 1 0 0 20 38
+{5 1 34 37}
+Crouch
+9 0 1 0 0 22 40
+{10 12 35 39}
+Guard
+1 0 1 0 0 19 38
+{4 1 33 37}
+Roll
+6 0 1 0 0 22 36
+{7 3 37 41}
+AirDodge
+6 0 1 0 0 25 42
+{11 3 40 41}
+Run
+10 0 1 0 0 27 40
+{14 3 43 39}
+SlideTurn
+1 0 1 0 0 20 38
+{5 3 34 37}
+Jump
+7 0 1 0 0 25 42
+{11 3 40 41}
+Jump2
+11 0 1 0 0 22 42
+{7 3 37 41}
+Fall
+2 0 1 0 0 17 42
+{2 4 31 41}
+LedgeGrab
+1 0 1 0 0 16 41
+{4 3 31 42}
+Attack
+7 0 1 0 0 16 40
+{18 14 39 30}
+RunAttack
+5 0 1 0 0 17 40
+{10 12 35 39}
+AirAttack
+11 0 1 0 0 21 49
+{22 6 52 40}
+AirAttackUp
+6 0 1 0 0 18 65
+{4 1 48 34}
+AirAttackDown
+6 0 1 0 0 17 46
+{8 25 30 48}
+Smash
+9 0 1 0 0 16 39
+{18 14 39 30}
+SmashUp
+9 0 1 0 0 24 42
+{1 0 44 28}
+SmashDown
+9 0 1 0 0 22 42
+{0 20 44 42}
+Special
+5 0 1 0 0 23 42
+{10 6 38 41}
+SpecialSide
+7 0 1 0 0 25 36
+{4 2 44 36}
+SpecialUp
+15 0 1 0 0 91 61
+{73 20 110 59}
+Explod
+6 0 1 0 0 88 32
+{}
+SpecialDown
+12 0 1 0 0 26 38
+{6 2 44 40}
+AirSpecialSide
+1 0 1 0 0 56 36
+{}
+Projectile
+2 0 1 0 0 20 5
+{11 5 26 5}
+LandmasterIdle
+1 0 1 0 0 148 104
+{42 40 232 103}
+LandmasterWalk
+4 0 1 0 0 148 104
+{LandmasterIdle}
+LandmasterJump
+3 0 1 0 0 148 104
+{LandmasterIdle}
+LandmasterAttack
+5 0 1 0 0 148 104
+{142 50 242 103}
+LandmasterSpecial
+6 0 1 0 0 148 104
+{LandmasterIdle}
+LandmasterProjectile
+8 0 1 0 0 148 51
+{100 14 188 86}

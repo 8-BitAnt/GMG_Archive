@@ -1,0 +1,8 @@
+T backTree.png
+T backBrick.png
+T backBlock.png
+M modFloor.d3d
+M modTree.d3d
+M modBlock.d3d
+O objSomething modBlock backBlock
+O objTree modTree backTree

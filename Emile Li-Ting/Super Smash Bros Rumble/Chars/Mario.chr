@@ -1,0 +1,144 @@
+[Smash Bros Rumble - Character Definition]
+name=Mario
+path=.\Chars\Mario\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 0 64 80
+{0 0 127 159}
+Idle
+17 0 1 0 1 8 30
+{0 2 16 29}
+Intro
+23 0 1 0 0 15 52
+{0 30 27 51}
+StockIcon
+1 0 1 0 0 12 15
+{0 0 25 29}
+8BitIdle
+1 0 1 0 0 10 19
+{3 1 17 18}
+8BitWalk
+3 0 1 0 0 10 19
+{3 1 17 18}
+8BitAttack
+7 0 1 0 0 10 19
+{3 1 17 18}
+8BitProjectile
+4 1 1 0 0 5 5
+{1 1 8 8}
+Hit
+1 0 1 0 0 12 29
+{4 0 20 28}
+Hit2
+1 0 1 0 0 12 29
+{4 0 20 28}
+Hit3
+2 0 1 0 0 8 23
+{Idle}
+Electrocuted
+2 0 1 0 0 11 28
+{Idle}
+Burned
+4 0 1 0 0 8 29
+{Idle}
+Crushed
+9 0 1 0 0 8 27
+{Idle}
+Dizzy
+8 0 1 0 0 13 29
+{Idle}
+Crouch
+1 0 1 0 0 8 30
+{0 15 16 29}
+Guard
+1 0 1 0 0 8 30
+{0 2 16 29}
+Roll
+6 0 1 0 1 9 25
+{1 0 17 24}
+AirDodge
+6 0 1 0 1 8 30
+{0 2 16 29}
+Walk
+8 0 1 0 0 8 30
+{0 2 16 29}
+Run
+10 0 1 0 0 13 32
+{5 4 21 31}
+SlideTurn
+1 0 1 0 1 8 30
+{0 2 16 29}
+Jump
+1 0 1 0 1 8 31
+{0 3 16 30}
+Jump2
+6 0 1 0 1 9 30
+{1 2 17 29}
+Fall
+2 0 1 0 1 8 30
+{0 2 16 29}
+LedgeGrab
+1 0 1 0 1 13 32
+{5 4 21 31}
+Attack
+8 0 1 0 1 9 29
+{12 4 29 18}
+Attack2
+6 0 1 0 1 14 29
+{15 1 33 29}
+Attack3
+7 0 1 0 1 10 33
+{6 6 37 26}
+AttackUp
+8 0 1 0 1 11 33
+{0 0 21 23}
+AttackDown
+11 0 1 0 1 11 30
+{10 16 35 32}
+RunAttack
+6 0 1 0 1 15 31
+{13 2 29 30}
+AirAttack
+6 0 1 0 1 15 30
+{17 6 32 27}
+AirAttackUp
+10 0 1 0 1 16 31
+{8 -2 32 18}
+AirAttackDown
+11 0 1 0 1 15 41
+{1 5 28 45}
+FinalSmash
+9 0 1 0 1 10 28
+{2 0 20 27}
+Smash
+9 0 1 0 1 9 34
+{10 10 35 28}
+SmashUp
+13 0 1 0 1 11 34
+{2 0 25 22}
+SmashDown
+10 0 1 0 1 18 29
+{5 12 33 29}
+Special
+5 0 1 0 1 9 30
+{1 3 19 29}
+SpecialSide
+11 0 1 0 1 19 31
+{15 3 37 27}
+SpecialUp
+8 0 1 0 1 13 36
+{0 0 25 28}
+SpecialDown
+12 0 1 0 1 15 30
+{0 5 30 29}
+Projectile
+4 0 1 0 0 7 7
+{3 3 12 12}
+Projectile2
+4 0 1 0 0 67 67
+{2 2 132 132}
+Taunt
+18 0 1 0 0 40 80
+{Idle}

@@ -1,0 +1,47 @@
+Hero Core v1.4 Changelog
+Game copyright Remar Games 2009-2013
+www.remar.se/daniel
+
+NOTE: The savefile (herocore.sav) is fully compatible with all versions of the game. So, you can keep your old saves when updating the game.
+
+
+1.4 (22 Jul 2013)
+-----------------
+-Added Polish translation by SuVe.
+-The music files now remain in the game folder after being unpacked, so it's easier to copy and listen to them elsewhere.
+-The "Neo translation", previously only included in one unique copy, is now available in the full game. Unlock it by pressing up, up, down, down, left, right, left, right on the main menu. Note: it's in Swedish and was written for some friends as an in-joke.
+
+
+1.3 (14 Sep 2011)
+-----------------
+-Added German translation by Valentin Scheiner.
+-The Blade now keeps its charge while taking damage or suffering overheat, as long as the button is held. During pain or overheat, there's a half second window of releasing the button and the blade coming out anyway.
+-The Eliminator never retreats when Hero is at level 9.
+-It now only takes one second for the game to detect slowdown and turn off motion blur.
+-No secrets have been added (unlike Iji I will document such changes, if any, in Hero Core's changelog).
+
+
+1.2 (12 Jun 2010)
+-----------------
+-Added Russian translation by Danila "MyOtheHedgeFox" Evstifeyev.
+-Added Spanish translation by Jeshua Morbus and Dijuana Anomen.
+-Added a boss rush for the Normal mode bosses. Times are counted separately from the Hard mode boss rush.
+-Made some rooms easier, notably the Annihilator + Hunter and Annihilator + Annihilator rooms in Hard mode.
+-Lowered the volume of the sound made when shooting an invincible part of an enemy.
+-Probably fixed the Star Splitter's "feet" getting stuck in walls.
+-Fixed the Z+X letters in the HUD displaying the wrong characters.
+-Fixed HP scanner displaying the Guardian's HP over its minions' HP.
+-Fixed a time display bug in the main menu.
+-Autofire now turns itself off when you're defeated.
+-No secrets have been added (unlike Iji I will document such changes, if any, in Hero Core's changelog).
+
+
+1.1 (5 May 2010)
+----------------
+-Fixed some incorrectly placed dirt blocks.
+-Fixed the HUD displaying a level of 0 regardless of your level during Hero's speech to Tetron.
+
+
+1.0 (1 May 2010)
+----------------
+-Game released.

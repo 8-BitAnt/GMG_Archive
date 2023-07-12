@@ -1,0 +1,7 @@
+var type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    shadowLength=0.7
+}

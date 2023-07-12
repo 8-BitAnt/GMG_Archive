@@ -1,0 +1,513 @@
+var charAction,i,j,k;
+
+charAction=global.theArgument0;
+
+if (charAction == HASBEENHIT){ exit
+}else if (charAction == HASBEENGRABBED){ exit
+}else if (eightBitTimer > 0) && (charAction >= ATTACK) && (charAction <= SPECIALSMASHDOWN){
+    SetAttackBoxParameters(3,4);
+    movementModifier=1
+    exit
+}
+
+switch(charAction)
+{
+case ATTACK:
+    SetAttackBoxParameters(2,3);
+    
+    i=choose(sprAttack, sprAttack2)
+    if (i == sprAttack){
+    }else{
+        theAttack.attackFrameStart=3
+        theAttack.attackFrameEnd=4
+    }
+    
+    theAttack.sprite_index=i
+    theAttack.hAttackSpeed=4.5
+    theAttack.vAttackSpeed=3.5
+    break
+case ATTACKSIDE: ActionScript(global.character[pNum], ATTACK); break
+case ATTACKUP:
+    SetAttackBoxParameters(3,4);
+    movementModifier=1
+    theAttack.hAttackSpeed=0
+    theAttack.vAttackSpeed=5.5
+    break
+case ATTACKDOWN:
+    SetAttackBoxParameters(3,4);
+    theAttack.hAttackSpeed=1
+    theAttack.vAttackSpeed=3
+    break
+
+case RUNATTACK:
+    SetAttackBoxParameters(0,2);
+    theAttack.attackPower=6*attackMultiplier
+    theAttack.hAttackSpeed=6
+    theAttack.vAttackSpeed=3
+    break
+    
+case AIRATTACK:
+    SetAttackBoxParameters(2,3);
+    theAttack.hAttackSpeed=4
+    theAttack.vAttackSpeed=1
+    theAttack.endOnGround=true
+    break
+case AIRATTACKSIDE: ActionScript(global.character[pNum], AIRATTACK); break
+case AIRATTACKUP:
+    SetAttackBoxParameters(2,3);
+    theAttack.hAttackSpeed=4
+    theAttack.vAttackSpeed=1
+    theAttack.endOnGround=true
+case AIRATTACKDOWN:
+    if (image_xscale > 0){
+        hspeed=4
+    }else if (image_xscale < 0){
+        hspeed=-4
+    }
+    vspeed=4
+    SetAttackBoxParameters(2,3);
+    theAttack.hAttackSpeed=4
+    theAttack.vAttackSpeed=1
+    theAttack.endOnGround=true
+    break
+
+case SMASHSIDE:
+    if (image_xscale > 0){
+        hspeed=2
+    }else if (image_xscale < 0){
+        hspeed=-2
+    }
+    SetAttackBoxParameters(4,6);
+    theAttack.hAttackSpeed=7
+    theAttack.vAttackSpeed=5
+    theAttack.chargeFrameStart=3
+    theAttack.chargeFrameEnd=3
+    theAttack.whiffFrame=4
+    theAttack.cooldownTimer=2
+    break
+case SMASHUP:
+    SetAttackBoxParameters(3,5);
+    theAttack.hAttackSpeed=0
+    theAttack.vAttackSpeed=7.5
+    theAttack.chargeFrameStart=1
+    theAttack.chargeFrameEnd=1
+    theAttack.whiffFrame=2
+    break
+case SMASHDOWN:
+    SetAttackBoxParameters(5,10);
+    theAttack.hAttackSpeed=4
+    theAttack.vAttackSpeed=1
+    theAttack.chargeFrameStart=3
+    theAttack.chargeFrameEnd=4
+    theAttack.whiffFrame=5
+    break
+
+case SPECIAL:
+    if (specialState != INSTANTPRESSED){ break }
+    if (finalSmash){
+        //shinkuu hadouken
+        hspeed=0
+        vspeed=0
+        suspendGravity=true
+        suspendFriction=true
+        friction=0
+        gravity=0
+        SetAttackBoxParameters(-1,-1);
+        theAttack.sprite_index=sprSpecial2
+        theAttack.finalSmash=true
+        theAttack.endSuspendGravity=true
+        
+        for (i=0;i<2;i+=1){
+            SetProjectileParameters((bbox_right-bbox_left)/4,(bbox_bottom-bbox_top)/2)
+            if (i==0){
+                theProjectile.attackPower=35*attackMultiplier
+                theProjectile.hAttackSpeed=4
+                theProjectile.vAttackSpeed=4
+                theProjectile.image_xscale=abs(image_xscale)*5.5
+                theProjectile.image_yscale=theProjectile.image_xscale
+            }else{
+                theProjectile.attackPower=20*attackMultiplier
+                theProjectile.hAttackSpeed=6
+                theProjectile.vAttackSpeed=2
+                theProjectile.image_xscale=abs(image_xscale)*4.25
+                theProjectile.image_yscale=theProjectile.image_xscale
+                theProjectile.image_alpha=0.4
+            }
+            theProjectile.appearanceFrame=6
+            theProjectile.stunningPower=35
+            theProjectile.hSpeedMin=false
+            theProjectile.vSpeedMin=false
+            theProjectile.loopAttack=true
+            theProjectile.loopAttackEvery=(theProjectile.image_number-1)/random(2)
+            theProjectile.alphaDecay=true
+            theProjectile.decayOnImpact=true
+            theProjectile.ignoreWalls=true
+            theProjectile.ignoreGuard=true
+            theProjectile.rotateOnDirection=true
+            theProjectile.damageBasedStun=true
+            theProjectile.damageBasedStunMultiplier=STUNMULTIPLIER*2
+    
+            theProjectile.theHSpeed=6
+            theProjectile.maxHSpeed=MAXRUNSPEED*4
+            theProjectile.speedIncrease=0.8
+            theProjectile.minHSpeed=1
+            theProjectile.bounceMax=INVALID
+            theProjectile.hitMax=INVALID
+            theProjectile.unreflectable=true
+        }
+        exit
+    }
+    
+    //hadouken fireball
+    k=0
+    if (projectileCount[k] > 0){
+        exit
+    }
+    projectileCount[k]+=1
+
+    SetAttackBoxParameters(-1,-1);
+    theAttack.whiffSound=soundSpecial
+    theAttack.guardCancelCooldown=6
+    sound_volume2(theAttack.whiffSound,0.8)
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)*0.75
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*0.66
+    SetProjectileParameters(i,j)
+    theProjectile.image_xscale=abs(image_xscale)*2
+    theProjectile.image_yscale=theProjectile.image_xscale
+    theProjectile.deathTimer=50
+    theProjectile.rotateOnDirection=true
+//theProjectile.absoluteDirectionHit=true
+    theProjectile.attackPower=8*attackMultiplier
+    theProjectile.stunningPower=4
+    theProjectile.hAttackSpeed=1.5
+    theProjectile.vAttackSpeed=1
+    theProjectile.alphaDecay=true
+    theProjectile.decayOnImpact=true
+    theProjectile.explodeSprite=sprProjectile2
+    theProjectile.appearanceFrame=4
+    theProjectile.theHSpeed=9
+    theProjectile.projectileCountNum=k
+
+    //----projectile particle trail
+    if (global.chargingEffect){
+        if (image_xscale > 0){
+            i=(bbox_right-bbox_left)/2 + (bbox_right-bbox_left)/4
+        }else{
+            i=-((bbox_right-bbox_left)/2  + (bbox_right-bbox_left)/4)
+        }
+        theChargeEffect=instance_create(x+i,(bbox_bottom+bbox_top)/2,Effect);
+        theChargeEffect.depth = 5;
+        theChargeEffect.noDeath = true;
+        theChargeEffect.noDecay = true;
+        theChargeEffect.parentObject=self.id
+        theChargeEffect.follow=2
+        theChargeEffect.xOffset=abs(i)
+        theChargeEffect.yOffset=-((bbox_bottom-bbox_top)/2) - (bbox_bottom-bbox_top)/8
+        theChargeEffect.radius=(bbox_right-bbox_left)/2 - (bbox_right-bbox_left)/4
+        theChargeEffect.radius2=(bbox_bottom-bbox_top)/2
+
+        with (theChargeEffect){
+            ps=part_system_create()
+            pt2=part_type_create()
+            part_system_depth(ps,depth)
+            part_type_shape      (pt2, pt_shape_flare)
+//            part_type_size       (pt2, 0.05, 0.1, 0, 0)
+            part_type_size       (pt2, 0.05, 0.2, 0, 0)
+            part_type_color3     (pt2, c_blue, c_white, c_aqua)
+            part_type_alpha2     (pt2, 1, 0)
+            part_type_life       (pt2, 50, 60)
+            part_type_direction  (pt2, 0, 360, 0, 0)
+            part_type_orientation(pt2, 0, 360, 0, 0, 1)
+            part_type_gravity    (pt2, 0, 0)
+            part_type_scale      (pt2, 1, 1)
+            part_type_blend      (pt2, true)
+
+            at2 = part_attractor_create (ps);
+            part_attractor_position(ps,at2,x,y)
+//            part_attractor_force(ps,at2,0.1,radius*10,1,1)
+            part_attractor_force(ps,at2,0.1,room_width,1,1)
+        
+            em2 = part_emitter_create (ps);
+            part_emitter_region (ps,em2,x-max(radius,radius2),x+max(radius,radius2),y-max(radius,radius2),y+max(radius,radius2),ps_shape_ellipse,ps_distr_gaussian);
+            part_emitter_stream (ps,em2,pt2,0.5);
+        }
+        theChargeEffect.parentObject=theProjectile
+        theChargeEffect.xOffset=0
+        theChargeEffect.yOffset=0
+        theChargeEffect=INVALID
+    }
+    break    
+case SPECIALSIDE: ActionScript(global.character[pNum], SPECIAL); break
+case SPECIALUP:
+    if (specialState != INSTANTPRESSED){ break }
+    //shoryuken - rising dragon fist
+    if (!jumpCheck()){ exit }
+
+    SetAttackBoxParameters(2,5);
+    if (!onGround){        
+        if (gravity != fallGravity) && (!suspendGravity){
+            gravity=fallGravity
+        }
+        movementModifier=0
+    }
+    theAttack.attackPower=12*attackMultiplier
+    theAttack.stunningPower=20
+    theAttack.hAttackSpeed=2
+    theAttack.vAttackSpeed=5
+    if (onGround){ theAttack.vSpeedMin=14 }
+    else{ theAttack.vSpeedMin=8 }
+    theAttack.absoluteDirectionHit=true
+
+    theAttack.multiVSpeedFrame[0]=2
+    theAttack.multiHSpeedFrame[0]=2
+    theAttack.multiVSpeed[0]=-airJumpSpeed
+    theAttack.multiHSpeed[0]=3
+    theAttack.multiHSpeedSupplement[0]=true
+    break
+case SPECIALDOWN:
+    if (specialState != INSTANTPRESSED){ break }
+    //hurricane kick
+    noTurning=true
+    
+    suspendGravity=true
+    suspendFriction=true
+    friction=0
+    if (onGround){
+        vspeed=-2
+        gravity=0.1
+        if (image_xscale > 0){
+            hspeed=5
+        }else if (image_xscale < 0){
+            hspeed=-5
+        }
+        onGround=false
+    }else{
+        if (vspeed < -7){
+            vspeed=-7
+        }
+        
+        gravity=0.75
+        if (abs(hspeed)>maxWalkSpeed-3){
+            if (image_xscale > 0){
+                hspeed=maxWalkSpeed
+            }else if (image_xscale < 0){
+                hspeed=-maxWalkSpeed
+            }
+        }else{
+            if (image_xscale > 0){
+                hspeed+=3
+            }else if (image_xscale < 0){
+                hspeed-=3
+            }
+        }
+    }
+    SetAttackBoxParameters(2,12);
+    
+    theAttack.attackPower=18*attackMultiplier
+    theAttack.stunningPower=16
+    theAttack.hAttackSpeed=7
+    theAttack.vAttackSpeed=4
+    theAttack.whiffSound=soundSpecial2
+    sound_volume2(theAttack.whiffSound,0.8)
+    break
+
+case AIRSPECIAL: ActionScript(global.character[pNum], SPECIAL); break
+case AIRSPECIALSIDE: ActionScript(global.character[pNum], SPECIALSIDE); break
+case AIRSPECIALUP: ActionScript(global.character[pNum], SPECIALUP); break
+case AIRSPECIALDOWN: ActionScript(global.character[pNum], SPECIALDOWN); break
+
+case SPECIALSMASHSIDE:
+    //red hadouken
+    k=0
+    if (projectileCount[k] > 0){
+        exit
+    }
+    projectileCount[k]+=1
+
+    SetAttackBoxParameters(-1,-1);
+    theAttack.sprite_index=sprSpecial2
+    theAttack.whiffSound=soundSpecial
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)*0.75    
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*0.66
+    SetProjectileParameters(i,j)
+    theProjectile.sprite_index=sprProjectile
+    theProjectile.image_xscale=abs(image_xscale)*2
+    theProjectile.image_yscale=theProjectile.image_xscale
+    theProjectile.deathTimer=33
+    theProjectile.image_blend=c_red
+    if (random(2)<1){ theProjectile.elementalType='fire' }
+    theProjectile.attackPower=10*attackMultiplier
+    theProjectile.stunningPower=5
+    theProjectile.hAttackSpeed=1.5
+    theProjectile.vAttackSpeed=1
+    theProjectile.rotateOnDirection=true
+    theProjectile.alphaDecay=true
+    theProjectile.decayOnImpact=true
+    theProjectile.explodeSprite=sprProjectile2
+    theProjectile.appearanceFrame=6
+    theProjectile.hitMax=3
+//    theProjectile.bounceMax=0
+    theProjectile.theHSpeed=10
+    theProjectile.projectileCountNum=k
+    
+    if (global.chargingEffect){
+        if (image_xscale > 0){
+            i=(bbox_right-bbox_left)/2 + (bbox_right-bbox_left)/4
+        }else{
+            i=-((bbox_right-bbox_left)/2  + (bbox_right-bbox_left)/4)
+        }
+        theChargeEffect=instance_create(x+i,(bbox_bottom+bbox_top)/2,Effect);
+        theChargeEffect.depth = 5;
+        theChargeEffect.noDeath = true;
+        theChargeEffect.noDecay = true;
+        theChargeEffect.parentObject=self.id
+        theChargeEffect.follow=2
+        theChargeEffect.xOffset=abs(i)
+        theChargeEffect.yOffset=-((bbox_bottom-bbox_top)/2) - (bbox_bottom-bbox_top)/8
+        theChargeEffect.radius=(bbox_right-bbox_left)/2 - (bbox_right-bbox_left)/4
+        theChargeEffect.radius2=(bbox_bottom-bbox_top)/2
+
+        with (theChargeEffect){
+            ps=part_system_create()
+            pt2=part_type_create()
+            part_system_depth(ps,depth)
+            part_type_shape      (pt2, pt_shape_flare)
+//            part_type_size       (pt2, 0.05, 0.1, 0, 0)
+            part_type_size       (pt2, 0.05, 0.2, 0, 0)
+            part_type_color3     (pt2, c_red, c_orange, c_yellow)
+            part_type_alpha2     (pt2, 1, 0)
+            part_type_life       (pt2, 50, 60)
+            part_type_direction  (pt2, 0, 360, 0, 0)
+            part_type_orientation(pt2, 0, 360, 0, 0, 1)
+            part_type_gravity    (pt2, 0, 0)
+            part_type_scale      (pt2, 1, 1)
+            part_type_blend      (pt2, true)
+
+            at2 = part_attractor_create (ps);
+            part_attractor_position(ps,at2,x,y)
+//            part_attractor_force(ps,at2,0.1,radius*10,1,1)
+            part_attractor_force(ps,at2,0.1,room_width,1,1)
+        
+            em2 = part_emitter_create (ps);
+            part_emitter_region (ps,em2,x-max(radius,radius2),x+max(radius,radius2),y-max(radius,radius2),y+max(radius,radius2),ps_shape_ellipse,ps_distr_gaussian);
+            part_emitter_stream (ps,em2,pt2,0.5);
+        }
+        theChargeEffect.parentObject=theProjectile
+        theChargeEffect.xOffset=0
+        theChargeEffect.yOffset=0
+        theChargeEffect=INVALID
+    }
+    break
+case SPECIALSMASHUP:
+    //shoryuken rising dragon fist
+    if (!jumpCheck(true)){ exit }
+    
+    SetAttackBoxParameters(8,9);
+    if (!onGround){        
+        if (gravity != fallGravity) && (!suspendGravity){
+            gravity=fallGravity
+        }
+        movementModifier=0
+    }
+    theAttack.sprite_index=sprSpecial3
+    theAttack.absoluteDirectionHit=true
+    theAttack.multiHit[0]=6
+    theAttack.multiHit[1]=7
+    theAttack.multiHSpeedMinReq=false
+    theAttack.multiHHitSpeed=0
+//    theAttack.multiVSpeedMinReq=false
+    theAttack.multiVHitSpeed=13.5
+    theAttack.multiVSpeedSet=true
+    theAttack.multiAttackPower=3*attackMultiplier
+    theAttack.multiStunningPower=6
+    
+    theAttack.attackPower=12*attackMultiplier
+    theAttack.stunningPower=20
+    theAttack.hAttackSpeed=2
+    theAttack.vAttackSpeed=5
+    theAttack.multiVSpeedFrame[0]=6
+    theAttack.multiHSpeedFrame[0]=6
+    theAttack.multiVSpeed[0]=-airJumpSpeed
+    theAttack.multiHSpeed[0]=3
+    theAttack.multiHSpeedSupplement[0]=true
+
+    if (onGround){ theAttack.vSpeedMin=14 }
+    else{ theAttack.vSpeedMin=8 }
+
+    theAttack.whiffSound=soundSpecial3
+    sound_volume2(theAttack.whiffSound,0.8)
+    break
+case SPECIALSMASHDOWN:
+    //multihit hurricane kick
+    noTurning=true    
+    friction=0;
+    suspendFriction=true
+    suspendGravity=true
+
+    SetAttackBoxParameters(14,14);
+    theAttack.sprite_index=sprSpecial4
+    if (onGround){
+        i=-2 //vspeed
+        gravity=0.1
+        j=5 //hspeed
+        onGround=false
+    }else{
+        if (vspeed < -7){
+            i=-7
+        }
+        
+        gravity=0.75
+        if (abs(hspeed)>maxWalkSpeed-3){
+            j=maxWalkSpeed
+        }else{
+            j=3
+            theAttack.multiHSpeedSupplement[0]=true
+        }
+    }
+    
+    theAttack.multiVSpeedFrame[0]=3
+    theAttack.multiVSpeed[0]=i
+    theAttack.multiHSpeedFrame[0]=3
+    theAttack.multiHSpeed[0]=j
+    
+    theAttack.multiHit[0]=4
+    theAttack.multiHit[1]=6
+    theAttack.multiHit[2]=8
+    theAttack.multiHit[3]=10
+    theAttack.multiHit[4]=12
+    theAttack.multiHSpeedMinReq=false
+    theAttack.multiHHitSpeed=-5//-3
+    theAttack.multiVSpeedMinReq=false
+    theAttack.multiVHitSpeed=1.5
+    theAttack.multiAttackPower=3*attackMultiplier
+    theAttack.multiStunningPower=5
+    
+    theAttack.attackPower=4*attackMultiplier
+    theAttack.stunningPower=5
+    theAttack.hAttackSpeed=-4
+    theAttack.vAttackSpeed=4
+    theAttack.whiffSound=soundSpecial2
+    sound_volume2(theAttack.whiffSound,0.8)
+    break
+
+case ROLL: SetAttackBoxParameters(9); break
+
+case INITCHAR:
+    sprXScale=0.45
+    sprYScale=0.55
+    gender='m'
+    jumpSpeed=JUMPSPEED*0.95
+    runAnimSpeed=1
+    maxRunSpeed=MAXRUNSPEED*0.95
+    
+    soundIsHit=    'Ryu Hit.wav'
+    soundIsHit2=   'Ryu Hit2.wav'
+    soundIsHit3=   'Ryu Hit3.wav'
+    soundDies=     'Ryu Death.wav'
+    soundSpecial=  'Ryu Hadoken.wav'
+    soundSpecial2= 'Ryu HurricaneKick.wav'
+    soundSpecial3= 'Ryu Shoryuken.wav'
+    break
+}

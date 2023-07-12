@@ -1,0 +1,237 @@
+[Smash Bros Rumble - Character Definition]
+name=Son Goku
+path=.\Chars\Goku\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+11 0 1 0 1 27 50
+{9 8 45 49}
+StockIcon
+1 0 1 0 0 14 15
+{0 0 29 29}
+8BitIdle
+1 0 1 0 0 15 50
+{4 10 30 49}
+8BitWalk
+3 0 1 0 0 15 50
+{4 10 30 49}
+8BitAttack
+12 0 1 0 0 15 50
+{16 18 35 41}
+Guard
+5 0 1 0 0 27 50
+{9 8 45 49}
+Hit
+1 0 1 0 0 27 53
+{9 11 45 52}
+Hit2
+1 0 1 0 0 27 57
+{9 16 45 56}
+Hit3
+1 0 1 0 0 27 57
+{9 16 45 56}
+Crouch
+1 0 1 0 0 27 40
+{9 6 45 39}
+Walk
+4 0 1 0 0 28 45
+{10 -1 46 44}
+Run
+2 0 1 0 0 35 49
+{17 4 53 48}
+SlideTurn
+1 0 1 0 0 25 56
+{5 8 43 55}
+Jump
+17 0 1 0 0 23 55
+{5 10 41 54}
+Jump2
+10 0 1 0 0 28 57
+{10 12 46 56}
+Fall
+2 0 1 0 0 26 57
+{8 12 44 56}
+Roll
+6 0 1 0 0 35 49
+{17 4 53 48}
+AirDodge
+6 0 1 0 0 23 62
+{6 7 38 63}
+LedgeGrab
+4 0 1 0 0 15 56
+{4 4 32 55}
+Attack
+6 0 1 0 0 25 57
+{30 20 68 42}
+Attack2
+7 0 1 0 0 27 55
+{34 13 58 33}
+Attack3
+5 0 1 0 0 27 57
+{30 14 58 36}
+Attack4
+10 0 1 0 0 23 57
+{28 32 68 55}
+AttackDown
+8 0 1 0 0 25 57
+{0 32 64 55}
+RunAttack
+7 0 1 0 0 22 53
+{30 13 60 45}
+AirAttackUp
+6 0 1 0 0 25 57
+{20 0 60 46}
+AirAttackDown
+6 0 1 0 0 25 70
+{33 35 63 73}
+Smash
+7 0 1 0 0 24 53
+{30 13 61 33}
+Smash2
+13 1 1 0 1 24 62
+{30 15 80 62}
+SmashUp
+11 0 1 0 0 31 65
+{1 0 59 36}
+SmashDown
+8 0 1 0 0 31 58
+{30 15 60 57}
+Special
+7 0 1 0 0 46 86
+{Idle}
+FinalSmash
+17 0 1 0 0 32 70
+{0 2 71 70}
+SpecialSide
+15 0 1 0 0 26 53
+{1 3 53 53}
+SpecialUp
+11 0 1 0 0 24 67
+{1 26 44 66}
+SpecialDown
+11 0 1 0 0 55 66
+{0 26 104 66}
+AirSpecialUp
+13 0 1 0 0 40 73
+{0 45 78 70}
+AirSpecialDown
+12 0 1 0 0 40 72
+{30 40 68 70}
+Projectile
+16 1 1 0 0 15 34
+{0 2 129 65}
+Projectile2
+9 0 1 0 1 1 35
+{2 2 75 35}
+Projectile3
+13 0 1 0 0 67 67
+{4 4 130 130}
+Transform
+7 0 1 0 0 23 51
+{Idle}
+SSIdle
+6 0 1 0 0 18 65
+{3 10 34 64}
+SSWalk
+4 0 1 0 0 31 49
+{SSIdle}
+SSRun
+2 0 1 0 0 31 49
+{SSIdle}
+SSCrouch
+1 0 1 0 0 25 39
+{5 5 44 38}
+SSGuard
+10 0 1 0 0 24 51
+{SSIdle}
+SSRoll
+6 0 1 0 0 36 49
+{SSIdle}
+SSAirDodge
+6 0 1 0 0 22 64
+{SSIdle}
+SSSlideTurn
+1 0 1 0 0 24 46
+{SSIdle}
+SSJump
+1 0 1 0 0 21 61
+{SSIdle}
+SSJump2
+5 0 1 0 0 24 50
+{SSIdle}
+SSFall
+1 0 1 0 0 21 61
+{SSIdle}
+SSSlowFall
+3 0 1 0 0 19 57
+{SSIdle}
+SSLedgeGrab
+4 0 1 0 0 9 53
+{0 3 25 52}
+SSHit
+9 0 1 0 0 22 57
+{SSIdle}
+SSHit2
+1 0 1 0 0 24 53
+{SSIdle}
+SSHit3
+1 0 1 0 0 24 54
+{SSIdle}
+SSAttack
+6 0 1 0 0 22 53
+{37 17 68 37}
+SSAttack2
+10 0 1 0 0 22 53
+{34 25 68 47}
+SSAttackUp
+9 0 1 0 0 31 71
+{0 0 59 31}
+SSRunAttack
+6 0 1 0 0 18 52
+{30 14 50 33}
+SSAirAttackSide
+5 0 1 0 0 26 57
+{30 20 65 47}
+SSAirAttackUp
+6 0 1 0 0 31 71
+{0 0 59 31}
+SSAirAttackDown
+5 0 1 0 0 27 64
+{20 20 50 67}
+SSSmash
+13 0 1 0 0 25 53
+{30 15 66 53}
+SSSmashDown
+15 0 1 0 0 87 48
+{55 20 121 48}
+SSSpecialSide
+10 0 1 0 0 25 54
+{7 4 45 53}
+SSAirSpecialSide
+12 0 1 0 0 27 55
+{10 6 46 55}
+SSSpecialUp
+13 0 1 0 0 45 59
+{0 27 85 58}
+SSSpecial
+11 0 1 0 0 28 63
+{10 15 47 62}
+SSSpecial2
+10 0 1 0 0 29 63
+{10 15 47 62}
+SSSpecial3
+8 0 1 0 0 27 63
+{6 15 42 62}
+SSProjectile
+4 0 1 0 0 38 9
+{0 0 47 18}
+SSAirSpecialDown
+10 0 1 0 0 24 78
+{15 52 52 78}
+SSFinalSmash
+15 0 1 0 0 40 59
+{20 9 60 58}

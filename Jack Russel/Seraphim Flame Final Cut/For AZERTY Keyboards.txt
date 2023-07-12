@@ -1,0 +1,14 @@
+if you have an AZERTY Keyboard,
+Please do the following:
+
+-Open gamesettings.ini
+
+-change 'keyboard=0' into 'keyboard=1'
+
+-save the changes.
+
+
+NOTE:
+By doing this, all 'Z' commands in the game are now operational by pressing 'W' instead.
+This will mean that if the game says 'press z' instead you will need to press 'W'
+I know it's confusing, blame the Keyboard companies :P.

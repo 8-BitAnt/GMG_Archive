@@ -1,0 +1,1534 @@
+v0.70 - bug fixes
+--music--
+added many midi files
+--menu--
+added hoop damage option
+added mainMenuXOffset and YOffset so one can customize placement of buttons in main menu (in case of custom background etc)
+added NONE theme where does not show GUI display during matches, only available during debug
+added stamina match type (HP battles)
+max stock increased to 25
+max minutes increased to 25
+on first play: welcomes computer name; when creating a save file for the first time, default folder will be My Documents
+code button will only activate once per click
+next/back buttons scale with resolution
+fps moved to room_caption
+added please extract game files message when game is unable to locate chars folder
+added pause, unpause sounds
+used switch statements in char scripts (should increase performance)
+--gameplay--
+changed GRAB COMMAND to shield + attack
+parallaX fine tuned
+added debug stageInteraction button
+no longer goes into regular idle sprite after attacking in 8bitmode (thx TCLC)
+the more damage you have, the more ticks you cannot move after grabbing a ledge
+grabTime increased based on victim damage
+no more slowFalling when under eightBitTime
+--script--
+doubleDamage is replaced, use projectileDmgMultiplier=2
+used switch statements instead of if statements when possible; most parts of the game should be marginally faster now
+removed hMinSpeed and vMinSpeed variables from player scripts, game gives a warning when used(correct variables are hSpeedMin and vSpeedMin)
+moved collision checks between players and projectiles to player object
+moved collision checks between projectiles and attackBoxes to attackBox object
+--AI--
+attempted to run ai scripts less (but this failed)
+modified AI to try to get back to platform when too low on stage
+--chars--
+***ADDED PICHU
+all 8 bit projectiles should now scale correctly (hopefully I got them all)
+Bowser: added specialSide sound
+Cpt Falcon: fixed falcon punch sound, added taunt, taunt sound
+Diddy: 8bit projectile scales
+DK: 8bit projectile scales
+EWJim: 8 bit projectile scales
+Fox: specialDown uses projectileDmgMultiplier instead of doubleDamage
+Hayabusa: switched specialDown and specialSide
+Ichigo: added death, hit and attack sounds, projectiles scale to Ichigo
+Jigglypuff: specialDown no longer has a whiff sound; switched attackUp and smashUp animations; switched attackDown and smashDown animations; increased speed of neutral attack1
+Kirby: Pit's special adjusted, Fox's power sound does not exist error fixed (thanks to Huo556 for spotting this error)
+Lance: added sound when grabbing a powerup ; 8bit projectile scales, eightBit version shoots projectiles again
+Link: fixed specialUp sound
+Ness: fixed special (correctly gains damage over time), specialUp, specialSide, airSpecialSide, special sounds; unique airJump physics (ai does not use yet)
+Peach: finalSmash peaches work like normal peaches (must be picked up, no longer used on touch)
+Pit: arrows work more like Brawl; 8bit arrows scale with pit; specialDown increases reflected projectile damage (using projectileDmgMultiplier)
+Ryu: specialUp phyics changed, attackBox size made thinner
+Samus: 8bit projectile scales, fixed specialUp sound
+Sonic: fixed specialUp and airSpecialDown sounds
+Sora: specialDown uses projectileDmgMultiplier instead of doubleDamage
+Tails: specialSide causes dizzy animation; specialUp ends quicker
+Yoshi: fixed specialDown sound; unique airJump physics (ai does not use yet)
+--challenges--
+0 continues message has been changed
+saffron city continues reduced to 1 (continues are irrelevant in this challenge because there's only one 1 match anyway)
+Pink Toadstool: peach does more damage
+Dark Link: link does more damage
+--stages--
+sunset background updates less frequently
+during DAY, clouds don't spawn in huge sizes, spawn in less numbers
+stage can have unique shadowLength defined in stage.script
+FinalDestination has long shadow
+SaffronCity has no shadow (as 2D)
+YoshiIsland2 left ledge fixed
+Cliffs now spawn floating hearts (heals 2-5 hp)
+KingdomII spawns floating hearts but much rarer (heals 5 hp)
+Onett cars are never projected (like the warning signs)
+v0.691 - quick fix
+fixed Lucas PK cannonball yOffset (will not appear in floor when traveling left)
+fixed bug which caused CPU players to continually crouch
+
+
+**v0.69**
+---debugging---
+during matches, most keys require the holding down of shift as well
+attack hit boxes turn red when attacking instead of player hit box
+---menu---
+in character select screen: when picking up token by pressing 'special', slot is set to human and character is cleared
+FINALLY changed message button style (background and buttons)
+in options, when changing Clear Sprites to After Match, clears all sprites from memory
+added dodgeType button to rules, allowWaveDash removed (automatically allowed with MELEE dodgeType)
+added toggle show playerCard button
+when in 800x600, adding a player slot no longer creates creates an N/A button where the image_blend button is supposed to be
+options button now appears in challenge menu
+no longer crashes when holding a player token if slots are reduced below player number
+add unload sprites after match to menu
+only one smash ball label is white when smash ball frequency is 0 instead of when itself is 0
+added 800x600 resolution
+moved stageInteraction button
+removed ModeButton in selectChar screen, replaced with objButton
+---gameplay---
+fixed a bug where ai players still used joystick checks for controlled projectiles and lateMovement attacks
+lower lvl cpus don't crouch as much
+fixed bug where players using joysticks couldn't pick up items (changed upDownState check to a downState check when crouching)
+during practice, players with joystick shows analog joypad instead of buttons
+AI players will sometimes grab
+added grab cancel (press block after grabbing)
+added jumpDust, airJumpDust and flyDust effects
+platforms only begin to move once round starts
+if on ground, sprite_index is set to idle after an attack by default
+cooldown for airDodge reduced from 12 to 8 for MELEE dodgeType
+when players grab a ledge, they are invulnerable for a short time
+all smashes now have safeEdge
+added airHit sprite
+springs give all air jumps back
+if a player has multiple hitSprites and is hit, sprites should always change into another hitSprite if hit again
+jumpCount no longer increases before attack (can no longer specialUp from ground and then again in the air)
+when EggLayed, mashing causes the egg to jump around, flailing causes animation to speed up
+can no longer crouch when grabbed someone (occurred when you hold down while grabbing)
+when grabbed, can mash attack/special buttons or continually change directions to speed up recovery
+AI will try to use finalSmash when they have the smashBall and they're about to die
+jumping up through a platform no longer gives you all your jumps back
+added elemental hitsprites (burned, electrocuted/shocked, frozen, dizzy/confused, sleepy,crushed) ; stage lava burns characters
+added elementalType to attack objects ('fire', 'electric', 'ice', 'stun', 'sleep', 'crush')
+added slowFall sprites
+fixed the error that occurred every time a projectile hit a lightning item
+---script---
+removed some redundant coding in joystick and keyboard state functions
+renamed all [character]Script.txt files to [character].script
+added gender var to player obj which currently does absolutely nothing
+added directionalTurn(direction1, direction2); returns 1 if counterclockwise difference, -1 if clockwise difference or 0 if same
+added rotateOnDirection, rotateOnDirectionOnAppear for effects
+effects that are following an object that have moveUp or moveDown now use yOffset to move up/down (eg ship in Samus Intro)
+added multiSpeed, multiDirection, multiSpeedFrame to attackBox obj (for directed Fox, Pikachu specialUp): analog joysticks have a better control of direction
+added pickUpItem var to objItem: for items that require pressing attack or crouching to use (ie Heart, HPTomato etc)
+added to actionScript CHARINTRO
+added yOffset to attackBox obj (fixes Ness, MetaKnight being in floor when using attackBox rotateDirection var)
+removed extra attackBox obj creation when boosting with a projectile (Ness, Lucas)
+added copyImageBlend var to effect obj
+grabbing someone who's grabbing another no longer stops being grabbed too early (reset grabTimer)
+effect objs can use strict follow
+after grabbing a ledge, a player cannot move for 5 ticks and is invulnerable for up to 20 ticks (capped at 10 if they jump early)
+corrected animationEnd detection in attackBox obj
+removed suspendGravity in attackBox obj... already implemented in player obj
+characters no longer freeze during attacks on last frame when chargeFrameEnd=INVALID
+added wasAGrab var to attack obj
+victims use grabber's holdDistanceX and Y
+different holdDistanceX and Y for grabs and throws per frames
+added to actionScript CUSTOMSCRIPT1, CUSTOMSCRIPT2 and CUSTOMSCRIPT3 for character specific scripts (ie Kirby)
+added to actionScript HASALREADYLANDEDATTACK
+added to actionScript HASALREADYLANDEDGRAB
+add successFrame to attackBox obj to make a grabAttack end earlier (rather than show the full grab animation)
+game no longer loops indefinitely when there are 0 platforms in a stage
+removed suspendGravity from attackBox objs
+added variable multiHitUnique to attackBox obj which allows multiFrame to have the same uniqueHitID (so multiHit and main attack can only hit for a total of 1 time)  (eg Jigglypuff sleep)
+optimized sprite loading (if multiple players choose the same character, sprites are only loaded once)
+attack sound whiffFrame automatically set for attackFrameStart
+projectile deathTimer no longer has to be an integer for autodeath<<<< may cause problems for indefinite projectiles???
+throws now only hit grabbed player
+added canMash and canFlail to attackBox obj and player obj
+added to actionScript HASLANDEDATTACK in attackBox obj which allows scripting to occur for player
+added to actionScript HASLANDEDGRAB in attackBox obj
+added hitOnlyGrabbed var to attackBox in EndStep
+added isAThrow var to attackBox (when true, in EndStep will end grab; when false will still hold grabbed player)
+noSpriteChange: disables being hit any distance until hitTimer reaches 0 unless a throw (should already be in grab)
+noHitDistance: disables being hit any distance until hitTimer reaches 0 unless a throw (should already be in grab)
+noStunning: disables stunning as well as grabbing until hitTimer reaches 0 unless a throw (should already be in grab)
+when a hit player is headed to the ground and has vspeed less than 0.8, lands on ground
+added grabTime for attack obj when they are grabs
+idleAnimSpeed correctly works
+added airJump2AnimSpeed var to player obj
+added getSprite(); basically saves a couple characters each time variable_global_get() is used
+added TAUNT to actionScript (must be on ground: hold guard and press up)
+newChallenge during match now uses same script as chooseChar menu
+added grabbedInvisible to attack objects for grabs that make player invisible (ie Kirby, Yoshi)
+hSpeedSet implemented for attack objects
+added CUSTOMHIT actionScript, to allow scripting from one player applied to VICTIM (ie Yoshi's Egg Lay)
+added var possible noFlash to player object; when true, when have starTimer, will not flash colours
+move initialization variables to INITCHAR
+in actionScript: RELEASESPECIAL changed to CHARSTEP
+added INITCHAR actionScript
+window no longer resizes itself
+unloads background preview in stageSelection
+fixed change from slowFall sprites to fallSprites
+unloaded backTile during cleanUpMatch()
+added canGuard var to player objects
+added custom shield sprite (ie Yoshi)
+un-commented coding in quitGame()
+added isFinalSmash variable to player obj (keeps the finalSmash background effect, won't spawn smash ball)
+added music to ryu stage
+added LOSEALIFE in actionScript
+in *.chr, allows sprite boxes to load previously loaded bounding boxes (ie idle sprite bounding boxes)
+added button to unload all sprites except menu required ones after a match
+all character sprites are put into a DS when they are first loaded
+fixed objProjectile and objItem collision (thanks to Toro for reporting); had to do with a local script variable sharing the name of the with object variable (theAttack)
+game no longer crashes when a single AI starts a match
+added ability to have superState for characters (different set of idle/hit/walk/run animations) (ie Super Saiyan Goku, Kirby hats)
+added ability to reset superState to 0 after die, or chance to lose superState after a hit
+---stages---
+added several experimental stages (scripts are in Battlearena and Pinball)
+allowStageInteractions is none changeable by user for challenges
+Mushroom Tops updated graphics to New Super Mario Bros
+Dreamland spawns leaves more efficiently
+reduced appears of cars during morning rush hour on Onett
+---chars---
+finalSmash projectiles are NOW unreflectable (thanks videocatbox)
+Billy: added grab, throwFront, throwBack, throwAttack combo, throwSpecial combo; specialDown is now a counterAttack (when attacked within first 20 ticks of animation)
+Bowser: added intro (thx TCLC), which uses actionScript;
+CptFalcon: changed specialUp to work the way it should
+Diddy: peanut popper no longer transparent after charging; explosion now transparent; added a 2nd hit sprite; intro uses actionScript;
+DK: fixed ridiculous attack and attack2 hitBoxes; can now charge special in air; rises slightly higher with specialUp
+Don: lengthened intro; has burned, frozen, electrocuted, crushed sprites; added grab, throwAttack, throwUp, throwDown, throwFront, throwBack
+EWJim: has slowFall with appropriate animation; has burned, crushed, 3 taunt sprites
+***Fox: added landmaster finalSmash; laser blaster does slightly more dmg; specialUp and specialSide have better effects;
+Game&Watch: special spams slightly faster on ground, randomized image_speed; specialDown temporarily works like Ness and Lucas' specialDown until i finish implementing the true move
+**Goku: special projectile scales up; finalSmash turns Goku into a Super Saiyan (stronger, slower smashes, new move (special)); added slowFall sprite; can also power up to reach Super Saiyan (hold special)
+Jigglypuff: added intro (thx TCLC); separated specialUp effects; specialSide can destroy projectiles; added grab, throwAttack, throwUp, throwDown, throwFront, throwBack, 3 taunts
+Ichigo: special and projectile can only hit once total; specialSide and projectile can only hit once total
+***Kirby: tweaked specialUp physics and dmg (can hit 3 times); special now a primitive version of how it should be (can copy some powers); fixed airSpecial hitbox (was still using pre DS sprite hitbox); updated airSpecialSide and specialSide; has slowFall, burned, frozen, electrocuted, crushed, sleepy sprites; exported Kirby's specialDown move to folder; copying another plain kirby in October gives pumpkin suit that spits out high damaging candy that has no pushback or stun; in December gives santa hat and spits out candy that heals without stunning but has very high pushback
+Lance: powerups have some life before being destroyed, powerups take slightly less damage from specials; slightly increased chance of powerups appearing; powerup coding more efficient; visual cue created when losing a powerup
+Leo: has burned, frozen, electrocuted, crushed sprites; attack combo finisher always slowed airAttack or attackDown sprite; added grab, throwAttack, throwUp, throwDown, throwFront, throwBack
+Link: added grab, throwBack
+Lucas: starstorm projectiles are more reddish
+Luigi: redid some attack hitBoxes
+Mario: added 3rd hit sprite; has burned, electrocuted, crushed, dizzy, taunt sprites
+MegaMan: realigned charging, slideTurn sprites; has burn, electrocuted, frozen sprites
+MetaKnight: no longer appears in the ground when using special; intro cape uses actionScript; added Burned, Electrocuted, Crushed, Frozen, Dead (not used yet) sprites
+Mike: realigned runAttack sprite;  has burned, frozen, electrocuted, crushed sprites; added grab, throwAttack, throwUp, throwDown, throwFront, throwBack
+**Naruto: added Naruto Fox Demon FinalSmash; airSpecial knives scale to player
+Ness: no longer appears in the ground when using specialUp and hitting self; once Ness' specialUp projectile hits him, the projectile's direction no longer is set to 0 during fade out; starstorm projectiles are bluish; has burn sprite
+Pikachu: added intro (thx TCLC); fixed projectile being upside down when it was moving left
+Pimple: added intro (thx TCLC); has crushed sprite; modified specialSide physics, also can now destroy projectiles; added grab, 2 throwAttacks
+Pit: added slowFall sprite
+Raph: has burned, frozen, electrocuted, crushed sprites; added grab, throwAttack, throwUp, throwDown, throwFront, throwBack
+Rash: has crushed sprite
+Samus: charging special is done differently; charging sprites realigned; shot starts at a smaller size; intro uses actionScript
+Sonic: added frozen sprite, taunt
+Tails: can no longer guard and hold charge special; added frozen, slowFall sprites; updated Jump2 sprite
+***Yoshi: added shield sprite, SuperDragon finalSmash; improved shell sprite for intro, lengthened intro; guarding and rolling; tweaked specialSide sprite alignment, physics & dmg; special now a primitive version of how it should be; added grab, throwAttack, throwFront, throwBack, throwUp, throwDown; specialDown projectile no longer spawns right away, specialDown and projectile can only hit once total; fixed bug where ai would be able to use final smash attack when not with final smash
+Zitz: added intro (thx TCLC); special sprite belt added (thx TCLC); has crushed sprite; added grab, throwAttack, throwUp, throwBack; realigned airAttackUp
+---stages---
+Dreamland: blow animation stops but wind continues for 10 more ticks; leaves sometimes rotate
+added Ryu Temple
+
+v0.68
+respawn invulnerability slightly reduced from 110 to 90 ticks (about 3 seconds)
+added running dust
+when someone has a smash ball, background will go darker; turn this off by turning off background effects
+***ADDED Tails
+smashBalls last twice as long before disappearing; low appearance has less chance to spawn smashBall
+items begin to fade earlier, giving players a better hint when the item will disappear, also will alpha flash
+-stage scripts-
+removed objRoad that was only being used in Onett, uses Effect objects instead
+conveyor platforms fixed
+can no longer airDodge while ledge grabbing
+**added stage projectiles
+projectiles should be destroyed as far as players can walk off screen
+-script-
+projectiles can travel in sin waves using theVWave variable
+graphics given it's own section in save/load file
+added objDrawBehindPlatforms
+***fixed critical error while auto fixing bounding box of idle sprites
+PRELOAD, STEP, UNLOAD now constants
+stage projectiles have pNum = -2; playerHit() edited to allow -2 as a pNum, as well as player deaths
+-projectiles-
+using theSpeed and theDirection fixed
+added unreflectable var to objProjectile
+-menu-
+added allowStageInteractions to selectStage menu
+added showDamage to options menu
+clicking close button exits game without saving or any dialogue boxes
+added score indicator button to chooseCharOptions (+1 score or +1 insertComment)
+removed itemsAllowed variable since itemFrequency is the same
+added customSky button to options menu
+old backgrounds are deleted after successfully adding new ones
+remembers window position, window will no longer auto center before match, menu and match results
+-items-
+blue POW blocks are smaller than red to show they are weaker
+added apple; restores 2hp
+added peaches; restores 5hp
+items appear behind players (greater depth)
+no longer hit during chargeSpecial, invisible projectiles or a full multiHit attack
+Smash Ball shrinks when hit instead of Effect created above it
+*ADDED lightning item (shrinks all enemies)
+-match changes-
+multihits are chargable as well
+all final smashes require button to be INSTANTPRESSed (holding down the button will not work)
+POW blocks now work again (attackBox endStep ignored when animation ended with a pixel sprite)
+object_rank() gains more function; added notes to object_rank()
+added postAttackVSpeed, postAttackHSpeed, postAttackHSpeedSupplement, postAttackVSpeedSupplement to attackBox (postAttackVSpeed = on successful hit, will use this vspeed)
+***smash balls can be hit out of players, the more damage, the better chance to hit smash ball out
+when checking for finalSmash, game will now take into account a player with finalSmash as well as spawned Smash Ball items
+chargingVSpeed fixed (had to comment out maxVSpeed=theVSpeed)
+--stages--
+sunsets should be less laggy
+added DRAW event for stageScripts
+lava knockback, damage is determined by script
+Dreamland: wind blows players based on distance; tree has animated face; leaves show up to show wind direction and strength; updated thumbnail
+Village: all top walls removed to allow easier kills
+Onett: stage resized smaller; cars appear, can hit players; frequency depends on time of day; updated thumbnail
+PlanetZebes: visible lava moves up and down; speed depends on time of day
+Norfair: visible lava moves up and down slower than PlanetZebes, does not stay in place as long; speed depends on time of day
+PeachCastle2: Banzai Bills spawn infrequently, high damage, slow movement, no knockback; damage depends on time of day
+KingdomII: water is animated, animated plant heads
+Cliffs: animated plant heads; animated falconHeadDoor
+Lylat: top long platform broken into 3 pieces (like game)
+YoshiIsland3: added FlyGuys to background
+--chars--
+Bowser: special no longer reflectable; added Hit2 sprite
+Game&Watch: specialUp crew correctly freezes on last frame
+Goku: special no longer reflectable
+Kirby: airAttackDown uses postAttackVSpeed
+Link: airAttackDown uses postAttackVSpeed, can pogo, hitBox moved 5 pixels toward center; increased specialUp cooldown; specialUp chargable when onGround; special projectile physics changed
+Luigi: specialDown uses postAttackVSpeed
+Mario: finalSmash projectile moves in a wave
+Peach: special hearts ignore walls; finalSmash puts grounded enemies to sleep, creates 12 peachs that heal 5hp
+Pimple: specialUp physics modified; finalSmash physics modified
+Snake: can smashUp mortar higher through charging; specialDown shows correct sprite for planting c4
+Sonic: new airSpecial
+Yoshi: airSmashDown will use meteor smash, airDown will use foot windmill; airDown uses postAttackVSpeed
+Zitz: fixed attackDown purple background
+
+
+v0.67
+--joystick--
+added cursor dead zone constant (making joystick more sensitive in menu screens)
+joystick button config now saves properly (and therefore also loads correctly)
+during matches, tapping down on a jumpThrough platform correctly jumps down instead of jumping up
+press button 9 to change handness of cursor (left/right hand)
+ADDED x position for joystick to determines if player is walk speed
+analog joysticks cursor move speed is determined by x and y stick positions
+--menu--
+mouse cursor returns to normal when 2 slots or 12 slots are selected in character select
+added portrait scrolling in main menu
+changed next and back arrow sprites
+*added Custom Background button to options
+*added Choose Character Options
+removed objects: theLimitButton, decreaseLimit, increaseLimit, limiterLevel
+when a cursor right clicks to pick up token, does nothing (must expand player slots)
+cursor right clicking on any buttons in selectChar no longer picks up tokens
+using selectChar Brawl Theme, team battle now use colour cards
+in the rules menu, setting jumps to 0 disables jumping (but not special up)
+load bar backgrounds have some red to be more similar to splash logo
+adding cursors for menu screens (moved with same buttons as player controls); cursors can press buttons, use player token; move faster with higher resolutions
+**fixed crippling error in select stage when stages were locked
+***always displays version number at the bottom right of the menu
+middle clicking hardAI button will set all other players to the same state as the current pressed one
+made objButton the parent of objects: selectHMN,selectTeam,changeName
+middle clicking selectHMN makes all other slots match current slot
+Displays 'debug mode' at the bottom left when in debug mode
+moved buttons in stage select screen so they don't overlap the stage selects
+grayed out options not valid in options screen (pan sound grayed when sound is off etc.)
+panSounds button can now be right clicked
+char portraits in character select scale up with resolution
+stage icons in stage select scale up with resolution
+fixed placement of buttons in select stage screen
+while in splash screen, draws all sprites loaded (script in ImportChar())
+game takes MUCH less memory than older versions, stock icons no longer load during splash screen
+players cast shadows, toggable in options menu
+--gameplay--
+***ADDED the remaining Battletoads: Zitz and Pimple
+Diddy can still purposely cancel from charging special into another special move
+shadow image_alpha max now based on stage time (morning, sunset, etc)
+shadow position determined by closest platform (object_ranking) if not onGround
+shadows and offscreen mini correctly display, moved several things from step event to step end event
+shadows don't stutter on platforms moving up/down  (was ignoring platform being stood on by player) (step event script moved to begin step event)
+will now die if invulnerable and fall down into lava pit stages (since lava won't hit you)
+**ADDED moving platforms, sticky platforms
+*players now take hoop damage (when in magnifying glass icon, will take 1% dmg per second) when off screen, will randomly be KOd if have higher than 150dmg
+only 1 smash ball will appear on the stage at a time (unless disabled in rules)
+player guard shield orbs are drawn by objDrawAbovePlayer
+player shadows are drawn by objDrawBehindPlayer; now work well with sloped paths
+added clouds to sunsets
+can no longer hold special for many of the special attacks, must release and press again (Samus, MegaMan, Pit, Link, Lance)
+smash ball takes 150% more damage from special attacks compared to regular attacks
+when jump button is changed: will no longer use both 1st and 2nd jump counts, can use short hop (tap jump) and regular jump (hold)
+updated smash ball sprite
+when playing single player, will show buttons being pressed
+when a player walks off screen, a miniature icon is drawn
+played around with time colours; time flashes red and maroon during last 15 seconds
+AI will jump up left/right walls smarter
+during debug mode, players have limited control over ai players
+practise mode (1 player only) shows speed, hspeed and vspeed
+big hit sparks are less likely to appear on other big hit sparks
+--gameplay scripts--
+removed attack sounds play for introSprites
+added collision_line_point() from http://gmc.yoyogames.com/index.php?showtopic=400328    Thanks to general sirhc
+platforms moved to a depth further behind objDrawBehindPlayer so shadows can be drawn on top of stage created platforms
+removed particles that appeared during charging (but sparks still remain)
+added chargeSparks for chargable attacks so attacks can have sparks not appear
+*Each stage can now have stageScripts which run during preload, step and unloading periods
+added stageAlias to stageData
+showLockedChars correctly works
+renamed global.tempX to global.theArgument0 in character scripts
+during timed matches (without any stock limitations), the Melee GUI will now show 1 stock icon
+effect follow more precisely
+removed human check for Joystick_States() and Keyboard_States() since they only go in here during correct times
+added 5 hitIDs to players; added lastHitID array
+jumpState added so now draw button works in practice
+able to have intro sprites for characters (Ness, MegaMan, Mario, Luigi, Don, Richter, MetaKnight, Snake, Samusx2, Diddy, EWJim, GameWatch, Yoshi)
+removed canLoad var from scripts
+**REMOVED character ActionScripts, should splash load faster
+***IMPLEMENTED script_add(filename); new coding in ActionScript, InitializePlayer, Destroy Event for _PlayerParent
+refixed camera when autoZoom is turned off in a small room
+getGroundSpawn only checks for ground and not player position, (meaning items can spawn near players)
+*ADDED object_rank script (much faster than for loop) from http://studioeres.com/games/category/3/10
+use of object_rank in AICommands and projectile step for homing projectiles
+player objects now have theActionScript index, which loads player step scripts from file
+Effect object now have destroyOnAnimationEnd variable
+players with stars drop sparkles (looks more like mario with star in super mario world)
+fixed critical error in AI where projectile spamming was depending on x position of player(the more right of the screen the target was, the more the comp would spam)
+guard coding for playerHit() moved after checking of valid attack
+attacks will slightly push players guarding
+*being attacked while guarding will decrease your guardTimer much less
+match starts right away when practicing (<=1 player)
+--stages--
+Congo Jungle: 2 rotating platforms
+Kingdom II: got magic carpet bird
+PeachCastle2: moved objects and castle down 1 pixel
+PeachCastle1: moving platform, ledges removed
+PlanetZebes: moving platform
+Saffron City: 2 moving platforms
+Mario Bros: pipes no longer block top and bottom section
+Ninja Academy: 3 moving platforms
+Emerald Hill Zone: 2 moving platforms
+Highway: 2 moving platforms
+--chars--
+Billy: specialSmashUp works slightly different than specialUp
+Bowser: added ledgeGrab
+CptFalcon: special cooldownTimer increased to 10 from 8 and warmupTimer increased to 2 from 1
+Diddy: specialSide has 1 less invulnerable frame
+DK: added ledgeGrab
+Fox: specialDown physics modified; chargable specialDown
+Goku: finalSmash attacks for more frames; special no longer moves up when colliding with the floor
+Jiggly: special is chargable
+Lance: tapping attack now shoots faster than holding special
+Leo: finalSmash can now fly around
+Link: each finalSmash projectile hits multiple times; modified smashSide and smashDown movements
+Lucas: finalSmash warmupTimer increased; added sounds; changed altPortrait; chargable specialDown
+Mario: specialUp given a multiVSpeedMin; airAttackDown projectile correctly scales, spawned in correct ycoor; changed altPortrait; new finalSmash animation; specialSide chargable
+MetaKnight: fixed runAttack sprite
+Naruto: projectiles correctly scales
+Ness: finalSmash warmupTimer increased; updated and added sounds; chargeable specialDown
+Pit: specialDown pushes players away; specialSide is chargable
+Raph: used autoContrast on altPortrait; finalSmash can now fly around
+Ryu: projectile correctly scales
+Samus: projectile correctly scales; slower roll
+Sora: each finalSmash projectile hits multiple times
+Yoshi: specialDown projectile correctly scales, spawned in correct ycoor; added LedgeGrab
+
+
+v0.66
+-gameplay-
+FINAL SMASHES AVAILABLE!!
+attackable items can now be hit by projectiles and multiHit attacks
+*implemented safeEdge for AttackBox objects
+cannot grab ledges while doing finalSmash
+roll cooldown increased 1 tick from 4 to 5
+maxblocktimer increased from 60 to 80 (will be higher once throws are eventually implemented)
+movementModifier=0 works with attacks on ground
+added flight to attackBox obj for chars like Pit airSpecialUp, Sonic finalSmash
+-menu-
+added Smash Ball Frequency to rules
+added resolution button to options (only works in menus though, matches are just resized up)
+ratio variable added to cameraScript to accomodate widescreens
+-scripting-
+removed the not working 'endOnGroundProjectile' var from attackBox End step (already have a working appearOnGround var in projectile object)
+fixed appearOnGround projectiles appearing in air bug
+fixed collision ignoring walls to the right of the player when not moving horizontally
+removed EmptyPortrait2 from sprite list
+*started implementation of final smashes (however will not be available until all characters have a final smash move)
+True Final Smash:(Mario,Lance,Ness,Lucas,Bowser,Hayabusa,Samus,Richter,CptFalcon,Jiggly,Sonic,Pit,MegaMan,Diddy,Ryu,Pikachu,Mike,Don,Leo,MetaKnight)
+Placeholder Final Smashes:(Peach,GameWatch,Billy,Fox,Jim,Snake,Luigi,Naruto,DK,Goku,Raph,Link,Yoshi,Rash,Sora,Kirby,Ichigo)
+added copyScale to AttackBox object
+-chars-
+*Added Richter Belmont from Castlevania
+Diddy: specialUp correctly increases jumpCount; fixed error msg theProjectile.theVSpeed not existing (due to weird bug with not placing a semicolon after an array attribute ie theArray[number].attribute=newAttribute;) - thanks Sonicx2i4eve and all else who posted this error
+Fox: shooting animation speed is much faster
+Cpt Falcon: faster roll; airSpecialSide is raptor boost (ground specialSide still laser gun)
+Pikachu: added 8Bit sprite - thanks Albert Wikowonkavitz
+Samus: better quality projectile sprite
+Sora: added 8Bit FF sprites - thanks Albert Wikowonkavitz for idea
+-sky backdrop-
+sunset has various oranges
+-stages-
+bandaid fix for falling through platform on Planet Zebes (platforms now 'push' up players in their step event)
+added mini Left and Right walls; fixing MarioBros stage
+removed extensions for stage files, automatically tries gif, png, bmp, jpg (in that order), like character sprites are being imported
+*Added WygolVillage from Castlevania
+hitting lava will first place you on top of lava, now has a minimum speed to be shot up
+thumbnails no longer preloaded
+fixed misalignment in far left of HyruleCastle
+-Challenges-
+fixed Dark Link challenge always failing - thanks Sonicx2i4eve
+fixed challenges using global rules settings - thanks Sonicx2i4eve
+fixed yoshi challenge spawn point
+-Menu-
+removed some coding for Ninja Turtles, Ryu Hayabusa - thanks Albert Wikowonkavitz
+*added Smash Ball button to rules
+added change resolution in options (only really works in menu)
+fix menu button positions (messed when not 1024x768 resolution)
+
+
+v0.65
+--characters--
+*Added Sora from Kingdom Hearts, starts unlocked
+*Added Ryu Hayabusa from Ninja Gaiden, must be unlocked by completing the Ninja Nightmare challenge
+*Added Lucas from Mother/EarthBound series, starts unlocked
+added all Turtles to regular Smash Bros Rumble; "COWABUNGA"
+fixed problem with LinkScript when he performed AttackSide, called player1's script (since forgot [pNum])
+changed TMNT logo to old tv version
+Billy: cleaned up some dark pixels; jump speed reduced; has a tendency to throw knives downward
+CptFalcon: added attack grunts, airAttackSide; reduced maxAirSpeed
+Diddy: added 8Bit sprites (DK Jr); fixed error msg when pressing special (shooting peanut popper) in air
+Don: special spawns projectile at 3 slightly different heights; properly recoloured jump2 sprite
+Fox: added attack grunts; fixed specialSide effect not scaling; specialSide effect will disappear when attack is interrupted/ended
+Goku: jump speed reduced
+Ichigo: specialDown modified; slightly bigger
+Jiggly: added attack grunts
+Lance: was accidently using Bill Rizer's (player 1 aka Arnold) portraits, switched to Lance Bean's (player 2 aka Sylvester) portrait
+Leonardo: cleaned up dark pixels
+Link: added attack grunts, projectiles scale with player; jump speed reduced
+MetaKnight: added own Logo
+Michelangelo: cleaned up dark pixels
+Ness: Smash can reflect projectiles; Lucas has a 1/10 of missing; specialDown has knockback; specialUp can be guard Canceled; specialUp life decreased;
+Pikachu: added attack grunts; specialUp and specialSide afterimage effects added; reduced fall gravity (falls slower); sideSpecial chargable; specialUp does some very minor damage
+Pit: cleaned up more stray pixels; added attack grunts
+Raph: cleaned up dark pixels
+Rash: fixed airAttackUp sprite (thanks tot92); modified alignment of airAttackDown
+Ryu: new portrait
+Sonic: airSpecialDown fixed (wasn't going down); reduced maxAirSpeed
+Snake: grenades properly scale; jump speed reduced; smashUp vspeed chargeable; smashDown dmg chargeable
+Samus: jump speed reduced
+--stages--
+*Added Planet Zebes stage - cannot die from falling down, bottom acts as lava
+*Added Norfair stage - cannot die from falling down, bottom acts as lava
+Dr Mario stage starts unlocked
+--challenges--
+Link is hit less further in Dark Link challenge; humans start with 2 lives from 4
+*Added Ninja Nightmare challenge (unlocks Ryu Hayabusa from Ninja Gaiden)
+fixed bug for decade, and century challenges
+*Added TMNT Challenge
+Decade challenge slightly easier (reduced difficulty to 5 from 6)
+fixed last row of challenges not giving a player slot (thanks wii dude)
+--music--
+added metroid prime echo song to music list
+modified Music.cfg so files can now contain apostrophes
+--gameplay--
+jumpGravity increased by 0.001; fallGravity increased by 0.0001
+fixed friction during endSuspendFriction
+--game GUI--
+added text for losing all lives
+smallest hit sparks are now particle effects
+added controls display during loading screen of matches
+big text hit sparks will vibrate
+added loading bar for challenges; when loading cpu players, bar appears full
+--GUI script--
+kill/death streaks now only use 1 variable currentStreak
+if path of char sprites starts with ".\", will use working_directory as home folder
+fixed bug that was loading the wrong backdrop
+fixed ledgeGrab bug where movementModifier wasn't being reset
+importing char now checks for .gifs, then png, then bmp, then jpg
+fixed grabLedge script for loaded characters
+automatically fix bounding boxes of imported sprites; hit collision boxes are consistent during idle, walk, run, jump, hit, etc
+added textScoreIndicator remarks; keeps track of kill streaks and death streaks
+added textSpark and scoreIndicator switch
+added subtle parallax scrolling in cameraScript()
+*Removed all player sprites from game exe (now imported before a match begins, uses a lot less memory)
+added loading character bar to match start
+added loading character progress bar to game start
+*added character importing (sprites are only imported once so loading time is slow only for the first time that character is loaded)
+added character alias for character exporting
+fixed joining midgame bug that did not initialized sounds correctly
+added text hit sparks for big and medium hits
+--effects--
+added copyLastFrame
+attempted to add appearOnIndex
+added copySpriteIndex and copyImageScale
+particle effects more customizable (added minSize,maxSize,minParts,maxParts,alpha1,alpha2,alpha3)
+added vibrationVariation
+--menus--
+added longest kill/death streaks to match result screen
+debug restarting correctly deletes all character sprites (freeing memory)
+fixed right clicking on item frequency wouldn't go to max from 0
+--attack scripts--
+removed all unnecessary attackPower=0,stunningPower=0,hAttackSpeed=0,vAttackSpeed=0 when no attack frames
+attacks can now push away without stunning or damaging (such as Ness' specialDown)
+added airAttack2,airAttack3,airAttack4; airSpecial2,airSpecial3,airSpecial4 to playerObject
+added soundHits (for attacks that connect with enemy)
+attack sounds removed when air dodging and rolling
+--projectiles--
+self hitting projectiles (ie Snake's primed grenade, Diddy's peanut popper) now properly hit (again)
+projectile objects copy chargeAttack, chargeSpecial and chargeTimerMax from theAttack obj
+added charging speed/hit Speed/stunning power
+added charge damage
+projectiles check parentObject when to appear, no longer use timers
+added speedImageSpeedRatio to objProjectile; faster projectile=faster image_speed, slower projectile=slower animation
+boomerangs should be able to bounce off vertical walls now; boomerangs also bounce off floors; should return to middle of player
+fixed projectile counters no longer resetting; or statement was not working as intended and was split up into 2 separate statements
+attempting to fix grenade-like projectile physics; works better but projectiles still require airFriction
+--other--
+removed redundant walk/runs from character folders
+
+v0.64
+placed all sound indexes into an array, other player sounds no longer removed when one player is unloaded
+attempted to have guardCanceling stop all controlled projectiles
+attempted to fix waitForProjectile bug where player could still move around
+added soundIsHit4
+added showSoundAttempt debug var
+player sounds now correctly (for the most part) unload; WAS CAUSING MASSIVE SLOWDOWN
+attempting to have sprites added only right before a match
+added execute code for debug mode in Menu screen
+changed YoshiIsland1 height to 384 from 480
+added winBySurvivor variable which is true when a player/team kills all opponents
+game now allows both stock and time limit during matches and rules; stock and timeLimit can be changed to higher than 20 in rules
+removed global.limitLevel variable
+added handicap in rules (starting damage for everyone)
+removed theSpr setting for objButton (now done automatically)
+removed itemsAllowed; itemFrequency can be set to OFF (0), LOW (10), MEDIUM(35), HIGH (75), VERY HIGH (150)
+hides cursor
+fixed ledges only able to grab once per match bug
+gravity bug fixed in playerStep(); was not correctly changing from jumpGravity to fallGravity
+added explodeAlwaysUp for projectiles so image_yscale is always positive
+added slow fall (holding up in air) for flyers and certain characters
+added guardFrameStart and guardFrameEnd which now allows guard startup animation (but still no guard cooldown animation)
+added grey to CPU and NA in character select
+removed simple Options screen
+in character select, all characters face center
+debug no longer unlocks everything
+added code to finish all challenges
+added camera AutoRoom zoom: when true, camera will show entire room for small stages; default now OFF
+added camera scaling option; also changable in match using mouse scroll up and mouse scroll down
+added EXTRA character importing coding
+attempted to fix camera script on small stages
+CPU players with CPU level > 7 now occasionally charge smashes
+DrMario stage finished
+Extra Characters (only available in EXTRAS version):
+   *added Michelangelo
+   *added Raphael
+   *added Leonardo
+fixed all smash sound frames to match with charged smashes (sounds no longer play until attack begins)
+Bowser: added sounds
+CptFalcon: added sounds
+Donatello: changed projectile size; changed palette (replacing all the sprites); movement values changed; special side movement changed; fixed special down bounding box
+Fox: added sounds
+Jigglypuff: added sounds
+Kirby: added sounds; specialDown can be guard cancelled
+Link: changed/added sounds
+MetaKnight: lighter (easier to hit out); added sounds
+Ness: added sounds; air PKFire moves more horizontal
+Pikachu: added sounds
+Pit: added sounds; cleaned up SlideTurn and Walk sprites
+Rash: added frog stomp AirAttackDown
+Samus: added sounds
+Snake: added sounds; specialSide can be guard cancelled
+
+v0.63
+*added a primative Wave Dash; very hard to do with the keyboard, recommend joystick
+added vertical movement for air dodges
+added debug message for smash charging bugs
+added cpuColour to Options
+removed alwaysAllowGuard switch (was used to enable guarding/rolling/dodging in 8bit mode; now can never do those in 8bit)
+added rules section to saveData and loadData
+redHitBox for object AttackBox will now work again
+screenshot files add .bmp to the end of the file name
+pressing esc goes to pause menu; can quit game from pause menu
+story mode is default set to allow all attacks and dodging
+fixed Naruto airSpecial projectile spawn y coordinate
+fixed Flatzone foreground
+*Added maxJumps to rules
+*Added allowGuard, allowChargeSmash, allowAttack and allowSpecial switches; also in rules
+moved some options to rules
+Added Rules button and rules screen in character select
+Ninja Academy given Double Dragon music until a Double Dragon stage is created
+fixed failed Challenges bug
+fixed Junkyard music error in Music.cfg; this will fix Battletoads Challenge bug - thanks to klikli2
+characters that start unlocked are now always unlocked on loadup
+unlock all stages code correctly unlocks stages
+-chars-
+Lance: fixed laser warmup and cooldowntime for neutral attack
+Kirby: updated more sprites
+Luigi: fixed attacking while charging smash, sprite alignment
+Samus: slightly slowed down neutral attack animations; sprite alignment
+DK: fixed clipped smash side sprite and alignment
+Capt Falcon: AirAttackUp realigned
+GameWatch: holding down when in air will slow decent
+
+v0.6222
+fixed global.matchTimeCen bug not being initialized
+v0.62
+added unlock Stuff.txt
+when a player dies, all their projectiles are destroyed
+only loads and unlocks character sounds when sound is on. this means cannot turn on sounds during a match; turning off sound drastically improves performance
+when a sound isn't correctly loaded, will no longer show errors unless in debug mode
+added sound discard before sound deletes
+it only took HOURS but FINALLY figured out and fixed the sounds not playing/missing bug; death sounds were not deleting correctly;
+added ground spot dodge (air dodge by holding down on ground)
+grabbing 1up mushroom now shows 1UP text
+can no longer air dodge when in helpless state (which was making player invisible for 1 frame)
+shield visible during air dodge invulnerable frames
+projectile object can now do homing
+added sound_volume2 script
+player death sounds now added to objGUI array called deathSounds[]; death sound will now play even after player is removed; death sounds are unloaded right before room change
+background music now unloaded
+added chargeAttack switch; code to turn on/off: 'charging' or 'charge attack'
+attempted to play the complete last death sound playing during stock battle end
+changed the way chargingBeamTimer is lost on hit
+added cpuColour switch
+modified item collision (commented out -1 for bottomWall)
+modified projectileCollision (commented out -1 for aboveThisWall)
+fixed bug where if pressed backspace at character select, would randomize characters before going back to menu
+*Added Decade Challenge, 3 life; 3 enemies all have 10 lies and start with 300% damage; random stage
+fixed Century Challenge always failing; century challenge human players now have 5 lives instead of 1; the 4 CPUs have 25 lives each
+Rearranged global options
+Melee GUI now uses stock icons
+added stock icons for all characters; objGUI shows stock icons when lives remaining 4 and under
+Stock Battle dead when 0 livesRemaining instead of -1
+limits increased to 20 from 10
+game no longer saves GUI2Rows since variable is internal anyway
+-match results screen-
+winner's logo fades in and out
+all details only shows in debug mode
+story mode kills and deaths correctly shows
+-characters-
+Goku: special has longer warmupTimer
+Jigglypuff: special side no longer makes her helpless; specialUp has increased warmupTime
+*Lance: now spawns spread weapon items; has spread gun, holds gun like others hold charges (chance to lose it every time is hit); no fast fall; Missile switch to Projectile3 from Projectile2; Laser now Projectile2, does 4 times more damage; smash attacks usually stun (3/4); attacks sometimes stuns (1/10)
+Game&Watch: smashes players farther; has slow fall (by pressing down in air); damage multiplier reduced to 1.03 from 1.05
+Mario: fixed pallete bug in fall and dodge sprite
+Megaman: projectiles scale to size
+Pit: arrow fixed, thanks ZXCVBNMASDFGHJKLQWERTYUIOP
+Samus: smash special side now homing, no longer guided, lifetime reduced to 45 from 75
+-debugMode-
+f10 reduces all players but player0 to 999 damage and 1 life
+f11 instantly kills all players and their lives but player0
+
+v0.61
+fixed more collision bugs
+added some more false codes ;P
+applied a bandaid fix for constant loading of the spring sounds; Junkyard stage shouldn't experience slowdown
+changed buttonState behaviour for button objects, instant clicked sometimes happened twice
+fixed explode ignoreWalls bug
+added hit effect (smoke) when player is hit fast enough and stunned long enough
+removed cooldownTime from Player object
+added guardCancelCooldown for AttackBox object; all/most smashes will have guardCancel
+jumping on a spring will end suspendGravity and suspendFriction
+moved AttackBox step event to it's own script: attackBoxStep()
+edited loadCharSounds, debug mode will get message if sound incorrectly loaded
+*Added smash charging
+removed angleOffset from AttackBox since cannot find any character using it; may have possibly been used in MetaKnight special
+added damageBasedStun attacks: all smashes are now damageBasedStun attacks; damageBasedStun and damageBasedStun Multiplier added to attack objects, stunEquation added to player objects (lower and raise player tolerance for stun)
+added allowRoll and allowAirDodge variables; characters can have customized roll/dodge speeds
+modified coding for objAboveWall step event; will make Yoshi's Island1 and Corneria stages better playable (no accelerating off slopes)
+loading saved data during splash screen should take much shorter time; divided loading into sections
+rolling shows a small shield orb
+removed leftRightState!=UP for guard check in playerStep(); no more shield recharging and showing
+added missing invulnerableFrameStart and End check into playerIsInvulnerable script
+added airDodge and Roll; implemented for everyone except: Don (no air dodge), Bowser (no roll), Ryu (no air dodge), MetaKnight, Lance, Billy (no air dodge);
+collisionDetection no longer conflicts with respawning (xprevious and yprevious are set during loseLife script)
+removed now the unnecessary wall objects from stages
+collisionDetection now checks if previously went through a wall; now much more accurate and effective on smaller stages
+added screenshot button in pause dialog
+on small maps, max boundaries are larger
+fixed Saffron City, PeachCastle1 platform placement
+fixed projectile explodeHitMax bug ie Snake's grenade wouldn't blow up in his own hand unless he was attacking
+added needToAttack, explodeHitMax for projectile objects
+added playWhiff and playWhiff2, playWhiff2Once to attackObj, changed default values of playWhiffOnce to true
+whiffSounds will play on rounded down frame; all sounds should now play!
+during pause, displays a message and allows free roaming camera
+added error message when in debug mode when sound does not load
+
+-chars-
+modified maxAirSpeeds for most characters
+fixed some run animation speed in loadCharStats which incorrectly had runSpeedAnim instead of runAnimSpeed
+Billy: run animation set faster than walk to differentiate the two
+Bowser: raised cooldown for most attacks, increased slash damage, smash side damage
+CaptFalcon: Falcon punch sometimes destroys projectiles
+Diddy: overcharging his peanut popper will now damage you again
+DK: added 2 more hit sprites
+Don: ninja star animation faster, shortened 1st jump
+Earthworm Jim: modified runAttack, lowered self damage
+Luigi: shortened life of fireball
+Link: shortened 1st jump; cannot turn (but still can move) around during special up
+Kirby: started updating of sprites to DS
+Mario: fireball speed modified
+Metaknight: *updated all sprites
+Peach: moved text for her heart protectors (special), reduced hit distance for heart protectors and peach bomb (side special)
+Pikachu: lightning works in all stages including small stages
+Pit: air attack animation speeds slowed down from 1 to 0.75
+Ryu: fireball can now be cancelled
+Snake: attackside now only shoots gun; c4 will no longer flip horizontal
+Yoshi: Egg throw has lateVSpeed and lateHSpeed (more control of throw distance), has small vspeed increase; Yoshi bomb (special down) cooldown increased
+-menu-
+debug mode can only be accessed through codes and no longer through advanced options screen
+match results now shows same portraits as ones used during match
+pause dialogue centered on screen not room
+separated jump and up button
+renamed InitializePlayerInput to InitializeJoystickInput; also will now only accept joystickID as opposed to playerNum (pNum)
+customizable joystick buttons can be changed and displayed!
+added joystick default buttons; saves and loads joystick buttons
+new users should no longer a black screen
+displays message when taking key for controls
+howToPlay button appears when in debug mode
+added debugfps code 'fps'
+fixed random stage out of array bounds bug
+added anyButtonState for button object; modified most menus for anyButton clicking
+default joystick button for guard is button 3
+-obj AttackBox-
+moved charging stuff from step to end step; sounds are played after charged smash coding
+added chargeAttack, chargeSpecial, chargeTimer, chargeMaxTimer, chargeFrameStart, chargeFrameEnd, damageChange, damageChangeMin, damageChangeMax variables
+endOnGround moved from Player object
+moved movementModifier=2 to a SetAttackBoxParameters default
+added endOnGroundCooldownTimer
+added theAttack.pNum=pNum into SetAttackBoxParameters script; removing theAttack.pNum=pNum from all scripts
+SetAttackBoxParameters now takes 2 arguments; 1=attackFrameStart, 2=attackFrameEnd
+2 above changes reduces a lot of lines of code
+moved instance_create into SetAttackBoxParameters reducing 1 line of code for every single attack
+-projectiles-
+renamed all sprProjectile1 to sprProjectile and character projectile sprites drop the 1 suffix
+added SetProjectileParameters script, reduces many lines of codes during projectile creation
+lateAim variable removed; lateHSpeed and lateVSpeed added
+no longer do damage when image_alpha < 0.1
+added minHSpeed variable checked in activationProjectile script
+added theHSpeedSupplement variable
+bottomWall collision places projectiles on top, fixing non bounces that terminate projectiles such as Mario's fireball
+boundary check (see if offscreen) is now in the step event from outsideRoom event
+added collision check with objTopWall
+better collision detection using xprevious and yprevious
+-challenges-
+*Added the century challenge, unlocks a player slot
+projectiles will no longer cancel each other when on the same team
+-AI-
+better at going around bottom and top walls when they are between them and their closest enemy
+will more than likely come away from horizontal offscreen instead of firing projectiles
+will no longer dodge attacks with attackFrameEnd == -1
+will no longer dodge projectiles with noDamage == true
+-stages-
+cleaned up HyruleTemple; reloaded thumbnail pic
+*Added Rooftops I created spriting over a screenshot of TMNT: Smash Up preview
+walls should push you even when you are not moving in their opposite direction
+fixed Contra Jungle sprite
+added HyruleTemple front
+added DrMario beta stage; don't you remember 'chill' or 'fever'?
+-misc-
+renamed Keyboard_Actions to Keyboard_States and Joystick_Actions to Joystick_States
+P key no longer pauses during a match, only the set pause button
+
+v0.60321
+**apologies to Naruto[NU] for forgetting to credit him for the awesome work he did on the Ness sprites**,
+added credits for Ness and Naruto; reorganized credits to match order of characters in game
+Clouds background compressed
+player slot requirements changed again
+megamushroom enabled
+Mario fireball bigger
+added noFlinchTimer where player does not get hit any distance
+added noStunTimer to player objects, now a megaMushroom property
+rewrote stageData scripts, now all info pertaining to each stage is in one script
+added morning backdrop (day is now always day)
+fixed morning backdrop bug
+*added Dark Link challenge
+-stages-
+*Added Yoshi Island3
+*Added Hyrule Temple
+
+v0.6024 (unreleased)
+-gameplay-
+added noFaceLeft for projectile objects; default false;
+positive theHSpeed is now automatically away from the player
+added maxHSpeed, maxVSpeed for projectile objects
+added controlledExplode, controlledH, controlledV, controlledSpeedInc for projectile objects
+added damageChange, damageChangeMin, damageChangeMax for projectile objects: increase/decrease projectile damage over time
+added ignoreHorizontalWalls, ignoreVerticalWalls for projectile objects
+added comboCountHitOnly where combo will not continue unless attack hits
+fixed fall through platforms, can now properly jump down when jump platforms are stacked together
+crouch time needed to jump down increased; now able to do attackDowns on jumping platforms
+projectile explode sprites will ignore walls
+when match begins, players will face middle of the room
+added helpless variables for player objects
+selfDamage and selfDamageFrame added to attack obj; Damage given to player only after attack reaches certain frame ie EWJim
+checkJump script added
+when air "helpless" will flash transparent
+tile layer -15 now moved instead of hidden
+top and bottom boundaries for players is reduced
+fixed bug with multiHSpeedSupplement[] when moving left in attack obj
+added hSpeedSupplement and hSpeedSet in attack
+added new cloud background for day
+added absorbProjectile for attack object ie Ness specialDown <<<< NOT DONE will completely heal if used on Snake's grenade
+added follow for projectile objects ie Bowser Special, Goku Special
+added reflectFrameStart and reflectFrameEnd for attack objects
+added appearOnGround for projectile object ie Kirby specialUp should only appear on ground
+added onlyAttackOnVSpeed variable for attack objects  ie Kirby and Yoshi specialDown
+added end on ground projectiles for Mario, Yoshi
+attempting to get projectile physics correct ie grenades and c4
+correct awarding the wrong winner during stock battles when someone gets a 1up bug
+projectileCount array created for 3 separate projectile counts in Player object, all player scripts modified to accomodate new variables
+AI favours high platforms less
+AI ledge recovered modified
+cpuLevel, imageBlend, hasHardAI variables now in objGUI
+-item-
+added MegaMushroom item <<<<<<<<<<<<<< not completed. does not go back to normal stats after item is used
+megamushroom disabled until i can fix its bugs
+-menu-
+hardAI properly incremented by 11 not 10
+fixed random unique character bug wouldn't generate characters in disabled slots 
+added code unlocker button in menu
+changed new player slot reward requirements
+added showLockedChars variable
+selected stage thumb will magnify, preview will fade in and out
+fixed Match result bug for stock battles, > instead of <
+in advanced options, randomPortrait displays a ? portrait
+when quitting, checks to save settings if fullscreen switch does not match fullscreen status
+randomMusic default set to false
+game priority button added
+button delay between clicks now 1 tick from 3
+cameraZooms setting correctly loads
+hardAI difficultylevel increased
+changing hardAI will set all players hardAI
+difficultyLevel 0 added, cpu will only try to recover, basically a practice mode
+added image_blend button
+-challenges-
+made much easier
+added 3 new challenges
+-stages-
+*Added Cliffs
+*Added HyruleCastle
+*Added Yoshi Island2
+*Added SaffronCity
+some stages now have Peach logo
+updated SkyWorld, diagonal part now crouch-throughable
+adjusted stages so bottoms have no missing sliver
+selected stages are magnified and drawn on top of none selected stages
+-chars-
+modified MetaKnight's stats
+all character maxRunSpeeds have been modified, comparable to Brawl
+portraits and alternate portraits changed/modified for almost all characters; got rid of white space
+*Added Peach; Peach sounds
+Bowser: unique logo, death sound
+Billy: Special knives do more dmg, and stun longer but only has 10 per life; Attack combo slightly different
+Diddy: resized boundary boxes
+CptFalcon: Falcon Punch has an effect in the background; FalconPunch now special; Shoot laser now specialSide
+Ichigo: projectile slashes go through walls; projectiles lose damage over time
+Kirby: specialDown no longer hits when on kirby is already on ground; specialUp bug fixed
+Link: boomerang range decreased, specialSmashSide throws boomerang further; bow&arrow shooting fixed
+Mario: airAttackDown creates ground projectiles on contact with ground; changed colour palette
+MegaMan: tweaked crouch and guard sprite, cleaned up stray pixel in idle sprite, fixed bounding boxes for consistency, can now charge while walking; new logo
+Naruto: specialDown spawns more clones, do less damage
+Ness: updated smash, smashUp, smashDown, airAttack, attackUp sprites; added attackSide, spark effects for PKThunder, PKFlash
+Pikachu: hitDistance for attackCombo increased, limited to 3 strikes until longer cooldown and farther hit distance
+Ryu: Received multihitting versions of moves for smash special up and down, flashes red before using these attacks; dmg values changed for specials
+Snake: Special up now has cypher graphic, cypher is now projectile after he lets go; Snake sometimes shoots a gun for attackSide;
+              smashDown plants a landmine ; specialSide phyics changed, damage increases over time
+Samus: Homing Missile SpecialSmashSide now different colour from regular missiles
+Sonic: airAttackDown attack no longer ends on ground; new attack sprites and combos; specialSide can use chargingTimer; if chargingTimer>0, specialUp different move
+Yoshi: specialDown creates ground projectiles on contact with ground, no longer hits when yoshi already on ground
+
+v0.6 (Unreleased)
+-chars-
+many chars received multiple hit sprites
+MegaMan: charged shot, hits farther; no longer auto shoots on full powered shot; 2 weaker shots disippate, strong shot does not; longer to charge
+Samus: charged shot less time to charge, damage capped at 25
+Sonic: charge special base dmg increased, hit speed increased, 8bit changed; changed walk/runspeed
+MetaKnight: sprites realigned; will travel farther when hit; smashup changed to 3 hit; moves modified; sprites realigned
+Kirby: will travel slightly farther when hit
+Earthworm Jim: new airSpecialUp; old airSpecialUp now airSpecialSide; attack has a 1 in 6 chance of having 20 ticks of cooldown
+Luigi: specialDown modified; specialUp in air vspeed decreased
+Fox: specialSide startup reduced to 2 from 10, cooldown increased to 10 from 2, endSuspendGravity and Friction
+Snake: specialSide missile dmg increased to 14 from 10; smashside dmg upped to 22 from standard smash dmg
+Mario: run sprites changed
+Link: boomerang returns sooner; smashSpecialSide throws boomerang farther/faster
+Donatello: realigned center of all attacks
+-challenges-
+all challenges made easier; earlier the easier
+before every match, all non human players are set to NA
+MAXPLAYERS constant changed to MAXHUMANS
+-items-
+chance of POWs, 1ups and 8bit timer reduced
+-misc-
+collision with top wall modified
+added isInvulnerable(pNum),playerIsInvulnerable(thePlayer),hurtSelf(pNum, dmg)
+guard break timer (time spent dizzy) is now a constant
+loopCount attacks can attack multiple times; unique identifier is reset after each loop
+guard break stun increased to 80 from 50
+suicides displayed as a purple -1 score to show difference between being killed and suicide
+-menu-
+version number now stored in save file as opposed to version.ini
+difficultylevel can now be set as low as 0
+added hardAI button for each player
+if player is using hardAI, adds 10 to difficultylevel; in debugMode, displays true difficulty setting
+changing selectHMN button will now generate a random UNIQUE character
+arrow keys selector correctly wraps around for stage and challenge selection screens
+stage preview now shows up when keyboard arrows are used
+fixed preview displaying of stages without backgrounds; added EmptyBackground.gif
+hardAI button added to advanced options
+join midgame has 3 options; off, human/cpu, cpu
+-stages-
+*Added BattleArena & Pinball
+-AI-
+add hardAI modifier for extreme AI
+tries to stop holding down special once it's held down; tries to stop jumping when unrequired
+-debug-
+tab toggles AI behaviour for human controlled players
+shift toggles hardAI
+-credits-
+added credits to the 3 stages and 2 characters
+
+v0.5754
+-items-
+added POW
+added blue POW which does damage and attack speed based on how you attack the block
+when 8bitTimer is grabbed, icon appears in the middle of the screen
+when an 8bitTimer is attacked, only you change to 8bit mode
+-attackBox
+added ignoreGuard
+added hitAll
+-misc-
+moved mouseOver sprites to image_index for all buttons, reducing number of sprites loaded
+changed playerHit() script to playerHit(argument0)
+added Pink colour for free for all
+fixed displaying HUD (now dynamic) for more than 6 players
+jump down modified; changed JumpUnderWalls bbox_bottom to 7 from 8
+fixed new challenger bugs  - thanks to ZXCVBNMASDFGHJKLQWERTYUIOP for pointing out you could join with a locked character which caused the character selection screen error
+added endSuspendGravity and endSuspendFriction during cooldownTimer of an attack ie goku will fall during cooldown
+fixed sounds, should now play from correct directory
+added hpColourDamage variable
+game should run slightly faster when not in debug mode
+added add/remove player slot buttons in character select screen
+fixed load game progress button (was saving current data over file before loading)
+mouseOver text should only appear when object is visible
+-stages-
+fixed FinalDestination background
+fixed aboveWall placements on YoshiIsland1, KingdomII, EmeraldHillZone
+-chars-
+can no longer block when in 8bit mode
+all chars with 8bit projectile attacks now correctly have .cooldownTimer instead of .cooldown; cooldownTimer=5 from 2 and cooldownTim=2 from 5
+Luigi - changed special up movement and hit
+EarthWormJim - new ground special up
+Pit - cleaned up stray purple pixels; air attacks have less cooldown times and are very fast
+CaptFalcon - falcon punch MUCH stronger (does 25-26 dmg from 12!!! didn't know it was so underpowered), takes a bit longer to connect
+Jigglypuff - Special down move starts faster, has more cooldown, earlier frames of attack
+Ryu - 8bit sprites
+Goku - 8bit sprites
+-debug-
+added debug command to add/subtract maxplayers in select character menu; will be implemented for everyone else later on
+drawcollisionboxes works for all players
+toggle tile layer now one button instead of two
+only unlocks all characters, not challenges
+
+v0.57 <--- BIG FIX
+-menu-
+individual character portraits can now be randomized between standard & alternate (portrait button in advanced menu)
+added change game progress file button
+-Select Character Screen-
+tightened up coding, can no longer change options by clicking on a token or difficulty adjuster and dragging onto a button
+added mouse overs for all buttons
+-challenges- 1 NEW
+*Added Rash challenge
+modified some stages during several challenges
+added 1 more life for the 1st stage of the metaknight challenge
+-stages- 3 NEW
+*Added Mario Bros stage
+*Added Skyworld
+*Added KingdomsII (SMB2)
+readded clouds in Mushroom Kingdom - thanks to ZXCVBNMASDFGHJKLQWERTYUIOP for pointing this out
+updated Bridge Of Eldin with an updated version. will only be available on the HQ version
+used globals so calls to procedures are run once as opposed to (in the case of stage background initialization) 3 times
+-characters- 2 NEW
+*Added Rash
+*Added Goku
+added new guard sprites for all except Pikachu, Lance (who possibly won't be able to block)
+Ness - scaled to 0.9 from 1; realigned smash sprites, replaced side smash sprite, PK Thunder strengthened,  PKThunder hitting self attack greatly strengthed; PKThunder disappears when Ness is hit
+Samus - Fully charged shot only hits one player as opposed to infinite number of players; Fully charged shot takes less time to charge MAXCHARGETIME*1.2 as opposed to MAXCHARGETIME*1.5
+Don - special up goes up, old special up is now special side
+Billy - changed crouch sprite
+Pit - arrows are now slightly controllable (but you still move); included special side (was forgotten); fallGravity reduced by 0.1; special up on ground is a high jump instead of wings
+MegaMan - changed crouch sprite; resized some bounding boxes
+Luigi - realigned special up
+Diddy - realigned some attack sprites
+Snake - added attack down and air attack up sprites; Grenade particles turn green to now the team colour as opposed to purple
+-AI-
+comp players should try to jump/special up more often, only seems to work when there are ledges <-STILL NEEDS WORK
+AI players will less likely jump down
+added block behaviour for debug mode
+-challenges-
+Pit challenge final match is in skyworld from mushroom kingdom
+-general bug fixes/misc changes-
+save/load system fixed
+added theAttack.cooldownTimer=2 for all character smash attacks and theAttack.cooldownTimer=3 for all character special attacks unless redefined in attack scripts
+added save/load system for game progress
+added Infinity to credits for CaptainFalcon
+spawning script revised; the longer a random placement of a character takes, the closer the margin becomes between other players instead of having players on top of each other
+added highRisker variable; if true, player will do more damage when hurt more;
+added destroyProjectileOnHit variable for attacks; if hit during this attack, will destroy any existing projectile
+changed all variable names with: LEFTRIGHT to SIDE and LeftRight to Side; meaning smaller file size
+*Added 1Up item, gives 1 stock or sets damage to 0 for time mode
+changed the Poison Mushroom colour from red to purple
+added two separate critical chances and damage variables for smashes and regular attacks; SHOULD HAVE EFFECT TO SHOW CRITICAL ATTACK AKA smash spark or something
+projectiles attacks that boost self aka Ness' PK Thunder can now be modified for attack speeds and damage
+fall gravity slightly decreased to 1.025 from 1.05
+camera a little less shaky
+removed the ability to fall through jump platforms when in midair
+bandaid fixed a weird bug where last saved loaded version and game version: 0.57 < 0.57 was coming up as true; converted the load version back to string and then back to a real number
+character shields are slightly more transparent 0.6 from 0.65 and fade over time to a minimum of 0.15
+during a match, portraits have a drop shadow
+isAttacking=true and visible=false now in SetAttackBoxParameters(); saving lines of coding in character scripts
+
+v0.56
+-bug fixes-
+Fixed livesRemaining bug - Thanks traiss7 and MT
+-Stage changes-
+Ninja Academy converted to a gif
+Enlarged Yoshi's Island by a little bit
+Contra Jungle modified
+Stages are now added before the start of a match, which should decrease loading times at start (splash screen) of the game (but slightly increase loading times at the start of a match); reduced the size of the exe, stages are placed in stage folder
+Stage preview is now on top of stage icons, stage background loads each time a new stage is previewed
+-AI changes-
+AI players will attack in the air more often
+lower level AI will use specials less often
+AI players will use their special up moves much less often
+-Player changes-
+*Added a separate gravity for players when they are rising (vspeed <= 0) called jumpGravity and when they are falling (vspeed > 0) called fallGravity
+Projectile explode sprites now face the correct direction; explodeRotateOnDirection variable added
+Added hop jumps (where you tap up and don't go so high)
+To pick up hearts and tomato's, now must be moving slowly (< 5 speed)
+All character projectiles not affected by gravity have their life drastically reduced
+-Character changes-
+Kirby got 8bit attack sprite
+Yoshi jumpspeeds modified
+Bowser and DK have heavier fall gravity
+Ichigo damage values tweaked
+Pit has several sprites realigned
+Ryu's special down now hits multiple times
+DK's special up now hits multiple times
+Don's down special now hits multiple times; the damage is now fixed
+Jigglypuff special side modified
+Earthworm Jim has a side special that reflects projectiles
+Ryu's fireballs now have particle trails
+Ryu got a red fireball that hits 3 times (smash side special)
+Billy Lee's projectile was modified to have a short life
+Lance Bean smash sound will not play unless he actually shoots a missile
+Added attack, smash, hit and death sounds for Billy Lee
+Added shot, hit and death sounds for Lance Bean
+Added hit and death sounds for Earthworm Jim
+Added shoryuken, hit and death sounds for Ryu; reloaded hurricane kick and hadoken sounds
+
+v0.5582
+Modified AI platform check from room_height/3 to room_height
+Fixed Bowser challenge bug
+
+v0.55
+Added character logo associated with stages
+Changed retrieving stage data methods
+Character sounds are no longer 'preloaded' on match load
+*Added Contra Jungle stage, Lylat Stage
+Metaknight challenge 3rd match size reduction is to 0.75 from 0.5
+Edited Yoshi's Island1
+Game Version is now saved separately in version.ini
+AI will now aim controlled projectiles, even when they only have 1 life
+Added 2 Challenges: King Koopa and Kid Icarus
+Ness's Air Special PKFire now goes down to the ground
+DK special down slap ground move modified
+Mario's projectile movement changed
+Moved character logos in character select screen and match results screen
+Removed templateScript and renamed EMPTYtemplateScript to templateScript
+Removed notDone script since all characters are "done"
+Removed "transparent characters are not complete" message in character select screen
+Fiddled with character sound volumes
+Contra logo updated from 'C' to 'Contra'
+Bleach logo simplifed
+Naruto logo changed to his village logo thingie
+AI chances of dodging attacks increased
+Readjusted most player's weightclasses and how far they travel when hit
+Respawned players will now go into idle stance instead of perpetual fall state sprite
+Fixed Pit's stray pixels
+ObjGUI now has a step event instead of everything in the draw event
+Star invincibility no longer induces seizures
+Match results display shows winner's logo in their team colour
+Background stretched in all menus
+Moved fullscreen button to graphics side in advanced options
+Earthworm Jim max air jump is reset back to 1 since he is much stronger now
+Jump speed increased to 16 from 15
+Invulnerable AI players (respawn, starman) no longer attempt to block or dodge attacks and projectiles
+Added Starman item
+Another attempt to fix select character bug
+*Added Lance Bean
+Lance has walk facing up and run facing up sprites
+Fixed guard recharging when holding up bug
+AI players will go after items
+Item objects have 500 screen life, up from 200
+Changed projectile creation y coordinate to be relative to size of character up to Samus
+Moved all buttons up in advanced options screen
+Added item button and item frequency in options
+Items fade out when they are about to disappear
+DK, Snake, Earthworm Jim, Ichigo do more damage to opponents
+Naruto, Kirby, Diddy Kong are hit farther by opponents
+Donkey Kong and Bowser are hit less distance
+Earthworm Jim now has his cow sound back for his special down
+Earthworm Jim, Billy, Donkey Kong and Bowser hit opponents farther
+Earthworm Jim gets 2 air jumps from 1 air jump
+Fixed projectile bug where projectiles travelling left would hit a wall, and would face the wrong direction after collision
+Link can charge arrow, similar to Pit's arrow
+*Added Pit
+Mario Special Up fixed, should now hit multiple times
+Added 8bit item and sprites
+Modified Highway stage, can now jump up through a part
+Night has oval gradient fill background
+Fixed Flatzone background, Final Destination background colour
+Added 8bit sprites for some characters
+Changed off screen destruction of projectiles to 100 for x-axis and 50 for y-axis, both from 0 + bounding box
+Changed off screen death distance to 100 from 50 pixels for x-axis, and 150 from 50 for y-axis
+Added a few frames to Donatello's idle stance
+*Added Bowser
+Added Captain Falcon sounds
+Turned off lens flare when BackgroundEffect is off, sunset background with BackgroundEffect off is not 1 solid colour
+
+v0.544
+Fixed loading bug which loaded stages onto unlocked characters
+Added Pause Button in controls
+Added Default Button in options
+Enlarged Name Display black box
+Added AI Difficulty slider in character selection
+Changed AI difficulty to be more varied . ie lower difficulty has much easier AI
+Changed display max y ?????
+Players slow down when climbing up slopes
+Changed the way progress data is saved and loaded
+Game automatically saves challenge progress at challenge results screen
+Started a How To screen (still unavailable)
+CPU attacks less
+Naruto and Snake challenges easier
+Pressing enter during a match prompts to exit instead of exiting right away
+Fixed spawn bug where wouldn't spawn on ground rather than spawn next to a person
+Added advanced graphics buttons for turning off graphics for lower end computers
+Game objects should now unload during quitting, restarting and finishing the match.
+Removed projectile explosion sound when sounds are turned off
+Added more potential player slots
+Added more teams
+All characters now have alternate portraits
+Fixed Ichigo bounding box bug, causing him to move slowly on ground
+Added Ryu sounds
+Reduced lifetime of Ness' PkFire
+Mario's rapid attack is slowed
+Slowed down Donatello's rapid attack
+Naruto is invulnerable for a short time during Special Down move
+Kirby's Air Special Left Right attack should be more precise
+Sounds loaded at a 90% volume
+
+v0.53
+Added one more CPU slot
+Added attack invulnerableFrameStart and invulnerableFrameEnd
+Increased Shield Max from 45 to 60
+During sunsets, sun slowly sets and top of the screen slowly darkens
+Ai will more likely jump up to catch up to enemies if the enemy is above them
+*Added Ninja Academy stage
+Added clouds to BridgeOfEldin
+Fixed charged projectiles bug in ai script
+Ai should avoid projectiles and attacks a bit more often
+Modified Metaknight's special moves
+Added repeated attack tapping attacks for Pikachu, Link, Kirby, Yoshi, Jim, DK, Jigglypuff, Metaknight
+Modified repeated attack tapping for Don, Samus (reaches a bit farther), Game & Watch
+Modified smash movement (move to the side just before striking) for Megaman, Kirby, Samus, Mario
+Balanced some characters
+Recoloured Naruto's smash down
+match results screen slightly modified
+Decreased kbps of sound, much less music interruptions, also has the positive side effect of reducing file sizes
+Added Metaknight challenge, who is now initially locked
+Fixed waitForProjectile bug
+Fixed up Megaman's attack frames which were wayyyy off. I possibly didn't even try to match up the attack frames with the coding before.
+
+v0.522
+Fixed background division by 0 bug
+Added Constants for Stage Backgrounds
+Fixed Advanced/Simple Options button placement
+Added maxstoryrow variable
+Fixed missing apostrophe in music.cfg file
+
+v0.52
+Added Battlefield Ver 2 song
+Clarified challenge message
+Modified several character's moves
+***Definitely got rid of the storymode character selection bug!!!!!!!
+Yoshi is now initially locked
+*Added Yoshi Madness challenge, Shadow Clone Challenge, Metal Gear Challenge
+*Added Bridge Of Eldin and Megaman Highway stages
+*Added sunset background, sun, lens flare
+Added handicap variable, starting damage percent
+Default stage background of Mushroom Kingdom, Congo Jungle and Bridge Of Eldin changed to sunset
+Camera script changed
+
+v0.51 (Unreleased)
+*Completed Naruto
+*Added Ninja Academy stage
+Challenge CPUs are on an easier difficulty
+Clicking and dragging works, draggin and dropping from a character however does not and requires another click
+Fixed Don's Special Down animation
+Lengthed Player Card name slot rectangle thing
+Changed projectile theVSpeed so it is no longer inverted
+Added slideFriction
+Fixed Challenge Mode stock/time bug
+*Deleted Batman, not enough animations; replacing with Naruto
+Added simple options
+Fixed attacking bug. They should now attack more rather than use specials
+Added random music button in stage select screen
+Fall animations will start later so characters don't look like they're falling down slopes
+Fixed up Congo Jungle Front
+*Finished DK
+Added more frames to character idle stances
+Animated idle stances in Character Selection Screen
+Added sounds for Donatello and Earthworm Jim
+Fixed Donatello's side smash animation
+Fixed poor spawning bug
+Fixed Ichigo Ledge bounding box
+
+v0.50
+Fixed spawning bug
+Added Diddy Kong Challenge, Diddy Kong is now initially locked
+Changed "story mode" to "challenge mode" since there's absolutely no story
+*Added Congo Jungle stage
+Turned off sounds that played when sound was off
+*Added Ichigo (unlock him by unlocking everyone else)
+AI should try a bit harder to get back to ledges now
+v0.49 (Unreleased)
+Fixed incorrect portraits in story mode
+Added Camera Zoom button
+Fixed backgroundMusic variable does not exist bug
+*Added Snake
+Changed Starfox's name to Fox McCloud
+Donatello's attacks are modified to work more like Turtles In Time
+
+v0.48
+Fixed effects not clearing on room exit bug
+Fixed Mario attack down animSpeed bug
+Fixed projectile bug where they would not collide correctly
+Fixed projectile bug where they would fade in an incorrect position
+Added charging effects for Samus, Megaman, Sonic and Diddy
+Fixed projectile appearance bug.. when changed, image_speed of player could throw off equality of current frame of appearance
+AI should now charge up moves that can be charged up
+Added Samus' charged shot, Megaman's pea shooter, Samus' guided missile
+v0.47(Unreleased)
+Added more sounds, Megaman gets some loving
+In the menu screens, occasionally logos fade in and out of view
+Further improved platform collision
+Bolded health font
+Health text changes slowly to red the more damage you receive (LIKE BRAWLLLL)
+Removed obsolete getSprite()
+
+v0.46
+Added random music button so if you play on one stage several times, you won't get sick of the music
+Added Diddy and Luigi sounds
+All sounds load before the match starts instead of being loaded real time, music no longer cuts out, smoother gameplay for a slight loading time before the match begins
+Player 4 joystick works
+
+v0.45
+Added Ness' Smash PIIING (which I ripped myself), changed Luigi's Special Up sound to the same as Marios
+Effects no longer disappear on small stages (took me HOURS to iron out this bug)
+Adjusted camera script for small stages
+Fixed up Flatzone for camera script update
+Misc bug fixing
+Player names will now be loaded and saved correctly
+
+v0.44
+Fixed multihitting (FINALLY!!)
+Added death sounds
+Created credits.txt file
+Changed smash speed values
+Added select char msg in select character screen
+Added pan sound button and select char msg buttons to options
+Recycled some sounds
+Added some hit sounds
+Fixed Ness' Pkthunder angle
+
+v0.43
+Created this version.txt history file
+Sounds pan according to location in room, will be changable next update
+Fixed reflect projectile bug
+Added menu music
+*ADDED Diddy Kong, Jigglypuff
+Created a version history text file
+Fixed Mario jump sound timing
+Added Captain Falcon's crouch sprite
+Added Smash hit sparks and button in options to turn them off
+
+v0.42
+Changed the way characters can fall during an attack
+Modified some moves of: Sonic, Yoshi, Kirby, Billy
+Added more sounds Mario, Yoshi
+If a name is saved, loading the settings will no longer crash the game
+Change progress bar
+Fixed some constant redundancies bugs
+Fixed team button and NA/CPU/Human button bug, token bug (hopefully)
+
+v0.39
+Fixed falling sprite before match starts bug
+Edited some Sonic moves,
+Added Sonic sounds
+Added music, which can be customized in Music.cfg
+Tightened up platform collision script
+Changed "Profile" to "Controls"
+
+v0.38
+Added 4 player button configuration!!!
+
+v0.36
+Added more sounds
+Added spring object (Thanks whoever mentioned this, I'll add your name later)
+
+v0.353
+*Added EmeraldHillZone stage (Sonic)
+fixed Earthbound Story bug, edited some of pikachu's moves
+added more keys for configuration (, . / ; ' [ ] \ - = ` will no longer appear as blanks in the profile screen)
+initial spawning of players with now usually be spread out (80 pixel margin between players)
+fixed up deflecting of projectiles when guarding, as well as reflecting with Fox or Mario
+added guardcrush effects (when guarding expires)
+added some sounds
+
+v0.35
+*Added Corneria stage (Starfox)
+Added guarding
+
+v0.34
+*Added Starfox (initially locked)
+*Added Starfox storyline
+Added Kirby's Special Up move
+Added Kirby's Hammer move while on ground
+modified story screen
+standardized attack animations (making adding characters easier for me, meaning faster new characters for everyone!)
+standardized hit speeds
+
+v0.33
+*Added first unlockable character
+*Luigi is now modified unlockable character, bringing the grand total to 2 unlockable characters
+*Added Mushroom Kingdom stage
+mouseover fading fixed
+Added choose story screen
+
+v0.32
+Only asks to save on exit
+Added high definition logos
+Added alternate portraits for some characters
+Added alternate portrait button in Options
+Changed Earthworm Jim's Special Down move
+Updated Luigi, Captain Falcon Attacks
+Updated AI
+
+v0.31
+Finished Luigi
+Added Pikachu Ledge Grab sprite
+Added default button for keyboard configurations
+
+v0.30
+Profile screen added
+User is able to configure P1 and P2 keyboard buttons
+
+v0.29
+Finished Pikachu
+Updated Yoshi
+default stage background is now random
+Added friendly fire to options
+Only asks for saving settings if settings have changed
+
+v0.28
+Random button now will produce unique characters, right clicking will use old non-unique character generation
+Stage background can now be day or night, or random, or stage default
+Added Options Menu
+Added saving and loading settings
+
+v0.27
+*Finished (mostly) Yoshi
+Projectiles shouldn't get stuck anymore
+Modified air friction, less slipping around
+ai favours higher platforms
+
+v0.26
+*Added Dreamland, FinalDestination, PeachCastle2
+Raised MushroomTops so the action takes place in the middle of the room, added beanstalk clouds!!!
+Added Smash Spark
+
+v0.253
+*Added Flatzone stage
+Fixed theMoon bug, thx supercrusher777444
+
+v0.252
+*Added Yoshi Island 1 stage
+*Added Mushroom Tops stage
+
+v0.251
+Added some Pikachu specials
+Added Yoshi egg throw
+Moved Onett walls
+
+v0.25 <--- BIG FIX
+*Added Fourside stage
+Fixed assists
+Fixed ryu's fireball sprite
+Mr Game&Watch Special Up emergency crew effect disappears instead of fading
+Added random character button
+Added mouseover text to buttons
+Fixed underlying code (i forgot exactly what)
+	Modified damage values to reflect closer to real game
+	Hit players now properly show hit sprite
+	Prelaunched projectiles are destroyed if player is hit before launch of said projectile
+	Changed block objects to wall objects
+	Wall objects works correctly (cannot stand on side walls)
+	Players in hit state cannot grab ledges
+Fixed turning in midair speeds
+
+v0.23
+*Added Ryu and an incomplete Batman
+Unlocked 5 players for debug purposes (will allow unlocking up to 8 players in final version)
+removed attackTimer variable
+removed preloading for all sprite stances except idle stance
+
+v0.21
+*Added Earthworm Jim & completed MetaKnight
+
+v0.20
+*Added Captain Falcon & Billy Lee
+Right clicking on selectHUMAN no longer randomizes computer character
+
+v0.191
+*Added Mr.Game&Watch
+*Added Onett
+
+v0.??
+*Added Stage Selection Screen
+*Added PeachCastle1
+*Added Sonic, MegaMan
+changed name of game to Smash Bros. Rumble and created logo
+*Added Main Menu
+*Added Donatello
+*Added Samus
+Added Luigi, DK, Yoshi (all incompleted at this point)
+*Added Character Selection Screen
+Added Camera Script
+Added multihitting
+*Added Link
+*Added Mario
+Added Test Level
+
+*Game created May 29, 2008, 4:59:45 AM, temporarily titled "Smash"

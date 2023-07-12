@@ -1,0 +1,87 @@
+[Smash Bros Rumble - Character Definition]
+name=Lance Bean
+path=.\Chars\Lance\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+1 0 1 0 1 14 46
+{2 5 28 45}
+StockIcon
+1 0 1 0 0 11 15
+{0 0 25 29}
+8BitIdle
+1 0 1 0 0 11 35
+{2 2 20 34}
+8BitWalk
+6 0 1 0 0 15 39
+{5 4 24 38}
+8BitAttack
+3 0 1 0 0 12 39
+{3 4 22 38}
+8BitProjectile
+1 0 1 0 0 2 2
+{0 0 5 5}
+Hit
+1 0 1 0 0 17 46
+{3 7 28 45}
+Guard
+1 0 1 0 1 14 46
+{2 5 28 45}
+Crouch
+1 0 1 0 0 25 47
+{1 31 45 46}
+WalkUp
+5 0 1 0 0 16 49
+{3 5 28 48}
+Run
+6 0 1 0 0 16 45
+{3 5 28 44}
+SlideTurn
+1 0 1 0 1 14 46
+{2 5 28 45}
+Jump
+1 0 1 0 0 13 42
+{1 1 27 41}
+Jump2
+7 0 1 0 0 14 42
+{2 1 28 36}
+Fall
+1 0 1 0 0 13 43
+{1 2 27 42}
+LedgeGrab
+1 0 1 0 0 11 47
+{0 4 25 46}
+Attack
+3 0 1 0 0 15 46
+{3 5 28 45}
+Attack2
+3 0 1 0 0 13 50
+{3 11 27 57}
+AttackUp
+3 0 1 0 0 17 58
+{3 15 28 57}
+AttackDown
+3 0 1 0 0 25 47
+{1 31 45 46}
+AirAttack
+3 0 1 0 0 11 43
+{-2 1 24 42}
+AirAttackUp
+3 0 1 0 0 17 55
+{2 12 30 54}
+AirAttackDown
+3 0 1 0 0 12 43
+{2 1 22 42}
+Projectile
+1 1 1 0 0 4 4
+{0 0 7 7}
+Projectile2
+1 0 1 0 0 10 2
+{0 0 24 4}
+Projectile3
+4 1 1 0 0 12 7
+{5 3 18 12}

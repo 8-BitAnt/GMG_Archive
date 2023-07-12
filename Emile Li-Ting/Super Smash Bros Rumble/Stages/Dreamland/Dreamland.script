@@ -1,0 +1,171 @@
+var i, j, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    shadowLength=0.2
+
+    sprFace=sprite_add(global.homeDir+"\Stages\Dreamland\Face.png",23,0,1,0,0,13,23)
+    sprite_set_bbox_mode(sprFace,0)
+    sprFace3=sprite_add(global.homeDir+"\Stages\Dreamland\Face3.png",2,0,1,0,0,13,23)
+    sprite_set_bbox_mode(sprFace3,0)
+    sprFace4=sprite_add(global.homeDir+"\Stages\Dreamland\Face4.png",2,0,1,0,0,13,23)
+    sprite_set_bbox_mode(sprFace4,0)
+    sprLeaf=sprite_add(global.homeDir+"\Stages\Dreamland\Leaf.png",8,0,1,0,0,13,13)
+    sprite_set_bbox_mode(sprLeaf,0)
+    sprLeaf2=sprite_add(global.homeDir+"\Stages\Dreamland\Leaf2.png",8,0,1,0,0,13,13)
+    sprite_set_bbox_mode(sprLeaf2,0)
+
+    blowRight=INVALID
+    blowDown=INVALID
+    blowTimer=0
+    blowXSpeed=random(3.5)+0.5
+    blowYSpeed=random(3.5)+0.5
+
+    leafTimer=0
+
+    theFace=instance_create(530,430,Effect)
+    theFace.sprite_index=sprFace
+    theFace.noDeath=true
+    theFace.image_speed=random(0.5)+0.2
+    theFace.depth=25
+    theFace.image_xscale=choose(-1,1)
+    
+
+}else if (type == STEP) && (global.roundStart){
+    if (blowRight==INVALID){
+        theFace.sprite_index=sprFace
+        if (random(300)<1){
+            blowRight=choose(0,1)
+            blowTimer=random(200)+100
+            blowXSpeed=random(3.75)+0.5
+//            blowYSpeed=random(3.5)+0.5
+            leafTimer=0
+            if (blowRight==0){
+                blowXMin=250
+                blowXMax=515 //room_width/2
+                theFace.image_xscale=-1
+                if (blowXSpeed>3.5){
+                    theFace.sprite_index=sprFace4
+                }else{
+                    theFace.sprite_index=sprFace3
+                }
+            }else if (blowRight==1){
+                blowXMin=540 //room_width/2
+                blowXMax=778
+                theFace.image_xscale=1
+                if (blowXSpeed>3.25){
+                    theFace.sprite_index=sprFace4
+                }else{
+                    theFace.sprite_index=sprFace3
+                }
+            }
+            blowYMin=250
+            blowYMax=474
+        }
+    }else if (blowRight==0){
+        if (theFace.x>515){
+            theFace.x-=1
+        }
+    }else if (blowRight==1){
+        if (theFace.x<540){
+            theFace.x+=1
+        }
+    }
+    if (blowTimer > 0){
+        if (global.backgroundEffect){
+            if (leafTimer == 0){
+//            if (random(18)<1){
+                j=room_width/2 //535
+                if (blowRight==0){
+                    j=other.theFace.x
+                    j-=random(50)
+                }else if (blowRight==1){
+                    j=other.theFace.x
+                    j+=random(50)
+                }
+                //leaves
+                i=instance_create(j,390+choose(-1,1)*random(50),Effect)
+                i.rotate=choose(0,0,1)
+                i.rotationSpeed=choose(1,-1)*(random(10+abs(blowXSpeed))+abs(blowXSpeed/2))
+                i.sprite_index=choose(sprLeaf,sprLeaf2)
+                i.image_speed=random(0.5)+0.01
+                i.freezeOnLastFrame=true
+                i.depth=24
+                i.hspeed=max(0,blowXSpeed-0.5)+random(2)
+                if (blowRight==0){
+                    i.hspeed*=-1
+                }
+                i.image_xscale=random(0.8)+0.5
+                i.image_yscale=i.image_xscale
+                i.fadeOut=true
+                i.deathTimerMax=100+random(40)
+                i.image_angle=random(360)
+                if (blowDown == INVALID){
+                    i.vspeed=choose(1,-1)*random(1.75)
+                }
+                leafTimer=floor(random(5))+10
+            }else if (leafTimer>0){
+                leafTimer-=1
+            }
+        }
+
+        for (i=0; i<3; i+=1){
+            global.theArgument0=false
+            if (i==0){
+                j=_PlayerParent
+                global.theArgument0=true
+            }else if (i==1){
+                j=objItem
+            }else if (i==2){
+                j=objProjectile
+            }
+            with (j){
+                var k,m,a,b;
+                k=objGUI
+                if (global.theArgument0){
+                    if (ledgeGrab){//don't blow players grabbing on ledges
+                        break;
+                    }
+                }
+                a=k.blowXMin
+                b=k.blowXMax
+                if (k.blowRight==1){
+                    a=other.theFace.x
+                }else if (k.blowRight==0){
+                    b=other.theFace.x
+                }
+                if (x>=a) && (x<=b) && (y<=k.blowYMax) && (y>=k.blowYMin){
+                    m=abs(a-b)
+                    if (k.blowRight==1){
+                        x+=k.blowXSpeed*(m-(distance_to_point(other.theFace.x,y)))/m
+                    }else if (k.blowRight==0){
+                        x-=k.blowXSpeed*(m-(distance_to_point(other.theFace.x,y)))/m
+                    }
+                    /*
+                    if (k.blowDown==1){
+                        y+=k.blowYSpeed
+                    }else if (k.blowDown==0){
+                        y-=k.blowYSpeed
+                    }
+                    */
+                }
+            }
+        }
+        blowTimer-=1
+        if (blowTimer == 0){
+            theFace.image_speed=random(0.5)+0.2
+        }
+        if (blowTimer <= 20){
+            theFace.sprite_index=sprFace
+        }
+    }else{
+        blowRight=INVALID
+    }
+}else if (type == UNLOAD){
+    if (sprite_exists(sprFace)){ sprite_delete(sprFace) }
+    if (sprite_exists(sprFace3)){ sprite_delete(sprFace3) }
+    if (sprite_exists(sprFace4)){ sprite_delete(sprFace4) }
+    if (sprite_exists(sprLeaf)){ sprite_delete(sprLeaf) }
+    if (sprite_exists(sprLeaf2)){ sprite_delete(sprLeaf2) }
+}

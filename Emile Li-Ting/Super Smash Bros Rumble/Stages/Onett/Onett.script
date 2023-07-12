@@ -1,0 +1,113 @@
+var i, j, k, l, type;
+
+type=global.theArgument0; //PRELOAD=0; STEP=1; UNLOAD=2
+
+if (type == PRELOAD){
+    sprCar=sprite_add(global.homeDir+"\Stages\Onett\Car.png",3,0,1,0,0,38,40)
+    sprite_set_bbox_mode(sprCar,2)
+    sprite_set_bbox(sprCar,0,0,88,40)
+
+    sprTaxi=sprite_add(global.homeDir+"\Stages\Onett\Taxi.png",3,0,1,0,0,37,44)
+    sprite_set_bbox_mode(sprTaxi,2)
+    sprite_set_bbox(sprTaxi,0,0,87,44)
+
+    sprRunAwayR=sprite_add(global.homeDir+"\Stages\Onett\RunAwayR.png",3,0,1,0,0,32,48)
+    sprite_set_bbox_mode(sprRunAwayR,2)
+    sprite_set_bbox(sprRunAwayR,0,0,75,48)
+
+    sprRunAwayL=sprite_add(global.homeDir+"\Stages\Onett\RunAwayL.png",3,0,1,0,0,38,48)
+    sprite_set_bbox_mode(sprRunAwayL,2)
+    sprite_set_bbox(sprRunAwayL,0,0,75,48)
+
+    sprRoad=sprite_add(global.homeDir+"\Stages\Onett\Road.png",1,0,0,0,0,249,13)
+    sprite_set_bbox_mode(sprRoad,0)
+
+    sprWarning=sprite_add(global.homeDir+"\Stages\Onett\Warning.png",1,0,1,0,0,22,15)
+    sprite_set_bbox_mode(sprWarning,0)
+
+    i=instance_create(732,504,Effect)
+    i.sprite_index=sprRoad
+    i.noDeath=true
+    i.noDecay=true
+    
+    i=instance_create(236,504,Effect)
+    i.sprite_index=sprRoad
+    i.noDeath=true
+    i.noDecay=true
+
+}else if (type == STEP) && (global.roundStart){
+    if (theCurrentBackground=MORNING)    { k=80  }//40
+    else if (theCurrentBackground=DAY)   { k=200 }
+    else if (theCurrentBackground=SUNSET){ k=110 }
+    else if (theCurrentBackground=NIGHT) { k=350 }
+    
+    if (random(k)<1){
+        k=choose(0,1)//0=going left; 1=going right
+        j=-100
+        l=random(5)
+        if (k){
+            i=instance_create(j,508+l,objProjectile)
+            i.depth-=10+l+5
+            l=instance_create(40,500,ImageEffect)
+        }else{
+            i=instance_create(room_width-j,497+l,objProjectile)
+            i.depth-=9+l
+            l=instance_create(view_wport[0]-40,500,ImageEffect)
+        }
+        l.sprite_index=sprWarning
+        l.setProjection=true
+        l.fadeOut=true
+        l.deathTimerMax=30
+        l.image_xscale=2
+        l.image_yscale=2
+        l.destroyOutsideRoom=false
+        l.depth=depth-1
+
+        i.sprite_index=choose(sprTaxi,sprCar,sprRunAwayR)
+        i.attackPower=25
+        i.stunningPower=15
+        i.ignoreWalls=true
+        if (i.sprite_index == sprTaxi){
+            i.theHSpeed=19
+            i.hAttackSpeed=5
+            i.vAttackSpeed=5
+            i.hSpeedMin=20
+            i.vSpeedMin=15
+        }else if (i.sprite_index == sprCar){
+            i.theHSpeed=15
+            i.hAttackSpeed=-5
+            i.vAttackSpeed=5
+            i.hSpeedMin=-60
+            i.vSpeedMin=15
+        }else{
+            i.theHSpeed=23
+            i.attackPower=30
+            i.vAttackSpeed=10
+            i.vSpeedMin=25
+        }
+        i.maxHSpeed=i.theHSpeed
+        i.appearanceFrame=INVALID
+        i.activated=true
+        i.warmupTimer=25
+        i.deathTimerMax=80
+        i.unreflectable=true
+        i.hitMax=INVALID
+        i.bounceMax=INVALID
+        i.pNum=-2 //stage projectile
+        if (!k){
+            if (i.sprite_index=sprRunAwayR){
+                i.sprite_index=sprRunAwayL
+            }else{
+                i.image_xscale*=-1
+            }
+            i.theHSpeed*=-1
+        }
+    }
+}else if (type == UNLOAD){
+    if (sprite_exists(sprTaxi)){ sprite_delete(sprTaxi) }
+    if (sprite_exists(sprCar)){ sprite_delete(sprCar) }
+    if (sprite_exists(sprRunAwayR)){ sprite_delete(sprRunAwayR) }
+    if (sprite_exists(sprRunAwayL)){ sprite_delete(sprRunAwayL) }
+    if (sprite_exists(sprRoad)){ sprite_delete(sprRoad) }
+    if (sprite_exists(sprWarning)){ sprite_delete(sprWarning) }
+}

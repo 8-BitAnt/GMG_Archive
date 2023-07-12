@@ -1,0 +1,11 @@
+Eye-Attack
+
+Use the arrow keys to roll around
+Use the S key to jump
+Use the A key to attack when you have a power up
+Press Enter to pause the game
+Pres ESC to exit the level or game
+
+To be able to save you must put both of these files in the same folder
+
+hope you enjoy

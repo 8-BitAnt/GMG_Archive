@@ -1,0 +1,184 @@
+///////////////////////////////////////////////////////////////////////////
+/RRRRRK K    K    RRR         RRR R       RRRA   K    R    K   ARRR RRRA  /
+/  g    g   Rg Agg         Agg    g     ggA     KgH  RgNgggg RgN    g  NgH/ 
+/  g    gRRRNg gNRRRR      gR     g    qgRRRRA  g g  Rg   Rg gRRRRR gRRRRg/ 
+/  g    g   Rg gR          gR     g    qq      qH Hg Rg   Rg g      g  NgH/ 
+/  KggARg   Rg KggA        KggA   g    AggK   AgggggRRg   Rg Hgq    g    g/ 
+/     K K    K    RRR         RRR RRRRA   RRRAAA    A K    K   ARRRIR    R/ 
+///////////////////////////////////////////////////////////////////////////
+/////////////////////The Cleaner v 1.0/////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////Created  by  Robert  Lupinek  AKA//Darthlupi////////////
+///////////////////Music  by  Chris  Roper  AKA  PugFugly//////////////////
+///////////////////////////////////////////////////////////////////////////
+/////////////////////////http://darthlupi.com//////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+BEFORE PLAYING OR READING ANY FURTHER EXTRACT THE CONTENTS OF THIS 
+ZIP FILE TO A DIRECTORY ON YOUR COMPUTER.
+
+PRESS ESCAPE TO EXIT CUTSCENES!!!! PEOPLE PLEASE DON'T COMPLAIN
+ABOUT NOT BEING ABLE TO EXIT CUTSCENES!!!
+
+1. Game Play Instructions
+2. System Requirments
+3. Trouble Shooting
+
+////////////////////////////
+/1. Game Play Instructions/
+//////////////////////////
+
+/////////
+I. Intro
+////////
+
+The Cleaner is platformer shooter with many puzzles and stats to build.  
+You will collect points to spend on new weapons and stats that would be able 
+to use to help complete your quest.  Here is a quick rundow of the input keys you 
+need in order to complete the game.
+
+////////////////////////
+II. Movement
+///////////////////////
+
+a. Moving the character: 
+
+The Left, Right, Up, and Down keys move your player,
+as do the W, A, S, and D keys.
+
+b. Jumping:
+
+To jump use the Up or the W key.
+
+c. Flying:
+
+Once you are in the air VIA a jump or a fall, press the UP or W key.
+
+///////////////////////////
+III. Combat
+//////////////////////////
+
+Spells are your main weapon.  Each spell requires mana to be cast.
+If you run out of mana will not be able to attack.
+
+You also have the ability to smash enemies with objects using the 
+Telekinesis ability.
+
+a. Mana: 
+You mana bar is the red bar located in the upper left hand corner of the screen.
+Once this bar depletes, you will no longer be able to use spells.
+
+NOTE: Mana regenerates faster when you are walking, and you can adjust your
+regeration rate in the Stats Menu.
+
+b. Shooting a spell:
+This done with the Left Mouse Button.
+NOTE: Some spells require you to hold the Left Mouse button down.
+
+c. Telekinesis: 
+When ever you cursor turns blue you can press and HOLD the Right Mouse
+button to pick up the object.  You then have use the mouse cursor to aim the object.
+
+d. Shields:
+The upper left hand corner of the screen will have a blue bar.  This bar represents
+the amount of shield energy you have.  When this runs out and you are hit, you will die.
+You can regain your shield enegry by completing a level, collecting it around the game,
+or by finding the Shield Relic.
+
+//////////////////////
+/IV. Stats and Spell/
+////////////////////
+
+To enter the Spells and stats Screen PRESS THE M KEY!
+
+Virtually every skill and ability of the player is upgradable.
+You can also customize your spells.  Here is how.
+
+/////////
+I. Stats
+////////
+
+To purchase a Stat, you must have the require EP.  
+Left Mouse Click the Stat to purchase it.
+NOTE: There is no refund for stats purchased.  They become part of you.
+
+a. Mana:
+This is the total mana capacity.  This is your ammo load.
+
+b. Mana Regeneration:
+This is the rate at which your mana comes back.
+
+c. Shields:
+This stat is the amount of damage you can take.
+
+e. Flight Speed:
+The higher this stat, the quicker you move.
+NOTE: Your flight speed upgrades slowly, but it is very helpful still.
+
+f. Relics:
+You will find pieces of relics during your adventure.
+What a completed relic does is up to you to find.
+
+///////////
+II. Spells
+//////////
+
+I will not explain the spells, but I will explain the system.
+Spell are heavily explained in the game.
+
+a. Purchasing a spell:
+A spell has an EP cost.  You will need that amount of EP in order to purchase
+the spell.  As you upgrade a spell (each spell has three upgrades) it will
+become more expensive AND powerful.
+
+This is done with a Left Mouse Click.
+
+b. Refunding a spell:
+
+To get your EP back for a purchased spell, Right Mouse Click the spell.
+NOTE: You cannot refund a Stat, so be careful with refunded points!
+
+//////////
+/V. Other
+/////////
+
+Press the ESCAPE KEY to get to the exit menu to load, resume, or exit the game.
+Press the ESCAPE KEY to exit the CUTSCENES.
+
+
+
+/////////////////////////
+/2. System Requirements/
+///////////////////////
+
+/////////////
+I. Required:
+/////////////
+
+DirectX 8 or higher
+Window Operating System
+Direct3d capable Video Card
+640x480 video resolution
+
+/////////////////
+II. Recommended:
+/////////////////
+
+P4 1.0 Ghz Processor
+256 Mb of RAM
+32 Mb Video Card
+
+
+////////////////////
+//Trouble Shooting/
+//////////////////
+
+Verify that meet the requirements and the recommended requirements.
+If you are still having issues try the following.
+
+a. Shut down all other applications.
+b. Reboot the machine.
+c. Go into your display properties and set Color Depth to 16.
+d. Do a rain dance.
+
+For all problems post a reply at the games forum at http://darthlupi.com/forums/

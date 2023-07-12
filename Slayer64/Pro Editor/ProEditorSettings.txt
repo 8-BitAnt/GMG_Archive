@@ -1,0 +1,11 @@
+ 60
+ 800
+ 600
+ 1
+ 1
+ 1
+ 16
+C:\Users\rene\Desktop\proEditor\resources.txt
+C:\Users\rene\Desktop\proEditor\code2.txt
+C:\Users\rene\Desktop\proEditor\image.png
+C:\Users\rene\Desktop\proEditor\model.d3d

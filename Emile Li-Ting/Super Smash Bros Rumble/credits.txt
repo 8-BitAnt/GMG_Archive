@@ -1,0 +1,211 @@
+>>>Smash Bros Rumble Credits<<<
+
+http://www.yoyogames.com/games/show/43778
+
+MAJOR CREDIT GOES TO NINTENDO for the creation of the Smash Bros series
+All characters are the property of their respective companies, whomever they may be, including:
+Nintendo
+Sega
+Shiny Entertainment
+Konami
+Capcom
+HAL Laboratory / Sora Ltd.
+Tecmo
+Square Enix / Disney
+
+Mark Overmars for Game Maker
+
+Created by Emile Li-Ting using Game Maker 7.0 Pro. All coding completed by myself unless indicated.
+http://www.yoyogames.com/members/supermariokartracers
+
+
+
+
+-----Bug Reporting & New Ideas/Concepts-----
+ZXCVBNMASDFGHJKLQWERTYUIOP - outstanding job!
+tot92/theCowLaunchingCrusader (TCLC) - excellent ideas!
+NarblootoMaster666
+MortalKombatDude
+KingofLosers
+Alan Nunes
+
+
+-----Character Sprites-----
+(most characters contain some minor editing by myself to suit what i wanted,
+so they may not be exactly what the original creators/editors have)
+group collaborators/edits are separated by commas, separate spritesheets are separated by semi-colons;
+**NO GAME WOULD BE COMPLETE WITHOUT THE GREAT WORK OF GRAPHIC ARTISTS and in most of these cases, SPRITE RIPPERS**
+
+Mario - Gorsal v.2.2; The Night Mocker; Artie; Rapid The Hedgehog; Torkirby; Kevin Huff; Spritanium, MarioKing64; Sludge;
+Luigi - Gorsal v.2.2; Artie; Randy Solem, ChaoticTH, Semi juggalo; the shirt ninja; MarioKing64;
+Link - GregarLink10; Previous (from TSR)
+Samus Aran - SemiJuggalo; Tommy Lee; Rogultgot; Bean; zerofighter & rocktyt;
+Kirby - Drshnaps; Random Talking Bush
+Donkey Kong - Frario; Grim of UNP, LittleSpriter(LS); Zeon; 
+Yoshi - Drshnaps, ZinDinTimeYUM; Semi-Juggalo, ChaoticTH; Apple Kid;
+Captain Falcon - Infinity's End, CheddarX;
+Pikachu - SemiJuggalo; tot92;
+Fox - Sploder, CheDDar-X, ziku, Neox (all of which are full of win);
+Ness - Naruto[NU]; Mike W;
+Lucas - Naruto[NU]
+Jigglypuff - Sponge, Cybershadow & Pik, Neopolis, Pixeltendo & tSR;
+Peach - DuelEdge; Robert L. Lynch
+Bowser - BooMansion; ??; Ragey, CheDDar-X, Nf, Naruto[NU]; Mageker for Chomp Shark
+MrGame&Watch - King Kirby; SmithyGCN; Arthur Butcher;
+Sonic - Glukom; Ren "Foxx" Ramos; Nate the Hedgehog; SupaChao; Daniel Sidney; DuelEdge; Black Squirrel;
+MetaKnight - Drshnaps; Kevin Huff;
+Diddy Kong - Frario, NintendoFlash, CheDDar-X;
+Pit - Mind, GergorLink10, NintendoFlash, CyberSonik;
+Solid Snake - ?UNKNOWN?, Idle sprite from Omega X rip by Knuckio the Chameleon, Des, Ton2k; http://www.spriters-resource.com/custom_edited/metalgearsolid/sheet/16615
+MegaMan - Bonzai; Polar Koala; http://anime.wikia.com/wiki/Category:FS
+Leonardo - Silverbolt; Sponge Pore; Remix
+Donatello - Silverbolt; Sponge Pore; ReMix
+Raphael - Silverbolt; Sponge Pore; Remix
+Michelangelo - Silverbolt; Sponge Pore; Remix
+Earthworm Jim - Grim; Snake9251; SonicFreak; tot92; ness;
+Billy Lee - Kevin Huff
+Rash - bWWd; the shirt ninja; Ryan914
+Zitz - bWWd; the shirt ninja; Jurae818; tot92
+Pimple - bWWd; the shirt ninja; tot92, Hologram
+Son Goku - Alejo; Nightmare; Bonzai, Grim
+Naruto - Nightmare; Neimad; www.oneinchpunch.net
+Ichigo Kurosaki - Dazz & Fret; Grim; Neimad; www.drawingnow.com
+Lance Bean - Nny555; Belial The Hedgehog; Locke_gb7;
+Ryu - Grim; Ragey
+Ryu Hayabusa - Zephr_light; Lord Zymeth
+Sora - Nemu, Mike the Vampire, Shayde; Brave_Shyguy, TwilightGuard, OmegaHeartless
+Simon Belmont - NIK; www.finaldestinationpixelation.com; Lord Zemeth
+Tails - Ren "Foxx Ramos, neo_foxx000@yahoo.com; Digi-Ex, pcgamemod.tk; Daniel Sidney, Dan_Sidney@hotmail.com; Grim, http://sd&neuropod.net; Cecil, Snowflake; Flacko The Funky Drawing Weasel
+Pichu - joejoe; Veemonsito
+
+-----Stages-----
+PeachCastle1 - ssbkid
+Dreamland - Jack
+Corneria - StoatTamer
+HyruleCastle - StoatTamer, Sir Brownie, E. Laimo, and Cheddar-X;
+CongoJungle - StoatTamer
+Yoshi's Island2 - ssbkid
+Saffron City - suiken 2mieu; NintendoFlash, Mii, ElvisDitto, and maxmatsu
+Planet Zebes - clipped out by me, jpg screenshot from www.nintendoclub.it
+
+Onett - Naruto[NU]
+Yoshi's Island1 - Young Link
+Flatzone - ?? - Spriter's Resource
+FinalDestination - MarioMK1
+PeachCastle2 - Koopaul, Bacon; Scott
+HyruleTemple - CheDDar-X, sirBrownie, E. Lamio
+
+Bridge Of Eldin - WillBillXP
+Lylat Sector Z - StoatTamer
+Fourside - Tonberry2K
+MarioBros - Solink
+SkyWorld - WillBillXP
+KingdomII - Tonberry2K
+Yoshi's Island3 - WillBillXP
+Norfair - clipped out by me, jpg screenshot from www.nintendoclub.it
+
+EmeraldHillZone - ripped by Ultragm2003, assembled by me;
+MushroomTops - ripped by A.J. Nitro, assembled by me;
+MushroomKingdom - ripped by AJ Nitro, assembled by me;
+Cliffs - ripped by RyuMaster, assembled by me;
+Highway - ripped by Zeric, assembled by me;
+Rooftops - created me, several small parts ripped by Will Mallia (Turtles In Time objects);
+Ninja Academy - >>>DoB<<<
+ContraJungle - RT-55J, assembled by me;
+New Junk City - ripped by SmithyGCN, tot92@aol.com for stage ideas, assembled by me;
+DrMarioJar - viruses from www.mariomayhem.com
+Village - Geckosan, Konami;
+Ryu Temple - Will Mallia
+
+-----Super Smash Bros Brawl Stock Icons & Portraits-----
+Gary Kertopermono - Multiverse Works
+
+-----Items-----
+Smash Ball - Mr. Listen, double sized and edited by me
+- ZinDinTimeYUM
+
+-----Menu-----
+Logo - ??
+character selection cards - Flare
+hand cursor sprites - Colton
+message button - edited from Crystalline theme by Dustin B. (krez)
+
+-----Heavy Sprite Editing by myself-----
+Samus
+Ryu
+Kirby - most of the hats
+Yoshi attacks
+Yoshi's Egg - cleaned up
+Naruto - converted a couple NarutoPt2 to NarutoPt1
+Hyrule Temple - upsizing
+the Smash Ball - upsizing
+
+-----Sounds-----
+SSBWav & SSBM - RapidyKirby3K
+http://vgsounds.deviantart.com/: vgsounds@gmail.com
+  KHCloudStrife: a2v20cloud@gmail.com
+  deezer@usa.net, alluro95@hotmail.com
+Sprite Database - http://sdb.drshnaps.com
+  Ichigo's Sounds - ultimate ripper
+
+------Music------
+VG Music - http://www.vgmusic.com
+  SA2GreenHill - Sonic Megaman
+  TMNT4Downtown (Alley Cat Blues) - Pongball
+  TMNT4Highway (Neon Night Riders) - Pongball
+  New_Junk_City - Teck
+  ssbyoshi - Tony Thai
+  SamusStage2 - Insane Apu
+  MushroomKingdom.mid (Super Mario All-Stars) - Jarel Jones
+  Mushroom_Kingdom2 - WaVeOf_DaRKnEsS
+  SSBMcorneria - Dave Phaneuf
+  SSBM_Fountain_of_Dreams - Dave Phaneuf
+  SSM_Brinstar_Depths - Dave Phaneuf
+  SSBM_Rainbow_Cruise - Dave Phaneuf
+  ssbm_onett_v_4 - Chibi Vegetto
+  ssbm_dreamlandpast.mid - Chibi Vegetto
+  jrlepage_-_ssbm_-_final_destination.mid - jrlepage
+  SSBM_Pokemon_Stadium.mid - hylianhero128
+  ContraMedley.mid - Jason Lewis
+  G_Contra_Stage2.mid - Gecko Yamori
+  muteCity.mid - llama37 - http://www.laurasmidiheaven.com/00-MIDI/2/000000003840/F-Zero%20Grand%20Prix%3a%20Mute%20City
+  menu_screens.mid - www.midishrine.com
+
+-----Alternate Portraits------
+Mr. Game & Watch - Geollyn - http://hardvector.deviantart.com/art/Mr-Game-and-Watch-wallpaper-70128870
+Link - Adele Lorienne - http://saimain.deviantart.com/art/Dark-Warrior-67356011 - no longer being used
+Earthworm Jim - Douglas TenNapel - http://beloved-creature.deviantart.com/art/Jim-87315565
+Solid Snake - Amelia Woo - http://crazydwarf.deviantart.com/art/Solid-Snake-17213843
+Naruto - http://www.narutopictures.biz/wallpapers/naruto-wallpapers
+Ness - Gigandas - no longer being used
+Jigglypuff - ?
+MetaKnight - ?
+Pikachu - ?
+Pit - Zombie Padawan - http://lychi.deviantart.com/art/SSBBrawl-Ike-and-Pit-86848130
+Rash - JJo bootlegsketch
+Goku - Anthony Lopes www.darksungames.com
+Zitz - JJo bootlegsketch
+Pimple - JJo bootlegsketch
+
+
+------------CODING------------
+
+-----Camera Script----- edited from Smash Tutorial by EbTech
+http://www.yoyogames.com/games/show/19962
+
+-----Lens Flare Script-----
+GAMECAVE EFFECTS ENGINE 3.X
+
+
+----------Main Sprite Resources----------
+Mario Fan Games Galaxy -    http://www.mfgg.net/
+The Spriters Resource -     http://www.spriters-resource.com/
+Dr Shnaps Sprite Database - http://sdb.drshnaps.com/
+The Video Game Atlas -      http://www.vgmaps.com/
+Retro Game Zone -           http://www.retrogamezone.co.uk/
+
+Check out http://www.mcleodgaming.com/ for a flash based smash game!
+(in no way affiliated with me, but they got some great spriters and coders on their team)
+
+If you feel like I've missed you in the credits, please e-mail me and I'll fix things up.
+supermariokartracers@gmail.com

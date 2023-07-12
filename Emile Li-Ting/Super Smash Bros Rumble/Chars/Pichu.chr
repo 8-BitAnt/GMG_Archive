@@ -1,0 +1,111 @@
+[Smash Bros Rumble - Character Definition]
+name=Pichu
+path=.\Chars\Pichu\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+8 0 1 0 1 14 28
+{6 6 19 27}
+StockIcon
+1 0 1 0 0 14 15
+{0 0 29 29}
+8BitIdle
+1 0 1 0 0 13 21
+{0 2 20 21}
+8BitWalk
+4 0 1 0 0 17 23
+{2 1 29 22}
+8BitAttack
+9 0 1 0 0 15 23
+{5 3 24 22}
+Hit
+2 0 1 0 0 11 22
+{Idle}
+Hit2
+8 0 1 0 0 10 24
+{Idle}
+Crouch
+1 0 1 0 0 9 16
+{Idle}
+Roll
+4 0 1 0 0 12 22
+{Idle}
+Walk
+4 0 1 0 0 10 23
+{Idle}
+Run
+3 0 1 0 0 10 18
+{Idle}
+SlideTurn
+2 0 1 0 0 10 23
+{Idle}
+Jump
+2 0 1 0 0 12 23
+{Idle}
+Jump2
+6 0 1 0 0 12 22
+{Idle}
+Fall
+2 0 1 0 0 12 22
+{Idle}
+LedgeGrab
+1 0 1 0 0 2 24
+{0 12 0 1}
+Attack
+5 0 1 0 0 11 26
+{6 10 24 25}
+Attack2
+5 0 1 0 0 11 26
+{11 12 21 25}
+RunAttack
+5 0 1 0 0 16 20
+{0 0 28 22}
+AirAttack
+5 0 1 0 0 9 25
+{0 0 15 25}
+AirAttackSide
+7 0 1 0 0 10 26
+{0 9 25 26}
+AirAttackUp
+6 0 1 0 0 9 27
+{0 0 20 20}
+AirAttackDown
+6 0 1 0 0 14 25
+{11 19 27 30}
+Smash
+7 1 1 0 0 12 26
+{11 0 26 25}
+SmashUp
+6 0 1 0 0 18 32
+{4 2 30 32}
+SmashDown
+10 0 1 0 0 28 24
+{0 0 53 26}
+Special
+4 0 1 0 0 14 23
+{0 0 31 23}
+Special2
+4 0 1 0 0 14 23
+{0 0 31 23}
+Projectile
+1 0 1 1 0 4 4
+{0 0 8 8}
+Projectile2
+2 0 1 1 0 4 4
+{0 0 8 8}
+SpecialSide
+15 0 1 0 0 22 37
+{1 0 54 53}
+Projectile3
+4 0 1 1 0 4 4
+{}
+SpecialUp
+11 0 1 0 0 13 23
+{5 4 20 23}
+SpecialDown
+7 0 1 0 0 27 30
+{0 0 55 38}

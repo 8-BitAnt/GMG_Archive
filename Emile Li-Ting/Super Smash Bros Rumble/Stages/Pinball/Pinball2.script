@@ -1,0 +1,33 @@
+//--------------UPS AND DOWNS---------------//
+
+var i, j, type;
+
+type=global.theArgument0; //PRELOAD=0; STEP=1; UNLOAD=2
+
+if (type == PRELOAD){
+    with (objBottomWall){ instance_destroy() }
+    with (objSpring){ instance_destroy() }
+    with (objTopWall){ instance_destroy() }
+    with (objLeftWall){ instance_destroy() }
+    with (objRightWall){ instance_destroy() }
+    with (objLedgeLeft){ instance_destroy() }
+    with (objLedgeRight){ instance_destroy() }
+
+    bottomPlatform=instance_create(room_width/2, room_height*3/4, objBottomWall)
+    bottomPlatform.image_xscale=20
+    bottomPlatform.visible=true
+
+    topPlatform=instance_create(room_width/2, room_height*1/4, objTopWall)
+    topPlatform.image_xscale=20
+    topPlatform.visible=true
+}else if (type == STEP) && (global.roundStart){
+    if (theGravity=='up'){
+        if (random(125)<1){
+            theGravity='down'
+        }
+    }else if (theGravity=='down'){
+        if (random(600)<1){
+            theGravity='up'
+        }
+    }
+}

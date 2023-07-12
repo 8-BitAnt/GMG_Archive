@@ -1,0 +1,38 @@
+var i, j, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    sprPlatform=sprite_add(global.homeDir+"\Stages\Highway\Platform.png",1,0,0,0,0,55,1)
+    sprite_set_bbox_mode(sprPlatform,2)
+    sprite_set_bbox(sprPlatform,0,1,110,15)
+
+    i=instance_create(random(526-5-400+5)+420, 564, objBottomWall)
+    i.sprite_index=sprPlatform
+    i.image_xscale=0.6
+    i.image_xscale*=choose(1,-1)
+    i.image_yscale=abs(i.image_xscale)
+    i.xSpeed=0.5
+    i.xSticky=1
+    i.ySticky=1
+    i.minX=400
+    i.maxX=526
+    i.goRight=choose(1,0)
+    i.visible=true
+
+    i=instance_create(468, 690, objBottomWall)
+    i.sprite_index=sprPlatform
+    i.image_xscale=0.6
+    i.image_xscale*=choose(1,-1)
+    i.image_yscale=abs(i.image_xscale)
+    i.ySpeed=1.5
+    i.ySticky=1
+    i.minY=484//492
+    i.maxY=690
+    i.goDown=0
+    i.visible=true
+
+}else if (type == STEP){
+}else if (type == UNLOAD){
+    if (sprite_exists(sprPlatform)){ sprite_delete(sprPlatform) }
+}

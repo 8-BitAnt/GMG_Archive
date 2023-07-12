@@ -1,0 +1,973 @@
+var charAction,i,j,k,l,holdDelay;
+
+holdDelay=6;
+charAction=global.theArgument0;
+
+if (charAction == HASBEENHIT){
+    l=global.theArgument1//dmg being taken
+    if (attackGun != 'none') && (random(20)<l){//chance to lose attackGun
+        //should also play a sound
+        j=choose(-2,-1,0,1,2)
+        k=-(bbox_bottom-bbox_top)*1.1
+        i=instance_create(x+j,y+k,Effect);
+        if (attackGun=='laser'){
+            i.sprite_index=sprLaserGun
+        }else if (attackGun=='spread'){
+            i.sprite_index=sprSpreadGun
+        }
+        i.image_xscale=abs(image_xscale)
+        i.image_yscale=image_yscale
+        i.image_alpha=0.9
+        i.depth=depth+1
+        i.parentObject=self
+        i.deathTimerMax=50
+        i.pNum=pNum
+        i.moveUp=true
+        i.shrink=true
+        i.effectSpeed/=10
+        attackGun='none'
+        idleAnimSpeed=0.5
+    }
+    if (smashGun != 'none') && (random(25)<l){//chance to lose attackGun
+        //should also play a sound
+        j=choose(-2,-1,0,1,2)
+        k=-(bbox_bottom-bbox_top)*1.1
+        i=instance_create(x+j,y+k,Effect);
+        if (smashGun=='homing'){
+            i.sprite_index=sprHomingMissile
+        }else if (smashGun=='crush'){
+            i.sprite_index=sprCrushMissile
+        }
+        i.image_xscale=abs(image_xscale)
+        i.image_yscale=image_yscale
+        i.image_alpha=0.9
+        i.depth=depth+1
+        i.parentObject=self
+        i.deathTimerMax=50
+        i.pNum=pNum
+        i.moveUp=true
+        i.shrink=true
+        i.effectSpeed/=10
+        smashGun='none'
+        idleAnimSpeed=0.5
+    }
+    exit
+}else if (charAction == HASBEENGRABBED){ exit
+}else if (eightBitTimer > 0) && (charAction >= ATTACK) && (charAction <= SPECIALSMASHDOWN){
+    SetAttackBoxParameters(-1,-1);
+    movementModifier=1
+    theAttack.cooldownTimer=5
+    
+    i=(bbox_right-bbox_left)/4
+    j=(bbox_bottom-bbox_top)*0.7
+    SetProjectileParameters(i,j)
+    theProjectile.attackPower=2*attackMultiplier
+    theProjectile.ignoreHorizontalWalls=true
+    theProjectile.stunningPower=8
+    theProjectile.hAttackSpeed=1.5
+    theProjectile.vAttackSpeed=1
+    theProjectile.hSpeedMin=false
+    theProjectile.vSpeedMin=false
+    theProjectile.alphaDecay=true
+    theProjectile.decayOnImpact=true
+    theProjectile.appearanceFrame=2
+    theProjectile.theHSpeed=min(abs(hspeed)+5,8)
+    exit
+}
+
+switch(charAction)
+{
+case ATTACK:
+    SetAttackBoxParameters(-1,-1);
+    movementModifier=0
+    theAttack.whiffSound=soundSpecial
+    theAttack.whiffFrame=1
+    sound_volume2(theAttack.whiffSound,0.875)
+    if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+        theAttack.cooldownTimer=holdDelay
+    }
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)*0.55
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*0.7
+    if (attackGun == 'none') || (attackGun == 'laser'){
+        //single shot
+        SetProjectileParameters(i,j)
+        theProjectile.attackPower=2*attackMultiplier
+        theProjectile.stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+        theProjectile.hAttackSpeed=0
+        theProjectile.vAttackSpeed=0
+        theProjectile.alphaDecay=true
+        theProjectile.decayOnImpact=true
+        theProjectile.appearanceFrame=1
+        if (attackGun == 'laser'){ //laser
+            theProjectile.sprite_index=sprProjectile2
+            theProjectile.attackPower*=4
+            theProjectile.decayOnImpact=false
+            theProjectile.deathTimer=30
+            theProjectile.hitMax=3
+            theProjectile.rotateOnDirection=true
+            theAttack.warmupTimer=3
+            theAttack.cooldownTimer=2
+            if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+                theAttack.warmupTimer+=holdDelay
+                theAttack.cooldownTimer+=holdDelay
+            }
+        }
+        theProjectile.theHSpeed=7
+        if (upDownState == UP){
+            theAttack.sprite_index=sprAttack2
+            theProjectile.xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+            theProjectile.yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+            theProjectile.theSpeed=7
+            theProjectile.theDirection=45
+        }
+    }else if (attackGun == 'spread'){ //spread shot
+        theAttack.cooldownTimer=4
+        if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+            theAttack.cooldownTimer+=holdDelay+2
+        }
+        for (k=0; k<5; k+=1){
+            SetProjectileParameters(i,j,k)
+            theProjectile[k].image_xscale=abs(image_xscale)+0.2
+            theProjectile[k].image_yscale=theProjectile.image_xscale
+            theProjectile[k].ignoreHorizontalWalls=true
+            theProjectile[k].deathTimer=25
+            theProjectile[k].attackPower=2*attackMultiplier
+            theProjectile[k].stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+            theProjectile[k].hAttackSpeed=0
+            theProjectile[k].vAttackSpeed=0
+            theProjectile[k].alphaDecay=true
+            theProjectile[k].decayOnImpact=true
+            theProjectile[k].appearanceFrame=1
+            theProjectile[k].theSpeed=7
+            
+            if (upDownState == UP){
+                theAttack.sprite_index=sprAttack2
+                theProjectile[k].xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+                theProjectile[k].yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+                theProjectile[k].theDirection=45
+            }
+        
+            theProjectile[k].theSpeed=7
+            if (k <= 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 3){
+                theProjectile[k].theDirection-=20
+            }
+            if (k >= 3){
+                theProjectile[k].theDirection-=20
+            }
+        }
+    }
+    break
+           
+case ATTACKSIDE: ActionScript(global.character[pNum], ATTACK); break
+        
+case ATTACKUP:
+    //shot
+    SetAttackBoxParameters(-1,-1);
+    movementModifier=0
+    theAttack.whiffSound=soundSpecial
+    theAttack.whiffFrame=1
+    sound_volume2(theAttack.whiffSound,0.85)
+    if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+        theAttack.cooldownTimer=holdDelay
+    }
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)*0.1
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*1.2
+    if (attackGun == 'none') || (attackGun == 'laser'){
+        //single shot
+        SetProjectileParameters(i,j)
+        theProjectile.attackPower=2*attackMultiplier
+        theProjectile.stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+        theProjectile.hAttackSpeed=0
+        theProjectile.vAttackSpeed=0
+        theProjectile.ignoreHorizontalWalls=true
+        theProjectile.alphaDecay=true
+        theProjectile.decayOnImpact=true
+        theProjectile.appearanceFrame=1
+        if (attackGun == 'laser'){
+            theProjectile.sprite_index=sprProjectile2
+            theProjectile.attackPower*=4
+            theProjectile.decayOnImpact=false
+            theProjectile.deathTimer=30
+            theProjectile.hitMax=3
+            theProjectile.rotateOnDirection=true
+            theAttack.warmupTimer=3
+            theAttack.cooldownTimer=2
+            if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+                theAttack.warmupTimer+=holdDelay
+                theAttack.cooldownTimer+=holdDelay
+            }
+        }
+        theProjectile.theVSpeed=-7
+        if (leftRightState != NONE){
+            theAttack.sprite_index=sprAttack2
+            theProjectile.xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+            theProjectile.yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+            theProjectile.theSpeed=7
+            theProjectile.theDirection=45
+        }
+    }else if (attackGun == 'spread'){
+        theAttack.cooldownTimer=4
+        if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+            theAttack.cooldownTimer+=holdDelay+2
+        }
+        for (k=0; k<5; k+=1){
+            SetProjectileParameters(i,j,k)
+            theProjectile[k].image_xscale=abs(image_xscale)+0.2
+            theProjectile[k].image_yscale=theProjectile.image_xscale
+            theProjectile[k].deathTimer=25
+            theProjectile[k].attackPower=2*attackMultiplier
+            theProjectile[k].stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+            theProjectile[k].ignoreHorizontalWalls=true
+            theProjectile[k].hAttackSpeed=0
+            theProjectile[k].vAttackSpeed=0
+            theProjectile[k].alphaDecay=true
+            theProjectile[k].decayOnImpact=true
+            theProjectile[k].appearanceFrame=1
+            theProjectile[k].theSpeed=7
+            theProjectile[k].theDirection=90
+            if (leftRightState != NONE){
+                theAttack.sprite_index=sprAttack2
+                theProjectile[k].xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+                theProjectile[k].yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+                theProjectile[k].theSpeed=7
+                theProjectile[k].theDirection=45
+            }
+            if (k <= 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 3){
+                theProjectile[k].theDirection-=20
+            }
+            if (k >= 3){
+                theProjectile[k].theDirection-=20
+            }
+        }
+    }
+    break
+    
+case ATTACKDOWN:
+    //shot
+    SetAttackBoxParameters(-1,-1);
+    theAttack.whiffSound=soundSpecial
+    theAttack.whiffFrame=1
+    sound_volume2(theAttack.whiffSound,0.85)
+    if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+        theAttack.cooldownTimer=holdDelay
+    }
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)*0.4
+    j=max((theAttack.bbox_bottom-theAttack.bbox_top)*0.45, 1)
+    if (attackGun == 'none') || (attackGun == 'laser'){
+        //single shot
+        SetProjectileParameters(i,j)
+        theProjectile.attackPower=2*attackMultiplier
+        theProjectile.stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+        theProjectile.hAttackSpeed=0
+        theProjectile.vAttackSpeed=0
+        theProjectile.ignoreHorizontalWalls=true
+        theProjectile.alphaDecay=true
+        theProjectile.decayOnImpact=true
+        theProjectile.appearanceFrame=1
+        if (attackGun == 'laser'){
+            theProjectile.sprite_index=sprProjectile2
+            theProjectile.attackPower*=4
+            theProjectile.decayOnImpact=false
+            theProjectile.deathTimer=30
+            theProjectile.hitMax=3
+            theProjectile.rotateOnDirection=true
+            theAttack.warmupTimer=3
+            theAttack.cooldownTimer=2
+            if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+                theAttack.warmupTimer+=holdDelay
+                theAttack.cooldownTimer+=holdDelay
+            }
+        }
+        theProjectile.theHSpeed=7
+    }else if (attackGun == 'spread'){
+        theAttack.cooldownTimer=4
+        if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+            theAttack.cooldownTimer+=holdDelay+2
+        }
+        for (k=0; k<5; k+=1){
+            SetProjectileParameters(i,j,k)
+            theProjectile[k].image_xscale=abs(image_xscale)+0.2
+            theProjectile[k].image_yscale=theProjectile.image_xscale
+            theProjectile[k].deathTimer=25
+            theProjectile[k].attackPower=2*attackMultiplier
+            theProjectile[k].stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+            theProjectile[k].ignoreHorizontalWalls=true
+            theProjectile[k].hAttackSpeed=0
+            theProjectile[k].vAttackSpeed=0
+            theProjectile[k].alphaDecay=true
+            theProjectile[k].decayOnImpact=true
+            theProjectile[k].appearanceFrame=1
+            theProjectile[k].theSpeed=7
+            if (k <= 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 3){
+                theProjectile[k].theDirection-=20
+            }
+            if (k >= 3){
+                theProjectile[k].theDirection-=20
+            }
+        }
+    }
+    sprite_index=sprCrouch
+    break
+    
+case RUNATTACK: ActionScript(global.character[pNum], ATTACK); break
+    
+case AIRATTACK:
+    //shot
+    SetAttackBoxParameters(-1,-1);
+    movementModifier=0
+    theAttack.whiffSound=soundSpecial
+    theAttack.whiffFrame=1
+    sound_volume2(theAttack.whiffSound,0.85)
+    if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+        theAttack.cooldownTimer=holdDelay
+    }
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)*0.55
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*0.7
+
+    if (attackGun == 'none') || (attackGun == 'laser'){
+        //single shot
+        SetProjectileParameters(i,j)
+        theProjectile.attackPower=2*attackMultiplier
+        theProjectile.stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+        theProjectile.hAttackSpeed=0
+        theProjectile.vAttackSpeed=0
+        theProjectile.alphaDecay=true
+        theProjectile.decayOnImpact=true
+        theProjectile.appearanceFrame=1
+        if (attackGun == 'laser'){
+            theProjectile.sprite_index=sprProjectile2
+            theProjectile.attackPower*=4
+            theProjectile.decayOnImpact=false
+            theProjectile.deathTimer=30
+            theProjectile.hitMax=3
+            theProjectile.rotateOnDirection=true
+            theAttack.warmupTimer=3
+            theAttack.cooldownTimer=2
+            if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+                theAttack.warmupTimer+=holdDelay
+                theAttack.cooldownTimer+=holdDelay
+            }
+        }
+        theProjectile.theHSpeed=7
+        if (upDownState == UP){
+            theAttack.sprite_index=sprAttack2
+            theProjectile.xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+            theProjectile.yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+            theProjectile.theSpeed=7
+            theProjectile.theDirection=45
+        }
+    }else if (attackGun == 'spread'){
+        theAttack.cooldownTimer=4
+        if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+            theAttack.cooldownTimer+=holdDelay+2
+        }
+        for (k=0; k<5; k+=1){
+            SetProjectileParameters(i,j,k)
+            theProjectile[k].image_xscale=abs(image_xscale)+0.2
+            theProjectile[k].image_yscale=theProjectile.image_xscale
+            theProjectile[k].deathTimer=25
+            theProjectile[k].attackPower=2*attackMultiplier
+            theProjectile[k].stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+            theProjectile[k].hAttackSpeed=0
+            theProjectile[k].vAttackSpeed=0
+            theProjectile[k].alphaDecay=true
+            theProjectile[k].decayOnImpact=true
+            theProjectile[k].appearanceFrame=1
+            theProjectile[k].theSpeed=7
+            if (upDownState == UP){
+                theAttack.sprite_index=sprAttack2
+                theProjectile[k].xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+                theProjectile[k].yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+                theProjectile[k].theSpeed=7
+                theProjectile[k].theDirection=45
+            }
+            if (k <= 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 3){
+                theProjectile[k].theDirection-=20
+            }
+            if (k >= 3){
+                theProjectile[k].theDirection-=20
+            }
+        }
+    }
+    break
+    
+case AIRATTACKSIDE: ActionScript(global.character[pNum], AIRATTACK); break
+    
+case AIRATTACKUP:
+    //shot
+    SetAttackBoxParameters(-1,-1);
+    movementModifier=0
+    theAttack.whiffSound=soundSpecial
+    theAttack.whiffFrame=1
+    sound_volume2(theAttack.whiffSound,0.85)
+    if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+        theAttack.cooldownTimer=holdDelay
+    }
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)*0
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*1.1
+    if (attackGun == 'none') || (attackGun == 'laser'){
+        //single shot
+        SetProjectileParameters(i,j)
+        theProjectile.attackPower=2*attackMultiplier
+        theProjectile.stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+        theProjectile.hAttackSpeed=0
+        theProjectile.vAttackSpeed=0
+        theProjectile.alphaDecay=true
+        theProjectile.decayOnImpact=true
+        theProjectile.appearanceFrame=1
+        if (attackGun == 'laser'){
+            theProjectile.sprite_index=sprProjectile2
+            theProjectile.attackPower*=4
+            theProjectile.decayOnImpact=false
+            theProjectile.deathTimer=30
+            theProjectile.hitMax=3
+            theProjectile.rotateOnDirection=true
+            theAttack.warmupTimer=3
+            theAttack.cooldownTimer=2
+            if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+                theAttack.warmupTimer+=holdDelay
+                theAttack.cooldownTimer+=holdDelay
+            }
+        }
+        theProjectile.theVSpeed=-7
+        if (leftRightState != NONE){
+            theAttack.sprite_index=sprAttack2
+            theProjectile.xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+            theProjectile.yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+            theProjectile.theSpeed=7
+            theProjectile.theDirection=45
+        }
+    }else if (attackGun == 'spread'){
+        theAttack.cooldownTimer=4
+        if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+            theAttack.cooldownTimer+=holdDelay+2
+        }
+        for (k=0; k<5; k+=1){
+            SetProjectileParameters(i,j,k)
+            theProjectile[k].image_xscale=abs(image_xscale)+0.2
+            theProjectile[k].image_yscale=theProjectile.image_xscale
+            theProjectile[k].deathTimer=25
+            theProjectile[k].attackPower=2*attackMultiplier
+            theProjectile[k].stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+            theProjectile[k].hAttackSpeed=0
+            theProjectile[k].vAttackSpeed=0
+            theProjectile[k].alphaDecay=true
+            theProjectile[k].decayOnImpact=true
+            theProjectile[k].appearanceFrame=1
+            theProjectile[k].theSpeed=7
+            theProjectile[k].theDirection=90
+            if (leftRightState != NONE){
+                theAttack.sprite_index=sprAttack2
+                theProjectile[k].xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+                theProjectile[k].yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+                theProjectile[k].theSpeed=7
+                theProjectile[k].theDirection=45
+            }
+            if (k <= 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 1){
+                theProjectile[k].theDirection+=20
+            }
+            if (k == 3){
+                theProjectile[k].theDirection-=20
+            }
+            if (k >= 3){
+                theProjectile[k].theDirection-=20
+            }
+        }
+    }
+    break
+        
+case AIRATTACKDOWN:
+    //shot
+    SetAttackBoxParameters(-1,-1);
+    movementModifier=0
+    theAttack.whiffSound=soundSpecial
+    theAttack.whiffFrame=1
+    sound_volume2(theAttack.whiffSound,0.85)
+    if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+        theAttack.cooldownTimer=holdDelay
+    }
+    i=0
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*0.1
+    if (attackGun == 'none') || (attackGun == 'laser'){
+        //single shot
+        SetProjectileParameters(i,j)
+        theProjectile.attackPower=2*attackMultiplier
+        theProjectile.stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+        theProjectile.hAttackSpeed=0
+        theProjectile.vAttackSpeed=0
+        theProjectile.alphaDecay=true
+        theProjectile.decayOnImpact=true
+        theProjectile.appearanceFrame=1
+        theProjectile.theVSpeed=7
+        if (attackGun == 'laser'){
+            theProjectile.sprite_index=sprProjectile2
+            theProjectile.attackPower*=4
+            theProjectile.decayOnImpact=false
+            theProjectile.deathTimer=30
+            theProjectile.hitMax=3
+            theProjectile.rotateOnDirection=true
+            theAttack.warmupTimer=3
+            theAttack.cooldownTimer=2
+            if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+                theAttack.warmupTimer+=holdDelay
+                theAttack.cooldownTimer+=holdDelay
+            }
+        }
+    }else if (attackGun == 'spread'){
+        //spread shot
+        theAttack.cooldownTimer=4
+        if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){
+            theAttack.cooldownTimer+=holdDelay+2
+        }
+        for (k=0; k<5; k+=1){
+            SetProjectileParameters(i,j,k)
+            theProjectile[k].image_xscale=abs(image_xscale)+0.2
+            theProjectile[k].image_yscale=theProjectile.image_xscale
+            theProjectile[k].deathTimer=25
+            theProjectile[k].attackPower=2*attackMultiplier
+            theProjectile[k].stunningPower=choose(0,0,0,0,0,0,0,0,0,0,1)
+            theProjectile[k].hAttackSpeed=0
+            theProjectile[k].vAttackSpeed=0
+            theProjectile[k].alphaDecay=true
+            theProjectile[k].decayOnImpact=true
+            theProjectile[k].appearanceFrame=1
+            theProjectile[k].theSpeed=7
+            theProjectile[k].theDirection=270
+            if (k <= 1){
+                (theProjectile[k]).theDirection+=20
+            }
+            if (k == 1){
+                (theProjectile[k]).theDirection+=20
+            }
+            if (k == 3){
+                (theProjectile[k]).theDirection-=20
+            }
+            if (k >= 3){
+                (theProjectile[k]).theDirection-=20
+            }
+        }
+    }
+    break
+
+case SMASHSIDE:
+    if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){ break }
+    //missile shot
+    SetAttackBoxParameters(-1,-1);
+    theAttack.sprite_index=sprAttack
+    theAttack.cooldownTimer=4
+    
+    k=0
+    if (projectileCount[k] > 1){
+        exit
+    }
+    projectileCount[k]+=1
+    theAttack.whiffSound=soundSpecial2
+    theAttack.whiffFrame=1
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)*0.55
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*2/3
+    SetProjectileParameters(i,j)
+    theProjectile.sprite_index=sprProjectile3
+    theProjectile.image_xscale=abs(image_xscale)-0.2
+    theProjectile.image_yscale=theProjectile.image_xscale
+    theProjectile.attackPower=8*attackMultiplier
+    theProjectile.stunningPower=choose(8,8,0)
+    theProjectile.deathTimer=30
+    theProjectile.hAttackSpeed=4
+    theProjectile.vAttackSpeed=3
+    theProjectile.hSpeedMin=8
+    theProjectile.rotateOnDirection=true
+    theProjectile.alphaDecay=true
+    theProjectile.decayOnImpact=true
+    theProjectile.appearanceFrame=1
+    theProjectile.hitSound=soundSpecial3   
+    theProjectile.theHSpeed=6.5
+    if (upDownState == UP){
+        theAttack.sprite_index=sprAttack2
+        theProjectile.xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+        theProjectile.yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+        theProjectile.theSpeed=6.5
+        theProjectile.theDirection=45
+    }
+    theProjectile.projectileCountNum=k
+    if (smashGun == 'homing'){
+        //homing missile
+        theProjectile.image_blend=c_teal
+        theProjectile.homing=true
+        theProjectile.turnRadius=8
+        theProjectile.deathTimer=35
+        theProjectile.hSpeedMin=7
+    }else if (smashGun == 'crush'){
+        //crush missile
+        theProjectile.image_blend=c_red
+        theProjectile.image_xscale=abs(image_xscale)
+        theProjectile.image_yscale=theProjectile.image_xscale
+        theProjectile.attackPower=12*attackMultiplier
+        theProjectile.hAttackSpeed=6//4.5
+        theProjectile.vAttackSpeed=4
+        theProjectile.deathTimer=18
+        theProjectile.hSpeedMin=9
+        theAttack.warmupTimer=6
+        theAttack.cooldownTimer=6
+    }
+    break
+    
+case SMASHUP:
+    if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){ break }
+    //missile shot
+    SetAttackBoxParameters(-1,-1);
+    theAttack.sprite_index=sprAttackUp
+    theAttack.cooldownTimer=4
+    
+    k=0
+    if (projectileCount[k] > 1){
+        exit
+    }
+    projectileCount[k]+=1
+    theAttack.whiffSound=soundSpecial2
+    theAttack.whiffFrame=1
+    
+    i=(theAttack.bbox_right-theAttack.bbox_left)/8
+    j=(theAttack.bbox_bottom-theAttack.bbox_top)*1.2
+    SetProjectileParameters(i,j)
+    theProjectile.sprite_index=sprProjectile3
+    theProjectile.image_xscale=abs(image_xscale)-0.2
+    theProjectile.image_yscale=theProjectile.image_xscale
+    theProjectile.attackPower=8*attackMultiplier
+    theProjectile.deathTimer=35
+    theProjectile.stunningPower=choose(8,8,0)
+    theProjectile.hAttackSpeed=choose (0,0,0,1)
+    theProjectile.vAttackSpeed=6
+    theProjectile.rotateOnDirection=true
+    theProjectile.alphaDecay=true
+    theProjectile.decayOnImpact=true
+    theProjectile.appearanceFrame=1
+    theProjectile.hitSound=soundSpecial3
+    theProjectile.theVSpeed=-6.5
+    if (leftRightState != NONE){
+        theAttack.sprite_index=sprAttack2
+        theProjectile.theSpeed=6.5
+        theProjectile.theDirection=45
+        theProjectile.xOffset=(theAttack.bbox_right-theAttack.bbox_left)*0.85
+        theProjectile.yOffset=-(theAttack.bbox_bottom-theAttack.bbox_top)*1
+    }
+    theProjectile.projectileCountNum=k
+    if (smashGun == 'homing'){
+        //homing missile
+        theProjectile.image_blend=c_teal
+        theProjectile.homing=true
+        theProjectile.turnRadius=8
+        theProjectile.deathTimer=35
+    }else if (smashGun == 'crush'){
+        //crush missile
+        theProjectile.image_blend=c_red
+        theProjectile.image_xscale=abs(image_xscale)
+        theProjectile.image_yscale=theProjectile.image_xscale
+        theProjectile.attackPower=12*attackMultiplier
+        theProjectile.hAttackSpeed=6
+        theProjectile.vAttackSpeed=4
+        theProjectile.deathTimer=18
+        theAttack.warmupTimer=6
+        theAttack.cooldownTimer=6
+    }
+    break
+
+case SMASHDOWN: if (attackState != INSTANTPRESSED) && (specialState != INSTANTPRESSED){ break }
+    //missile shot
+    SetAttackBoxParameters(-1,-1);
+    if (onGround){
+        theAttack.sprite_index=sprAttackDown
+    }else{
+        theAttack.sprite_index=sprAirAttackDown
+    }
+    theAttack.cooldownTimer=2
+    
+    k=0
+    if (projectileCount[k] > 1){
+        exit
+    }
+    projectileCount[k]+=1
+    theAttack.whiffSound=soundSpecial2
+    theAttack.whiffFrame=1
+    
+    if (onGround){
+        j=max((theAttack.bbox_bottom-theAttack.bbox_top)/2,1)
+        i=(theAttack.bbox_right-theAttack.bbox_left)*0.4
+    }else{
+        j=(theAttack.bbox_bottom-theAttack.bbox_top)*0.1
+        vspeed=-6
+        i=0
+    }
+    SetProjectileParameters(i,j)
+    theProjectile.sprite_index=sprProjectile3
+    theProjectile.image_xscale=abs(image_xscale)-0.2
+    theProjectile.image_yscale=theProjectile.image_xscale
+    theProjectile.attackPower=8*attackMultiplier
+    theProjectile.deathTimer=35
+    theProjectile.stunningPower=choose(8,8,0)
+    theProjectile.hAttackSpeed=3
+    theProjectile.vAttackSpeed=5
+    theProjectile.rotateOnDirection=true
+    theProjectile.alphaDecay=true
+    theProjectile.decayOnImpact=true
+    theProjectile.appearanceFrame=1
+    theProjectile.hitSound=soundSpecial3
+    
+    if (onGround){
+        theProjectile.theHSpeed=6.5//shoots sideways when on ground
+    }else{
+        theProjectile.theVSpeed=6.5//shoots down when in air
+    }
+    theProjectile.projectileCountNum=k
+    if (smashGun == 'homing'){
+        //homing missile
+        theProjectile.image_blend=c_teal
+        theProjectile.homing=true
+        theProjectile.turnRadius=8
+        theProjectile.deathTimer=35
+    }else if (smashGun == 'crush'){
+        //crush missile
+        theProjectile.image_blend=c_red
+        theProjectile.image_xscale=abs(image_xscale)
+        theProjectile.image_yscale=theProjectile.image_xscale
+        theProjectile.attackPower=12*attackMultiplier
+        theProjectile.hAttackSpeed=6
+        theProjectile.vAttackSpeed=4
+        theProjectile.deathTimer=18
+        theAttack.warmupTimer=6
+        theAttack.cooldownTimer=6
+    }
+    sprite_index=sprCrouch
+    break
+
+case SPECIAL:
+    if (finalSmash) && (specialState == INSTANTPRESSED){
+        //homing missile barrage
+        hspeed=0
+        vspeed=0
+        suspendGravity=true
+        suspendFriction=true
+        friction=0
+        gravity=0        
+        
+        SetAttackBoxParameters(-1,-1);
+        theAttack.sprite_index=sprAttack
+        theAttack.image_speed=0.1
+        theAttack.finalSmash=true
+        theAttack.warmupTimer=3
+        theAttack.endSuspendGravity=true
+        theAttack.whiffSound=soundSpecial
+        theAttack.whiffFrame=1
+        sound_volume2(theAttack.whiffSound,0.875)
+    
+        for (i=0;i<8;i+=1){
+            SetProjectileParameters((theAttack.bbox_right-theAttack.bbox_left)*0.55,(theAttack.bbox_bottom-theAttack.bbox_top)*0.7)
+            theProjectile.sprite_index=sprProjectile3
+            theProjectile.attackPower=15*attackMultiplier
+            theProjectile.stunningPower=20
+            
+            theProjectile.deathTimer=120
+            theProjectile.hAttackSpeed=4.5
+            theProjectile.vAttackSpeed=3.5
+            theProjectile.rotateOnDirection=true
+            theProjectile.alphaDecay=true
+            theProjectile.decayOnImpact=true
+            theProjectile.appearanceFrame=1
+            theProjectile.theHSpeed=6.5
+    
+//            theProjectile.smokeSprite=SamusSmokeTrail
+//            theProjectile.smokeXYVariance=12
+            theProjectile.ignoreWalls=true
+            theProjectile.ignoreGuard=true
+    
+            theProjectile.maxHSpeed=MAXRUNSPEED*1.5
+            theProjectile.speedIncrease=0.25
+            theProjectile.minHSpeed=1
+            theProjectile.image_blend=c_teal
+            theProjectile.homing=true
+            theProjectile.minHomingAngle=5
+            theProjectile.maxHomingAngle=180
+            theProjectile.turnRadius=8.5
+            theProjectile.hitSound=soundSpecial3
+            theProjectile.theSpeed=7
+            theProjectile.theDirection=-60
+            theProjectile.unreflectable=true
+            if (i >= 1){
+                theProjectile.theDirection+=30
+            }
+            if (i >= 2){
+                theProjectile.theDirection+=30
+            }
+            if (i >= 3){
+                theProjectile.theDirection+=30
+            }
+            if (i >= 4){
+                theProjectile.theDirection+=30
+            }
+            if (i >= 5){
+                theProjectile.theDirection+=30
+            }
+            if (i >= 6){
+                theProjectile.theDirection+=30
+            }
+            if (i >= 7){
+                theProjectile.theDirection+=30
+            }
+        }
+        exit
+    }
+    
+    ActionScript(global.character[pNum], ATTACK)
+    break
+    
+case SPECIALSIDE: ActionScript(global.character[pNum], ATTACK); break
+case SPECIALUP: ActionScript(global.character[pNum], ATTACKUP); break
+case SPECIALDOWN: ActionScript(global.character[pNum], ATTACKDOWN); break
+       
+case AIRSPECIAL:
+    if (finalSmash){ ActionScript(global.character[pNum], SPECIAL); }
+    else{ ActionScript(global.character[pNum], AIRATTACK); }
+    break
+
+case AIRSPECIALSIDE:
+    if (isSmash()){ ActionScript(global.character[pNum], SMASHSIDE); }
+    else{ ActionScript(global.character[pNum], AIRATTACK); }
+    break
+
+case AIRSPECIALUP:
+    if (isSmashUp()){ ActionScript(global.character[pNum], SMASHUP); }
+    else{ ActionScript(global.character[pNum], AIRATTACKUP) }
+    break
+case AIRSPECIALDOWN:
+    if (isSmashDown()){ ActionScript(global.character[pNum], SMASHDOWN) }
+    else{ ActionScript(global.character[pNum], AIRATTACKDOWN) }
+    break
+    
+case SPECIALSMASHSIDE: ActionScript(global.character[pNum], SMASHSIDE); break
+case SPECIALSMASHUP: ActionScript(global.character[pNum], SMASHUP); break
+case SPECIALSMASHDOWN: ActionScript(global.character[pNum], SMASHDOWN); break
+
+case INITCHAR:
+    gender='m'
+    attackGun='none'
+    smashGun='none'
+
+    jumpSpeed=JUMPSPEED*0.96
+    airJumpSpeed=AIRJUMPSPEED*0.96
+    if (variable_local_exists('maxAirJumps')){
+        maxAirJumps+=1
+    }
+    airCrouchSpeed=0
+    
+    hHitDistanceEquation=HHITDISTANCEEQUATION*0.9
+    vHitDistanceEquation=VHITDISTANCEEQUATION*0.9
+    walkAnimSpeed=0.4
+    walkUpAnimSpeed=0.4
+
+    soundDies=     'Contra Death.wav'
+    soundIsHit=    'Contra Attack.wav'
+    soundSpecial=  'Contra Shot.wav'//'SuperScope Shot.wav'
+    soundSpecial2= 'Samus Missile Shot.wav'//shot
+    soundSpecial3= 'Samus Missile.wav'//explosion
+    soundSpecial4= 'Contra Pickup.wav'//get item
+//    soundVictory= 'Contra Victory.wav'
+    break
+
+case STEPCHAR:
+    if (global.roundStart) && (!objGUI.matchEnd){
+        i=1000
+        if (attackGun == 'none') && (smashGun == 'none'){  i=800  }
+        if (random(i) < 1){
+            i=createItem(choose(sprLaserGun,sprSpreadGun,sprHomingMissile,sprCrushMissile), x + choose(1,-1) * (20 + random(40)));
+            i.lifeRemaining=15+random(5)
+        }
+    }
+
+    //spread weapon
+    i=collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,objItem,0,0)
+    if (i >= 0){
+        k=true
+        if (i.sprite_index == sprLaserGun){
+            attackGun='laser'
+            /*if (chargingBeamTimer < 3){
+                chargingBeamTimer+=3
+            }else if (chargingBeamTimer > 5){
+                chargingBeamTimer-=3
+            }*/
+        }else if (i.sprite_index == sprSpreadGun){
+            attackGun='spread'
+            /*if (chargingBeamTimer < 3){
+                chargingBeamTimer+=6
+            }else if (chargingBeamTimer < 6){
+                chargingBeamTimer+=3
+            }*/
+        }else if (i.sprite_index == sprHomingMissile){
+            smashGun='homing'
+            /*
+            if (chargingBeamTimer == 0) || (chargingBeamTimer == 3) || (chargingBeamTimer == 6){
+                chargingBeamTimer+=1
+            }else if (chargingBeamTimer == 2) || (chargingBeamTimer == 5) || (chargingBeamTimer == 8){
+                chargingBeamTimer-=1
+            }*/
+        }else if (i.sprite_index == sprCrushMissile){
+            smashGun='crush'
+            /*
+            if (chargingBeamTimer == 0) || (chargingBeamTimer == 3) || (chargingBeamTimer == 6){
+                chargingBeamTimer+=2
+            }else if (chargingBeamTimer == 1) || (chargingBeamTimer == 4) || (chargingBeamTimer == 7){
+                chargingBeamTimer+=1
+            }*/
+        }else{
+            k=false
+        }
+        if (k){//got an item
+            if (global.sound){ sound_play(soundSpecial4) }
+            global.itemsUsed[pNum]+=1
+            with(i){ instance_destroy() }
+        }
+    }
+    /*
+    if (chargingBeamTimer>8){
+        chargingBeamTimer=8
+    }else if (chargingBeamTimer<0){
+        chargingBeamTimer=0
+    }*/
+    break
+
+case LOSEALIFE:
+    attackGun='none'
+    smashGun='none'
+    break
+}

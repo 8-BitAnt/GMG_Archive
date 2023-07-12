@@ -1,0 +1,147 @@
+[Smash Bros Rumble - Character Definition]
+name=Jigglypuff
+path=.\Chars\Jiggly\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+21 0 1 0 0 18 30
+{3 4 28 29}
+Intro
+18 0 1 0 0 27 129
+{Idle}
+StockIcon
+1 0 1 0 0 15 15
+{2 3 27 29}
+8BitIdle
+1 0 1 0 0 10 19
+{2 3 17 18}
+8BitWalk
+4 0 1 0 0 10 19
+{1 2 18 18}
+8BitAttack
+8 0 1 0 0 10 19
+{1 2 18 18}
+Hit
+1 0 1 0 0 16 29
+{2 2 28 28}
+Hit2
+1 0 1 0 0 16 29
+{2 2 28 28}
+Crouch
+1 0 1 0 0 16 29
+{2 15 28 28}
+Guard
+1 0 1 0 0 16 29
+{2 2 28 28}
+Roll
+6 0 1 0 0 15 29
+{2 2 29 29}
+AirDodge
+6 0 1 0 0 16 30
+{2 2 28 28}
+Walk
+6 0 1 0 0 15 30
+{1 4 26 29}
+Run
+6 0 1 0 0 15 30
+{1 4 26 29}
+SlideTurn
+1 0 1 0 0 16 30
+{2 0 28 29}
+Jump
+6 0 1 0 0 17 30
+{3 2 30 29}
+Jump2
+5 0 1 0 0 17 30
+{3 2 30 29}
+Fall
+2 0 1 0 0 16 30
+{2 2 29 29}
+Fly
+5 0 1 0 0 17 30
+{3 2 30 29}
+LedgeGrab
+1 0 1 0 0 17 30
+{3 8 30 29}
+Attack
+7 0 1 0 0 16 29
+{5 7 32 26}
+Attack2
+7 0 1 0 0 16 29
+{16 7 32 26}
+AttackUp
+8 0 1 0 0 17 37
+{2 0 25 28}
+AttackDown
+9 0 1 0 0 18 28
+{0 5 35 28}
+AirAttack
+7 0 1 0 0 16 29
+{15 7 31 26}
+AirAttackDown
+7 0 1 0 0 16 29
+{5 15 27 30}
+Smash
+9 0 1 0 0 16 28
+{1 1 28 28}
+SmashUp
+13 0 1 0 0 17 38
+{0 3 54 25}
+SmashDown
+14 0 1 0 0 29 31
+{0 15 54 31}
+Special
+13 0 1 0 0 45 30
+{34 4 60 29}
+Special2
+27 0 1 0 0 88 169
+{7 9 168 169}
+SpecialSide
+8 0 1 0 0 20 30
+{8 4 32 29}
+SpecialUp
+14 0 1 0 0 21 37
+{-20 0 65 36}
+Notes
+3 0 1 0 0 5 7
+{ }
+Ring
+1 0 1 0 0 18 34
+{ }
+SpecialDown
+29 0 1 0 0 17 29
+{14 4 21 28}
+Grab
+6 0 1 0 0 13 26
+{15 3 30 20}
+GrabSuccess
+2 0 1 0 0 13 25
+{Idle}
+ThrowAttack
+8 0 1 0 0 15 24
+{15 3 33 20}
+ThrowFront
+6 0 1 0 0 14 32
+{ }
+ThrowBack
+9 0 1 0 0 23 29
+{ }
+ThrowUp
+6 0 1 0 0 13 26
+{ }
+ThrowDown
+10 0 1 0 0 14 26
+{ }
+Taunt
+17 0 1 0 0 22 29
+{Idle}
+Taunt2
+26 0 1 0 0 17 35
+{Idle}
+Taunt3
+16 0 1 0 0 15 31
+{Idle}

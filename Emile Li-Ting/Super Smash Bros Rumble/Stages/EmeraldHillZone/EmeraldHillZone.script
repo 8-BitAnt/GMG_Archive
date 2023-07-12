@@ -1,0 +1,31 @@
+var i, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    sprPlatform=sprite_add(global.homeDir+"\Stages\EmeraldHillZone\Platform.gif",1,0,1,0,0,32,8)
+    sprite_set_bbox_mode(sprPlatform,2)
+    sprite_set_bbox(sprPlatform,1,8,63,14)
+
+    i=instance_create(544, 378+5+random(504-5-378), objJumpBlock)
+    i.sprite_index=sprPlatform
+    i.ySpeed=3
+    i.ySticky=1
+    i.minY=378
+    i.maxY=504
+    i.goDown=choose(0,1)
+    i.visible=true
+
+    i=instance_create(862, 346+5+random(544-5-(544-5)), objJumpBlock)
+    i.sprite_index=sprPlatform
+    i.ySpeed=2
+    i.ySticky=1
+    i.minY=346
+    i.maxY=544
+    i.goDown=choose(0,1)
+    i.visible=true
+
+}else if (type == STEP){
+}else if (type == UNLOAD){
+    if (sprite_exists(sprPlatform)){ sprite_delete(sprPlatform) }
+}

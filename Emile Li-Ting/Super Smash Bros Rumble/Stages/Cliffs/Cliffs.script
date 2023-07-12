@@ -1,0 +1,93 @@
+var i, j, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    shadowLength=0.05
+
+    sprPlantHead=sprite_add(global.homeDir+"\Stages\KingdomII\PlantHead.png",8,0,1,0,0,0,7)
+    sprite_set_bbox_mode(sprPlantHead,0)
+
+    sprSMB2Heart=sprite_add(global.homeDir+"\Stages\Cliffs\SMB2Heart.png",2,0,1,0,0,4,5)
+    sprite_set_bbox_mode(sprSMB2Heart,0)
+
+    sprFalconHead=sprite_add(global.homeDir+"\Stages\Cliffs\FalconHead.png",17,0,1,0,0,0,21)
+    sprite_set_bbox_mode(sprFalconHead,0)
+
+    k=random(2)
+    for (j=0; j<k; j+=1){
+        i=instance_create(random(478-435)+435, 315, Effect)
+        i.sprite_index=sprPlantHead
+        i.noDeath=true
+        i.image_speed=random(0.4)+0.1
+        i.image_xscale=choose(-1,1)
+        i.depth=25
+    }
+
+    k=random(4)
+    for (j=0; j<k; j+=1){
+        i=instance_create(random(532-445)+445, 459, Effect)
+        i.sprite_index=sprPlantHead
+        i.noDeath=true
+        i.image_speed=random(0.4)+0.1
+        i.image_xscale=choose(-1,1)
+        i.depth=25
+    }
+
+    k=random(3)
+    for (j=0; j<k; j+=1){
+        i=instance_create(random(532-440)+440, 523, Effect)
+        i.sprite_index=sprPlantHead
+        i.noDeath=true
+        i.image_speed=random(0.4)+0.1
+        i.image_xscale=choose(-1,1)
+        i.depth=25
+    }
+
+    k=random(2)
+    for (j=0; j<k; j+=1){
+        i=instance_create(random(558-516)+516, 571, Effect)
+        i.sprite_index=sprPlantHead
+        i.noDeath=true
+        i.image_speed=random(0.4)+0.1
+        i.image_xscale=choose(-1,1)
+        i.depth=25
+    }
+
+    falcHead=instance_create(535, 410, Effect)
+    falcHead.sprite_index=sprFalconHead
+    falcHead.noDeath=true
+    falcHead.freezeOnLastFrame=true
+    falcHead.image_speed=0
+    falcHead.depth=25
+
+}else if (type == STEP){
+    if (round(falcHead.image_index) == falcHead.image_number-1) || (round(falcHead.image_index) == 0){
+        if (random(200)<1){
+            falcHead.image_index=0
+            falcHead.image_speed=random(0.4)+0.05
+        }
+    }
+    if (global.roundStart){
+        if (random(200)<1){
+            i=createItem(0,random(730-200)+200, room_height)
+            i.sprite_index=sprSMB2Heart
+            i.image_xscale=1
+            i.image_yscale=i.image_xscale
+            i.image_speed=0.1
+            i.pickUpItem=false
+            i.theGravity=0
+            i.vspeed=-2
+            i.hspeed=0
+            i.ignoreWalls=true
+            i.healthMod=choose(2,3,4,5)
+            i.theHWave=true
+            i.theHWaveOffset=0
+            i.theHWaveDivisor=20
+        }
+    }
+}else if (type == UNLOAD){
+    if (sprite_exists(sprPlantHead)){ sprite_delete(sprPlantHead) }
+    if (sprite_exists(sprSMB2Heart)){ sprite_delete(sprSMB2Heart) }
+    if (sprite_exists(sprFalconHead)){ sprite_delete(sprFalconHead) }
+}

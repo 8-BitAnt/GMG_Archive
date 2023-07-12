@@ -1,0 +1,120 @@
+[Smash Bros Rumble - Character Definition]
+name=Princess Peach
+path=.\Chars\Peach\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+15 0 1 0 1 21 40
+{10 3 32 39}
+StockIcon
+1 0 1 0 0 15 15
+{0 0 29 29}
+8BitIdle
+1 0 1 0 0 10 32
+{3 1 18 31}
+8BitWalk
+3 0 1 0 0 12 33
+{3 1 18 32}
+8BitAttack
+7 0 1 0 0 11 33
+{3 1 18 32}
+8BitProjectile
+1 0 1 0 0 11 33
+{3 4 18 19}
+Guard
+8 0 1 0 0 16 41
+{4 4 27 40}
+Hit
+1 0 1 0 0 25 40
+{14 3 36 39}
+Hit2
+5 0 1 0 0 19 47
+{8 8 29 46}
+Hit3
+3 0 1 0 0 20 43
+{9 6 29 42}
+Crouch
+1 0 1 0 0 22 39
+{10 2 33 38}
+Walk
+7 0 1 0 0 22 40
+{11 3 33 39}
+SlideTurn
+1 0 1 0 0 13 44
+{3 5 22 43}
+Jump
+4 0 1 0 0 22 42
+{10 4 33 41}
+Jump2
+6 0 1 0 0 16 46
+{5 12 26 45}
+Fall
+4 0 1 0 0 16 46
+{5 12 26 45}
+Roll
+6 0 1 0 0 19 39
+{8 2 32 38}
+AirDodge
+6 0 1 0 0 18 37
+{1 2 31 36}
+LedgeGrab
+4 0 1 0 0 14 45
+{3 11 25 44}
+Attack
+6 0 1 0 0 13 44
+{16 14 34 33}
+Attack2
+7 0 1 0 0 13 44
+{16 14 34 33}
+AttackSide
+7 0 1 0 0 14 35
+{15 10 56 35}
+AttackUp
+7 0 1 0 0 16 52
+{3 3 26 31}
+AttackDown
+5 0 1 0 0 14 35
+{15 18 56 35}
+RunAttack
+5 0 1 0 0 14 35
+{15 10 56 35}
+AirAttack
+8 0 1 0 0 23 35
+{28 9 47 29}
+AirAttackUp
+7 0 1 0 0 16 52
+{3 3 26 31}
+AirAttackDown
+8 0 1 0 0 14 44
+{4 25 23 43}
+Smash
+8 0 1 0 0 27 44
+{27 8 53 40}
+SmashUp
+9 0 1 0 0 23 51
+{14 14 32 50}
+SmashDown
+12 0 1 0 0 36 40
+{2 22 77 40}
+Special
+8 0 1 0 0 20 41
+{8 3 28 40}
+SpecialSide
+9 0 1 0 0 20 40
+{16 18 32 35}
+SpecialUp
+6 0 1 0 0 17 53
+{2 4 31 20}
+SpecialDown
+11 0 1 0 0 25 43
+{2 10 50 38}
+AirSpecialDown
+9 0 1 0 0 19 35
+{5 2 31 35}
+Projectile
+4 0 1 0 0 16 16
+{7 8 25 24}

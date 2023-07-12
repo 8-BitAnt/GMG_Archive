@@ -1,0 +1,132 @@
+[Smash Bros Rumble - Character Definition]
+name=Diddy Kong
+path=.\Chars\Diddy\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+18 0 1 0 0 24 31
+{13 4 35 30}
+Intro
+24 0 1 0 0 32 46
+{20 15 45 55}
+IntroBarrel
+1 0 1 0 0 32 46
+{}
+StockIcon
+1 0 1 0 0 14 15
+{1 0 28 29}
+8BitIdle
+1 0 1 0 0 12 20
+{4 4 21 19}
+8BitWalk
+4 0 1 0 0 12 20
+{4 4 21 19}
+8BitAttack
+6 0 1 0 0 14 20
+{6 4 23 19}
+8BitProjectile
+2 0 1 0 0 9 9
+{3 4 16 13}
+Hit
+1 0 1 0 0 20 32
+{9 5 31 31}
+Hit2
+1 0 1 0 0 17 24
+{Idle}
+Crouch
+1 0 1 0 0 20 31
+{9 9 31 30}
+Guard
+6 0 1 0 0 21 35
+{6 10 33 34}
+Roll
+6 0 1 0 0 21 39
+{4 4 35 38}
+AirDodge
+6 0 1 0 0 14 27
+{3 1 25 28}
+Walk
+4 0 1 0 0 19 31
+{8 4 30 30}
+Run
+4 0 1 0 0 17 31
+{6 4 28 30}
+SlideTurn
+1 0 1 0 0 16 31
+{5 4 27 30}
+Jump
+5 0 1 0 0 23 31
+{12 4 34 30}
+Jump2
+7 0 1 0 0 16 29
+{5 2 27 28}
+Fall
+2 0 1 0 0 15 30
+{4 3 26 29}
+LedgeGrab
+8 0 1 0 0 12 29
+{1 2 23 28}
+Attack
+7 0 1 0 0 15 34
+{16 18 45 30}
+Attack2
+5 0 1 0 0 12 35
+{17 15 43 36}
+AttackSide
+6 0 1 0 0 16 34
+{17 15 35 28}
+AttackUp
+6 0 1 0 0 15 34
+{6 4 33 23}
+AttackDown
+6 0 1 0 0 25 33
+{17 20 44 34}
+RunAttack
+5 0 1 0 0 25 42
+{10 12 40 42}
+AirAttack
+6 0 1 0 0 21 39
+{0 7 59 38}
+AirAttackSide
+8 0 1 0 0 15 30
+{10 5 42 25}
+AirAttackUp
+7 0 1 0 0 23 44
+{5 5 40 43}
+AirAttackDown
+9 0 1 0 0 20 45
+{5 25 35 50}
+Smash
+7 0 1 0 0 22 39
+{0 13 45 30}
+SmashUp
+9 0 1 0 0 16 44
+{4 2 30 30}
+SmashDown
+12 0 1 0 0 30 39
+{0 14 59 38}
+Special
+8 0 1 0 0 14 34
+{0 5 25 33}
+Special2
+2 0 1 0 0 14 34
+{0 5 25 33}
+SpecialSide
+11 0 1 0 0 18 34
+{0 4 34 33}
+SpecialUp
+12 0 1 0 0 35 25
+{10 0 55 80}
+SpecialDown
+14 0 1 0 0 31 47
+{20 15 45 55}
+Projectile
+5 0 1 0 0 12 13
+{3 4 22 20}
+Projectile2
+6 0 1 0 0 17 19
+{5 4 28 32}

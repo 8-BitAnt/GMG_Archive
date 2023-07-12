@@ -1,0 +1,42 @@
+var i, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    sprPlatform=sprite_add(global.homeDir+"\Stages\NinjaAcademy\Platform.gif",1,0,1,0,0,32,2)
+    sprite_set_bbox_mode(sprPlatform,2)
+    sprite_set_bbox(sprPlatform,0,2,64,10)
+
+    i=instance_create(room_width/2, 472, objJumpBlock)
+    i.sprite_index=sprPlatform
+    i.image_xscale=choose(1,-1)
+    i.xSpeed=0.5
+    i.xSticky=1
+    i.minX=438
+    i.maxX=600
+    i.goRight=choose(0,1)
+    i.visible=true
+
+    i=instance_create(room_width/2, 322, objJumpBlock)
+    i.sprite_index=sprPlatform
+    i.image_xscale=choose(1,-1)
+    i.xSpeed=2
+    i.xSticky=1
+    i.minX=392
+    i.maxX=644
+    i.goRight=choose(0,1)
+    i.visible=true
+
+    i=instance_create(room_width/2, 173, objJumpBlock)
+    i.sprite_index=sprPlatform
+    i.image_xscale=choose(1,-1)
+    i.xSpeed=4
+    i.xSticky=1
+    i.minX=356
+    i.maxX=688
+    i.goRight=choose(0,1)
+    i.visible=true
+}else if (type == STEP){
+}else if (type == UNLOAD){
+    if (sprite_exists(sprPlatform)){ sprite_delete(sprPlatform) }
+}

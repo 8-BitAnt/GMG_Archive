@@ -1,0 +1,75 @@
+//-------------RANDOM FALLING PLATFORMS----------------//
+
+var i, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    with (objBottomWall){
+        instance_destroy()
+    }
+    with (objLedgeLeft){
+        instance_destroy()
+    }
+    with (objLedgeRight){
+        instance_destroy()
+    }
+    sprBlock1=sprite_add(global.homeDir+"\Stages\BattleArena\block1.bmp",1,0,0,0,0,16,16)
+    sprite_set_bbox_mode(sprBlock1,0)
+    sprBlock2=sprite_add(global.homeDir+"\Stages\BattleArena\block2.bmp",1,0,0,0,0,16,8)
+    sprite_set_bbox_mode(sprBlock2,0)
+    sprJBlock=sprite_add(global.homeDir+"\Stages\BattleArena\jumpblock.bmp",1,0,0,0,0,16,8)
+    sprite_set_bbox_mode(sprJBlock,0)
+    
+    if (variable_global_exists('theSeed')){
+        if (is_string(global.theSeed)){
+            global.theSeed=real(global.theSeed);
+        }
+        if (global.theSeed != INVALID){
+            random_set_seed(global.theSeed)
+        }
+    }
+    
+    j=random(20)+12
+    for (i=0; i<j; i+=1){
+        if (i==0){
+            k=instance_create(0,0,objBottomWall)
+        }else{
+            k=instance_create(0,0,choose(objBottomWall,objBottomWall,objJumpBlock))
+        }
+        k.sprite_index=choose(sprBlock1,sprBlock2)
+        if (k.object_index==objJumpBlock){
+            k.sprite_index=sprJBlock
+        }
+        k.image_xscale=1+random(5)
+        if (i==0){
+            k.image_xscale+=6
+        }
+        with (k){
+            xSpeed=choose(0,0,random(4)+0.2)
+            ySpeed=choose(random(3)+0.05)
+            goRight=choose(0,1)
+            goDown=choose(0,1,1,1)
+            xSticky=choose(0,1)
+            ySticky=choose(0,1)
+            minX=random(room_width*0.6)
+            minY=random(room_height*0.6)
+            maxX=random(room_width-minX -10)+minX +10
+            maxY=choose(random(room_height-minY -10)+minY +10, room_height + 50)
+            x=minX+random(maxX-minX)
+            y=minY+random(maxY-minY)
+            visible=true
+        }
+    }
+
+}else if (type == STEP){
+    with (objBottomWall){
+        if (y>room_height+10){
+            y=0
+        }
+    }
+}else if (type == UNLOAD){
+    if (sprite_exists(sprBlock1)){ sprite_delete(sprBlock1) }
+    if (sprite_exists(sprBlock2)){ sprite_delete(sprBlock2) }
+    if (sprite_exists(sprJBlock)){ sprite_delete(sprJBlock) }
+}

@@ -1,0 +1,117 @@
+[Smash Bros Rumble - Character Definition]
+name=Ryu Hayabusa
+path=.\Chars\Hayabusa\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+Idle
+8 0 1 0 0 11 35
+{3 3 19 34}
+StockIcon
+1 0 1 0 0 15 15
+{3 0 24 29}
+8BitIdle
+1 0 1 0 0 11 34
+{3 3 19 33}
+8BitWalk
+3 0 1 0 0 11 34
+{3 3 19 33}
+8BitAttack
+6 0 1 0 0 11 34
+{15 8 41 20}
+Hit
+1 0 1 0 0 18 34
+{5 3 29 33}
+Hit2
+1 0 1 0 0 18 34
+{5 3 29 33}
+Crouch
+8 0 1 0 0 11 35
+{4 11 20 34}
+Guard
+1 0 1 0 0 12 34
+{1 2 21 33}
+Roll
+6 0 1 0 0 13 29
+{1 2 22 28}
+AirDodge
+6 0 1 0 0 15 34
+{1 4 28 33}
+Run
+6 0 1 0 0 11 35
+{0 5 21 34}
+SlideTurn
+1 0 1 0 0 13 35
+{3 3 22 34}
+Jump
+4 0 1 0 0 11 33
+{0 2 21 32}
+Jump2
+4 0 1 0 0 13 30
+{1 2 22 29}
+Fall
+5 0 1 0 0 11 34
+{1 2 21 33}
+LedgeGrab
+1 0 1 0 0 10 34
+{1 4 18 33}
+Attack
+5 0 1 0 0 11 32
+{16 3 44 17}
+Attack2
+5 0 1 0 0 11 32
+{16 10 44 27}
+Attack3
+5 0 1 0 0 9 32
+{16 19 44 33}
+AttackUp
+5 0 1 0 0 11 44
+{8 1 27 28}
+AttackDown
+5 0 1 0 0 9 32
+{16 12 44 25}
+AirAttack
+6 0 1 0 0 16 30
+{2 1 32 34}
+AirAttackSide
+5 0 1 0 0 10 32
+{16 2 44 14}
+AirAttackUp
+6 0 1 0 0 21 41
+{8 0 23 24}
+AirAttackDown
+6 0 1 0 0 21 34
+{20 25 35 48}
+Smash
+7 0 1 0 0 10 32
+{16 3 60 22}
+SmashUp
+7 0 1 0 0 11 59
+{6 0 26 37}
+SmashDown
+5 0 1 0 0 9 32
+{16 12 58 33}
+Special
+3 0 1 0 0 11 32
+{0 1 22 31}
+SpecialUp
+11 0 1 0 0 16 30
+{2 1 32 34}
+SpecialDown
+19 0 1 0 0 10 32
+{-10 3 28 17}
+Projectile
+8 0 1 0 0 6 6
+{2 2 9 9}
+Projectile2
+5 0 1 0 0 10 10
+{1 1 18 18}
+Projectile3
+4 0 1 0 0 18 19
+{4 2 31 36}
+Projectile4
+4 0 1 0 0 11 11
+{2 2 19 19}

@@ -1,0 +1,13 @@
+Type while playing to enable cheat:
+
+dontlive		invincibility
+dontshoot	automatic shotgun
+dontbleed	bloody mode
+dontexplode	exploding demons
+dontspawn	more demons
+
+You will hear an audible confirmation upon activating a cheat.
+Enabling any cheat will invalidate all your scores for the current round.
+All cheats are deactivated when each round starts.
+
+kthx

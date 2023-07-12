@@ -1,0 +1,105 @@
+var i, j, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    shadowLength=0.05
+
+    sprPlatform=sprite_add(global.homeDir+"\Stages\KingdomII\Platform.png",5,0,1,0,0,20,14)
+    sprite_set_bbox_mode(sprPlatform,2)
+    sprite_set_bbox(sprPlatform,2,14,40,18)
+
+    sprWater=sprite_add(global.homeDir+"\Stages\KingdomII\Water.png",8,0,0,0,0,0,0)
+    sprite_set_bbox_mode(sprWater,0)//298 x 161
+
+    sprPlantHead=sprite_add(global.homeDir+"\Stages\KingdomII\PlantHead.png",8,0,1,0,0,0,7)
+    sprite_set_bbox_mode(sprPlantHead,0)
+
+    sprSMB2Heart=sprite_add(global.homeDir+"\Stages\Cliffs\SMB2Heart.png",2,0,1,0,0,4,5)
+    sprite_set_bbox_mode(sprSMB2Heart,0)
+
+    i=instance_create(room_width/2, 200, objBottomWall)
+    i.sprite_index=sprPlatform
+    i.image_speed=0.3
+    i.image_xscale*=choose(-1,1)
+    i.xSpeed=2
+    i.ySpeed=0.5
+    i.xSticky=1
+    i.ySticky=1
+    i.minX=45
+    i.maxX=room_width-45
+    i.minY=150
+    i.maxY=250
+    i.goRight=choose(1,0)
+    i.goDown=choose(1,0)
+    i.visible=true
+
+    i=instance_create(170, room_height-161, Effect)
+    i.sprite_index=sprWater
+    i.noDeath=true
+    i.image_speed=0.5
+    i.depth=25
+
+    k=random(3)
+    for (j=0; j<k; j+=1){
+        i=instance_create(random(164-6)+6, 326, Effect)
+        i.sprite_index=sprPlantHead
+        i.noDeath=true
+        i.image_speed=random(0.4)+0.1
+        i.image_xscale=choose(-1,1)
+        i.depth=25
+    }
+
+    k=random(2)
+    for (j=0; j<k; j+=1){
+        i=instance_create(random(260-236)+236, 378, Effect)
+        i.sprite_index=sprPlantHead
+        i.noDeath=true
+        i.image_speed=random(0.4)+0.1
+        i.image_xscale=choose(-1,1)
+        i.depth=25
+    }
+
+
+    k=random(2)
+    for (j=0; j<k; j+=1){
+        i=instance_create(random(400-375)+370, 378, Effect)
+        i.sprite_index=sprPlantHead
+        i.noDeath=true
+        i.image_speed=random(0.4)+0.1
+        i.image_xscale=choose(-1,1)
+    }
+
+    k=random(3)
+    for (j=0; j<k; j+=1){
+        i=instance_create(random(630-478)+478, 326, Effect)
+        i.sprite_index=sprPlantHead
+        i.noDeath=true
+        i.image_speed=random(0.4)+0.1
+        i.image_xscale=choose(-1,1)
+        i.depth=25
+    }
+
+}else if (type == STEP) && (global.roundStart){
+    if (random(1000)<1){
+    	i=createItem(0,random(room_width), room_height)
+        i.sprite_index=sprSMB2Heart
+        i.image_xscale=1
+        i.image_yscale=i.image_xscale
+        i.image_speed=0.1
+        i.pickUpItem=false
+        i.theGravity=0
+        i.vspeed=-2
+        i.hspeed=0
+        i.ignoreWalls=true
+        i.healthMod=5
+        i.theHWave=true
+        i.theHWaveOffset=0
+        i.theHWaveDivisor=20
+    }
+}else if (type == UNLOAD){
+    if (sprite_exists(sprPlatform)){ sprite_delete(sprPlatform) }
+    if (sprite_exists(sprWater)){ sprite_delete(sprWater) }
+    if (sprite_exists(sprPlantHead)){ sprite_delete(sprPlantHead) }
+    if (sprite_exists(sprSMB2Heart)){ sprite_delete(sprSMB2Heart) }
+}

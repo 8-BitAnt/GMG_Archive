@@ -1,0 +1,360 @@
+[Smash Bros Rumble - Character Definition]
+name=Kirby
+path=.\Chars\Kirby\
+Portrait
+1 0 0 0 1 64 80
+{0 0 127 159}
+AltPortrait
+1 0 0 0 0 64 80
+{0 0 127 159}
+Idle
+10 0 1 0 0 17 31
+{4 7 27 30}
+StockIcon
+1 0 1 0 0 15 15
+{2 2 27 27}
+8BitIdle
+1 0 1 0 0 10 19
+{2 3 17 18}
+8BitWalk
+4 0 1 0 0 10 19
+{2 3 17 18}
+8BitAttack
+7 0 1 0 0 13 24
+{1 2 24 24}
+Hit
+1 0 1 0 0 15 28
+{3 4 26 27}
+Hit2
+1 0 1 0 0 15 28
+{3 4 26 27}
+Hit3
+1 0 1 0 0 13 29
+{3 5 26 28}
+Burned
+5 0 1 0 0 23 39
+{Idle}
+Frozen
+6 0 1 0 0 13 25
+{Idle}
+Electrocuted
+4 0 1 0 0 17 33
+{Idle}
+Crushed
+7 0 1 0 0 16 12
+{Idle}
+Sleepy
+4 0 1 0 0 18 23
+{Idle}
+Crouch
+1 0 1 0 0 16 31
+{4 18 27 30}
+Guard
+1 0 1 0 0 16 29
+{3 5 26 28}
+Roll
+6 0 1 0 0 17 31
+{5 5 28 30}
+AirDodge
+6 0 1 0 0 16 30
+{2 4 28 29}
+Walk
+10 0 1 0 0 17 31
+{4 7 27 30}
+Run
+8 0 1 0 0 17 31
+{4 7 27 30}
+SlideTurn
+1 0 1 0 0 16 31
+{3 7 26 30}
+Jump
+1 0 1 0 0 16 31
+{4 7 27 30}
+Jump2
+11 0 1 0 0 17 31
+{5 7 28 30}
+Fall
+5 0 1 0 0 16 31
+{4 7 26 30}
+Fly
+8 0 1 0 0 20 23
+{0 1 31 30}
+LedgeGrab
+1 0 1 0 0 7 32
+{-2 3 17 33}
+Attack
+7 0 1 0 0 14 33
+{16 16 31 30}
+Attack2
+13 0 1 0 0 13 33
+{16 10 46 33}
+AttackUp
+9 0 1 0 0 12 34
+{0 1 30 24}
+AttackDown
+6 0 1 0 0 14 34
+{0 20 31 34}
+RunAttack
+7 0 1 0 0 12 32
+{14 4 30 29}
+AirAttack
+6 0 1 0 0 13 35
+{14 10 37 39}
+AirAttackUp
+12 0 1 0 0 19 30
+{1 0 39 39}
+AirAttackDown
+8 0 1 0 0 16 37
+{3 15 26 36}
+Smash
+12 0 1 0 0 13 33
+{16 16 32 30}
+SmashUp
+8 0 1 0 0 15 41
+{2 0 36 31}
+SmashDown
+12 0 1 0 0 25 33
+{0 20 50 34}
+Special
+7 0 1 0 0 15 28
+{6 -3 30 28}
+Special2
+6 0 1 0 0 12 23
+{14 7 27 21}
+SpecialSide
+8 0 1 0 0 32 46
+{15 15 61 50}
+SpecialUp
+17 0 1 0 0 31 44
+{32 5 55 51}
+SpecialDown
+11 0 1 0 0 15 28
+{3 0 27 32}
+SpecialDown2
+11 0 1 0 0 15 28
+{3 0 27 32}
+SpecialDown3
+11 0 1 0 0 15 28
+{3 0 27 32}
+SpecialDown4
+11 0 1 0 0 15 28
+{3 0 27 32}
+AirSpecialSide
+8 1 1 0 0 32 48
+{15 15 61 50}
+Projectile
+6 0 1 0 0 25 38
+{0 7 44 38}
+Projectile2
+1 0 1 0 0 21 20
+{0 0 41 39}
+SGrab
+12 0 1 0 0 16 28
+{20 5 45 26}
+SSuccess
+1 0 1 0 0 18 29
+{Idle}
+SThrow
+5 0 1 0 0 18 28
+{Idle}
+SThrowAttack
+5 0 1 0 0 18 29
+{Idle}
+MarioHat
+1 0 1 0 0 13 26
+{}
+LuigiHat
+1 0 1 0 0 13 26
+{}
+LinkHat
+1 0 1 0 0 16 25
+{}
+LinkSpecial
+5 0 1 0 0 15 26
+{Idle}
+YoshiHat
+1 0 1 0 0 13 29
+{}
+YoshiSpecial
+10 0 1 0 0 13 36
+{29 14 55 30}
+YoshiSuccess
+5 0 1 0 0 18 40
+{-5 0 15 40}
+SamusHelmet
+1 0 1 0 0 13 24
+{}
+SamusIdle
+13 0 1 0 0 13 24
+{Idle}
+DKSuit
+1 0 1 0 0 13 25
+{}
+DKSpecial
+6 0 1 0 0 14 24
+{Idle}
+FoxEars
+1 0 1 0 0 14 24
+{}
+FoxIdle
+7 0 1 0 0 14 24
+{Idle}
+CptFalconHelmet
+1 0 1 0 0 14 22
+{}
+CptFalconIdle
+12 0 1 0 0 14 22
+{Idle}
+CptFalconSpecial
+21 0 1 0 0 14 33
+{16 16 32 33}
+PikachuHat
+1 0 1 0 0 17 34
+{}
+JigglyHair
+1 0 1 0 0 13 26
+{}
+JigglySpecial
+14 0 1 0 0 15 24
+{-26 -10 45 23}
+NessHat
+1 0 1 0 0 17 25
+{}
+NessSpecial
+6 0 1 0 0 17 25
+{Idle}
+PeachCrown
+1 0 1 0 0 13 26
+{}
+BowserHair
+1 0 1 0 0 13 30
+{}
+BowserIdle
+10 0 1 0 0 13 30
+{Idle}
+BowserSpecial
+7 0 1 0 0 13 39
+{Idle}
+GameWatchHat
+1 0 1 0 0 14 21
+{}
+GameWatchIdle
+7 0 1 0 0 14 21
+{Idle}
+GameWatchSpecial
+5 0 1 0 0 14 22
+{Idle}
+DiddyHat
+1 0 1 0 0 13 26
+{}
+PitWreath
+1 0 1 0 0 16 23
+{Idle}
+SonicHat
+1 0 1 0 0 13 26
+{}
+SonicSpecial
+18 0 1 0 0 15 27
+{ }
+MetaKnightMask
+1 0 1 0 0 14 21
+{}
+MetaKnightSpecial
+16 0 1 0 0 25 52
+{ }
+SnakeBeard
+1 0 1 0 0 13 26
+{}
+LucasHair
+1 0 1 0 0 14 27
+{}
+LucasSpecial
+6 0 1 0 0 17 25
+{Idle}
+MegaManHelmet
+1 0 1 0 0 13 25
+{}
+HayabusaSpecial
+21 0 1 0 0 14 33
+{16 16 32 30}
+BillyHair
+1 0 1 0 0 13 23
+{}
+PimpleHat
+1 0 1 0 0 13 21
+{}
+PimpleSpecial
+7 0 1 0 0 29 39
+{}
+RashHat
+1 0 1 0 0 13 21
+{}
+RashSpecial
+8 0 1 0 0 17 39
+{}
+ZitzHat
+1 0 1 0 0 13 21
+{}
+ZitzSpecial
+9 0 1 0 0 13 29
+{20 0 52 41}
+DonIdle
+7 0 1 0 0 14 27
+{Idle}
+DonHeadband
+1 0 1 0 0 14 27
+{}
+LeoIdle
+7 0 1 0 0 14 27
+{Idle}
+LeoHeadband
+1 0 1 0 0 14 27
+{}
+MikeIdle
+10 0 1 0 0 14 27
+{Idle}
+MikeHeadband
+1 0 1 0 0 14 27
+{}
+RaphIdle
+16 0 1 0 0 14 27
+{Idle}
+RaphHeadband
+1 0 1 0 0 14 27
+{}
+GokuHair
+1 0 1 0 0 14 31
+{}
+NarutoHeadband
+1 0 1 0 0 13 28
+{}
+RyuIdle
+13 0 1 0 0 15 21
+{Idle}
+RyuHeadband
+1 0 1 0 0 15 21
+{}
+RyuSpecial
+10 0 1 0 0 15 30
+{0 3 32 33}
+RyuProjectile
+3 0 1 0 0 13 27
+{ }
+PumpkinSuit
+1 0 1 0 0 13 27
+{Idle}
+HalloweenCandy
+8 0 1 0 0 7 7
+{}
+SantaHat
+1 0 1 0 0 16 25
+{Idle}
+ChristmasCandy
+8 0 1 0 0 7 7
+{}
+Taunt
+8 0 1 0 0 14 25
+{Idle}
+Taunt2
+11 0 1 0 0 14 25
+{Idle}

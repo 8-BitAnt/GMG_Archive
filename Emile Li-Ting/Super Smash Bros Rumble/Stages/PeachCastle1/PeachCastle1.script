@@ -1,0 +1,24 @@
+var i, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    shadowLength=0.05
+
+    sprPlatform=sprite_add(global.homeDir+"\Stages\PeachCastle1\Platform.gif",1,0,0,0,0,245,1)
+    sprite_set_bbox_mode(sprPlatform,2)
+    sprite_set_bbox(sprPlatform,0,1,490,22)
+
+    i=instance_create(room_width/2-15, 575, objBottomWall)
+    i.sprite_index=sprPlatform
+    i.depth=1000001
+    i.xSpeed=0.65
+    i.xSticky=1
+    i.minX=room_width/2-490/4-15
+    i.maxX=room_width/2+490/4-15
+    i.goRight=choose(0,1)
+    i.visible=true
+}else if (type == STEP){
+}else if (type == UNLOAD){
+    if (sprite_exists(sprPlatform)){ sprite_delete(sprPlatform) }
+}

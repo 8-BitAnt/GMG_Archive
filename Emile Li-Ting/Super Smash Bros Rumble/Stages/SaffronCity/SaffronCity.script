@@ -1,0 +1,32 @@
+var i, type;
+
+type=global.theArgument0
+
+if (type == PRELOAD){
+    shadowLength=0.05
+
+    sprPlatform=sprite_add(global.homeDir+"\Stages\SaffronCity\Platform.gif",1,0,1,0,0,35,2)
+    sprite_set_bbox_mode(sprPlatform,2)
+    sprite_set_bbox(sprPlatform,0,2,70,6)
+
+    i=instance_create(408, 460+random(517-450), objJumpBlock)
+    i.sprite_index=sprPlatform
+    i.ySpeed=1
+    i.ySticky=1
+    i.minY=455-30//455
+    i.maxY=517
+    i.goDown=choose(0,1)
+    i.visible=true
+
+    i=instance_create(215, 528+random(598-5-(528+5)), objJumpBlock)
+    i.sprite_index=sprPlatform
+    i.ySpeed=1
+    i.ySticky=1
+    i.minY=528-30//528
+    i.maxY=598
+    i.goDown=choose(0,1)
+    i.visible=true
+}else if (type == STEP){
+}else if (type == UNLOAD){
+    if (sprite_exists(sprPlatform)){ sprite_delete(sprPlatform) }
+}

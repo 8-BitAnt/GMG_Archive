@@ -1,0 +1,431 @@
+var charAction;
+
+charAction=global.theArgument0;
+
+if (charAction == HASBEENHIT){ exit
+}else if (charAction == HASBEENGRABBED){ exit
+}else if (eightBitTimer > 0) && (charAction >= ATTACK) && (charAction <= SPECIALSMASHDOWN){
+    SetAttackBoxParameters();
+    movementModifier=1
+    exit
+}
+
+switch (charAction)
+{
+case ATTACK:
+    SetAttackBoxParameters(2,3);
+    
+    if (comboCount<=0){
+        theAttack.comboCount=1
+    }else if (comboCount > 0){
+        theAttack.sprite_index=sprAttack2
+        theAttack.comboCount=0
+    }
+    
+    theAttack.attackPower=(random(1)+1)*attackMultiplier
+    theAttack.hAttackSpeed=0.8
+    theAttack.hSpeedSet=true
+    theAttack.hSpeedMinReq=false
+    theAttack.vAttackSpeed=1.5
+    theAttack.cooldownTimer=0
+    
+    theAttack.whiffSound=soundWhiff
+    if (random(4)<1){
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+    }
+    theAttack.hitSound=soundHits
+    break
+    
+case ATTACKSIDE: ActionScript(global.character[pNum], ATTACK); break
+        
+case ATTACKUP:
+    SetAttackBoxParameters(3,4);
+    movementModifier=1
+    theAttack.hAttackSpeed=0
+    theAttack.vAttackSpeed=5.5
+
+    theAttack.whiffSound=soundWhiff2
+    if (random(4)<1){
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+    }
+    theAttack.hitSound=soundHits
+    break
+    
+case ATTACKDOWN:
+    SetAttackBoxParameters(2,4);
+    theAttack.hAttackSpeed=4
+    theAttack.vAttackSpeed=1
+    
+    theAttack.whiffSound=soundWhiff2
+    if (random(4)<1){
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+    }
+    theAttack.hitSound=soundHits
+    break
+    
+case RUNATTACK:
+    SetAttackBoxParameters(0,2);
+    
+    theAttack.whiffSound=soundWhiff3
+    if (random(2)<1){
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+    }
+    theAttack.hitSound=soundHits2
+    break
+    
+case AIRATTACK:
+    SetAttackBoxParameters(0,3);
+    theAttack.endOnGround=true    
+    theAttack.whiffSound=soundWhiff2
+    if (random(4)<1){
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+    }
+    theAttack.hitSound=soundHits
+    break
+    
+case AIRATTACKSIDE:
+    if (image_xscale>0){
+        hspeed+=4
+    }else{
+        hspeed-=4
+    }
+    SetAttackBoxParameters(2,4);
+    theAttack.endOnGround=true
+    theAttack.whiffSound=soundWhiff2
+    if (random(4)<1){
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+    }
+    theAttack.hitSound=soundHits
+    break
+    
+case AIRATTACKUP:
+    SetAttackBoxParameters(5,6);
+    movementModifier=0
+    theAttack.endOnGround=true    
+    theAttack.whiffSound=soundWhiff2
+    if (random(4)<1){
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+    }
+    theAttack.hitSound=soundHits
+    break
+
+case AIRATTACKDOWN:
+    vspeed+=5
+    SetAttackBoxParameters(1,3);
+    theAttack.endOnGround=true
+    theAttack.whiffSound=soundWhiff2
+    if (random(4)<1){
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+    }
+    theAttack.hitSound=soundHits
+    break
+
+case SMASHSIDE:
+    SetAttackBoxParameters(5,6);
+    theAttack.multiHSpeedFrame[0]=5
+    theAttack.multiHSpeed[0]=2
+    theAttack.attackPower=14*attackMultiplier
+    theAttack.chargeFrameStart=2
+    theAttack.chargeFrameEnd=3
+    theAttack.cooldownTimer=6
+    theAttack.whiffSound=soundWhiff3
+    theAttack.whiffFrame=4
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=4
+    theAttack.hitSound=soundHits2
+    break
+    
+case SMASHUP:
+    SetAttackBoxParameters(10,13);
+    theAttack.multiHit[0]=4;
+    theAttack.multiHit[1]=7;
+    theAttack.multiVSpeedMinReq=false
+    theAttack.multiVSpeedMin=3
+    theAttack.multiVHitSpeed=3
+    theAttack.multiAttackPower=2.5*attackMultiplier
+    theAttack.multiStunningPower=7
+    
+    theAttack.attackPower=4*attackMultiplier
+    theAttack.hAttackSpeed=0
+    theAttack.vAttackSpeed=5.5
+    theAttack.stunningPower=9
+    theAttack.chargeFrameStart=2
+    theAttack.chargeFrameEnd=2
+    theAttack.cooldownTimer=4
+    theAttack.whiffSound=soundWhiff3
+    theAttack.whiffFrame=3
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=4
+    theAttack.hitSound=soundHits2
+    break
+
+case SMASHDOWN:
+    SetAttackBoxParameters(4,7);
+    theAttack.multiHSpeedFrame[0]=2
+    theAttack.multiHSpeed[0]=6
+    theAttack.hAttackSpeed=4
+    theAttack.vAttackSpeed=1
+    theAttack.chargeFrameStart=0
+    theAttack.chargeFrameEnd=0
+    theAttack.whiffSound=soundWhiff3
+    theAttack.whiffFrame=4
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=3
+    theAttack.hitSound=soundHits2
+    break
+    
+case SPECIAL:
+    if (specialState != INSTANTPRESSED){ break }
+    if (finalSmash){
+        //Air Drilling
+        chargingTimer=0
+        hspeed=0
+        vspeed=0
+        suspendGravity=true
+        suspendFriction=true
+        friction=0.01
+        gravity=0
+        SetAttackBoxParameters(0,3);
+        movementModifier=0
+        theAttack.image_xscale=abs(image_xscale)
+        theAttack.image_yscale=theAttack.image_yscale
+        theAttack.yOffset=-(bbox_bottom-bbox_top)*0.5
+        theAttack.attackPower=12*attackMultiplier
+        theAttack.hAttackSpeed=4
+        theAttack.vAttackSpeed=4
+        theAttack.rotateDirection=true
+        theAttack.loopCount=30
+        theAttack.endSuspendFriction=true
+        theAttack.cooldownTimer=10
+        theAttack.finalSmash=true
+        theAttack.flight=true
+        theAttack.upFlightSpeed=1.5
+        theAttack.downFlightSpeed=1.5
+        theAttack.sideFlightSpeed=1.5
+        theAttack.whiffSound=soundWhiff3
+        theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+        theAttack.whiffFrame2=0
+        theAttack.hitSound=soundHits2
+        
+        exit
+    }
+    
+    
+    //drill rush
+    if (!jumpCheck(true)){ exit }
+    if (onGround){
+        vspeed=-5
+    }
+    suspendGravity=true
+    gravity=0.2
+    onGround=false
+    suspendFriction=true
+    friction=0
+    SetAttackBoxParameters(2,4);
+    theAttack.image_speed=0.9
+    theAttack.yOffset=-(bbox_bottom-bbox_top)*0.5
+    theAttack.attackPower=7*attackMultiplier
+    theAttack.stunningPower=10
+    theAttack.hAttackSpeed=3
+    theAttack.vAttackSpeed=2
+    theAttack.rotateDirection=true
+    theAttack.loopCount=3
+    theAttack.flight=true
+    theAttack.endOnGround=true
+    theAttack.cooldownTimer=10
+    theAttack.endSuspendGravity=true
+    theAttack.endSuspendFriction=true
+    theAttack.whiffSound=soundWhiff3
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=0
+    theAttack.hitSound=soundHits2
+    break
+    
+case SPECIALSIDE:
+    //thrust
+    suspendGravity=true
+    gravity=0
+    vspeed=0
+    suspendFriction=true
+    friction=0
+    onGround=false
+
+    SetAttackBoxParameters(1,4);
+    theAttack.multiHSpeedFrame[0]=1
+    theAttack.multiHSpeed[0]=12
+    theAttack.multiHSpeedFrame[1]=5
+    theAttack.multiHSpeed[1]=3
+    theAttack.multiHSpeedFrame[1]=6
+    theAttack.multiHSpeed[1]=3
+    
+    theAttack.attackPower=12*attackMultiplier
+    theAttack.stunningPower=8
+    theAttack.hAttackSpeed=2
+    theAttack.vAttackSpeed=3
+    theAttack.absoluteDirectionHit=true
+    theAttack.endSuspendGravity=true
+    theAttack.endSuspendFriction=true
+    theAttack.cooldownTimer=13
+    
+    theAttack.whiffSound=soundWhiff3
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=0
+    theAttack.hitSound=soundHits2
+    break
+    
+case SPECIALUP:
+    //mach tornado
+    if (!jumpCheck()){ exit }
+        
+    suspendGravity=true
+    gravity=0.2
+    suspendFriction=true
+    friction=0
+    vspeed=0
+
+    SetAttackBoxParameters(8,12);
+    movementModifier=1
+    if (random(3)<1){ theProjectile.elementalType='confuse' }
+    theAttack.reflectFrameStart=5
+    theAttack.reflectFrameEnd=15
+    theAttack.destroyProjectiles=true
+    theAttack.multiVSpeedFrame[0]=5
+    theAttack.multiVSpeed[0]=-4
+    theAttack.multiVSpeedFrame[1]=8
+    theAttack.multiVSpeed[1]=-10
+    theAttack.multiVSpeedFrame[2]=13
+    theAttack.multiVSpeed[2]=-4
+    theAttack.hAttackSpeed=2
+    theAttack.vAttackSpeed=5
+    theAttack.cooldownTimer=6
+    theAttack.endSuspendGravity=true
+    theAttack.endSuspendFriction=true
+    break
+    
+case SPECIALDOWN:
+    //dimension cape    
+    suspendGravity=true
+    suspendFriction=true
+    friction=0
+    gravity=0
+    y-=1
+    onGround=false
+
+    SetAttackBoxParameters(-1,-1);
+    theAttack.image_speed=1
+    theAttack.invulnerableFrameStart=7
+    theAttack.invulnerableFrameEnd=20
+    theAttack.multiHSpeedFrame[0]=12
+    theAttack.multiHSpeed[0]=40
+    theAttack.multiHSpeedFrame[1]=14
+    theAttack.multiHSpeed[1]=0
+    theAttack.multiHSpeedFrame[2]=15
+    theAttack.multiHSpeed[2]=0
+
+    theAttack.cooldownTimer=0
+    break
+       
+case AIRSPECIAL: ActionScript(global.character[pNum], SPECIAL); break
+case AIRSPECIALSIDE: ActionScript(global.character[pNum], SPECIALSIDE); break
+case AIRSPECIALUP: ActionScript(global.character[pNum], SPECIALUP); break
+    
+case AIRSPECIALDOWN:
+    SetAttackBoxParameters(10,11);
+    theAttack.sprite_index=sprAirSpecialDown
+    
+    theAttack.multiHit[0]=0;
+    theAttack.multiHit[1]=2;
+    theAttack.multiHit[2]=4;
+    theAttack.multiHit[3]=6;
+    theAttack.multiHit[4]=8;
+    
+    theAttack.multiHSpeedMinReq=false
+    theAttack.multiHHitSpeed=-1
+    theAttack.multiVSpeedMin=2
+    theAttack.multiVHitSpeed=2
+    
+    theAttack.multiVSpeedMinReq=false
+    theAttack.multiAttackPower=2*attackMultiplier
+    theAttack.multiStunningPower=8
+    
+    theAttack.image_speed=0.8
+    theAttack.attackPower=4*attackMultiplier
+    theAttack.hAttackSpeed=1.5
+    theAttack.vAttackSpeed=3
+    theAttack.cooldownTimer=9
+    
+    theAttack.whiffSound=soundWhiff
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3,soundAttack4)
+    theAttack.whiffFrame2=0
+    theAttack.hitSound=soundHits
+    break
+    
+case SPECIALSMASHSIDE: ActionScript(global.character[pNum], SPECIALSIDE); break
+case SPECIALSMASHUP: ActionScript(global.character[pNum], SPECIALUP); break
+case SPECIALSMASHDOWN: ActionScript(global.character[pNum], SPECIALDOWN); break
+
+case INITCHAR:
+    gender='m'
+    flyer=true
+    airSlowFallSpeed=AIRSLOWFALLSPEED*0.5
+    maxRunSpeed=MAXRUNSPEED*1.375
+    maxAirSpeed=MAXAIRSPEED*0.975
+    fallGravity=FALLGRAVITY-0.2
+    maxFallSpeed=MAXFALLSPEED-0.15
+    maxFlyJumps=5
+    flyJumpAnimSpeed=0.4
+    airJumpAnimSpeed=0.4
+    walkAnimSpeed=0.6
+    runAnimSpeed=1
+    
+    hDamageSpeedMultiplier=1.1
+    vDamageSpeedMultiplier=1.05
+    hHitDistanceEquation=HHITDISTANCEEQUATION*1.15
+    vHitDistanceEquation=VHITDISTANCEEQUATION*1.175
+
+    soundDies=   'MetaKnight Death.wav'
+    soundIsHit=  'MetaKnight Hit.wav'
+    soundIsHit2= 'MetaKnight Hit2.wav'
+    soundIsHit3= 'MetaKnight Hit3.wav'
+    soundIsHit4= 'MetaKnight Hit4.wav'
+    soundWhiff=  'Weak Sword Whiff.wav'
+    soundWhiff2= 'Medium Sword Whiff.wav'
+    soundWhiff3= 'Strong Sword Whiff.wav'
+    soundAttack= 'MetaKnight Attack.wav'
+    soundAttack2='MetaKnight Attack2.wav'
+    soundAttack3='MetaKnight Attack3.wav'
+    soundAttack4='MetaKnight Attack4.wav'
+    soundHits=   'Medium Sword Hit.wav'
+    soundHits2=  'Strong Sword Hit.wav'
+    break
+
+case CHARINTRO:
+    i=instance_create(x,y,Effect);
+    i.sprite_index=getSprite(alias+'IntroCape')
+    i.depth=depth+1
+    i.visible=false
+    i.copyImageScale=true
+    i.follow=1
+    i.followUntilAppear=true
+    i.parentObject=theAttack
+    i.theSpeed=0.1
+    i.moveDown=true
+    i.theSpeed2=0.6
+
+    if (x>room_width/2){ i.moveRight=true }
+    else{ i.moveLeft=true }
+
+    i.appearOnIndex=17
+    i.fadeOut=true
+    i.deathTimerMax=15
+    i.pNum=pNum
+    break
+}

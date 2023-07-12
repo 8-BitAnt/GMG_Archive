@@ -1,0 +1,47 @@
+var i, j, k, l, type;
+
+type=global.theArgument0;
+
+if (type == PRELOAD){
+    shadowLength=0.2
+
+    sprBanzaiBill=sprite_add(global.homeDir+"\Stages\PeachCastle2\BanzaiBill.gif",1,0,1,0,0,38,40)
+    sprite_set_bbox_mode(sprBanzaiBill,1)
+
+}else if (type == STEP) && (global.roundStart){
+    if (random(550)<1){
+        if (theCurrentBackground=MORNING)    { l=30 }
+        else if (theCurrentBackground=DAY)   { l=45 }
+        else if (theCurrentBackground=SUNSET){ l=35 }
+        else if (theCurrentBackground=NIGHT) { l=25 }
+
+        k=choose(0,1)//0=going left; 1=going right
+        j=-30
+        if (k){
+            i=instance_create(j,room_height*2/3+choose(1,-1)*random(room_height/3),objProjectile)
+        }else{
+            i=instance_create(room_width-j,room_height*2/3+choose(1,-1)*random(room_height/3),objProjectile)
+        }
+
+        i.sprite_index=sprBanzaiBill
+        i.image_xscale*=-1
+        i.attackPower=l
+        i.stunningPower=15
+        i.ignoreWalls=true
+        i.hspeed=random(5)
+        i.appearanceFrame=0
+        i.activated=true
+        i.visible=true
+        i.deathTimerMax=random(3000)+500
+        i.unreflectable=true
+        i.hitMax=10
+        i.bounceMax=INVALID
+        i.pNum=-2 //stage projectile
+        if (!k){
+            i.image_xscale*=-1
+            i.hspeed*=-1
+        }
+    }
+}else if (type == UNLOAD){
+    if (sprite_exists(sprBanzaiBill)){ sprite_delete(sprBanzaiBill) }
+}

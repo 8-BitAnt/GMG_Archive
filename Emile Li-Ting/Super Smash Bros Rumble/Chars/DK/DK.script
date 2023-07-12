@@ -1,0 +1,440 @@
+var charAction,i,j,k;
+
+charAction=global.theArgument0;
+
+if (charAction == HASBEENHIT){ exit
+}else if (charAction == HASBEENGRABBED){ exit
+}else if (eightBitTimer > 0) && (charAction >= ATTACK) && (charAction <= SPECIALSMASHDOWN){
+    SetAttackBoxParameters(-1,-1);
+    movementModifier=1
+    theAttack.cooldownTimer=5
+    
+    i=(bbox_right-bbox_left)/4
+    j=(bbox_bottom-bbox_top)/3
+    SetProjectileParameters(i,j)
+    theProjectile.attackPower=2*attackMultiplier
+    theProjectile.stunningPower=8
+    theProjectile.hAttackSpeed=1.5
+    theProjectile.vAttackSpeed=1
+    theProjectile.hSpeedMin=false
+    theProjectile.vSpeedMin=false
+    theProjectile.alphaDecay=true
+    theProjectile.decayOnImpact=true
+    theProjectile.appearanceFrame=3
+    theProjectile.fall=true
+    theProjectile.theGravity=0.7
+    theProjectile.bounceMax=3
+    theProjectile.theHSpeed=min(abs(hspeed)+5,8)
+    exit
+}
+
+switch(charAction)
+{
+case ATTACK:
+    SetAttackBoxParameters(4,5);
+    theAttack.image_speed=0.8
+    if (comboCount<=0){
+        theAttack.hAttackSpeed=0.8
+        theAttack.hSpeedSet=true
+        theAttack.hSpeedMinReq=false 
+        theAttack.vAttackSpeed=1
+        theAttack.comboCount=1
+    }else{
+        if (onGround){
+            hspeed=0
+        }
+        theAttack.sprite_index=sprAttack2
+        theAttack.attackFrameStart=3
+        theAttack.attackFrameEnd=4
+        theAttack.hAttackSpeed=2
+        theAttack.vAttackSpeed=2
+        theAttack.comboCount=0
+    }
+    
+    theAttack.cooldownTimer=0
+    theAttack.whiffSound=choose(soundWhiff,soundWhiff2)
+    sound_volume2(theAttack.whiffSound,0.9)
+    break
+
+case ATTACKSIDE: ActionScript(global.character[pNum], ATTACK); break
+        
+case ATTACKUP:
+    SetAttackBoxParameters(3,5);
+    theAttack.whiffSound=choose(soundWhiff,soundWhiff2)
+    sound_volume2(theAttack.whiffSound,0.9)
+    break    
+
+case ATTACKDOWN: ActionScript(global.character[pNum], ATTACK); break
+case RUNATTACK: SetAttackBoxParameters(0,2); break
+case AIRATTACK: ActionScript(global.character[pNum], ATTACK); break
+case AIRATTACKSIDE: ActionScript(global.character[pNum], AIRATTACK); break
+case AIRATTACKUP:  ActionScript(global.character[pNum], AIRATTACK); break
+case AIRATTACKDOWN: ActionScript(global.character[pNum], AIRATTACK); break
+
+case SMASHSIDE:
+    SetAttackBoxParameters(7,9);
+    theAttack.multiHSpeedFrame[0]=4
+    theAttack.multiHSpeed[0]=5
+    theAttack.chargeFrameStart=2
+    theAttack.chargeFrameEnd=2
+    theAttack.whiffSound=choose (soundWhiff, soundWhiff2)
+    sound_volume2(theAttack.whiffSound,0.9)
+    theAttack.whiffFrame=3
+    theAttack.whiffSound2=choose(soundAttack,soundAttack2,soundAttack3)
+    sound_volume2(theAttack.whiffSound2,0.9)
+    theAttack.whiffFrame2=3
+    if (random(3)<1){
+        theAttack.hitSound=soundSmash
+        sound_volume2(theAttack.hitSound, 0.9)
+    }
+    break
+    
+case SMASHUP:
+    SetAttackBoxParameters(8,9);
+    theAttack.chargeFrameStart=2
+    theAttack.chargeFrameEnd=2
+    theAttack.whiffSound=choose (soundWhiff, soundWhiff2)
+    sound_volume2(theAttack.whiffSound,0.9)
+    theAttack.whiffFrame=3
+    theAttack.whiffSound2=choose (soundAttack, soundAttack2, soundAttack3)
+    sound_volume2(theAttack.whiffSound2,0.9)
+    theAttack.whiffFrame2=3
+    if (random(3)<1){
+        theAttack.hitSound=soundSmash
+        sound_volume2(theAttack.hitSound, 0.9)
+    }
+    break
+
+case SMASHDOWN: ActionScript(global.character[pNum], SMASHSIDE); break
+    
+case SPECIAL:
+    if (finalSmash) && (specialState == INSTANTPRESSED){
+        //PLACEHOLDER: Balloon Bursters: sometimes all spawn on same x coordinate
+        hspeed=0
+        vspeed=0
+        suspendGravity=true
+        suspendFriction=true
+        friction=0
+        gravity=0        
+        
+        SetAttackBoxParameters(-1,-1);
+        theAttack.sprite_index=sprSpecial2
+        theAttack.image_speed=0.25
+        theAttack.finalSmash=true
+        theAttack.endSuspendGravity=true
+        
+        for (i=0;i<15;i+=1){
+            SetProjectileParameters(0)
+            if (theProjectile.x<0){
+                theProjectile.x=random(room_width/3)
+            }else if (theProjectile.x>room_width){
+                theProjectile.x=room_width-random(room_width/3)
+            }
+            theProjectile.x=random(room_width)
+            theProjectile.y=room_height
+//            theProjectile.sprite_index=sprProjectile
+            theProjectile.image_xscale=choose(1,-1)*image_xscale*1.1
+            theProjectile.image_yscale=abs(theProjectile.image_xscale)
+            theProjectile.image_blend=c_yellow
+            theProjectile.theImageSpeed=random(0.5)+0.25
+            theProjectile.attackPower=20*attackMultiplier
+            theProjectile.stunningPower=20
+            theProjectile.spawnOnOwnerX=false
+            theProjectile.spawnOnOwnerY=false
+            
+            theProjectile.deathTimer=400
+            theProjectile.hAttackSpeed=2
+            theProjectile.vAttackSpeed=5
+            theProjectile.alphaDecay=true
+            theProjectile.decayOnImpact=true
+            theProjectile.appearanceFrame=choose(1,2,3,4,5,6,7,8,9,10)
+            theProjectile.ignoreWalls=true
+            theProjectile.ignoreGuard=true
+    
+            theProjectile.speedIncrease=random(0.0175)
+            theProjectile.theSpeed=random(3)
+            theProjectile.theDirection=90
+            theProjectile.maxHSpeed=MAXRUNSPEED*2
+            theProjectile.maxVSpeed=MAXRUNSPEED*2
+            theProjectile.unreflectable=true
+        }
+        exit
+    }
+    
+    //charge arm and punch
+    if ((specialState==INSTANTPRESSED) && (chargingBeamTimer < maxChargeTime) && ((chargeSpecialTimer >= SMASHMAX)||(chargeSpecialTimer == 0))) //start charging
+    || (((specialState==INSTANTPRESSED) || (specialState==HELDDOWN)) && (chargingBeamTimer < maxChargeTime)){ //holding down charge
+        chargingBeamTimer+=1
+        sprite_index=sprSpecial2 //charge
+        if ((specialState==INSTANTPRESSED) && (chargingBeamTimer < maxChargeTime) && ((chargeSpecialTimer >= SMASHMAX)||(chargeSpecialTimer == 0))){
+            chargeSpecialTimer=0
+        }else{
+            chargeSpecialTimer+=1
+        }
+        
+        if ((!instance_exists(theChargeEffect)) || (theChargeEffect == INVALID)) && (!sound_isplaying(soundCharge)){
+            if (global.sound) && (sound_exists(soundCharge)){
+                sound_play(soundCharge)
+            }
+
+            if (image_xscale > 0){
+                i=(bbox_right-bbox_left)/2 - (bbox_right-bbox_left)/5
+            }else{
+                i=-((bbox_right-bbox_left)/2 - (bbox_right-bbox_left)/5)
+            }
+            theChargeEffect=instance_create(x+i,(bbox_bottom+bbox_top)/2,Effect);
+            theChargeEffect.depth = 5;
+            theChargeEffect.noDeath = true;
+            theChargeEffect.noDecay = true;
+            theChargeEffect.parentObject=self.id
+            theChargeEffect.follow=2
+            theChargeEffect.xOffset=abs(i)
+            theChargeEffect.yOffset=-((bbox_bottom-bbox_top)/2) - (bbox_bottom-bbox_top)/8
+            theChargeEffect.radius=(bbox_right-bbox_left)/2 - (bbox_right-bbox_left)/4
+            theChargeEffect.radius2=(bbox_bottom-bbox_top)/2
+            if (global.chargingEffect){
+                with (theChargeEffect){
+                    ps=part_system_create()
+                    pt2=part_type_create()
+                    part_system_depth(ps,depth)
+                    part_type_shape      (pt2, pt_shape_smoke)
+                    part_type_size       (pt2, 0.2, 0.01, 0, 0)
+                    part_type_color2     (pt2, getColour(global.team[other.pNum]), c_white)
+                    part_type_alpha2     (pt2, 1, 0)
+                    part_type_life       (pt2, 50, 60)
+                    part_type_direction  (pt2, 0, 360, 0, 0)
+                    part_type_orientation(pt2, 0, 360, 0, 0, 1)
+                    part_type_gravity    (pt2, 0, 0)
+                    part_type_scale      (pt2, 1, 1)
+                    part_type_blend      (pt2, true)
+
+                    at2 = part_attractor_create (ps);
+                    part_attractor_position(ps,at2,x,y)
+                    part_attractor_force(ps,at2,0.1,radius*10,1,1)
+        
+                    em2 = part_emitter_create (ps);
+                    part_emitter_region (ps,em2,x-max(radius,radius2),x+max(radius,radius2),y-max(radius,radius2),y+max(radius,radius2),ps_shape_ellipse,ps_distr_gaussian);
+                    part_emitter_stream (ps,em2,pt2,0.5);
+                }
+            }
+        }
+        
+    }else if ((specialState==INSTANTPRESSED) && (chargingBeamTimer >= maxChargeTime))
+    || ((specialState==INSTANTPRESSED) && (chargingBeamTimer>0)){ //punch fully charged
+        if (sound_exists(soundCharge)){
+            sound_stop(soundCharge)//stop charging sound
+        }
+        chargingBeamTimer=max(chargingBeamTimer, 5)
+
+        SetAttackBoxParameters(3,6);
+//        theAttack.sprite_index=sprSpecial
+        theAttack.multiHSpeedFrame[0]=5
+        theAttack.multiHSpeed[0]=6
+        theAttack.attackPower=2*chargingBeamTimer/5*attackMultiplier
+        theAttack.hAttackSpeed=1.5*chargingBeamTimer/8
+        theAttack.vAttackSpeed=1*chargingBeamTimer/8
+        
+        theAttack.hitSound=soundSmash
+        sound_volume2(theAttack.hitSound, 0.9)
+        theAttack.whiffSound=soundWhiff3
+        theAttack.whiffFrame=2
+        theAttack.whiffSound2=choose (soundAttack, soundAttack2, soundAttack3)
+        sound_volume2(theAttack.whiffSound2,0.9)
+        theAttack.whiffFrame2=0
+        
+        if (instance_exists(theChargeEffect)) && (theChargeEffect!= INVALID) && (global.chargingEffect){
+            theChargeEffect.parentObject=theAttack
+//            theChargeEffect.xOffset=0
+//            theChargeEffect.yOffset=0
+            with (theChargeEffect){
+                part_attractor_force(ps,at2,0.1,room_width,1,1)
+            }
+            theChargeEffect=INVALID
+        }
+        
+        chargingBeamTimer=0
+        chargeSpecialTimer=0
+    }
+    break
+case SPECIALSIDE:
+    if (image_xscale > 0){
+        if (hspeed<5){
+            hspeed=5
+        }else{
+            hspeed+=4
+        }
+    }else{
+        if (hspeed>-5){
+            hspeed=-5
+        }else{
+            hspeed-=4
+        }
+    }
+    vspeed=-4
+    
+    SetAttackBoxParameters(2,5);
+    theAttack.cooldownTimer=0
+    break
+    
+case SPECIALUP:
+    if (!jumpCheck()){ exit }
+       
+    suspendGravity=true
+    gravity=0.16//0.2
+    vspeed=-5
+    
+    SetAttackBoxParameters(14,15);
+    movementModifier=0
+    
+    theAttack.multiHit[0]=3;
+    theAttack.multiHit[1]=7;
+    theAttack.multiHit[2]=11;
+    theAttack.multiHHitSpeed=3
+    theAttack.multiVHitSpeed=2
+    theAttack.multiAttackPower=3*attackMultiplier
+    theAttack.multiStunningPower=8
+    
+    theAttack.hAttackSpeed=3
+    theAttack.vAttackSpeed=2
+    theAttack.attackPower=5*attackMultiplier
+    theAttack.cooldownTimer=0
+    
+    theAttack.whiffSound=soundSpecial2
+    sound_volume2(theAttack.whiffSound,0.9)
+    theAttack.whiffFrame=0
+    break
+
+case SPECIALDOWN:
+    //ground slap
+    SetAttackBoxParameters(4,5);
+    theAttack.stunPower=15
+    theAttack.hAttackSpeed=1.5
+    theAttack.vAttackSpeed=4
+    theAttack.elementalType='crush'
+    theAttack.cooldownTimer=0
+    break
+       
+case AIRSPECIAL: ActionScript(global.character[pNum], SPECIAL); break
+case AIRSPECIALSIDE: ActionScript(global.character[pNum], SPECIALSIDE); break
+case AIRSPECIALUP: ActionScript(global.character[pNum], SPECIALUP); break
+
+case AIRSPECIALDOWN:
+    //elbow drop
+    suspendGravity=true
+    gravity=jumpGravity
+    
+    SetAttackBoxParameters(5,8);
+    theAttack.sprite_index=sprAirSpecialDown
+    theAttack.elementalType='crush'
+    
+    theAttack.multiHSpeedFrame[0]=3
+    theAttack.multiHSpeed[0]=0
+    theAttack.multiVSpeedFrame[0]=3
+    theAttack.multiVSpeed[0]=3
+    theAttack.multiVSpeedFrame[1]=5
+    theAttack.multiVSpeed[1]=6
+    
+    theAttack.hAttackSpeed=1.5
+    theAttack.vAttackSpeed=3.5
+    theAttack.cooldownTimer=0
+    break
+    
+case SPECIALSMASHSIDE: ActionScript(global.character[pNum], SPECIALSIDE); break
+case SPECIALSMASHUP: ActionScript(global.character[pNum], SPECIALUP); break
+case SPECIALSMASHDOWN: ActionScript(global.character[pNum], SPECIALDOWN); break
+case ROLL: SetAttackBoxParameters(9.75); break
+case AIRDODGE: SetAttackBoxParameters(11,2); break
+
+case INITCHAR:
+    sprXScale=1.4
+    sprYScale=1.4
+    gender='m'
+    jumpSpeed=JUMPSPEED*0.8
+    airJumpSpeed=JUMPSPEED*0.8
+    moveSpeed=MOVESPEED*0.85
+    maxAirSpeed=MAXAIRSPEED*0.8
+    maxWalkSpeed=MAXWALKSPEED-1
+    maxRunSpeed=MAXRUNSPEED*1.275
+    jumpGravity=JUMPGRAVITY+0.07//0.075
+    fallGravity=FALLGRAVITY+0.08
+    maxFallSpeed=MAXFALLSPEED+0.25
+    attackMultiplier=1.05
+    hDamageSpeedMultiplier=0.85
+    vDamageSpeedMultiplier=0.85
+    hHitDistanceEquation=HHITDISTANCEEQUATION*0.85
+    vHitDistanceEquation=VHITDISTANCEEQUATION*0.85
+    hAttackSpeedMultiplier=1.05
+    vAttackSpeedMultiplier=1.05
+
+    soundIsHit=   'DK Hit.wav'
+    soundIsHit2=  'DK Hit2.wav'
+    soundDies=    'DK Death.wav'
+    soundWhiff=   'DK Whiff.wav'
+    soundWhiff2=  'DK Whiff2.wav'
+    soundWhiff3=  'DK Whiff3.wav'
+    soundAttack=  'DK Attack.wav'
+    soundAttack2= 'DK Attack2.wav'
+    soundAttack3= 'DK Attack3.wav'
+    soundSmash=   'DK Smash.wav'
+    soundSpecial2='DK Heli.wav'
+    break
+case STEPCHAR:
+    if (chargeSpecialTimer >= maxChargeTime){
+        if (sound_exists(soundCharge)){
+            sound_stop(soundCharge)
+        }
+    }
+
+    if (chargeSpecialTimer>=SMASHMAX) && (chargingBeamTimer<maxChargeTime) && (!isAttacking) && (specialState == NONE){ //continue charging
+        chargingBeamTimer+=1
+        sprite_index=sprSpecial2 //charge
+    }
+
+    if (specialState==RELEASED) && (chargeSpecialTimer != 0) && (chargeSpecialTimer < SMASHMAX) && (!isAttacking){ //press and release quickly, shoot
+        if (sound_exists(soundCharge)){
+            sound_stop(soundCharge)//stop charging sound
+        }
+        chargingBeamTimer=max(chargingBeamTimer, 5)
+    
+        SetAttackBoxParameters(3,6);
+        theAttack.sprite_index=sprSpecial
+        theAttack.multiHSpeedFrame[0]=5
+        theAttack.multiHSpeed[0]=6
+        theAttack.attackPower=2*chargingBeamTimer/5*attackMultiplier
+        theAttack.hAttackSpeed=1.5*chargingBeamTimer/8
+        theAttack.vAttackSpeed=1*chargingBeamTimer/8
+
+        theAttack.hitSound=soundSmash
+        theAttack.whiffSound=soundWhiff3
+        theAttack.whiffFrame=2
+        theAttack.whiffSound2=choose (soundAttack, soundAttack2, soundAttack3)
+        sound_volume2(theAttack.whiffSound2,0.9)
+        theAttack.whiffFrame2=0
+        
+        if (instance_exists(theChargeEffect)) && (theChargeEffect!= INVALID) && (global.chargingEffect){
+            theChargeEffect.parentObject=theAttack
+            with (theChargeEffect){
+                part_attractor_force(ps,at2,0.1,room_width,1,1)
+            }
+            theChargeEffect=INVALID
+        }
+        
+        chargingBeamTimer=0
+        chargeSpecialTimer=0
+    }
+    
+    if (instance_exists(theChargeEffect)) && (theChargeEffect!= INVALID) && (global.chargingEffect) && (chargingBeamTimer >= maxChargeTime){
+        with (theChargeEffect){
+            part_type_size       (pt2, 0.2, 0.3, 0, 0)
+            part_type_color3     (pt2, c_blue, c_red, c_yellow)
+        }
+    }
+    
+    if (chargingBeamTimer==0) && (instance_exists(theChargeEffect)) && (theChargeEffect!= INVALID){
+        with (theChargeEffect){
+            instance_destroy()
+        }
+        theChargeEffect=INVALID
+    }
+    break
+}
