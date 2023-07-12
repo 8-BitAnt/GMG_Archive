@@ -1,0 +1,62 @@
+Assassin Blue is a game I began programming in April 2008 for a couple weeks, then dropped it because I coudln't find anyone to 
+help make tilesets, wich I rather suck at.  Three months later in mid-June I decided to forge about a tileset artist, and went ahead
+and drew background myself in photoshop--which ended up working, somehow.  After about a week or experimentation, level one came out...
+
+
+Release History:
+
+12-28-08
+------------------
+After many bugfixes, tweaks, and graphical updates nobody will notice, game published and considered a finished work.
+
+12-25-08
+------------------
+BETA! 12 levels finished along with post-game unlockables- Boss Rush mode and the bonus cutscene.
+
+12-6-08
+------------------
+Bugfixes, as well as innumerable updates to graphical effects and the game's engine.
+
+9-29-08
+------------------
+Bugfix, controls now taught via fading text
+
+9-25-08
+------------------
+Minor bugfixes / tweaks
+
+9-20-08
+------------------
+Levels 7, 8 and 9 added, along with chargeable special attacks, a new HUD, more stat tracking, and a ton of other small tweaks.
+
+8-28-08
+------------------
+Minor bugfixes / graphical updates
+
+8-23-08
+------------------
+Minor bugfixes
+
+8-19-08
+------------------
+Levels 4, 5, and 6 released along with a few upgrades to the game in general such as the bonus shop.
+
+7-19-08
+------------------
+Minor update, fixing some small errors and toning down the difficulty.
+
+7-17-08
+------------------
+Released levels 2 and 3, as well as a ton of different other additions involving the interface, menus and gameplay.
+
+7-15-08
+-------------------
+First level finished and released
+
+
+Credits:
+Game by Banov
+Music by Prophecy
+
+
+Don't steal this game or anyting in it, or I will murder you.

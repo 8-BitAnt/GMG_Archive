@@ -1,0 +1,2 @@
+Simply take this folder and place it i the same location as AssassinBlue.exe.
+When the game starts it will load the mp3 music from the folder into the game.
