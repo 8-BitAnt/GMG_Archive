@@ -1,0 +1,29 @@
+# File created by Luuv tsx 1.1.5
+# Created on: Thu Jan 25 18:25:06 2007 0x04ef6cb0
+# Vertices: 3
+# Texture vertices: 3
+# Normals: 3
+# Faces: 2
+
+mtllib fragment.mtl
+v 0.000000 0.000000 -0.964506
+v -0.835287 0.000000 0.482253
+v 0.835287 0.000000 0.482253
+
+vt 0.500000 0.000000
+vt 1.000000 1.000000
+vt 0.000000 1.000000
+
+vn 0.000000 0.000000 0.000000
+vn 0.000000 0.000000 0.000000
+vn 0.000000 0.000000 0.000000
+
+mtllib fragment.mtl
+
+g Default
+s 1
+usemtl NoName,25
+f 3/3/3 2/2/2 1/1/1
+f 1/1/1 2/2/2 3/3/3
+
+# The end.

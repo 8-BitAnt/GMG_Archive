@@ -1,0 +1,69 @@
+WALKTHRU
+
+when i say 'go <direction>'
+i mean that direction to the next screen
+
+~*~ spoiler alert ~*~
+
+go right
+	switch resets push block puzzle
+	use it if you mess up block puzzle
+go right
+	avoid green slimes
+	hint: be patient
+go up
+	push top block left
+	push bottom block left
+	push middle block up
+go left
+	avoid green slimes
+	get key
+go right
+go down
+go left
+go left
+go up
+	key will open door
+	get hearts
+	get blue orb
+go down
+go down
+	blue gate will be gone
+	purple one still there
+go right
+	avoid red slimes
+	they are more powerful than green
+go right
+	avoid green slimes
+	look for wall with dot on it
+	hit it until it breaks
+go up
+	get heart
+	get purple orb
+go down
+	avoid green slimes
+go left
+	avoid red slimes
+go left
+	purple gate will be gone
+go down
+	avoid green slimes
+go right
+	get hearts
+	get green orb
+	look for wall with dot on it
+	hit it until it breaks
+go right
+	talk to king red slime
+	he will call off red slimes
+go left
+go left
+	avoid green slimes
+go up
+go right
+go right
+	avoid green slimes
+	green gate will be gone
+go down
+	enter spinning portal
+	you win

@@ -1,0 +1,182 @@
+﻿╔═══════════════════════════════════════════════════════════════════════════════╗
+╠╦═════════════════════════════════════════════════════════════════════════════╦╣
+║║Artilerry F                                                                  ║║
+║║ ╔═══╗ ╔════╗ ╔═════╗╔═╗╔═╗    ╔═════╗╔════╗ ╔════╗ ╔═╗ ╔═╗   ╔═════╗        ║║
+║║╔╝╔═╗╚╗║ ╔═╗╚╗╚═╗ ╔═╝║ ║║ ║    ║ ╔═══╝║ ╔═╗╚╗║ ╔═╗╚╗║ ║ ║ ║   ║ ╔═══╝        ║║
+║║║ ║ ║ ║║ ║ ║ ║  ║ ║  ║ ║║ ║    ║ ║    ║ ║ ║ ║║ ║ ║ ║║ ║ ║ ║   ║ ║            ║║
+║║║ ╚═╝ ║║ ╚═╝╔╝  ║ ║  ║ ║║ ║    ║ ╚══╗ ║ ╚═╝╔╝║ ╚═╝╔╝╚╗╚═╝╔╝   ║ ╚══╗         ║║
+║║║ ╔═╗ ║║ ╔═╗╚╗  ║ ║  ║ ║║ ║    ║ ╔══╝ ║ ╔═╗╚╗║ ╔═╗╚╗ ╚╗ ╔╝    ║ ╔══╝         ║║
+║║║ ║ ║ ║║ ║ ║ ║  ║ ║  ║ ║║ ║    ║ ║    ║ ║ ║ ║║ ║ ║ ║  ║ ║     ║ ║            ║║
+║║║ ║ ║ ║║ ║ ║ ║  ║ ║  ║ ║║ ╚═══╗║ ╚═══╗║ ║ ║ ║║ ║ ║ ║  ║ ║     ║ ║            ║║
+║║╚═╝ ╚═╝╚═╝ ╚═╝  ╚═╝  ╚═╝╚═════╝╚═════╝╚═╝ ╚═╝╚═╝ ╚═╝  ╚═╝     ╚═╝            ║║
+╠╩═════════════════════════════════════════════════════════════════════════════╩╣
+║Yeah, 3 "R"s, and an "L".                                                      ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║Game Ver2.02                                                                   ║
+║MANUAL                                                                         ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+╚═══════════════════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════╗
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║THIS GAME WAS MADE USING GAMEMAKER 8.0 LITE                                    ║
+║                                                                               ║
+║Trailer for version 1.0                                                        ║
+║-http://www.youtube.com/watch?v=gahGVw3aNak                                    ║
+║                                                                               ║
+║Pages on:                                                                      ║
+║YoYoGames                                                                      ║
+║-http://www.yoyogames.com/games/142545-artilerry-f#                            ║
+║Game Maker Community                                                           ║
+║-http://gmc.yoyogames.com/index.php?showtopic=490622                           ║
+║GameJolt                                                                       ║
+║-http://gamejolt.com/freeware/games/adventure/artilerry-f/3917/                ║
+║                                                                               ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+╚═══════════════════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════╗
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║Artilerry F is a freeware game. You don't have to pay for this game.           ║
+║Do not manually modify the save file!                                          ║
+║Report any bug/glitches or anything related!                                   ║
+║                                                                               ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+╚═══════════════════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════╗
+╠╦═════════════════════════════════════════════════════════════════════════════╦╣
+║║MINIMUM SYSTEM REQUIREMENT                                                   ║║
+╠╩═════════════════════════════════════════════════════════════════════════════╩╣
+║-Intel Celeron CPU 1.6Ghz                                                      ║
+║-1GB RAM                                                                       ║
+║-Microsoft Windows 98/NT/2000/XP/Vista/7                                       ║
+║-15 MB free disk space                                                         ║
+║-DirectX 8.0 or later                                                          ║
+║                                                                               ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║By downloading this game you agree to the following :                          ║
+║                                                                               ║
+║You, as the user,                                                              ║
+║                                                                               ║
+║1. will not claim the resources used in this software as yours.                ║
+║   IT'S OWNED BY ME, DON'T TAKE IT.                                            ║
+║2. will not sell of this game or use this game for any commercial project.     ║
+║3. will not modify, reverse engineer or decompile the game executable file.    ║
+║4. will take all responsibility for any damages that might occurs by using this║
+║   sofware.                                                                    ║
+║                                                                               ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║If you do not agree with any one of these terms, please delete any copy of the ║
+║game on your computer and stop playing this game.                              ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+╚═══════════════════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════╗
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║If you find "NORMAL" mode is too hard for you, try beating "EASY" mode         ║
+║first!                                                                         ║
+║                                                                               ║
+║You might find it hard to beat the game without leveling up to over 50(EASY)   ║
+║and 80(NORMAL) if you're a beginner.                                           ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+╚═══════════════════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════╗
+╠╦═════════════════════════════════════════════════════════════════════════════╦╣
+║║ABOUT THE GAME                                                               ║║
+╠╩═════════════════════════════════════════════════════════════════════════════╩╣
+║The original version was designed for YoYoGames Competition06 themed           ║
+║"Discovery". Reached Round 2(top 45) only.                                     ║
+║                                                                               ║
+║You can load old version of saved game data, but the new version of save       ║
+║data cannot be loaded with a previous version of the game. The difficulty will ║
+║be set to NORMAL.                                                              ║
+║                                                                               ║
+║I have decided to upgrade the game to a newer version (3), which means it will ║
+║include major changes to the game. Major changes equal to a long period of     ║
+║time.                                                                          ║
+║                                                                               ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║Change(s) v2.02.3:                                                             ║
+║-fixed bug which disallow you to return to some area.                          ║
+║                                                                               ║
+║Change(s) v2.02.2:                                                             ║
+║-removed the fix for "character still moving in the next room even after your  ║
+║ release the key" because a new bug appears which I think serious than this    ║
+║ one. So this glitch is still there.                                           ║
+║                                                                               ║
+║Change(s) v2.02.1:                                                             ║
+║-fixed an error where the final boss HP start at 1 in normal mode.             ║
+║-fixed typo and some false information.                                        ║
+║-[REMOVED]fixed "character still moving in the next room even after your       ║
+║ release the key".                                                             ║
+║                                                                               ║
+║Change(s) v2.01:                                                               ║
+║-Super small glitch fixes.                                                     ║
+║-Fixed a long text graphic error.                                              ║
+║-Added sign at Save, HP restore & MP restore point.                            ║
+║                                                                               ║
+║Change(s) v2.00:                                                               ║
+║-enhanced gameplay(including the minigame).                                    ║
+║-added difficulty option, EASY and NORMAL(tweaked original difficulty).        ║
+║-changed some enemies' behaviour/stats to prevent some extreme difficulties.   ║
+║-changed/added soundfx and bgm.                                                ║
+║-added a few save points.                                                      ║
+║-you can now jump while attacking(will cancel the attack, normal attacks only).║
+║-graphic fixes/modification.                                                   ║
+║-added/edited several cutscene.                                                ║
+║-added new bonus and edited some of the old.                                   ║
+║-items' price increased.                                                       ║
+║-coins now have 3 different value.                                             ║
+║-Swift Shot now semi-auto aim. Full manual aim can be achieved by holding      ║
+║ key X.                                                                        ║
+║-you can now use health regenerator item before it time runs out.              ║
+║-...                                                                           ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║Known bug(s):                                                                  ║
+║-sometimes when switching to another room, the character will still            ║
+║ moving eventhough left/right key is not pressed down. You can achieve this by ║
+║ releasing the key when the next room start loading.                           ║
+║-stuck on some floor corner(which you can drop through).                       ║
+║-player become invisible after damaged.                                        ║
+║                                                                               ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+╚═══════════════════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║Controls                                                                       ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║Left/Right keys : Move left or right                                           ║
+║Up/Down keys    : Move camera up or down/Enter cave(Up key only)               ║
+║Z key           : Attack                                                       ║
+║X key           : Jump/OK                                                      ║
+║C key           : Skills or magic/Cancel                                       ║
+║SPACEBAR        : Open menu/Cancel                                             ║
+║P key           : View map & pause game                                        ║
+║                                                                               ║
+║F2 : Fullscreen (no change monitor/window resolution)                          ║
+║F3 : Scale game screen size to Max/100%/200%/300%                              ║
+║F4 : Default fullscreen (no change monitor resolution)                         ║
+║F9 : Take screenshots (saved on \SCREENSHOTS\)                                 ║
+║                                                                               ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║For KRASBOMTOYCAR minigame                                                     ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║Left/Right/Up/Down keys : Accelerate & change direction                        ║
+║Z/Y key         : Use powerup 1                                                ║
+║X key           : Use powerup 2                                                ║
+║SPACEBAR        : Exit minigame(on minigame title screen)                      ║
+║P key           : Start/Pause game                                             ║
+║                                                                               ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║Glowing spot & Saving the game                                                 ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║You can go to the save room by stopping at the white glowing spot.             ║
+║You can restore your HP by staying at the blue glowing spot.                   ║
+║You can restore your MP by staying at the red glowing spot.                    ║
+║                                                                               ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+╚═══════════════════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════╗
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+║E-mail: raven_of_death@rocketmail.com                                          ║
+║Developed by Maelron                                                           ║
+║Artilerry F Copyright Maelron                                                  ║
+║KrasbomToyCar Copyright Maelron                                                ║
+╟┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╢
+╚═══════════════════════════════════════════════════════════════════════════════╝

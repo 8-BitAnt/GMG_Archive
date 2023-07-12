@@ -1,0 +1,5 @@
+Changes in version 1.01 (from 1.0): 
+
+* Defense rebalanced. It is no longer possible to research a unit to invulnerability.
+* Army Ant Soldier made weaker, cheaper.
+* Fixed bug with leafcutters that caused them to be unable to gather food.

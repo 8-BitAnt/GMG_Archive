@@ -1,0 +1,4 @@
+Adding Custom Music
+---------------------
+
+To play your favorite songs automatically in Adrenaline, simply copy the MP3 or OGG files into the 'music' directory.

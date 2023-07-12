@@ -1,0 +1,9 @@
+64digits|yoyogames
+yoyogames|64digits
+hairy|cuddly
+cuddly|sexy
+sexy|hairy
+fox|tiger
+tiger|bear
+bear|man
+god|flying spag monster

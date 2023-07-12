@@ -1,0 +1,32 @@
+Version 1.02 - 03/21/07 - Public release
+	- Random non-player "stuck" planes should no longer appear in multiplayer...  again!
+
+Version 1.01 - 03/21/07 - Public release
+	- Powerups in multiplayer should not appear out of bounds any more
+	- The game now checks versions after successfully logging in, so you don't have to restart
+	- "Your plane has gone down" message no longer appears at the end of rounds
+	- Powerups that supply infinite skill should appear correctly on radar in multiplayer now
+	- Extra highlighted box removed from single player menu
+	- Random non-player "stuck" planes should no longer appear in multiplayer
+	- Game now remembers if it was running in full screen or not
+	- Added music on/off checkbox in configuration
+
+Version 1.00 - 03/17/07 - Public release
+	- Distance at which enemy planes in Dogfight start shooting at you has been increased
+	- The angle at which enemy places in Dogfight start shooting at you has been increased
+	- Cloud shadow / speed skill effect depth problem fixed
+	- Version number added to loading screen
+	- Added new sound effects to game
+	- Fixed a bug in the local high score saving system
+	- Fixed a display bug in the high score tables
+	- Slight increase to skill point regeneration speed
+	- HUD effect added when infinite health or skill power-ups are collected
+	- Fixed (hopefully) a multiplayer issue with some planes not moving
+	- Fixed server password weirdness
+	- Added ability to earn Reflect credits
+	- Added server full message
+	- Fixed server player count error
+	- Added Reflect URL to intro
+	- Fixed a multiplayer powerup issue
+
+Version 0.90 - 03/12/07 - BETA 1 release

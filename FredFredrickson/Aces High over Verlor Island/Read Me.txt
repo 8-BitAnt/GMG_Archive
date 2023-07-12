@@ -1,0 +1,101 @@
+Aces High Over Verlor Island
+Created by Martin Crownover (FredFredrickson)
+Version 1.02 -  March 21, 2007
+
+Contents:
+1. Introduction & Features
+2. Controls
+3. Credits
+4. Terms of Use
+
+
+
+
+1. Introduction & Features
+
+Welcome to Aces High Over Verlor Island (AHOVI), a casual 3D dogfighting game where you pilot a biplane and perform stunts and try to out-maneuver your opponents!  With the added functionality of the Reflect Account System, players can compete online in 8 player head-to-head bouts, or for the top high score in the single player modes.
+
+AHOVI's single player games include Balloon Burst, a race to pop as many balloons as possible within the given time limit, Dogfight, where the player must shoot down 5 enemy airplanes as fast as possible, and Survival, a test of your endurance and flight skills.  Multiplayer can be played with or without a 10 kill limit rule, and are customizable to limit players, power-ups, and more.
+
+
+
+
+2. Controls
+
+Using menus:
+	LEFT MOUSE - Click to activate a button
+	UP & DOWN ARROWS - Navigate menu options
+	ENTER - Activate a button
+	ESC - Close the current menu / exit the game
+
+Playing the game:
+	LEFT & RIGHT ARROWS - Turn your aircraft left or right
+	LEFT & RIGHT ARROWS (double tap) - Do a barrel roll
+	UP ARROW (hold) - Speed skill
+	DOWN ARROW (hold) - Slow Skill
+	DOWN ARROW (double tap) - Perform a vertical loop
+	SPACE BAR - Fire machine gun
+	ESC - Exit the game
+
+Multiplayer only:
+	ENTER - Begin chat type mode / send message
+	SHIFT (hold) - View scoreboard
+
+	HOST CHAT COMMANDS:
+	/players - view a numbered player list
+	/kick # - replace # with the desired player number from the player list to kick a player
+
+Miscellaneous:
+	F4 - Toggle windowed / full screen mode
+
+
+
+
+3. Credits
+
+Reflect Games:
+	Martin Crownover (FredFredrickson) - Design, graphics, coding, netcode, Reflect system
+	Wilco Schoneveld (Fox-NL) - Netcode, Reflect system
+	David Perritte (Ds) - Music, testing
+
+Assistance:
+	39ster - Winsock DLL
+	John Leffingwell (Xot) - Scripts
+	EyeGuy - Scripts
+
+Beta Testing:
+	sn0wb0arder381
+	Leviathan
+	Grandhighgamer
+	Nighthawk17
+	Neur0n
+	BenRK
+	DJKilo
+	Lethalanvas
+	Dracodragon
+	Dregnought
+
+Miscellaneous:
+	Game Maker 7 (http://www.yoyogames.com)
+	EO game Development Community (http://www.eocommunity.co.uk)
+	Find Sounds (http://www.findsounds.com)
+	PHP Freaks (http://www.phpfreaks.com)
+
+Created with Game Maker 7 by Mark Overmars & YoYo Games
+
+
+
+
+4. Terms of Use
+By unzipping and using this program, you agree to the following terms:
+1. You, the user, claim any and all responsibility for any damages that might occur, including physical, emotional, and / or material by using this software.
+
+2. This program is not guaranteed to run on any system.
+
+3. No part of this package may be altered or changed in any way, without prior written consent from the original author of this software.
+
+4. No part of this project shall be sold without prior written consent from the original author.
+
+5. Linked is ©2006 Martin Crownover, and all work contained within that was not created by Martin Crownover should be considered copyrighted by it's respective author.
+
+6. The Game Maker 7 runner contained within this game is copyright / property of YoYo Games.  Modifying, adapting, decompiling or reverse engineering this game or the software contained within it is unlawful.  You may not remove, disable, modify, add to or tamper with any program code or data, copyright, trademark or other proprietary notices and legends contained within the object (compiled) code of the software.

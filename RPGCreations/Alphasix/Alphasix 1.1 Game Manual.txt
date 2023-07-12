@@ -1,0 +1,470 @@
+ALPHASIX 1.0 GAME MANUAL
+
+This seal of assurance that the staff of RPGCREATIONS has reviewed this game and that it has met our standards for excellence in workmanship, reliability and entertainment value. Always look for this seal whenever you download any of our games.
+
+*
+
+CONTENTS
+									
+1: System Requirements
+2: Backstory
+3: Characters
+4: Game
+
+*
+
+SYSTEM REQUIREMENTS
+							
+This first limited release of the game (version 1.0) will largely determine the game's system requirements.
+
+The game requires Windows 98SE, 2000, Me, XP, or later. You'll also need a video card with at least 16MB of memory (64MB and above is recommended). You'll also need DirectX 8.0 or later (if you have an earlier version, you can get the latest version at http://www.microsoft.com/windows/directx/). The RAM that's required depends on your operating system, but recommended is at least 256MB. The CPU speed should be at least Pentium, and preferably at least 2.0 GHz.
+
+The game successfully reaches over 100 frames per second on most stages on my 2.0 GHz, 64MB videocard, 512MB RAM system. If your computer is significantly older than that, you might want to run the game in 30 frames per second mode.
+
+To use a joystick, a dual-analog joystick (such as a PS2 controller with converter) is required; if you don't have that, you can simply use the mouse and keyboard. A joystick is required for VS mode on one computer, although you don't need one for online VS mode.
+
+*
+
+BACKSTORY
+
+PUNISHED IS NOT THE MAN HIMSELF, BUT THE EVIL THAT RESIDES IN HIM
+
+In 20xx, the world was at the height of its political upheaval. Terrorist groups and rogue nations blossom across the world. World War III seems inevitable, that is, until UN introduces "IT". "IT" is a band of highly trained soldiers gathered from various countries. Their missions and modus operandi border on questionable ethics; civilian casualties is not a taboo as long as the work gets done. Not long after its inception, terror lies not within the rogue nations, it resides under the care of UN.
+
+With the dissipation of power within the nations in the UN security council, UN falls into disarray and is eventually disbanded. With UN fading into history, "IT" follows soon after. The UN secretary-general's final order was prevent the secret of "IT" from leaking. Employing the United States military, the UN decided to take the most drastic measure: silence members of "IT".
+
+Most of the "IT" members managed to get away and lived peaceful lives in secrecy. A small few of the survivors became embittered by the ordeal. These men and women banded together to form an independent mercenary group with a vowed vendetta against the US Army. Soon enough, the existence of this mercenary group becomes a thorn for the United States as they now belong to oppossing forces.
+
+After several key losses against "IT", the US army has no choice. They have decided to summon Panzerfaust, a veteran soldier responsible for training Alphasix, the leader of "IT".
+
+*
+
+CHARACTERS
+
+
+
+*Alphasix*
+
+Alphasix was the leader of a UN-backed special forces called "IT". "IT" enjoyed several successful campaigns before being disbanded with the downfall of UN. Under Alphasix's leadership, "IT" thrived as an independent mercenary group working for rogue nations.
+
+Alphasix prefers weapons from the Israeli gun manufacturer IMI, especially the Desert Eagle with .50 Action Express caliber ammunition. This particular version of the Desert Eagle has been hailed as the most powerful pistol in the world and indeed it is as far as power goes: the .50 Action Express ammunition can go tear through any kevlar suit effortlessly. However, its power is also its biggest drawback: The recoil is horrendous due to the immense firepower it provides. The relatively small ammo clip also means that the user have to make sure that every shot counts.
+
+As her melee weapon, Alphasix has a katana ready when the time calls. The katana has the longest reach out of all melee weapons available and does the most damage. However due to the cumbersome size, the katana is relatively slow, and cannot be thrown.
+
+Alphasix's trademark speciality is setting traps. She's notorious for her abilities to hide mines, especially in jungle setting. The claymore mines, Alphasix's preferable material of destruction, can cause massive damage to its victims. The landmines however, is not a weapon for the reckless and forgetful, as the owner has as much chance of triggering the mines as the opponent if she forgets where they were placed.
+
+
+
+*Panzerfaust*
+
+Panzerfaust Worked with SAS for a brief time before he moved to the US for retirement. He was asked to train the "IT" squad on his latter years and had a mentor-student relationship with Alphasix. He was brought out of retirement by the US goverment with one last task: Eliminate Alphasix and all key members of it. He initially refused the plea of the US government, but eventually he agreed. He had been tormented with the fact that he was partially responsible for all the killing spree "IT" had caused.
+
+Panzerfaust uses the Heckler & Kock USP pistol, one of the standard sidearm issued for US military personnel. It packs more punch than the 9mm caliber beretta and overall decent firing rate.
+
+The SOG is standard issue knife for US military personnel. It's easy to conceal and very light. It does a medium damage, but has a rather short range. This is the fastest melee weapon after the switchblade.
+
+Whenever the situation calls for desperate measure, Panzerfaust has several flashbangs ready. The flashbang if used properly, will blind and stun the victim. This is not a weapon to be taken lightly however, the flashbang can blind the owner if used recklessly.
+
+
+
+*Panzerjager* 
+
+An independent mercenary, he works for whoever who can afford to pay him, doesn't matter if the clientele has a streak of criminal record. He earned his nickname as a mercenary group for his aggressive modus operandi, much like Panzerfaust's. He resented this as he thought that his skill is being referenced as second to Panzerfaust. He vowes to prove his superiority in combat skills and to claim the title "panzer" for himself.
+
+Panzerjager's primary weapon of choice is the Sig Sauer P226. The ammunition clip allows one more bullet (13) when compared to the USP. The overall quality of the gun is similar to the USP except that it's slightly more powerful and slower rate of fire. 
+
+The SOG is standard issue knife for US military personnel. It's easy to conceal and very light. It does a medium damage, but has a rather short range. This is the fastest melee weapon after the switchblade.
+
+More focused on aggressive tactics than Panzerfaust, Panzerjager prefers the use of grenades over flashbangs. It does a great damage and is relatively useful to weed out campers hiding around corners. Like the flashbang and the mine, the grenade too can harm its owner.
+
+
+
+*Sixshooter* 
+
+Alphasix's most trusted agent. Sixshooter is second in command in "IT." Together with Alphasix, Sixshooter has gone through many campaigns across the globe. Her experience in battle coupled with her high proficiency in marksmanship makes her one of the most feared mercenary. She's fond of Alphasix, but believes that Alphasix's vendetta against the US Government has blinded her rational judgement. She's out to stop Alphasix from herding "IT" to its demise whatever the cost may be.
+
+Sixshooter is fond of revolvers has quite a collection that she gathered throughout her campaigns. Of all the revolvers she had tried however, she preferred the Smith & Wesson .357 magnum revolver. Though relatively slow and having a small ammo capacity, the revolver is the second most powerful gun in the game, and has the fastest bullet speed.
+
+Accustomed to fighting guerilla wars in the jungle, Sixshooter carries a bowie knife to plow through thick vegetation. Eventually, Sixshooter began carrying a bowie knife out of habit. The knife has a medium reach and does more damage the SOG knife, though it is somewhat slow. 
+
+Sixshooter choice of gadget is the special ops kit. It's a kit designed for enchance the user's vision and listening ability. Though it can't tell you the exact location of the enemy, it will let you know whenever they're nearby. The only downside to this high-tech gadget is that it eats up the battery fairly quick. The gadget is automatically used as the round starts, and cannot be turned on or off.
+
+
+
+*Speedstar* 
+
+Just as her codename suggests, speedstar is quick and agile. Although a newcomer to the world of mercenary, speedstar managed to climb through "IT"'s organization ladder with her great skills. Though she is a capable mercenary, Alphasix is often reluctant to put her in charge. Speedstar is far too ambitious and Alphasix fears that Speedstar will plan to oust her from "IT."
+
+As far as Damage goes, Glock18C is the weakest gun in the game. But the high rate of fire -- almost as fast as the player can click -- and the bulky ammo clip makes up for its drawback.
+
+Melee combat conflicts with Speedstar's "run & gun" combat style, but she understands that melee is often inevitable. She prepares a switchblade whenever the situation calls for a close quarter battle. The switchblade is fast but is terribly weak and has the shortest range. It also cannot be thrown.
+
+Other than speed, stealth is Speedstar's trademark. The camo kit that she carries will make her temporarily invisible. The invisibility  will however be disabled whenever Speedstar starts shooting, or performs any other action (apart from movement). It should be noted however that the camo kit is not a magical stealth cloak: its user will be visible whenever they get too close to the enemy. If the first shot going out of camo mode is successful, it will dizzy the opponent. Conversely, if Speedstar user is shot while in camo mode, the user will be dizzied.
+
+*
+
+GAME
+
+This is a technical guide for those who want to truly master the game. The game can be picked up without reading this, simply by looking at the options: controls screen and reading what each of the buttons do, but for those who want to become good at the game this section is helpful.
+
+
+
+BASIC CONTROLS AND MENU NAVIGATION
+
+Use the arrow keys, the W/A/S/D keys, or the joystick to navigate through the menus. On the character selection screen, left and right chooses a character, up an down chooses a play mode.
+
+In the options screen and in the controller configuration screen, any button except Enter will choose what the cursor is on, and Enter will confirm all of your choices and return you to the previous screen.
+
+In the controller configuration screen, to change what function a key is associated with, simply move the cursor to that feature and hold the mouse button, and then (while holding the mouse button) press the key you desire to be associated with that function.
+
+To return to the title screen at any point in the game, press the Escape key. To quit the game, press the Escape key on the title screen.
+
+
+
+THE LIFE BAR
+
+The life bar is your life; you may choose 1, 2, or 3 lifebars from the options screen. When it reaches 0, you die.
+
+There are medical kits which recover one-third of your life bar, but they will not bring back a lifebar you have lost (for example, if you have two full life bars and get a medical kit, it will not return you to your third life bar).
+
+When the timer (if there is one, this can be changed in the options) reaches 0, the life bars of both players begin to drain steadily, this is called "overtime". During overtime, if your life bar is higher than the enemy's, hide! If it's not higher, try to reduce the enemy's life bar as quickly as possible until it is lower than yours, and then run.
+
+
+
+THE TENSION BAR
+
+The tension bar allows you to perform most special functions. It's a bar combined with three buttons, each button representing a full bar; its maximum is three bars. In A-Mode and C-Mode, it begins at 1/3 (one bar), in B-Mode, it begins at 0. It increases slowly with time in A-Mode and C-Mode, and in B-Mode it increases while defending or when you successfully dodge.
+
+Obviously, B-Mode needs to take the tension bar more seriously than the other two modes do; when in B-Mode it's prudent to spend some time hidden from the other character, charging up the tension meter while defending.
+
+
+
+THE DIZZY BAR
+
+The dizzy bar is right under your life bar; but when it is full it's invisible. It also recovers with time after being lowered, which makes it a good idea to get away if it's very near 0, until it recovers to an acceptable level. Whenever you're hit by a bullet or a melee attack, it is reduced slightly; it's reduced much more if you're hit while defending. When it's all gone, you become dizzy for several seconds, and cannot do anything but stand there and get hit.
+
+How much the attacks of the different characters reduce the dizzy bar varies. Panzerfaust's attacks reduce it the most, Speedstar's attacks reduce it the least (the difference is very striking if you pay attention), and the others are in-between. How quickly the dizzy bar recovers also depends on the character: generally, those who do a lot of dizzy damage recover from dizzies faster too. However, for all of the characters, the reduction of the dizzy bar is somewhat random, it depends on many variables, as described here:
+
+The dizzy bar reduces farther if a bullet has bounced off a wall before hitting a character (this applies to anyone's bullets). The dizzy bar reduces more the greater the distacet the character firing the bullet is from the character being hit. The direction also matters: hitting someone from the back dizzies them more than hitting them from the side, which dizzies more than being hit from the front; for this purpose it's the aiming direction that matters, not the direction the character is moving in.
+
+Dizziness also results in three other special circumstances which can immediately dizzy: 1) when a character is standing too close to a flashbang grenade when it goes off, that character becomes dizzy, 2) when Speedstar is hit in camo mode she becomes dizzy, and 3) when a character is hit by Speedstar in camo mode (with the bullet that takes her out of camo mode, since firing cancels it) bey become dizzy, because they have no idea that they were going to be hit from that direction.
+
+Dizziness can be recovered using the "Dizzy Cancel" special ability, but this requires tension (1 full bar), but losing a bar of tension is certainly preferable to being hit over and over while dizzy, so in practise dizziness is also a good way to reduce the tension meter of the opponent (reducing the range and extent of special abilities they can employ on you).
+
+
+
+THE HEADS-UP DISPLAY
+
+In the bottom corner of the screen is the heads-up display: this displays which weapon a character has equipped (their primary weapon, which is then used with the fire button), and how many remaining uses it has. If your gun is empty and requires reloading, an R will appear over it. A little bar will appear under Speedstar's camo unit and under Sixshooter's special ops equipment; this indicates how much energy remains for that special item. When the bar is empty, the item is unusable.
+
+The number appearing after the gun is not how many bullets remain in the gun but how many clips remain to reload the gun. The number appearing after the land mine, grenade, or flashbang stun grenade, represents how many of those items the character possesses. Collecting the boxes labeled "S" replenishes this number, as well as the energy of the camo unit or special ops unit. Collecting the boxes labeled "A" gives a character another pistol clip.
+
+
+
+MOVEMENT (default: W, S, A, D, joystick analog stick 1)
+
+Movement is quite simple, there is no acceleration. But unlike many perpendicular games, moving e.g. north-east doesn't move you as quickly north as simply moving north would.
+
+If you touch an enemy, both of you will "bounce" back, pushing eachother away. This does no damage and you cannot do anything during this recoil. The distance you recoil is related to that character's "weight", which is equivalent to the inverse of their speed. Whichever character's weight is greater recieves only half as much recoil as the other character. You can use this recoil bounce to your advantage: for instance, Sixshooter could trap Speedstar in a corner, and due to the weight advantage Speedstar wouldn't be able to push her way out easily.
+
+
+
+ROLLING (default: Ctrl, joystick button 5)
+
+Rolling is for A-Mode only. When it's performed, the character dashes forward in the direction they were last moving in. It can be performed simply by pressing the roll button, or by very quickly double-tapping the move button in the desired direction (keyboard only). While rolling, you cannot be harmed, but you cannot shoot or do anything else. Rolling continues until a solid object is hit, or it can be canceled by pressing the opposite movement direction in which you are rolling.
+
+Rolling very powerful and useful, but requires a lot of tension to use, so don't over-use it. It requires 1/4 of a tension bar to begin, and the longer the distance that is rolled, the more additional tension it requires. Rolling is much faster than running, but it can only be done in one of the four orthogonal directions, making it less flexible. Rolling is more useful for quick entries and escapes, especially escapes from special attacks, while running is more useful for actual gunfighting. Why is it called rolling when the character doesn't actually roll? That's a trade secret.
+
+
+
+DODGING (default: Ctrl, joystick button 5)
+
+Dodging is for B-Mode only. It requires precise timing: simply press the dodge button right before you're about to be hit with a bullet or a melee weapon; you will vanish briefly and, if timed right, recieve no damage, and even recieve a bonus to your tension bar. It costs nothing, but you cannot move or shoot or do anything else while dodging, and you cannot dodge again for about a half-second after you have just dodged. It can be very annoying to face an expert dodger, but remember that dodging does not work on explosive damage (such as barrel or car explosions, mines, flashbangs, and grenades).
+
+
+
+RUNNING (default: Ctrl, joystick button 5)
+
+Running is for C-Mode only. Running, contrary to movement, does accelerate with time. You are required to hold the button down in combination with the movement buttons. Speed will gradually increase as long as you don't change directions, at which point you have to begin accelerating all over again. But even at the beginning stages of acceleration, running is faster than simply walking. Running drains tension at a steady rate: you might be surprised how much it drains if you use it too often.
+
+
+
+AIMING and SIGHT (default: Mouse position, Analog Joystick 2)
+
+Aiming is tricky, and the mouse and the joystick handle it differently. Aiming with the mouse is simple: move the mouse where you want to fire at, and when you use the fire button your bullet (or trap, or melee attack) will be in that direction. Using the joystick to aim is a bit more complex: you point it in the direction you want to aim, and until you press another direction, you will continue to be aiming in that direction, even if you walk in a different direction.
+
+Aiming also handles your character's field of vision. If you are aiming south, and your opponent is north of you, he'll be invisible to you until he moves into your field of vision or until you aim in his direction. When your enemy is behind a wall, or a large crate, or something else which blocks your field of view, he will not appear on the screen. And vice versa; the computer AI and your (online multiplayer) opponent will not see you if you are not in their field of vision. (If you've played Metal Gear Solid, you have some understanding of how fields of vision work; it's roughly the same except the distance is unlimited, it's an infinite cone).
+
+
+
+PRIMARY WEAPON CHOICE (default: 1, 2, 3, Specebar, joystick button 9)
+
+Every character has at least two primary weapons: their melee attack and their pistol. There is also a third weapon for three of the characters (the special equipment of the other two characters is not usable as a weapon, although Speedstar's camo unit is triggered like a weapon). You choose between these primary weapons by using the toggle button to cycle between them, or by pressing 1, 2, or 3 on the keyboard to instantly select the one you desire. You will notice which weapon you have selected by a white box around that weapon in your heads-up display.
+
+
+
+FIRING & BULLETS (default: mouse click, E, joystick button 3)
+
+Firing is not automatic: holding it down does not continuously fire. You can of course cheat with a "turbo" controller, but that's cheating. Every character has a cooldown time, during which they cannot fire; Speedstar can fire the most rapidly, Alphasix the least rapidly, and the others are somewhere in-between. Bullet damage differs by character, with Alphasix doing the most damage, Speedstar the least, and the others somewhere in-between. Bullets also differ by speed; Sixshooter has the fastest bullets, Panzerjager has the slowest, and the others somewhere in-between.
+
+When you aim, aim for the bottom half of a character, because of the perspective used, aiming at their head isn't actually aiming at a character, but behind a character, and it will seem to pass through; so aim at the heart. The number of bullets on screen at once is unlimited, but each bullet will disappear after a certain amount of time, or when it hits something (except when it hits a bouncable object, of course).
+
+Bullets can bounce, and Sixshooter's bullets become stronger when they do (by 1.5x for each bounce). If a bullet bounces too many times in a second, it will disappear (this is to avoid a bullet getting "stuck" bouncing between two bouncable objects and rapidly bouncing between the two dozens of times a second). Bouncing is key to good strategy, especially with sixshooter. Most levels have at least one bouncable object in them, but Singapore has all of its walls bouncable.
+
+As an option in the options menu, you can use the joystick aiming analog stick to fire; you simply push it to the extreme in any direction and it will fire in that direction. If you've played Smash TV, it works a bit like that, although you cannot hold the direction to continually fire, you'll need to push the analog stick in that direction and then return it to its resting position in order to fire multiple shots using this method.
+
+
+
+RELOADING & QUICK RELOADING (default: R, joystick button 4)
+
+Each character has a clipsize, which holds a different number of bullets. When it reaches 0, a new clip is needed. There are two basic ways to reload.
+
+Manual reloading is slower, but requires no tension to perform; you simply hold reload button. The clip will turn red for two or three seconds, and then the reload will be complete. The character may move during this time, but may not use other weapons. Because Speedstar has a large clip size (20 bullets) she takes longer to manually reload than the other characters do.
+
+Quick reloading takes 1/4 of a tension bar, and is performed by pressing the reload button twice rapidly. It instantly reloads. This is preferable while in the midst of fighting, and is tempting to use every time, but the expert player will more often use manual reloading, to preserve tension for more important things.
+
+Sixshooter cannot reload using either of those two methods, because she uses a revolver. With her, pressing the reload button reloads a single bullet. She can reload even when she is only missing one bullet out of her maximum of six. So to reload her entire gun when it's empty, simply press the reload button six times in succession; the faster you press it, the faster she reloads. In effect, the fast-fingered will find her reloading to be the most convenient, because it doesn't take any tension and is almost as quick as quick reloading for the other characters
+
+
+
+MELEE ATTACKS (default: left mouse click, E, joystick button 3)
+
+Melee attacks are very short-range and usually a last resort attack (the exception is Alpahsix, whose katana is quite powerful). The melee attacks vary by the length the attack reaches (Alphasix the highest, Speedstar the lowest), the speed of the movement of the melee swing, the damage it does, the length of time it lasts, and the length of time before it can be used again. Attacking with a melee weapon usually damages the dizzy bar slightly more than a bullet does, so it's sometimes useful to use when an opponent has a low dizzy bar and you want to quickly bring it to 0.
+
+
+
+SPECIAL ATTACKS (default: left mouse click, E, joystick button 3)
+
+Panzerfaust uses flashbang stun grenades, Panzerjager uses grenades, and Alphasix uses mines. Speedstar can turn her camo unit on and off as well. Sixshooter's special equipment, provided she has energy for it, is always in use. Each of these five will now be explained in more detail. They are all, except for Sixshooter's, triggered by selecting it and pressing the fire button, the same way the gun and the melee weapon are triggered.
+
+
+
+GRENADE (default: left mouse click, E, joystick button 3)
+
+Panzerjager's grenade does the most damage of any attack in the game, but is easy to avoid or cancel. Panzerjager, and Sixshooter if special ops is on, will see a countdown from 5 to 0 (it explodes at 0). The other characters will see no countdown, and won't know exactly when it will go off. Using several grenades at once is a useful strategy.
+
+The grenade, when launched, bounces between objects, increasing in speed with each bounce. The initial speed of it depends on how far the mouse is from the player when you trigger it, or on how far the analog stick is pressed (when using it with the joystick). If it picks up enough speed, it can be very hard to cancel or avoid, but this is dangerous for Panzerjager as well, because it can also harm him.
+
+
+
+FLASHBANG (default: left mouse click, E, joystick button 3)
+
+Panzerfaust's flashbang, like the grenade, is launched and bounces between objects, although it has a shorter fuse (three seconds instead of five). When it goes off, anyone within a medium-range distance will be blinded (the screen will become pure white), and anyone very near to it will become dizzy. If you are far enough away, the screen will merely brighten, but will still be navigatable.
+
+The flashbang deals no damage, so it's only really useful as an adjunct or preparation to Panzerfaust's gun. It's especially useful when combined with full auto and a lot of bullets. It can also be used as a method of escape, where one can prepare (build up tension in B-Mode, or pick up more ammo boxes).
+
+
+
+LAND MINE (default: left mouse click, E, joystick button 3)
+
+Alphasix's land mine is placed in the ground and remains in that spot until triggered. IMPORTANT: move before the mine is fully placed, otherwise it will go off on Alphasix as well. Mines do a good deal of damage, but not as much as the grenade. Mines cannot be placed when Alphasix is in view of her opponent, only when she is out of view (such as around a corner, or behind a crate). This makes mines good for large levels, and less useful for small ones.
+
+Mines are deadly for the careless player, because they can't be seen until a character is a few steps away from them, so they require quick reaction time to avoid triggering them. Like all specials (except for Sixshooter's), they can be canceled with the Special Cancel ability, and if they are blocking your path that's usually the best thing to do. If you are playing against Alphasix, pay attention to the floor as you walk, and if a mine appears in your path, go carefully around it. When you are Alphasix, place them in key positions that a person would be likely to step on.
+
+
+
+CAMO (default: left mouse click, E, joystick button 3)
+
+Speedstar's camo unit allows her to disappear for a short time; the opponent will not be able to see her. However, if she performs any visible action, such as shooting, the camo unit will be turned off and she will be visible again. Like the mines, camo cannot be initiated when in view; Speedstar can only become invisible when out of the opponent's field of vision, such as around a corner or behind a crate.
+
+She can be hit while invisible, and if this is done she becomes visible and dizzy. If she shoots while invisible, the first shot which makes her visible will dizzy her opponent if it hits (because they were not expecting it). Camo is thus most useful as a fast way to dizzy the opponent, and is also sometimes useful as an escape device (to recover your dizzy meter or to find more bullets).
+
+In Ardennes, Belgium, and if she has stepped in the swamp in Cambodia, her footprints will still be visible, so her position can be inferred in those stages, making her less useful there.
+
+Due to the nature of play (both players using one screen), two-players playing VS on one computer will be able to see the other player even if that player is in camo mode, although the dizzy shot and dizzying effects will still apply.
+
+
+
+SPECIAL OPS (default: left mouse click, E, joystick button 3)
+
+Sixshooter's special ops kit has no offensive use, it's purely tactical. While powered, it confers the following. First, a radar beep which will beep faster and louder the nearer you are to your enemy, and (if you have stereo speakers) the left-right sound of the beep will indicate the position of your opponent.
+
+It also acts as a counter to the special abilities of the other characters. It increases the speed at which Speedstar's camo energy drains when she is in camo mode to twice that of normal; it reduces the glare from the flashbang if Sixshooter happens to get hit by it; it allows her to detect where mines have been placed; and it allows her to see the countdown numbers on the grenade and flashbang (so she'll know when they're about to go off). It also allows Sixshooter to see the heads up display and the tension meter of her enemy, so that she knows which weapon the enemy is preparing to use, when they run out of bullets or special abilities, and when they should watch out for a 3-bar super.
+
+Due to the nature of play, two-players playing on one computer will recieve no benefit from the special ops kit, except for mine visibility (for *both* players) and reduction of Speedstar's camo energy. (Two players on one computer mode is not meant to be the primary way in which one plays the game, it should be used only when internet connectivity doesn't work, or to introduce someone to the game.)
+
+
+
+DEFENDING (default: shift, joystick button 6)
+
+Defending creates a protective forcefield, which reduces damage by about 80%. It only works against melee and bullet attacks, however; you can't defend against grenades and other explosions. While defending, the dizzy bar goes down twice as fast as it otherwise would, so use dizzy sparingly, especially against Panzerfaust. You can move while defending, but you cannot shoot. While in B-Mode, defending increases your tension meter. A character in A-Mode may not defend.
+
+
+
+SPECIAL CANCEL (default: T, joystick button 2)
+
+Special cancel is a purely defense function; it creates a circle of cancelation around the player, which destroys any bullet or special ability in that range. Even can even cancel camo. But its range is only a small distance (although Speedstar has a slightly longer range). It costs half a tension bar to use, and is most useful as protection from grenades and flashbangs (if you can't simply run away from them), or as a quick way to get rid of an approaching bullet.
+
+
+
+DIZZY CANCEL (default: T, joystick button 2)
+
+Dizzy cancel simply cancels dizziness, and costs one full tension bar. If you're dizzy and being hit, and can afford it, there's really no reason not to use this.
+
+
+
+SUPER DEFENSE (default: Z, joystick button 7)
+
+Super Defense roughly doubles your defense while in use; it lasts about ten seconds after using it, and costs one tension bar. While in use the screen has a blue filter effect. This is good to use in overtime mode, when you are ahead in life energy.
+
+
+
+SUPER OFFENSE (default: X, joystick button 8)
+
+Super Offense increases your offense (bullets and melee attacks only) while in use; it lasts about ten seconds after triggering it, and costs one tension bar. While in use the screen has a red filter effect. This is good to use just prior to using Full Auto, if you have enough tension for both.
+
+
+
+FULL AUTO MODE (default: C, joystick button 10)
+
+Full auto costs two tension bars, one tension bar in B-Mode. It allows you to shoot continuously (as long as your gun is loaded). Speedstar, due to her already fast rate of fire, cannot use this feature. This feature is excellent to use when the enemy is dizzy! But it does waste a lot of bullets, and is less accurate than single-shot firing.
+
+
+
+STRAFING (default: arrow keys, joystick POV gamepad)
+
+Strafing is not usually that useful, but it can be useful for evasion. Pressing forward moves toward your aiming cursor, pressing left and right strafe to the left and right relative to the cursor position, and pressing backwards moves you away from what you're aiming at.
+
+Another trick is to hold the "strafe forward" button on the joystick, and then you can simultaneously move and aim using the joystick. This works with the keyboard and mouse as well, holding forward while moving the mouse around will make your character follow your mouse cursor.
+
+
+
+PAUSING (default: Pause/Break key)
+
+Press the pause key to pause the game, and press it again to resume it. Useful for breaks.
+
+
+
+THE THREE MODES
+
+There are three modes in which you may play the game. Because there are five characters, there are a total of fifteen mode-character combinations. Some characters are better in some modes than others (for example, B mode for Speedstar is quite useless, because she cannot use Full Auto mode and the main draw of B mode is it reduces the tension required to use Full Auto mode by 1). Here's an outline of what you can do in each mode:
+
+
+
+ADVANCED MODE
+
+Advanced mode is my personal favorite, because, although the damage you can do is lower, you get twice as many special weapons, and can use the awesome "roll" feature. Not being able to defend is a major drawback, especially when the opponent uses Full Auto (to which the optimum reaction is defending). This mode is particularly useful with Panzerfaust and Panzerjager, because it gives you twice as many chances to connect with a grenade or flashbang.
+
++ Can roll.
++ Tension meter regenerates automatically.
++ Can trigger Super Offense and Super Defense.
++ Starts with twice as many special items.
+
+- Cannot run.
+- Cannot dodge.
+- Cannot defend.
+- Weaker gun and melee attacks.
+
+
+
+TURBO MODE
+
+Turbo mode is for those who really like Full Auto mode. Using that mode, you can defeat an opponent in a second (provided you have enough ammo and a clear shot). However, the drawback for this mode is that you can't use super offense or super defense, and you have to charge your tension meter. It also has no rolling or running, instead it has the dodge, which takes some getting used to, but is very useful once mastered.
+
++ Can dodge.
++ Can defend.
++ Can trigger Full Auto mode for one tension bar instead of 2.
++ Does more damage as the health bar decreases.
+
+- Tension meter does not regenerates automatically.
+- Cannot trigger Super Offense or Super Defense.
+- Cannot run.
+- Cannot roll.
+
+
+
+CLASSIC MODE
+
+Classic mode is recommended to the beginning player. It is useful when you primarily fight with your gun, because you get extra damage. If you're near death, your damage is about double the damage the other two modes can do. It can also run, which doubles your speed and costs nothing (although your tension meter will not go up when running). It has no weaknesses, but it also has no real strengths.
+
++ Can run.
++ Can defend.
++ Tension meter regenerates automatically.
++ Can trigger Super Offense and Super Defense.
++ Does more damage as the health bar decreases.
+
+- Cannot roll.
+- Cannot dodge.
+
+
+
+SPECIAL ITEMS
+
+The game will continuously spawn objects across the map as you are playing (unless you have this option turned off in the options menu). 
+
+The A boxes will give you more ammo while the S boxes will increase your special item supply. Barrels won't give you anything, but it can be used strategically: shooting a barrel while the enemy is standing close to it will cause it to explode and damage the enemy nearby. Medical kits recover your health, but will not recover higher than the lifebar you are currently on.
+
+
+
+SPECIAL TERRAIN
+
+Big crates block your bullets, but after they take a number of hits, they'll be destroyed.
+
+You can shoot over small crates, but you cannot walk over them. They can be pushed, which is useful to slow the enemy's pursuit. They can be destroyed with any character's melee weapon.
+
+In both big and small crates, sometimes you might find helpful objects. Both types of crates can be destroyed by explosions (whether by a barrel or by a grenade).
+
+Cars can be destroyed if shot enough times, and the resulting explosion is quite dangerous to anyone nearby. The trouble with cars is that you never really know when they'll explode.
+
+It's rumored that there's a way to destroy bamboo trees as well...
+
+
+
+OCCUPATIONAL HAZARDS 
+
+Aside from your opponent, there are a few things that you need to pay attention too.
+
+In Ardennes, there are NPCs at each side of the map. The soldiers on your side can't harm you, but they will harm the other player. The opposite is true for the other players.
+
+You also leave footprints when you walk around in Ardennes, make full use of this to track your opponent. In Cambodia, be wary of the fact that every time you out of from the swamp, you will leave tracks.
+
+In Cambodia, if you stay too long on the swamp without moving, your health bar will slowly be depleted.
+
+There are also rumors of a level with spikes...
+
+
+
+*
+
+CREDITS
+
+				DESIGN
+Lead Design.....................................Hardi "Orchard-L" Gosal
+Assistant Design................................Paul Valentin "RinkuHero" Eres
+
+				GRAPHICS
+Lead Graphics...................................Hardi "Orchard-L" Gosal
+Character Sprite Graphics.......................Kevin "Charbile" Loan
+Particle and Effect Graphics....................Paul Valentin "RinkuHero" Eres
+
+				PROGRAMMING
+Lead Programming................................Paul Valentin "RinkuHero" Eres
+Multiplayer Advice..............................Mike "Fyrewulff" Kidder
+
+				CAST
+ALPHASIX........................................Ariel "Miyu Sakura" Anderson
+PANZERFAUST.....................................Kenneth "Harlock Hero" Whitehead
+PANZERJAGER & ANNOUNCER.........................Alexander "Hachi-Roku" Santos
+SIXSHOOTER......................................Linda "Bireaux St. Juste de Jarjeyes" Folsom
+SPEEDSTAR.......................................Jess "Cinnamon Squire" Glover
+
+				LIBRARIES
+GAME MAKER ENGINE...............................Mark Overmars
+JBFMOD LIBRARY..................................M. Rijks
+FMOD LIBRARY....................................Firelight Multimedia
+
+				MUSIC*
+Bit/Cinefex, Gammus, Lesnik, Radix, Reed & Tempest, 
+Smash of Fairlight, Jeconte, Theralite, Jochen Hippel, 
+Zabutom & Dubmood, Purple Motion, Zalza (Rebels), Elwood
+
+[NOTE: Music used without permission. If you are an author] 
+[and have a problem with us using your music in this game ]
+[and would like your song removed from the game, email us.]
+[The music in this game is temporary and will be replaced ]
+[after we find an associate musician. If interested in    ]
+[creating this game's soundtrack, email us with samples.  ]
+
+				SPECIAL THANKS
+Bastardzero, J'sang'spar, Haggard, Inferior Minion, Konami, 
+Longebane, Nanamihero, Retrogamer, Specplosive, Wynand

@@ -1,0 +1,241 @@
+  Adrenaline Changelist  v1.2.0
+      (c) OpticalLiam and BrainWare 2010
+---------------------------------------------------
+
+
+Changes in v1.2.0
+------------------
+
+- Added 10 new floor textures
+- Added 5 new wall textures
+- Added 8 new maps
+- Added game help in main menu
+- Added arrow keys for player movement
+- Added clan tag support
+- Added flag dropping (press b)
+- Added flag icons on minimap
+- Added flag waypointer
+- Added adaptive spawn algorithm - puts you in safer spawns, spreads out players
+- Added client command line switches: "-connect ip" and "-sp map mode points bots"
+- Added loading map message
+- Added ticks next to servers if they have portforwarded/same version, locks if they are passworded
+- Added detailed player information in the serverlist
+- Added new hacker protection schemes
+- Added high velocity (purple) bullets
+- Added player coloured knives
+- Added player coloured explosions
+- Added blood spray (instead of sparks!) when bullets hit players
+- Added in-game volume control keys (Numberpad + / -)
+- Added SP map debugging mode (press F9 to see an overlay of the bot's A* navigation grid)
+- Added map search in SP window, press <enter> and type the map name
+SERVER - Added '/ip <id>' command
+SERVER - Added private servers (i.e. join passwords)
+SERVER - Added server logging to file
+SERVER - Added game mode aliases ('dm' = 0, 'tdm' = 1, 'ctf' = 2, 'con' = 3) e.g. '/load Airbase dm'
+SERVER - Added '/hidden' command to toggle whether server is shown on the server list
+SERVER - Added rapid fire protection
+
+- Improved performance, especially during heavy firefights
+- Improved single player, better performance and less bugs
+- Improved lag compensation, better hit registration
+- Improved balance of CON game mode
+- Improved melee hit registration
+- Improved game now uses much less memory
+- Improved bots should be more realistic, e.g. no longer have perfect accuracy
+- Improved balance of the shotgun
+SERVER - Improved now uses much less memory
+SERVER - Improved made all server messages more consistent and user friendly
+SERVER - Improved the ban system. Bans are now much stronger, and there is a new global ban system in place.
+SERVER - Improved protection against hackers
+
+- Changed very slightly reduced update rate
+- Changed sniper bullets now do fixed 85% damage
+- Changed menu GUI, added name and progress to every screen and rearranged buttons slightly
+- Changed the singleplayer window, moved up slightly so you can see all of the dropdowns
+- Changed default bots number is now 5
+- Changed reduced lifetime of decals
+- Changed shotgun now shoots slightly slower
+- Changed shotgun / curveshot damage now drops off over distance (high damage up close, med-low at distance)
+- Changed curveshot now shoots slightly faster
+- Changed players now move about 13% faster
+- Changed now uses HTTP dll for Reflect connections
+- Changed nuke damage radius increased (to match increased player speed)
+- Changed you can no longer put mines close to teleporters
+- Changed CON mode so you now only get one grenade (to improve balance)
+- Changed CON mode so you only spawn at your own team's spawns and not neutral spawns
+- Changed you now win CON if enemy only has one spawn left or less
+- Changed the size of the map selection dropdown in single player menu
+SERVER - Changed now uses HTTP dll for Reflect connections
+SERVER - Changed the settings INI format slightly
+
+- Fixed 'incendiary' spelling mistake
+- Fixed 'Unknown variable hasflag' bug
+- Fixed 'Unknown variable angle bug' bug
+- Fixed 'Unknown variable flagnum' bug in singleplayer
+- Fixed 'at position 38: Unknown variable dir' bug
+- Fixed many possible packet exploits
+- Fixed mute button now properlly mutes, doesn't stop music
+- Fixed the infamous nuke cheat
+- Fixed the bug that gave you are 'you are banned' message if you join a full server
+- Fixed a bug in autobalance
+- Fixed guest name character restrictions (only alpha-numeric allowed)
+- Fixed bug that made your chat disappear when pressing '
+- Fixed a rare issue where delta time did not work correctly on certain machines
+- Fixed bug where sniper scope occasionally got stuck on
+- Fixed huge bug in singleplayer bot collisions - less walking through walls, much less lag
+- Fixed shooting through walls bug
+- Fixed long names dont overlap on end round score screen
+- Fixed you can no longer throw grenades exactly ontop of yourself (so they go huge and vanish)
+- Fixed bug where you could use sniper scope with any gun
+- Fixed you can no longer melee through small blocks
+- Fixed melee on edges of corners now requires line of sight
+- Fixed rockets are now correct colour in team modes
+- Fixed an odd error that appears occasionally in the single player menu
+- Fixed 'host disconnected' message after being kicked
+- Fixed a possible error in real() if stats server breaks
+- Fixed game now unloads everything correctly from memory
+- Fixed bug that left your melee knives still on screen after you had died
+- Fixed bug that could cause a division by 0
+- Fixed bug that sometimes made you unable to move when you spawned
+- Fixed bots can no longer knife straight after spawning
+- Fixed item boxes now have correct rendering depth when on the edges of screen, no longer overlap walls
+- Fixed volume option now gets saved correctly
+- Fixed bot gibs now correct colour in dm
+- Fixed old hack protection
+- Fixed huge problems in single player bot pathfinding. Almost all maps should now function virtually perfectly!
+SERVER - Fixed ping is now calculated much more accurately
+SERVER - Fixed bug that made a crash when supplying a large player id (out of array range > 255)
+SERVER - Fixed possible exploit in newplayer packet
+SERVER - Fixed a bug in autobalance that could cause the server to crash
+
+
+Changes in v1.0.0
+------------------
+
+- Added achievements
+- Added new weapon art
+- Added tactical nuke weapon
+- Added a "free nuke" award for 5 kill streak
+- Added CTF mode to singleplayer
+- Added new GUI effects
+- Added 4 new textures
+- Added footstep sounds
+- Added new sounds for flag events
+- Added multiplayer guest mode
+- Added auto team balancing
+- Added a delay for knives after spawning
+- Added a countdown before new rounds in single player
+- Added cursor to login textboxes
+- Added global stats page in menu
+- Added ability for bots to dodge grenades better
+- Added a delay to bots respawn
+- Added muffle audio filter effects when hit by nearby explosions
+- Added custom music directory option (only usable through settings.ini)
+- Added host button in the server list when none online
+SERVER - Added icon
+SERVER - Added minimise to tray facility
+SERVER - Added "-tray" switch to launch minimised in tray
+
+- Improved the smoothness of online play, reduced lag
+- Improved performance in general
+- Improved server list
+- Improved startup and load time
+- Improved single player bots
+- Improved character animations
+SERVER - Improved server console GUI
+SERVER - Improved load up time and responsiveness
+
+- Changed the length of time lasers are visible
+- Changed the colours of various ammo boxes
+- Changed the size of the weapon pads to be slightly larger
+- Changed the colour of armor piercing and incendiary bullets
+- Changed the shotgun to be slightly less deadly
+- Changed the fragma ammo slightly
+- Changed ammo pickup sound
+- Changed the sniper scope to look better
+- Changed team damage to be DISABLED by default
+- Changed kill/death messages
+- Changed and added various in game information messages
+
+- Fixed AI walking through walls
+- Fixed a bug in delta time, as a result the game runs smoother at lower framerates
+- Fixed tilde key not opening console on certain keyboards
+- Fixed bugs that meant you were kicked unfairly from the server
+- Fixed various single player bugs
+- Fixed various bugs in the GUI
+- Fixed server list to show locally hosted servers
+- Fixed bugs with decals
+- Fixed problems with the drop down box in singleplayer GUI
+- Fixed a bug that meant you could connect to a game but not see any other players, but they could see you
+SERVER - Fixed bug that allowed an extra person to join a full server
+SERVER - Fixed player kicking
+SERVER - Fixed various other bugs
+
+- Removed intro screens
+- Removed the MOTD
+SERVER - Removed "-silent" and "-nocon" switches. Use "-tray" instead.
+
+
+Changes in beta 3
+------------------
+
+- Added new single player AI, with DM and TDM modes
+- Added new game mode, conquest, in which your team must take all of the spawns
+- Added the Curveshot weapon
+- Added a new plasma ammo type, the fragma
+- Added new music system
+- Added new player characters
+- Added command "!change" to change teams
+- Added sniper rifle scope, right click when using the sniper to toggle the scope
+- Added team chat, press 't'
+- Added smoother logon transitions
+- Added intro screens
+- Added MOTD
+- Added 'Adrenaline' logo to menu background
+- Added glow to sides of ammo boxes
+- Added item pick up effects
+- Added new game icon
+- Added indication when hitting enemies, makes cursor flash red with a sound effect
+- Added rocket reload sound
+- Added flag pickup, capture and return sounds
+- Added flag pick up visual effects
+- Added option to reverse chatbox order, press 'F5'
+- Added kill message popup
+- Added player footstep sound
+- Added click sound when new messages are recieved
+- Added an icon that appears near players who are having connection problems
+- Added a button to play single player when no servers online
+- Added a button for single player only at the Reflect login stage, to allow you to play single player without logging in
+- Added word wrapping for the chatbox
+- Added all-time stats tracking using the "!stats" command. The original per-server stats command is now "!serverstats"
+- Added command "!scores" that shows how many all-time flag captures, returns and spawn captures you have made
+- Added menu button to take you to your stats on the stats website
+
+- Improved cheat prevention
+- Improved server list
+- Improved audio leveling
+- Improved rocket visuals
+- Improved grenades visuals
+- Improved overall smoothness of online play and reduced lag
+- Improved huds are now smoother and anti-aliased
+
+- Changed plasma disc ammo to max of 15
+- Changed what happens after leaving a server, it will now take you to the server list
+- Changed minigun accuracy, made less accurate
+- Changed the look of the chatbox and console
+- Changed menu button click sound
+- Changed the "!stats" command to "!serverstats"
+
+- Fixed various bugs in CTF
+- Fixed GUI bugs in menus when pressing escape
+- Fixed bug that allowed you to have any weapon
+- Fixed bug that made players disappear
+- Fixed bug that made players skip when hugging walls
+- Fixed collision issues with rockets
+- Fixed a bug in chat where typing too much would result in the message '0'
+
+- Removed sawn off shotgun
+- Removed menu button to take you to your profile
+
+- Mapped the tilde key to console
+- Mapped the 'y' key to chat
