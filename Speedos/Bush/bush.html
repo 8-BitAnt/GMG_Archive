@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<title>Lands of Games</title>
+<link rel="icon" href="../general/icon.png">
+<meta charset="utf-8">
+<meta name="description" content="The greatest site of them all.">
+<meta name="keywords" content="kimberly kubus, game maker games, game maker, ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	body {background-image: url("bg.png")}
+	h1	{font-size: 40px; color: red; font-weight: bold;}
+	p	{font-size: 20px; color: blue; font-weight: bold;}
+	.center {text-align: center}
+</style>
+
+<div class="center">
+<h1>
+Fortune from the Magic Bush
+</h1>
+<img src="bush.gif" alt="O---O">
+<p>
+Welcome to the wonderful realm of the magic bushh!
+This magical plant has been growing in the gardens of TAYANBAUN for millions of years and it is always excited to reveal its wisdom and fortune upon anyone willing to listen.
+Simply ask a question, click the MAGIK SPELL OF FATE and gaze upon the WISDOM!!!
+</p>
+<img src="wrath.gif" alt="Click here!" onclick="magikspell()">
+<p id="thingo"></p>
+<script type="text/javascript">
+	function magikspell() 
+		{
+			var fortunelist=["Yes", "No", "Maybe", "8====D", "69", "get a gf NERD", "potato mash", "that sucks", "yea but only in red", "only if ya cook it first", "relax a lil", "gay", "BUSHHH", "get tree bodyyy", "go to landsofgames.com and play some good ass games", "save it up", "delete", "screw the government", "wash your feet", "flamingo", "a briefcase maybe", "boom badoom", "a sammich", "sell some stuff", "one hundred umbrellas!!", "This concept: My jam!", "evening fisting", "00110110 00110110 00110110", "shalalaaa budohaa ainaaa buradaa agimaa murodaa aimaa burodaaa", "eh", "EEEEEE", "an old man", "screwdriver in SPACE", "fuckkkkkkkk yeah i agree", "blunder of da year", "MHM", "wash your dog", "speedos: criminal on the run", "wank the crank", "nobody lives forever", "ask me 1 more thin and i will ass fug", "0,000324% of huamns cannot ask me stuff cause they suck", "executive producer asshole", "I AM GOD HERE", "dont want da fbi", "marry kill fuck yourself", "new one", "its not gay if its a feminine penis"]; 
+			var fortune=fortunelist[Math.floor(Math.random()*fortunelist.length)]; 
+			document.getElementById("thingo").innerHTML = fortune;
+		}
+</script>
+</div>
+</div>
