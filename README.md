@@ -7,7 +7,7 @@ This archive contains many Game Maker Games made in early versions of Game Maker
 
 There is no specific category these games fit in and are just random games I've come across and put into this archive.
 
-I am excluding most of the games from the YoYo Games Archive since it's pretty complete but I might put the games from there into here soon.
+I am excluding most of the games from the YoYo Games Archive since it's pretty complete but I might put the games from there into here eventually.
 
 Hope you enjoy! :D
 
@@ -30,5 +30,5 @@ This is an archive so what can be archived will be archived so don't be surpirse
 
 Yes, though if you expierence issues please let me know immediately.
 
-(Keep in mind that Anti Viruses detect false positives with games like Dark Caves 1 & 2 by Hellbound and some others)
+(Keep in mind that Anti Viruses detect false positives with games like Dark Caves 1 & 2 by Hellbound and some others.)
 
