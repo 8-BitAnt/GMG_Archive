@@ -1,0 +1,114 @@
+GAME CHANGES - Version 0.7 to 0.71
+==================================
+- AI soldiers stand further away.
+- Slightly improved AI performance.
+- AI now starts off easy and slowly gets harder as you gain more BLUE STARS.
+- "Record Stats" is now set to YES by default.
+- Replaced the "knife" weapon with a chainsaw.
+- Altered credits text a bit.
+- Altered tutorial messages a bit.
+- Fixed bug in which respawning barrels trap soldiers.
+- Improved appearance for the plasma cannon.
+- Improved appearance for the flamethrower.
+- Improved appearance of decaying bullets.
+
+GAME CHANGES - Version 0.62c to 0.7
+===================================
+- Partially restructured engine (for performance)
+- Implemented Sound Engine
+- Partially redeveloped menu
+- Implemented Account System
+- Rearranged HUD / Partially redesigned
+- New turret 'air-strike'
+- New weapon 'laser rifle'
+- New weapon 'knife'
+- Redesigned 'incendiary grenade'
+- Preloads alpha masks, weapon arrays, sounds, etc on system startup (faster performance)
+- Implemented weapon slot system
+- Rewritten AI and soldier class system
+- Implemented scoreboard / ex-game stats
+- Implemented 'stars' system (awarded stars for accomplishments in games)
+- Removed unnecessary options (Auto-Update, Language Filter, Volume, Resolution)
+- New video setting 'terrain rendering' (pre-rendered, realtime render, no terrain)
+- New video setting 'Region Scaling' (stretches game to fit screen)
+- Round settings when starting a new game slightly redesigned.
+- Improved weather effects (look AND performance).
+- Improved Soundtrack (new tracks)
+
+- Tweaked weapon mechanics and design
+- Tweaked error-reporting system
+- Changed appropriate aspects of the game for new title "Conflict: Arcade"
+- Updated credits
+- Fixed 'safe mode'
+- New "first time" mission replacing all training missions
+- AI can now throw grenades appropriately.
+- Redeveloped weapon lists/format (for efficiency)
+- Improved blur FX performance
+- Removed GameCave Logo (buggy on some computers, GameCave doesn't exist anymore)
+
+GAME CHANGES - Version 0.62b to 0.62c
+===================================
+- Upgraded to GML 7.0 (changes marked with an asterisk are courtesy of the engine upgrade)
+- Fixed critical error when starting a training mission
+- Now supports Windows Vista *
+- Surface FX runs faster *
+- Game may perform faster *
+
+GAME CHANGES - Version 0.62 to 0.62b
+===================================
+- Fixed critical error(s) when observing a non-team-based game.
+- Removed HUD when observing
+- There is now a 1 second pause when changing weapons to avoid quick weapon changing/shooting.
+
+GAME CHANGES - Version 0.61 to 0.62
+===================================
+- New gameplay type "Bully" - Score by killing the randomly-chosen 'victim', or by killing anyone while being the victim yourself.
+- Fixed critical error when being killed while holding the Warrior flag.
+
+- The time-left on HUD doesn't show if there isn't a time-limit.
+- You can now choose your team as "Observe", which allows you to watch AI soldiers play instead of playing yourself.
+- Score text on the right is now in the format "individual score", as opposed to
+"individual - score"
+- AI will only get in turrets by a random chance.
+- Arrow above player is now drawn above everything (except HUD)
+- Improved AI processing.
+- Added the "Knife" Weapon (Melee) - "BETA".
+- 1 second "god-mode" when respawning, so that people can't blow you up as soon as you spawn!
+
+GAME CHANGES - Version 0.60 to 0.61
+===================================
+- New "Mansion Courtyard" Map.
+- Improved performance in night-time lighting.
+- Death-Screen is now partially removed. The screen will blur alot (if surface effects is on, else the screen just goes red then quickly fades out), and instead of going black, you will be able to see the area where you died.
+- Warrior score-methods have changed. You now score 1 point for every person you kill WHILE being the warrior - You also score a point if you kill the warrior, and another if you pick the warrior-flag up.
+- New gameplay type 'Last Man Standing' - Deathmatch without scoring, however you have a certain number of lives (score-limit) and must be the last man standing!
+
+- Shells no longer go through obstacles
+- Slightly improved walking-speed while in water
+- Slightly reduced normal walking-speed
+- Fixed issue of going outside walls when getting out of a turret (enemies stuck in the top-left corner of hunting creek)
+- Fixed error when Warrior games finish
+- Added an easter egg (you'll need to type in a number in-game...)
+- Rocket Launcher now moves faster.
+- The moving of the mouse won't move the screen as much around borders of the screen.
+- Weapon spray now goes either side of the cursor, instead of just in the clockwise-direction.
+- Proximity mines will blow up if a door closes on it.
+- Sparks no longer go past the wall they're supposed to come out of when you shoot too close (still an issue with musket rifles).
+- Improved look of minigun bullets.
+- Smoke is now additive - to give a more "gassy" look, and blend nicely with particles.
+- Added an arrow above the player so it's easier to find yourself.
+- AI will now get blinded by flash grenades.
+- Door in basic-training no longer locks over the top of the player (getting him stuck).
+- Bullets collide with targets much more nicely now. 
+- You can no longer see enemy laser-sights (realism factor + lag issue)
+- Default AI Players is now set to 1, instead of 0.
+- Fixed lighting issue, in which the HUD and other frontend-features were also affected by lighting.
+- Increased power and damage for Shrapnel Cannons.
+- Fixed depth problems with confirmation messages and night-time lighting.
+- The finishing score-screen now says which team has won (if it's a team-based game)
+- The finishing score-screen now has clearer text.
+- AI aims faster if their target is close, and slower if their target is far away. 
+- Collisions with guards in basic-training map fixed. 
+- Changed some instructional text on the basic training mission.
+- Added some sandbags in the medic training mission to stop exploiting in the laser-tolerance part of the mission.
+- Errors are now embedded into a custom window.

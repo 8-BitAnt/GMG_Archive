@@ -1,0 +1,77 @@
+Iji
+Remar Games 2004-2008
+www.remar.se/daniel
+Music list and credits
+
+Note: the only song not specifically made for Iji is "Further".
+
+Key for reading the entries:
+filename (official/explanatory name) - artist's final song name
+
+
+
+1. secintro (Sector intro) - Make Your Mind Up
+Chris Geehan & Dan Byrne McCullough
+
+2. sec1 (Sector song 1) - Kinda Green
+Chris Geehan & Dan Byrne McCullough
+
+3. sec2 (Sector song 2) - 3 Cans Later
+Chris Geehan & Dan Byrne McCullough
+
+4. sec3 (Sector song 3) - Welcome to the Party, Pal
+Chris Geehan & Dan Byrne McCullough
+
+5. sec4 (Sector song 4) - For Stronger Bones
+Chris Geehan & Dan Byrne McCullough
+
+6. sec5 (Sector song 5) - Seven Four
+Chris Geehan & Dan Byrne McCullough
+
+7. boss (Boss theme) - Face to Face
+Tom Mauritzon
+
+8. tor (Tor theme) - Tor
+Chris Geehan & Dan Byrne McCullough
+
+9. ending (Ending theme) - Further
+Composed by VNV Nation
+Covered and performed by LifeForce
+Edited for length by Daniel Remar
+
+10. mainmenu (Main menu) - Men And You
+Chris Geehan
+
+11. clear (Clear screen) - Level Clear
+Chris Geehan & Dan Byrne McCullough
+
+12. darkstroke (Darkstroke) - Dark Stroke
+Chris Geehan & Dan Byrne McCullough
+
+13. lightstroke (Lightstroke) - Light Stroke
+Chris Geehan & Dan Byrne McCullough
+
+14. calm (Calm) - All That Can Wait
+Chris Geehan & Dan Byrne McCullough
+
+15. dark (Dark) - Hade Shade
+Chris Geehan & Dan Byrne McCullough
+
+16. sad (Sad) - Glass Soldier
+Chris Geehan & Dan Byrne McCullough
+
+17. asha (Asha theme) - Asha
+Chris Geehan & Dan Byrne McCullough
+
+18. gameover (Game over) - Game over
+Chris Geehan & Dan Byrne McCullough
+
+19. hero3d (Hero3D theme) - Hero (Wretched8 Remix)
+Composed by Machinae Supremacy
+Covered by Captain Goodnight
+
+20. doom (Doom) - Doom
+Chris Geehan & Daniel Remar
+
+21. N/A (N/A) - ½fabrikat
+Internal SFX sequence player by Daniel Remar

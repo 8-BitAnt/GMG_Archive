@@ -1,0 +1,25 @@
+0
+1
+{1}<Untitled>{2}
+7,19
+{1}Name{2}Skill Needed{3}Non-Id'ed Name{4}Sprite{5}Description{6}Codestring{7}Cost{8}
+{1}Row 1{2}Row 2{3}Row 3{4}Row 4{5}Row 5{6}Row 6{7}Row 7{8}Row 8{9}Row 9{10}Row 10{11}Row 11{12}Row 12{13}Row 13{14}Row 14{15}Row 15{16}Row 16{17}Row 17{18}Row 18{19}Row 19{20}
+{1}Gold Ring{2}0{3}Gold Ring{4}spr_goldring{5}A simple ring, with no powers other than looking nice.#[Charm +1]{6}global.cha2 += 1;{7}10{8}
+{1}Ring of Enchantment{2}10{3}a ring with a flower on it{4}spr_flowering{5}A ring that enhances the wearer's charm.#[Charm +5]{6}global.cha2 += 5;{7}50{8}
+{1}Silver Ring{2}0{3}Silver Ring{4}spr_ringsilver{5}A simple ring, with no powers other than looking nice.#[Charm +1]{6}global.cha2 += 1;{7}10{8}
+{1}Ring of Lies{2}25{3}a silver-black striped ring{4}spr_ringlies{5}A dark, oily ring that makes the wearer seem beautiful on the outside...#[Charm +30, 10 Sin]{6}global.cha2 += 30; if (global.sins < 10) global.sins = 10;{7}100{8}
+{1}Dazzling Ring{2}50{3}a diamond ring{4}spr_dazring{5}A brilliant diamond ring that catches the eye. Very fashionable.#[Charm +30]{6}global.cha2 += 30;{7}300{8}
+{1}Ring of Brute Force{2}35{3}a stone ring{4}spr_rockring{5}A ring of stones that grants the wearer strength, but makes them clumsy.#[Strength +25, Luck -15]{6}global.str2 += 25; global.dex2 -= 15;{7}100{8}
+{1}Ring of Fire{2}100{3}a ruby ring{4}spr_firering{5}This ring boosts the user's powers in fire-based magic.#[Fire]{6}global.mfire += 0.5;{7}200{8}
+{1}Ring of Ice{2}100{3}a sapphire ring{4}spr_icering{5}This ring boosts the users's powers of water-based magic.#[Water]{6}global.mwater += 0.5;{7}200{8}
+{1}Ring of Lightning{2}100{3}a ring with a bolt on it{4}spr_lightningring{5}This ring boosts the user's powers of air-based magic.#[Air]{6}global.mair += 0.5;{7}200{8}
+{1}Ring of Shattering{2}100{3}a copper ring{4}spr_earthring{5}This ring boosts the user's powers of earth-based magic.#[Earth]{6}global.mearth += 0.5;{7}200{8}
+{1}Ring of Strength{2}20{3}an ivory ring{4}spr_strongring{5}This ring provides a minor enhancement to strength.#[Strength +5]{6}global.str2 += 5;{7}50{8}
+{1}Ring of Vigor{2}75{3}an emerald ring{4}spr_vigorring{5}This ring enhances the wearer's strength.#[Strength +30]{6}global.str2 += 30;{7}300{8}
+{1}Lucky Charm{2}10{3}a ring with a purple stone{4}spr_luckring{5}A cheap trinket that provides a small amount of luck.#[Luck +5]{6}global.dex2 += 5;{7}25{8}
+{1}Lucky Stars{2}50{3}an amethyst ring{4}spr_luckstarring{5}This ring enhances the luck of the wearer.#[Luck +25]{6}global.dex2 += 25;{7}95{8}
+{1}Ring of Protection{2}75{3}a rune-marked ring{4}spr_runering{5}This ring aids defense and absorbs minor damage.#[Combat +10, Damage -1]{6}global.combat2 += 10; global.damred += 1;{7}110{8}
+{1}Full Spectrum{2}125{3}a rainbow ring{4}spr_rainbowring{5}This ring adds a bit of energy to every kind of magic, like a universal charm.#[All Magic]{6}global.mfire += 0.1; global.mwater += 0.1; global.mair += 0.1; global.mearth += 0.1; global.mlight += 0.1; global.mdark += 0.1; global.mholy += 0.1; global.mnature += 0.1; global.memotion += 0.1;{7}250{8}
+{1}Chaos Ring{2}125{3}a rainbow ring{4}spr_chaosring{5}This ring causes your magical energy to fluctuate wildly. Beware!#[Special]{6}global.magic2 = round(random(min(250, 3 * global.magic2)));{7}96{8}
+{1}Ring of Meditation{2}75{3}a glass ring{4}spr_mindring{5}This ring focuses your mind and helps you think clearly.#[Mind +10]{6}global.int2 += 10;{7}110{8}
+{1}Broken Rainbow{2}200{3}a ring of rainbow dust{4}spr_antiring{5}This nearly-invisible ring drains magical energy - from user and attacker.#[Magic -25, Special]{6}global.magic2 -= 25; if (global.magic2 < 0) global.magic2 = 0;{7}300{8}

@@ -1,0 +1,13 @@
+- When fighting next to more than one enemy, pay attention to the HP indicator because the combat message system can only keep track of the damage you've received from the enemy you're currently fighting against.
+
+- You can switch the game to Fullscreen Mode with F4.
+
+- You can find info about controls and scoring by pressing F1 in game.
+
+- Some of the equipment available in the store can also be found from the crypt.
+
+- The crypt has 30 levels.
+
+- "The Crypts of Despair" can be described as a light roguelike game. Here's a good site if you want to try some of the full-scale roguelikes: http://thelist.roguelikedevelopment.org/
+
+I hope you enjoy the game! -JTR

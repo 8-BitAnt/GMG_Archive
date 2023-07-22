@@ -1,0 +1,56 @@
+                        
+          _           
+         | |          
+   _____ | | _   _   
+  |  _  || || | | |  
+  |  ___|| || | | undersea
+  | |___ | || |_| |
+  |_____||_||_____|
+
+  a life simulator
+  created in 2004 by clysm - http://autofish.net
+
+--
+
+  this program is free, but you can't sell it.
+
+  I made it using Game Maker by Mark Overmars,
+  a program that I can't recommend highly enough.
+
+  http://www.gamemaker.nl/
+
+--
+
+  instructions: 
+
+  watch what happens, or click your mouse on things,
+  or both.
+
+--
+
+  this is sort of a sequel to another similar
+  program that I made about a year ago.
+
+  the first one was just called elu.
+
+  elu means 'life' in Estonian.
+
+  if you like elu, or even if you don't, you may 
+  like seiklus, an exploration/adventure game that
+  I made.
+
+  http://www.autofish.net/clysm/games/seiklus/
+
+--
+
+  thanks, for various reasons related to this 
+  project, to
+
+  jph wacheski  http://www.iterationgames.com/
+  mocha man     http://drgames.2ya.com/
+  darthlupi     http://www.darthlupi.com/
+  lackey        (needs to make a web page)
+  
+--
+
+  the end.

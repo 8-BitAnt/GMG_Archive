@@ -1,0 +1,37 @@
+0
+1
+{1}<Untitled>{2}
+7,31
+{1}Name{2}Skill Needed{3}Non ID'ed{4}Sprite{5}Description{6}Codestring{7}Cost{8}
+{1}Row 1{2}Row 2{3}Row 3{4}Row 4{5}Row 5{6}Row 6{7}Row 7{8}Row 8{9}Row 9{10}Row 10{11}Row 11{12}Row 12{13}Row 13{14}Row 14{15}Row 15{16}Row 16{17}Row 17{18}Row 18{19}Row 19{20}Row 20{21}Row 21{22}Row 22{23}Row 23{24}Row 24{25}Row 25{26}Row 26{27}Row 27{28}Row 28{29}Row 29{30}Row 30{31}Row 31{32}
+{1}Minor Health Potion{2}5{3}a red potion{4}minorhealth_spr{5}This potion restores a small amount of lost health points.#[10 HP]{6}global.hp += 10; if (global.hp > global.con) global.hp = global.con;{7}25{8}
+{1}Minor Mana Potion{2}5{3}a blue potion{4}minormana_spr{5}This potion restores a small amount of lost magic points.#[10 MP]{6}global.mp += 10; if (global.mp > global.int) global.mp = global.int;{7}25{8}
+{1}Elixir of Luck{2}25{3}a purple potion{4}luckelixir_spr{5}This potion boosts the user's Luck.#[Luck +20]{6}drink_potion("global.dex2 += 20;");{7}35{8}
+{1}Elixir of Strength{2}25{3}a green potion{4}strelixir_spr{5}This potion increases the user's strength.#[Strength +20]{6}drink_potion("global.str2 += 20;");{7}35{8}
+{1}Fruit Juice{2}35{3}a sweet red potion{4}juice_spr{5}A refreshing drink with no magical powers.{6}x = x{7}10{8}
+{1}Mild Poison{2}35{3}a dark blue potion{4}mpoison_spr{5}This liquid will make the drinker feel ill.#[-10 HP]{6}global.hp -= 10; if (global.hp < 0) global.hp = 0;{7}15{8}
+{1}Water{2}50{3}a clear potion{4}water_spr{5}It's just plain water.{6}x = x{7}1{8}
+{1}Potion of Barkskin{2}50{3}a murky brown potion{4}barkpotion_spr{5}This potion toughens the skin and allows it to absorb damage.#[Damage -1]{6}drink_potion("global.damred += 1;");{7}45{8}
+{1}Potion of Phasing{2}50{3}a bubbling gray potion{4}phasepotion_spr{5}This potion makes the user partially ghostlike, increasing defense but lowering damage done.#[Combat +40, MaxDam 1]{6}drink_potion("global.combat2 += 40; global.dambase = 1;");{7}50{8}
+{1}Potion of Skill{2}75{3}a shiny gray potion{4}skillpotion_spr{5}This potion enhances the user's skill with weapons.#[Weapons +25]{6}drink_potion("global.weapons2 += 25;");{7}75{8}
+{1}Holy Water{2}100{3}a clear potion{4}holywater_spr{5}Blessed water purges evil from believing hearts.#[-10 Sin]{6}global.sins -= 10; if (global.sins < 0) global.sins = 0;{7}75{8}
+{1}Potion of Stoneskin{2}150{3}a lumpy gray potion{4}stonepotion_spr{5}This potion toughens the skin and allows it to absorb extra damage.#[Damage -5]{6}drink_potion("global.damred += 5;");{7}125{8}
+{1}Health Potion{2}25{3}a big red potion{4}bighealthpotion_spr{5}This potion restores lost health points.#[50 HP]{6}global.hp += 50; if (global.hp > global.con) global.hp = global.con;{7}90{8}
+{1}Mana Potion{2}25{3}a big blue potion{4}bigmanapotion_spr{5}This potion restores lost mana points.#[50 MP]{6}global.mp += 50; if (global.mp > global.int) global.mp = global.int;{7}90{8}
+{1}Vile Potion{2}100{3}a blue vial{4}vilepotion_spr{5}This poison drains the user's strength.#[Strength = 1]{6}drink_potion("global.str2 = 1;");{7}50{8}
+{1}Magic Perfume{2}75{3}a sweet pink potion{4}perfume_spr{5}This potion enhances the user's attractiveness.#[Charm + 25]{6}drink_potion("global.cha2 += 25;");{7}60{8}
+{1}Elixir of Insight{2}125{3}a blue-green potion{4}intelixir_spr{5}This potion expands the mind but can have long-term side-effects.#[Mind +20, Magic -1]{6}drink_potion("global.int2 += 20; if (global.magic > 10) global.magic -= 1;");{7}75{8}
+{1}Potion of Power{2}125{3}an orange vial{4}powerpotion_spr{5}This potion boosts your magical and physical damage potential.#[Magic +20, MaxDam +3]{6}drink_potion("global.dambase += 3; global.magic2 += 20;");{7}115{8}
+{1}Mental Boost{2}200{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently increases intelligence.#[Mind +5]{6}global.int += 5;{7}200{8}
+{1}Health Boost{2}210{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently increases stamina.#[Stamina +5]{6}global.con += 5;{7}200{8}
+{1}Strength Boost{2}220{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently increases strength.#[Strength +5]{6}global.str += 5;{7}200{8}
+{1}Charm Boost{2}230{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently increases charm.#[Charm +5]{6}global.cha += 5;{7}200{8}
+{1}Luck Boost{2}240{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently increases luck.#[Luck +5]{6}global.dex += 5;{7}200{8}
+{1}Cure-All{2}250{3}a rainbow potion{4}rainbowpotion_spr{5}This potion fully heals the user.#[Special]{6}global.hp = global.con; global.mp = global.int;{7}250{8}
+{1}Mental Drain{2}200{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently lowers intelligence.#[Mind -10]{6}global.int -= 10; if (global.int < 10) global.int = 10; if (global.mp < global.int) global.mp = global.int;{7}200{8}
+{1}Health Drain{2}210{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently lowers stamina.#[Stamina - 10]{6}global.con -= 10; if (global.con < 10) global.con = 10; if (global.hp < global.con) global.hp = global.con;{7}200{8}
+{1}Strength Drain{2}220{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently lowers strength.#[Strength -10]{6}global.str -= 10; if (global.str < 5) global.str = 5;{7}200{8}
+{1}Charm Drain{2}230{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently lowers charm.#[Charm -10]{6}global.cha -= 10; if (global.cha < 5) global.cha = 5;{7}200{8}
+{1}Luck Drain{2}240{3}a rainbow potion{4}rainbowpotion_spr{5}This potion permanently lowers luck.#[Luck -10]{6}global.dex -= 10; if (global.dex < 5) global.dex = 5;{7}200{8}
+{1}Deadly Poison{2}250{3}a rainbow potion{4}rainbowpotion_spr{5}Caution - this potion may kill the user!#[Special]{6}global.hp = 1; global.mp = 0; global.con -= 10; if (global.con < 10) global.con = 10;{7}150{8}
+{1}Disgusting Muck{2}75{3}a murky brown potion{4}mudelixir_spr{5}This foul-smelling brew makes the drinker very unattractive.#[Charm - 30]{6}drink_potion("global.cha2 -= 30");{7}15{8}

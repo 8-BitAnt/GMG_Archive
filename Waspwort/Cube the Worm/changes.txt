@@ -1,0 +1,26 @@
+Cube the Wormgame - Version history
+***********************************
+VERSION 1.11
+- The game is available as lite or full version
+- Special bonuses added
+- Commentary voice can be disabled
+- More comments added
+- Silence in the end of one track has been removed
+
+VERSION 1.10
+- Invertible UP/DOWN controls
+- There is a pointer which helps to find the target (can be hidden)
+- Statistics
+- Worm moves faster on harder levels
+- Voice comments while playing
+- Wall textures are now high detail
+- More wall textures have been added
+- Texture quality can be adjusted
+- "Eye" can be hidden
+- Replaced music (made by "DJDarkShadow", see credits)
+- Replaced pickup sound
+- Game introduction after game mode selection
+- Many minor changes in the code and the graphics
+
+VERSION 1.00
+- The first release

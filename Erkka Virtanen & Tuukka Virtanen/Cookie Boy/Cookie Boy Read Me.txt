@@ -1,0 +1,44 @@
+
+                        Cookie Boy
+
+**************************************************************
+                         Story
+
+           Evil Doctor has taken all cookies.
+           And now you have to get them back...
+
+**************************************************************
+                      Controls
+
+                     In game
+
+                 Normal controls are:
+                   Left: left arrow
+                  Right: right arrow
+                   Jump: shift
+            Yo-yo trick: control
+                    Esc:Restart the game.
+ 
+                     In menu
+
+                 select: enter
+                     Up: up arrow
+                   Down: down arrow
+                    esc: go to main menu
+
+          Tip: Use your Yo-yo to turn on switches.
+**************************************************************
+                      Credits
+
+                   Everything by
+
+                  Erkka Virtanen 
+                 Tuukka Virtanen                 
+
+ PS: Don't worry about our crazy names; we are from Finland.
+
+**************************************************************
+
+                    Enjoy playing!
+
+if you have any questions, email me wirtanen@cedunet.com 

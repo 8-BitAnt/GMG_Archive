@@ -1,0 +1,16 @@
+0
+1
+{1}<Untitled>{2}
+4,10
+{1}Name{2}Sprite{3}Value{4}Description{5}
+{1}Row 1{2}Row 2{3}Row 3{4}Row 4{5}Row 5{6}Row 6{7}Row 7{8}Row 8{9}Row 9{10}Row 10{11}
+{1}White Ribbon{2}award_white{3}1{4}An award won at the Cooking Contest.{5}
+{1}Yellow Ribbon{2}award_yellow{3}1{4}An award won at the Cooking Contest.{5}
+{1}Red Ribbon{2}award_red{3}1{4}An award won at the Cooking Contest.{5}
+{1}Blue Ribbon{2}award_blue{3}1{4}An award won at the Cooking Contest.{5}
+{1}Teddy Bear{2}teddy_spr{3}15{4}A cuddly teddy bear won at the festival.{5}
+{1}Tiara{2}tiara_spr{3}250{4}The crown awarded to the girl chosen as Flower Queen.{5}
+{1}Runestone{2}runestone_spr{3}5{4}A rock with a symbol on it. You don't know what it means.{5}
+{1}Signet{2}signet_spr{3}100{4}A golden ring marked with the letter A. This must belong to someone... but it doesn't fit your finger.{5}
+{1}Fairy Dust{2}fairydust_spr{3}20{4}A sparkling magical powder.{5}
+{1}Mystical Whatsit{2}whatsit_spr{3}25{4}It's supposed to be magical, but what exactly is it? What does it do?{5}

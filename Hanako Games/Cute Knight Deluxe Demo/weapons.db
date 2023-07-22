@@ -1,0 +1,37 @@
+0
+1
+{1}blank{2}
+7,31
+{1}Name{2}Skill Needed{3}Non-ID'ed Name{4}Sprite{5}Description{6}Codestring{7}Cost{8}
+{1}Row 1{2}Row 2{3}Row 3{4}Row 4{5}Row 5{6}Row 6{7}Row 7{8}Row 8{9}Row 9{10}Row 10{11}Row 11{12}Row 12{13}Row 13{14}Row 14{15}Row 15{16}Row 16{17}Row 17{18}Row 18{19}Row 19{20}Row 20{21}Row 21{22}Row 22{23}Row 23{24}Row 24{25}Row 25{26}Row 26{27}Row 27{28}Row 28{29}Row 29{30}Row 30{31}Row 31{32}
+{1}Dagger{2}0{3}Dagger{4}dagger_spr{5}A small light weapon, easy to wield but doing little damage.#[Weapons +5, MaxDam 4]{6}global.weapons2 += 5; global.dambase = 4;{7}25{8}
+{1}Sword{2}0{3}Sword{4}sword_spr{5}A simple all-around weapon.#[MaxDam 8]{6}global.dambase = 8;{7}50{8}
+{1}Axe{2}0{3}Axe{4}axe_spr{5}A heavy weapon, doing extra damage but difficult to wield.#[Weapons -5, MaxDam 12]{6}global.weapons2 -= 5; global.dambase = 12;{7}100{8}
+{1}Wand{2}0{3}Wand{4}wand_spr{5}A wand with a small amount of magical power, but not much good for hitting things with.#[Magic +5, MaxDam 2]{6}global.dambase = 2; global.magic2 += 5;{7}25{8}
+{1}Star Wand{2}15{3}a wand with a star on top{4}starwand_spr{5}A wand with a little more magical power than the basic wand.#[Magic +10, MaxDam 2]{6}global.dambase = 2; global.magic2 += 10;{7}70{8}
+{1}Assassin's Blade{2}15{3}an oily black dagger{4}nightdagger_spr{5}Only a wicked person would use a poisoned dagger.#[Weapons +10, MaxDam 6, 10 Sin]{6}global.weapons2 += 10; global.dambase = 6; if (global.sins < 10) global.sins = 10;{7}75{8}
+{1}Wooden Staff{2}0{3}Wooden Staff{4}woodstaff_spr{5}Sturdier than a standard magical wand, but no more powerful.#[Magic +5, MaxDam 5]{6}global.dambase = 5; global.magic2 += 5;{7}40{8}
+{1}Halberd{2}0{3}Halberd{4}halberd_spr{5}This long weapon can do a lot of damage but is hard to defend with at close range.#[Weapons -10, Combat -10, MaxDam 16]{6}global.dambase = 16; global.weapons2 -= 10; global.combat2 -= 10; {7}135{8}
+{1}Spiked Club{2}0{3}Spiked Club{4}spikeclub_spr{5}A poor improvised weapon, cheap and not doing much damage.#[MaxDam 5]{6}global.dambase = 5;{7}15{8}
+{1}Magic Staff{2}35{3}a stick with a crystal on it{4}orbstaff_spr{5}The crystal on this staff helps to amplify magic powers.#[Magic +20, MaxDam 6]{6}global.dambase = 6; global.magic2 += 20;{7}95{8}
+{1}Spear{2}0{3}Spear{4}spear_spr{5}A cheap but powerful weapon, capable of good damage on a successful blow.#[MaxDam 10]{6}global.dambase = 10;{7}50{8}
+{1}Wizard's Staff{2}80{3}a stick with a crystal on it{4}wizstaff_spr{5}The crystal on this staff powerfully amplifies magic.#[Magic +50, MaxDam 6]{6}global.dambase = 6; global.magic2 += 50;{7}180{8}
+{1}Spear of Wrath{2}90{3}a red spear{4}wrath_spr{5}This spear is enhanced with the power of fire, enhancing the user's strength.#[Strength +20, MaxDam 10, Fire]{6}global.dambase = 10; global.str2 += 20; global.mfire += 0.25;{7}120{8}
+{1}Icebreaker{2}90{3}a blue axe{4}icebreaker_spr{5}This axe is enhanced with the essence of water, making it easier to wield.#[Weapons +10, MaxDam 12, Water]{6}global.weapons2 += 10; global.dambase = 12; global.mwater += 0.25;{7}150{8}
+{1}Earthsplitter{2}100{3}a glass sword{4}disword_spr{5}This diamond-edged blade can cut through almost anything, and does extra damage.#[MaxDam 25, Earth]{6}global.dambase = 25; global.mearth += 0.25;{7}210{8}
+{1}Lightning Kris{2}90{3}a wavy dagger{4}kris_spr{5}This dagger is enhanced with the essence of air to aid quicker movements.#[Luck +30, Weapons +10, MaxDam 4, Air]{6}global.dex2 += 30; global.weapons2 += 10; global.dambase = 4; global.mair += 0.25;{7}100{8}
+{1}Dashing Blade{2}50{3}a thin sword{4}rapier_spr{5}This highly-polished actor's sword looks stylish, but is difficult to fight with.#[Weapons -10, Charm +25, MaxDam 6]{6}global.dambase = 6; global.weapons2 -= 10; global.cha2 += 25;{7}105{8}
+{1}Claw Glove{2}120{3}a spiked glove{4}clawglove_spr{5}The blades on this leather glove make it a weak weapon and weak armor at the same time.#[Combat +10, MaxDam 4]{6}global.dambase = 4; global.combat2 += 10;{7}75{8}
+{1}Stone Fist{2}150{3}a heavy glove{4}stonefist_spr{5}This armored glove allows you to catch blows and absorb some of the damage. #[Combat +10, MaxDam 6, Damage -3]{6}global.dambase = 6; global.damred += 3; global.combat2 += 10;{7}145{8}
+{1}Magic Mop{2}0{3}Magic Mop{4}mmop_spr{5}This magical mop allows cleaning experience to count as fighting expertise.#[Weapons = Clean, MaxDam 4]{6}global.dambase = 4; if (global.weapons < global.clean) global.weapons2 = global.clean; else global.weapons2 += (global.clean / 10); {7}305{8}
+{1}Magic Dagger{2}50{3}a glowing dagger{4}mdagger_spr{5}Fairy magic improves this dagger's chance to hit.#[Weapons +15, MaxDam 4]{6}global.weapons2 += 15; global.dambase = 4;{7}45{8}
+{1}Magic Sword{2}50{3}a glowing sword{4}msword_spr{5}Fairy magic improves this sword's chance to hit.#[Weapons +10, MaxDam 8]{6}global.weapons2 += 10; global.dambase = 8;{7}75{8}
+{1}Magic Axe{2}50{3}a glowing axe{4}maxe_spr{5}Fairy magic improves this axe's chance to hit.#[Weapons +5, MaxDam 12]{6}global.weapons2 += 5; global.dambase = 12;{7}130{8}
+{1}Druid's Staff{2}80{3}a branching staff{4}druidstaff_spr{5}This staff enhances nature-based magic.#[Magic +25, MaxDam 6, Nature]{6}global.dambase = 6; global.magic2 += 25; global.mnature += 0.5;{7}140{8}
+{1}Hammer{2}50{3}a stone hammer{4}hammer_spr{5}This heavy stone hammer can crush enemies, but drains the user's strength.#[Strength -25, MaxDam 18]{6}global.str2 -= 25; global.dambase = 18;{7}120{8}
+{1}Magic Lance{2}50{3}a lance{4}mlance_spr{5}Fairy magic makes this long weapon easier to handle than a standard halberd.#[MaxDam 16]{6}global.dambase = 16;{7}160{8}
+{1}Holy Lance{2}50{3}a lance{4}hlance_spr{5}This blessed lance is easy to handle and strengthens holy magic.#[MaxDam 16, Holy]{6}global.dambase = 16; global.mholy += 0.5;{7}170{8}
+{1}Striking Ribbon{2}65{3}a ribbon whip{4}whip_spr{5}This ribbon can be twirled to charm an enemy, but it's useless for attacking.#[Tame +15, MaxDam 0, Emotion]{6}global.tame2 += 15; global.dambase = 0; global.memotion += 0.5;{7}35{8}
+{1}Deathstrike{2}75{3}an oily black sword{4}nightsword_spr{5}Only a wicked person would wield a poisoned sword.#[MaxDam 20, 25 Sin, Dark]{6}global.dambase = 20; global.mdark += 0.5; if (global.sins < 25) global.sins = 25;{7}199{8}
+{1}Magic Hammer{2}50{3}a glowing hammer{4}magichammer_spr{5}Fairy magic makes this powerful hammer light in your hands.#[MaxDam 18]{6}global.dambase = 18;{7}180{8}
+{1}Ray of Light{2}180{3}a dazzling blade{4}dazzleblade_spr{5}The rainbow of glimmers confuses the enemy and makes you harder to hit.#[Combat +15, MaxDam 6, Light]{6}global.combat2 += 15; global.dambase = 6; global.mlight += 0.5;{7}130{8}

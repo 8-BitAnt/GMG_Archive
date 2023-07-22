@@ -1,0 +1,27 @@
+0
+1
+{1}<Untitled>{2}
+4,21
+{1}Name{2}Sprite{3}Value{4}Description{5}
+{1}Row 1{2}Row 2{3}Row 3{4}Row 4{5}Row 5{6}Row 6{7}Row 7{8}Row 8{9}Row 9{10}Row 10{11}Row 11{12}Row 12{13}Row 13{14}Row 14{15}Row 15{16}Row 16{17}Row 17{18}Row 18{19}Row 19{20}Row 20{21}Row 21{22}
+{1}Flower{2}flower_spr{3}1{4}A well-preserved daisy.{5}
+{1}Fallen Star{2}star_spr{3}5{4}Metal from a meteorite.{5}
+{1}Night Stone{2}nightstone_spr{3}10{4}A shiny black stone with an oily surface.{5}
+{1}Iron Nails{2}nails_spr{3}2{4}Bits of hard, sharp metal.{5}
+{1}Stick{2}stick_spr{3}1{4}A sturdy piece of wood.{5}
+{1}Ribbon{2}ribbon_spr{3}1{4}A bright red ribbon.{5}
+{1}Crystal Orb{2}orb_spr{3}15{4}A sphere of crystal, almost clear enough to look through.{5}
+{1}Amethyst{2}amethyst_spr{3}10{4}A common purple crystal, often considered lucky.{5}
+{1}Amber{2}amber_spr{3}20{4}A natural substance known for generating static electricity.{5}
+{1}Diamond{2}diamond_spr{3}100{4}A valuable jewel.{5}
+{1}Ruby{2}ruby_spr{3}80{4}A valuable red jewel.{5}
+{1}Emerald{2}emerald_spr{3}100{4}A valuable green jewel.{5}
+{1}Sapphire{2}sapphire_spr{3}80{4}A valuable blue jewel.{5}
+{1}Rainbow Crystal{2}rainbowcrystal_spr{3}60{4}A strange jewel filled with many colors.{5}
+{1}Rocks{2}rocks_spr{3}0{4}Just some ordinary rocks.{5}
+{1}Tooth{2}tooth_spr{3}5{4}A big tooth, probably lost by some horrible monster.{5}
+{1}Acorn{2}acorn_spr{3}1{4}A fallen nut.{5}
+{1}Leather Scrap{2}scrap_spr{3}1{4}A discarded piece of leather, too small to make a suit of armor.{5}
+{1}Dry Bones{2}bones_spr{3}1{4}Old bones. At least they're not moldy.{5}
+{1}Egg{2}egg_spr{3}1{4}A dried-up old egg.{5}
+{1}Mushroom{2}mushroom_spr{3}1{4}A wild mushroom.{5}

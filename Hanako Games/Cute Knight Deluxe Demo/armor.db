@@ -1,0 +1,27 @@
+0
+1
+{1}blank{2}
+7,21
+{1}Name{2}Skill Needed{3}Non-ID'ed Name{4}Sprite{5}Description{6}Codestring{7}Cost{8}
+{1}Row 1{2}Row 2{3}Row 3{4}Row 4{5}Row 5{6}Row 6{7}Row 7{8}Row 8{9}Row 9{10}Row 10{11}Row 11{12}Row 12{13}Row 13{14}Row 14{15}Row 15{16}Row 16{17}Row 17{18}Row 18{19}Row 19{20}Row 20{21}Row 21{22}
+{1}Leather Armor{2}0{3}Leather Armor{4}leatherarmor_spr{5}Simple armor made of stiffened leather.#[Combat +5]{6}global.combat2 += 5;{7}60{8}
+{1}Chain Mail{2}0{3}Chain Mail{4}chn_spr{5}Armor made of linked metal rings.#[Combat +10, Damage -1]{6}global.combat2 += 10; global.damred += 1;{7}100{8}
+{1}Plate Mail{2}0{3}Plate Mail{4}plt_spr{5}Armor made of heavy metal plates. #[Combat +15, Damage -5, Luck -5]{6}global.combat2 += 15; global.damred += 5; global.dex2 -= 5;{7}150{8}
+{1}Plain Robe{2}0{3}Plain Robe{4}robe_spr{5}A simple cotton robe with no special properties at all.{6}{7}5{8}
+{1}Party Dress{2}0{3}a dress{4}dress_spr{5}For dressing up and looking nice; not for fighting.#[Charm +15]{6}global.cha2 += 15;{7}100{8}
+{1}Studded Leather{2}0{3}Studded Leather{4}studleather_spr{5}Metal spikes add to the protection of this leather armor.#[Combat +10]{6}global.combat2 += 10;{7}85{8}
+{1}Nightgown{2}15{3}a starry robe{4}nightgown_spr{5}This soft flannel robe is decorated with stars.#[Magic +10]{6}global.magic2 += 10;{7}65{8}
+{1}Padded Chainmail{2}0{3}Padded Chainmail{4}padchain_spr{5}Leather padding makes this chainmail more comfortable.#[Combat +15, Damage -1]{6}global.combat2 += 15; global.damred += 1;{7}125{8}
+{1}Skeletal Armor{2}25{3}bone armor{4}bonearmor_spr{5}Dark magic reinforces these old bones. #[Combat +10, Dark]{6}global.combat2 += 10; global.mdark += 0.5;{7}105{8}
+{1}Rune Plate{2}50{3}stone armor{4}stonearmor_spr{5}This stone armor provides protection and magic, but is very heavy!#[Combat +20, Magic +10, Damage -5, Luck -15]{6}global.combat2 += 20; global.dex2 -= 15; global.damred += 5; global.magic2 += 10;{7}200{8}
+{1}Rainbow Robe{2}25{3}a tie-dyed shirt{4}rainbowrobe_spr{5}This colorful robe enhances magic energy, but offers no protection aginst weapons.#[Magic +25]{6}global.magic2 += 25;{7}125{8}
+{1}Enchanted Plate{2}50{3}gold plate armor{4}goldplate_spr{5}Magic makes this plate mail light and easy to wear.#[Combat +20, Damage -5]{6}global.combat2 += 20; global.damred += 5;{7}200{8}
+{1}Enchanted Chain{2}50{3}gold chain armor{4}goldchain_spr{5}Magic makes this chainmail light and easy to wear, improving reflexes.#[Combat +15, Damage -1, Luck +10]{6}global.combat2 += 15; global.damred += 1; global.dex2 += 10;{7}150{8}
+{1}Chainmail Bikini{2}0{3}Chainmail Bikini{4}chainbikini_spr{5}Magically just as effective as regular chainmail, but looks better on you!#[Combat +10, Damage -1, Charm +15]{6}global.combat2 += 10; global.damred += 1; global.cha2 += 15;{7}150{8}
+{1}Necromancer's Robe{2}75{3}a black robe{4}necrobe_spr{5}This heavy robe is decorated with skulls.#[Combat +5, Magic +10, Dark]{6}global.combat2 += 5; global.magic2 += 10; global.mdark += 0.5;{7}125{8}
+{1}Shaman's Robe{2}100{3}a green robe{4}shamrobe_spr{5}This heavy robe is decorated with animal teeth.#[Combat +5, Magic +10, Strength +10, Nature]{6}global.combat2 += 5; global.magic2 += 10; global.str2 += 10; global.mnature += 0.5;{7}150{8}
+{1}Paladin's Plate{2}50{3}blessed armor{4}holyarmor_spr{5}This platemail has been blessed - but it's still heavy.#[Combat +20, Damage -5, Luck -5, Holy]{6}global.combat2 += 20; global.damred += 5; global.dex2 -= 5; global.mholy += 0.5;{7}200{8}
+{1}Elven Leather{2}50{3}green leather armor{4}elfleather_spr{5}These leathers allow the wearer to be acrobatic.#[Combat +10, Luck +20]{6}global.combat2 += 10; global.dex2 += 20;{7}135{8}
+{1}Full Plate{2}0{3}Full Plate{4}fullplt_spr{5}This heavy metal armor covers more of the body than normal plate.#[Combat +20, Damage -5, Luck -5]{6}global.combat2 += 20; global.damred += 5; global.dex2 -= 5;{7}175{8}
+{1}Heavy Robe{2}0{3}Heavy Robe{4}hrobe_spr{5}Leather padding allows this robe to act as light armor.#[Combat +5]{6}global.combat2 += 5;{7}40{8}
+{1}Apron Dress{2}0{3}a dress{4}maiduni_spr{5}A dress worn by someone in domestic service.#[Clean + 10, Cook + 10]{6}global.clean2 += 10; global.cook2 += 10;{7}75{8}

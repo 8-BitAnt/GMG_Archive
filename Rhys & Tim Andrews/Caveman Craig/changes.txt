@@ -1,0 +1,90 @@
+Caveman Craig Changes
+---------------------
+v1.4.1;
+- All cavemen health replenishes now, not just hunters and Craig.
+- Throttled the number of dinosaurs that can be on the map at one point.
+- Replaced the 't-shirts' end ad with an ad for Caveman Craig: SE.
+
+v1.4;
+- Vastly improved overall performance by altering slope-movement methods.
+- Updated the licence / terms of distribution.
+- Increased difficulty a bit.
+- Hunters and Rivals no longer duck indefinitely if a velociraptor or hunter is standing over them.
+- Velociraptor no longer gets stuck on the edge of the room in the minigame (sometimes they do but you can just jump out)
+- Preparers are now a bit more scattered when preparing the same carcass.
+- Highlighting and Selecting options in the settings menu have better positioned masks.
+- Velociraptors now attend to the slope of the terrain.
+- Rivals don't go into a falling loop when being knocked out of the screen by a triceratops.
+- If you're dodging while a raptor is trying to eat you, and it gets hit by a rock, you no longer are forced to stand up.
+- Added an advertisement for the Caveman Craig T-Shirts.
+
+v1.3.3;
+- Rivals don't come in such large groups anymore.
+- Rain is a little rarer, but lasts longer.
+- Game will compensate for a missing names.dat file.
+- The loading sequence now runs a little faster when importing caveman names.
+- Fixed error where berry sounds didn't play
+- Triceratops' are now slightly harder to kill
+- Decreased volume of in-game theme a bit.
+- Fixed bug where changing body/armour/feet colour when creating a new profile didn't actually work
+
+v1.3.2;
+- Fixed critical error in which time-related variables didn't change (save timer, total time, etc)
+- Turning off caveman names will now also unload names from the memory.
+
+v1.3.1;
+- Berry Gathering Sound no longer plays if you're far away from the bush being gathered.
+- Fixed bug in 1.3 where rain stopped suddenly.
+- Implemented a new, more rhythmic in-game theme.
+- In-game theme now stops when the game pauses.
+- Some bugs may be fixed (un-pickable carcasses, un-hittable rivals)
+- Berries grow more often when it's raining.
+- Made some adjustments to the unlock at the end of the game.
+- Fixed bug where rocks got stuck in Craig's statue.
+- Fixed bug where rocks got stuck in velociraptors.
+- Time is now measured absolute, not relative to frames-per-second.
+- Rain now lasts longer.
+- Fixed bug where hunters get stuck in a 'being eaten' animation.
+- Rivals aren't as freaking strong.
+
+v1.3;
+- Fixed bug with rival cavemen and one of the bonuses.
+- Split up the tutorial more logically and in smaller chunks. 
+- Fixed bug where t-rex keeps trying to attack you while you're dodging.
+- T-rex's can (and will) now eat Rival Cavemen.
+- Rival Caveman rocks will now hurt a T-rex.
+- Tweaked triggers of difficulty
+- Implemented death sounds for raptors and triceratops' that differentiate from their 'signature' sound 
+- Improved performance and decreased game size with better texture management (thanks Pim!)
+- Added a "TAP SPACE" image that flashes above Craig's head when you're being eaten.
+- Placed some mouse-over sounds into the menu.
+- Game Over sounds now actually play.
+- Altered some collision masks.
+- Fully-trained caveman bonuses no longer add the message "Your new hunter, [name], is ready to be trained!"
+- Fixed bug where the T-rex timer will continue if you leave the game and start a new one.
+- Edited some parts of the tutorial.
+- Added a very special unlock / bonus that signifies the ending of the game - however, you can continue playing afterwards.
+- Rival Cavemen can now be eaten by Raptors and Head-butted by Triceratops'
+- Rival Cavemen now respond to attacks from hunters while they are attacking gatherers or preparers.
+- Fixed bug where Rival Cavemen counted as two kills.
+- Dead rival cavemen face the way they died.
+
+v1.2;
+- Added a notification box when pausing.
+- Added hotkeys 1,2, and 3 to create caveman (1 hunters, 2 gatherers, 3 preparers)
+- Removed the windows buttons from title bar
+- Slightly decreased difficulty of escaping raptors via space.
+- Rival Caveman tweaked.
+- Hunters are more likely to stand further away from the T-rex
+- Fixed freezing-hunter bug (please report if it occurs)
+- Improved quality of soft edges on cavemen.
+- Improved the duck animation.
+- Improved the mid-range image for the berry bushes.
+- Hunters don't take as long learning how to fight.
+- Berry pile emerges earlier, so it doesn't appear like you have no berries when you may.
+- Added another bonus, but you have it discover it yourself.
+- Triceratops' no longer head-butt cavemen who are already being mauled by a raptor.
+- Added a sound for when you die.
+- Moved the food progress bar next to the cavemen credits stone, so it looks more in place. 
+- Added a T-Rex Death sequence
+

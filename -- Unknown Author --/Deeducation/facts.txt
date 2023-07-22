@@ -1,0 +1,55 @@
+Evolution is the change in DNA.
+DNA stands for Deoxyribonucleic acid.
+DNA is in a double helix shape.
+DNA is organized into chromosomes.
+There are 46 chromosomes, in 23 pairs.
+Genes can be dominant, or... not dominant.
+Hair colour is stored in genes.
+Eye colour is stored in genes.
+My wallet is stored in my jeans.
+JMickle made the art, music and sprites.
+Ghostdev91 did most of the coding for this game.
+KniteBlargh came up with the basic concept.
+The arrow keys move your ship.
+Space bar shoots magical laser beams at the facts.
+I am a fact. Have a nice day.
+This game is dedicated to the Square Wave.
+Yawn.
+470 divided by three is 156.67
+www.gamingw.net for all your gaming needs!
+Gamma rays are a form of electromagnetic wave.
+Microwaves are not very powerful waves.
+Oxygen is not the main portion of air.
+Carbon monoxide is poisonous.
+This fact is interesting.
+1984 was published in 1948. Interesting.
+Kau is the southern most district in Hawaii.
+Appoquinimink is a real word. No lie.
+Ice cream parlours sell ice cream.
+The Pamlico were a Native American people.
+Rotvoll is an area of Trondheim, Norway.
+Khadarah is a village in western central Yemen.
+The Erechim River is a river of southern Brazil.
+Henrik Wiehe was a Danish film actor.
+Maltby is a town and civil parish of 17,247 inhabitants.
+Volksgemeinschaft is a German expression.
+Juli Minoves Triquell is an Andorran diplomat.
+Anthony Davies may refer to Anthony Davies, a Welsh snooker player
+Ritsuko Akagi is a fictional character.
+Albeura was a convict ship that transported eleven convicts.
+Kinlochleven is a village in Lochaber, Highland, Scotland.
+Pseudacanthicus leopardus is a species of catfish.
+2+2=4
+self.visible=true;
+e=mc^2
+6 is 2*3.
+Don't divide by zero. Fact.
+Dettol Protects.
+1*x=x
+anything * 0 = 0
+get_fact();
+e^i(pi)=-1
+(d/dx)e^x=e^x
+e=~2.71
+pi=~3.14
+i^2=-1

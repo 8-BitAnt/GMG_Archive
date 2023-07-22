@@ -1,0 +1,8 @@
+This folder will temporarily hold the sound data while the game is playing.
+
+If you delete it the game will not function properly.
+
+Please do not delete this folde or tamper with its contents during the game.
+
+
+Thank you

@@ -1,0 +1,49 @@
+                         
+          _           
+         | |          
+   _____ | | _   _   
+  |  _  || || | | |  
+  |  ___|| || | | |
+  | |___ | || |_| |
+  |_____||_||_____|
+
+  a life simulator
+  created in 2003 by clysm - http://autofish.net
+
+--
+
+  this program is free, but you can't sell it.
+
+  I made it using Game Maker by Mark Overmars,
+  a program that I can't recommend highly enough.
+
+  http://www.gamemaker.nl/
+
+--
+
+  instructions: 
+
+  watch what happens, or click your mouse on things,
+  or both.
+
+--
+
+  if you like elu, or even if you don't, you may 
+  like seiklus, an exploration/adventure game that
+  I made.
+
+  http://www.autofish.net/clysm/games/seiklus/
+
+--
+
+  thanks to 
+  Jeph Wacheski for inspiring me with Seeds
+
+  http://www.iterationgames.com/seeds.html
+  
+  Janell Smith, Matthew Witt, 
+  and Phil Bordelon for helpful suggestions.
+
+--
+
+  the end.

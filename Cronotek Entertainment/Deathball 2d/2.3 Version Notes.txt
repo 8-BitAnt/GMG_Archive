@@ -1,0 +1,68 @@
+Deathball 2D v2.3
+Version Notes
+=================
+
+NOTE: Saved game data from previous versions are not compatible with v2.3
+
+
+GENERAL:
+
+   - The talent tree has undergone significant changes to greatly increase build diversity.
+     The main focus is to remove the disconnect between shots and volleys. Now both shots
+     and volleys should be viable for scoring, regardless of your talent setup.
+
+   - The talent tree no longer has skill prerequisites. All talents on each tier will be
+     available as long as you spend enough points to reach them.
+
+   - Increased the number of talent points available to spend from 21 to 26. Because of
+     this, Tier 5 talents have had their point requirements increased from 20 to 25.
+
+   - Increased the player's shot charge rate by approximately 20%.
+
+   - Increased the power of the player's shots and instant shots by approximately 10%.
+
+   - Increased the power of the player's volleys by approximately 3%.
+
+
+TALENTS:
+
+   Nuclear Generators - Now increases both shot power and volley power by 1.2/2.4/3.6/4.8/6%.
+
+   Phase Filters - This talent has been removed.
+
+   Unstable Energy - Increased the shot and volley power bonus from 2/4/6% to 3/6/9% and it
+                     is now active whenever you are below 100 health. This is now a Tier 1
+                     talent and doesn't require any points spent in the tree.
+
+   Superior Actuators - This is now a 2 point talent: "Increases your movement speed while
+                        holding the ball by 5/10%." This is now a Tier 1 talent and doesn't
+                        require any points spent in the tree.
+
+   Supercharge - This is now a 3 point talent: "Increases your shot charge rate by 
+                 10/20/30%.". This is now a Tier 2 talent and requires only 5 points spent
+                 in the tree.
+
+   Overpower - This is now a 3 point talent: "Increases your volley power by 2/4/6%, but
+               reduces your volley accuracy by 2/4/6%.".
+
+   Energy Focus - Increased the Instant Shot power bonus from 10/20% to 15/30%.
+
+   Impact *NEW* - This is a new Tier 3 talent: "Increases the knockback strength of your
+                  volley gun by 8/16/24/32/40%.".
+
+   Gravity Stabilizers - Increased the knockback reduction bonus from 4/8/12/16/20% to
+                         5/10/15/20/25%.
+
+   Catalyst - This talent has been removed.
+
+   Titanium Plating - This is now a Tier 3 talent and requires only 10 points spent in the 
+                      tree.
+
+   Endurance - This is now a 5 point talent: "Increases your maximum health by 
+               10/20/30/40/50, and your movement speed by 2/4/6/8/10%."
+
+   Harmonic Resonance Gun - Reduced the cooldown from 10 seconds to 8 seconds.
+
+   Volley Mastery - No longer provides a 3% bonus to volley power.
+
+   Recoil Dampener - Improved the reduction of interruption effects from 10% to 15%.

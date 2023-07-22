@@ -1,0 +1,745 @@
+IJI v1.7
+Game copyright Remar Games 2004-2010
+www.remar.se/daniel
+
+LEGAL STATEMENT FOR 1.7
+Iji (including its soundtrack) is freeware, with the following definitions: the game is illegal to distribute for profit, or bundle with adware or install programs. The game contains modified sound effects used without permission, and a cover of a copyrighted song. Coupled with my respect for my testers, voice actors/actresses and musicians who all worked for free, neither I nor anyone else can make any money on the game.
+
+
+================
+|   CONTENTS   |
+================
+
+ 1. System requirements
+ 2. Credits and thanks
+ 3. Controls
+ 4. Difficulty levels
+ 5. Sectors and saving
+ 6. Health
+ 7. Nanofields, Nano and leveling
+ 8. Cracking interface
+ 9. Stats
+10. Special traits
+11. Weapons and Passive mode
+12. Nano Overloads
+13. Questions and answers
+14. Version changelog
+
+
+
+==============================
+|   1. SYSTEM REQUIREMENTS   |
+==============================
+
+IJI REQUIRES:
+Windows XP or above
+1 Ghz CPU
+32 MB graphics card
+500-700 MB working memory depending on your system
+
+TECHNICAL NOTE ON SAVING:
+Iji will likely not be able to create a savefile if you run the game from within the zip archive. You need to extract it to play it. Also, do not attempt to run the game from a slow USB drive or similar, or you may not be able to save the game.
+
+
+
+=============================
+|   2. CREDITS AND THANKS   |
+=============================
+
+Game design, script, programming, graphics, SFX/voice edit: Daniel Remar
+
+The Iji soundtrack: Chris Geehan and Dan Byrne McCullough
+
+Music also by: Tom Mauritzon (Boss theme), Captain Goodnight (Hero3D theme), LifeForce (Ending theme (not specifically made for Iji))
+
+Voice acting: Anna Ashabova, Annette Nielsen, Birgitta Johansson, Camila Dalence, Henrik Engström, Johannes Helgesson, Lisa Lenkel, Louise Stigell, Monika Mikucka, Ola Holmdahl, Miguel Nalvarte, Erik Sjöstrand
+
+Testing: 2005 Ultimortal community, 2005 MaSu community, Eo community
+
+In-depth testing: Anders Davallius, Annette Nielsen, Anton Grundvall, Audric, Bag, Beoran, Berra, Cactus, ChevyRay, Chris Laviolette, Erik Sjöstrand, Grashaboras, Henrik Engström, Linus Nordgren, Ola Holmdahl, Oscar Aludden, Pondwater, ReallyJoel, Srehpog, Thomas Ahlström
+
+Special thanks: Beoran, Blender 3D, Mark Overmars, Trollis
+
+Also: Carl Christiansen (voice acting), Tau (voice acting), Jay Stevenson (alpha demo music), Potatismos (music), Radiczor (music), Simone (voice acting) and SoulEye (music) for their demos, work and concepts which did not make it into the final game for various reasons
+
+
+
+===================
+|   3. CONTROLS   |
+===================
+
+Left and Right: Move
+Up: Jump
+Down: Duck / turn pages when reading text
+
+Z: Kick
+X: Fire
+C: Use
+Enter: Change Nanogun mode / Abort cracking
+Escape: Pause / skip chats / skip cutscenes
+Numpad: Move the view
+
+1: Weapon 1
+2: Weapon 2
+3: Weapon 3
+4: Weapon 4
+5 or Q: Weapon 5
+6 or W: Weapon 6
+7 or E: Weapon 7
+8 or R: Weapon 8
+
+A: Previous weapon
+D: Next weapon
+S: Change to super-weapon
+
+Hold F2: Return to Main menu
+Hold F4: Retry Sector/boss
+Hold F12: Quit game
+
+
+You can change the keys for kicking, jumping and firing in the options in the Main menu. You can also change the weapon cycling keys, and the four extra keys for weapons 5-8 (so that they are placed directly beneath the numbers 1-4 on your keyboard).
+
+
+
+============================
+|   4. DIFFICULTY LEVELS   |
+============================
+
+Normal:
+You can gain 5 levels per Sector
+Cracking time is normal
+Some enemies may dodge/reflect projectiles
+When failing to crack a security box:
+ there's a 25% chance its Security will increase by 1
+When failing to crack a door:
+ there's a 25% chance its Security will increase by 1
+When failing to crack a weapon combination:
+ there's a 25% chance to lose 5 ammo for those weapons
+Red Nanofields recover 2 HP
+Bosses are of normal difficulty
+There are 14% less enemies compared to higher difficulties
+
+Hard:
+You can gain 4 levels per Sector
+Cracking time is decreased by 2 seconds
+Certain enemies attack at a faster rate
+Certain enemies dodge/reflect projectiles more often
+When failing to crack a security box:
+ it has a 25% chance of breaking
+When failing to crack a door:
+ there's a 50% chance its Security will increase by 1
+When failing to crack a weapon combination:
+ there's a 50% chance to lose 5 ammo for those weapons
+Red Nanofields recover 1 HP
+Bosses are more difficult
+
+Extreme:
+You can gain 3 levels per Sector
+Cracking time is decreased by 4 seconds
+Certain enemies attack at a very fast rate
+Certain enemies almost always dodge/reflect projectiles
+When failing to crack a security box:
+ it has a 25% chance of exploding
+When failing to crack a door:
+ there's a 75% chance its Security will increase by 1
+When failing to crack a weapon combination:
+ there's a 75% chance to lose 5 ammo for those weapons
+Red Nanofields recover 1 HP
+Bosses are very difficult
+Nano Overloads do not exist
+
+Ultimortal:
+Same basics as Extreme, with the following additions:
+Each Sector has a time limit
+Only Health can be upgraded
+Red and green Nanofields do not exist
+Most enemies are faster
+
+Note: the security of a door cannot increase on a failed cracking attempt if its security is 1.
+
+
+
+=============================
+|   5. SECTORS AND SAVING   |
+=============================
+
+The military complex is built of Sectors. At the end of a Sector, you can save. If you quit the game without saving, all progress in the current Sector is lost, with the exception of unlocked Posters and Hidden skills.
+
+Around the middle of most Sectors, you'll find a Checkpoint. If Iji dies, she'll be revived at the Checkpoint - but only once per Sector! Particularly long Sectors may have more than one Checkpoint, in which case activating the second will deactivate the first. The game will notify you when this happens.
+
+
+
+=================
+|   6. HEALTH   |
+=================
+
+Like the Tasen, Iji's body is maintained by a personal Nanofield, which doubles as a shield to protect her from harm.
+
+You have a health bar and an armor bar. If your armor is reduced to zero, you lose one hit point and the armor regenerates to 100%. Whenever your health is damaged, you will be invulnerable for a short while.
+
+Particularly powerful attacks will instantly reduce your hit points regardless of your armor, and the armor regenerates to 100%.
+
+To recover health, assimilate Red Nanofields. To recover armor, assimilate blue, green or red Nanofields. You cannot recover past 100% armor.
+
+
+
+========================================
+|   7. NANOFIELDS, NANO AND LEVELING   |
+========================================
+
+Scattered around the Sectors are free-floating gatherings of Nano that Iji's personal Nanofield can assimilate.
+
+BLUE pickups recover armor, but also add to your total Nano. When you reach a certain amount of Nano, you will level up and get a `point`. Points are spent at Cyborg station, which will upgrade one of your seven stats. Leveling up does not make you stronger unless you spend the points you get at the Cyborg stations!
+
+RED pickups recover health and armor. They don't help you level up.
+
+GREEN pickups only recover armor. They don't help you level up.
+
+
+
+==============================
+|   8. CRACKING INTERFACE   |
+==============================
+
+(Cracking is learned in a short tutorial in Sector 2, and doesn't appear in the Pause menu help section until that time.)
+
+CRACKING INTERFACE
+
+Press the Use key to touch things and crack them. Then press the Use key to get started (or Enter/Escape to bail out), then move your green dot around using the arrow keys, until you reach the red dot. If you hit a dark blue node or the time runs out, the cracking attempt fails. The length of the puzzle depends on the security of the object. Note that if you press Enter or Escape to bail out of an ONGOING cracking attempt, it counts as a failure.
+
+Security doors and multi-colored Security boxes must be cracked. Cracking an enemy will often disable its most powerful weapons, and if you're lucky you'll heavily damage it as well. Cracking enemies CANNOT directly kill them - their malfunctioning weapons may cause them to self-destruct, but this will not count as your kill.
+
+Cracking an enemy will also make it guaranteed to drop some ammo upon its death.
+
+
+
+================
+|   9. STATS   |
+================
+
+ HEALTH
+Your maximum hit point total increases by two for each Health level.
+
+ ATTACK
+The power put into all your Nanoweapon attacks (not your kick). A maximum Attack level effectively means that you deal double damage.
+
+ ASSIMILATE
+Determines how much armor you regenerate when assimiating any kind of Nanofield, and increases ammo capacity for all Nanoweapons.
+
+ STRENGTH
+Your physical strength. Determines what enemies you can successfully kick back, and how far they'll fly. Also used to kick down Shield doors. Kicking most enemy without the required Strength will stagger them, but won't damage them.
+
+ CRACK
+Determines how secure Nanofields you can crack, such as the ones surrounding security boxes and doors, and how well you can combine the weapon technologies in your Nanogun.
+
+ TASEN
+Determines what Tasen weapons you can wield (weapons 1-4). If you try to pick up a weapon you can't use, you'll see a small text where the weapon is, telling you what level you need.
+
+ KOMATO
+Determines what Komato weapons you can wield (weapons 5-8). The Tasen stole these from another alien race, and they are very rare, so don't expect to encounter them near the start of the game.
+
+ JUMP
+Determines the maximum height of your jump. Can only be upgraded by picking up unique Jump upgrades.
+
+ ARMOR
+Determines how well you absorb Armor-damaging attacks. Can only be upgraded with unique Armor upgrades.
+
+
+
+==========================
+|   10. SPECIAL TRAITS   |
+==========================
+
+For every stat that reaches level 10, you gain a Special trait. These will permanently enhance your abilities in a number of ways.
+
+
+ HEALTH: SUPPRESSION
+Iji's personal Nanofield gains extreme resistance to heavy blows. If an attack deals more than 1 HP damage in a single hit, the damage taken is lowered by 1 HP. For example, an attack that deals 3 HP damage now deals only 2.
+
+ ATTACK: IMPROVED AUTOLOADING
+Lowers the reload time of all non-rapidfire weapons by 20%. Weapons that fire so fast that they don't affect the blue reload bar in the lower left of the screen are rapid-fire weapons, such as the Machinegun and Pulse cannon.
+
+ ASSIMILATE: ADVANCED RECOVERY
+Assimilating a red Nanofield will recover 1 more HP, and assimilating a green Nanofield will recover 1 HP instead of none.
+
+ STRENGTH: CYBERNETIC ENDURANCE
+The invulnerability time after being damaged is increased by 50%. You are no longer knocked to the ground when firing the MPFB Devastator.
+
+ CRACK: ELECTRONIC MASTERY
+When you fail to crack something, no adverse effects occur (enemies don't notice you, security crates don't break/explode on higher difficulty levels, and the security of doors cannot increase etc). Additionally, the blue nodes no longer flicker while cracking, and cracking time is extended.
+
+ TASEN: VENGEANCE
++1 to all Tasen ammunition you pick up.
+
+ KOMATO: GLORY
++1 to all Komato ammunition you pick up.
+
+
+
+===================================
+|  11. WEAPONS AND PASSIVE MODE   |
+===================================
+
+Iji carries a Nanogun, a Tasen-made weapon capable of shapeshifting its interior to fire any Nanoweapon it is programmed with. At first it contains only the Shotgun, but by assimilating additional Nanoweapons, your arsenal increases.
+
+You can switch the Nanogun to Passive mode by pressing Enter. This changes your weapons to their Passive versions, which CANNOT injure or kill enemies. All Passive weapons benefit from your Attack stat in different ways, be it a longer range or projectile duration. Look up their exact specifications in the Help/info part of the Pause menu, or find enemy logbooks that describe their use.
+
+If you find a Nanoweapon station, you can attempt to combine two of your Nanoweapons into a new "super-weapon". Super-weapons are selected by pressing a weapon's key twice. They do not have Passive versions.
+
+To obtain more ammunition, you need to assimilate ammo packs - simply walk into them.
+
+
+
+==========================
+|   12. NANO OVERLOADS   |
+==========================
+
+These rare, concentrated gatherings of Nano give Iji a temporary special ability when assimilated. The abilities will only last for 20 or 40 seconds, depending on the type of Overload. You will have to discover and understand these abilities on your own. Tasen research suggests that the more aggressive the user is, the more her Overloads will be geared towards offense and destruction rather than survival and stealth.
+
+Note to explorers: No Nano Overloads can help Iji reach areas she couldn't without their aid.
+
+
+
+=================================
+|   13. QUESTIONS AND ANSWERS   |
+=================================
+
+This section should answer some questions the game does not.
+
+Q: The game emits a short high-pitched sound whenever a song starts. Can you fix this?
+A: Sorry, it's a Game Maker 7.0 problem specific to certain computers.
+
+Q: The game doesn't start, throws an "Unexpected Error" or hangs suddenly and/or the full-screen gamma effects don't show. Can you fix these?
+A: Sorry, there is nothing I can do about Game Maker compatibility errors like these. Please try playing in Windowed mode.
+
+Q: Is there a high-quality soundtrack available?
+A: Yes, on the game's homepage, www.remar.se/daniel
+
+Q: I can't save the game, I don't hear music and it keeps telling me the savefile is corrupt even though it's my first time playing.
+A: You can't play Iji from within the Zip archive; you must extract it to your hard drive or another fast read/writable place. If you play the game from a slow USB stick or similar, it'll likely be choppy to save and when a piece of music plays or restarts, or the saving may not even work at all. 
+
+Q: The music is garbled / I still don't hear any music eventhough it's turned on in the Options and I have no other programs running. What do I do?
+A: Try updating Windows Media Player, setting it to be the default music player, or updating your sound card drivers. If all else fails, you need to try the game on a different computer.
+
+Q: There's too much text. How do I know what's important?
+A: If you're following the story, only reading the cutscenes and chat dialogues should give you the basics to understand everything. If you want more backstory and discover secrets and hints about the game, you need to read the enemy logbooks. If you don't care for the text at all, you can skip most dialogues and cutscenes with Escape, although you may miss alternate dialogues and texts if you skip them when replaying the game.
+
+Q: I'm stuck in a Sector, where should I go next?
+A: The chat dialogues will tell you what to do. If you don't remember or skipped them, you need to go exploring places you haven't been, or look for doors, terminals etc. After getting a Jump upgrade, you should also look for high ledges you couldn't reach before. Sometimes Iji will tell you outright that you're going the wrong way.
+
+Q: I'm stuck on a boss, what do I do?
+A: After losing to a boss and restarting the boss room, Iji will give you a hint on how to beat it during the introductory chat. This chat is unskippable for a few seconds to make it hard to miss. Note that restarting the boss room manually before dying doesn't give you the hint. Some hints also don't show up immediately when the boss fight begins - this is the case with the final boss.
+
+Q: I moved a lift out of the way, can I still beat the Sector?
+A: As of version 1.7 all Sectors have been confirmed to be beatable no matter how you move the lifts and use the Checkpoints.
+
+Q: I noticed that the requirements for "Immortal" rank was getting zero damage, and "Skilled" was 100. Does that mean I must take zero damage to achieve "Immortal" rank?
+A: No, it means that you must take LESS than 100 damage to get "Immortal". You don't have to get zero (phew!).
+
+Q: Will there be translations of the game to different languages?
+A: As of writing this, there are Chinese and Korean versions, but translating this game requires manually modifying the source code and distributing it as a separate executable.
+
+Q: What are the "Remar Games" speedrun times on the Records screen?
+A: They're my personal records, and they're all beatable with skill and some luck. Doing so doesn't unlock anything and doesn't lead to any secrets, however. It's unfortunate that luck (such as randomized enemy and boss behaviour) plays a role in speedrunning Iji, but in the end the support for speedrunning didn't become top priority.
+
+Q: Must the game music be placed in the "music" subfolder?
+A: Files from the "music" subfolder are checked first, but if the game doesn't find a file there, it looks in the root game directory instead - it's a precaution in case you extracted the files incorrectly.
+
+Q: How do you pronounce "Iji"?
+A: Like "ee-gee" or "ii-dji".
+
+Q: Can I suggest something for a future update?
+A: Sorry, I only really implement what I want to see in the game myself.
+
+Q: Will you release this or any of your other games on XBLA, Wiiware, Steam, PSP etc.?
+A: No, even in the cases where it's technically and legally possible I don't want to do it.
+
+Q: Is Iji based on any specific real-life war or conflict?
+A: No.
+
+Q: I thought I heard an enemy speak a language other than English, is this true?
+A: No, everyone speaks English words and sentences (with the exception of names like Ciretako), but their distorted voices may sound like something else.
+
+Q: I heard names like "Iji" and "Tasen" mean something in some languages, was this intentional?
+A: Nope, it's inevitable for short words to mean something in one language or another.
+
+Q: Why are three actresses credited with Assassin Ansaksie's voice in the ending?
+A: Her voice is the combination of three separate people to achieve the "warped" effect.
+
+Q: Can you really play as a Tasen Soldier?
+A: No, that was a modified version of the game that replaced Iji's sprite.
+
+Q: Can you really meet Mia in the game?
+A: No, she dies in the opening cutscene. Iji was supposed to find the bodies of Mia and their father in Sector 2, but this was cut early in development.
+
+Q: Why is there no MP3 of "½fabrikat" and why doesn't it appear in the high quality soundtrack?
+A: This song is not an MP3, but pitched sound effects being played back in realtime, which allows it to change instruments, tempo etc as you progress through the level. It can only be played back by the game itself.
+
+Q: Can the randomized Nano Overloads help Iji reach areas she couldn't without their aid?
+A: Maybe sometimes, but no Nano Overload effects are required for any of the secret areas.
+
+Q: Has the potential speedrun times/strategies ever changed with an update?
+A: Yes, in version 1.7.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+SPOILERS BELOW - DETAILED QUESTIONS
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Q: (SPOILERS) I've unlocked everything on the Extras menu, but the Records screen still says "Extras and features: 11/12". What is the last feature?
+A: Entering Sector Z, which adds it to the Single Sector Play option.
+
+Q: (SPOILERS) Is there a reward for beating Sector Z without shooting any of the enemies in there?
+A: No, this is just an old rumor. Nothing happens if you do.
+
+Q: (SPOILERS) Are there any rewards for beating the Maximum Charge final boss?
+A: No, it's just for fun and an extra challenge. You just get a slightly different dialogue from the boss for it.
+
+Q: (SPOILERS) Is there a reward for beating Hero 3D 242 times?
+A: No, it was meant as a joke. There are no rewards related to Hero 3D at all, it's just a bonus game.
+
+Q: (SPOILERS) Is there a reward for finding all Supercharges?
+A: No, they are undocumented in the game for that reason, and because they can be considerably harder and more far-fetched to find than the Posters. There are usually no hints to finding them, either. Think of them as gameplay rewards for impressive achievements rather than secrets you're meant to actively search out.
+
+Q: (SPOILERS) Are there gameplay rewards (as in pickups, secret areas etc) for doing some things differently during a playthrough?
+A: Yes, in some cases, usually in regards to changes brought on by the player's kill count.
+
+Q: (SPOILERS) What's the absolute minimum number of Total Kills when beating the game, and is there any reward for acheiving that number?
+A: As of version 1.3 it is 0, but there are still no unlockables related to kill count. There is an in-game reward for 0 kills however. NOTE: This reward is not obtainable on the Ultimortal difficulty, as the lowest possible kill count on Ultimortal is 1 rather than 0.
+
+
+
+=============================
+|   14. VERSION CHANGELOG   |
+=============================
+
+1.7 hotfix (1 May 2017)
+
+MINOR/COSMETIC
+-The map for Sector 7 now refers to the door by the poster as a Shield door rather than a Security door.
+-Iji now makes a pain sound when hit by an elecbomb/electromine.
+-Fixed spelling errors.
+
+
+
+1.7 (13 March 2017)
+
+SERIOUS
+-Ported the game to Game Maker 7.0. Unfortunately this may cause audio glitches on some computers whenever a background song begins to play.
+-Added a major story modifier. To trigger it, defeat the final boss with over 300 total kills. This presents you with a choice that leads either to the standard or a new ending.
+-Added a major story modifier. To trigger it, defeat the Sector 9 boss with 270 total kills or less and without recruiting Ansaksie. This presents you with a choice that leads either to the standard or a new ending.
+-Added Passive weapons. Press Enter to switch the basic weapons into non-lethal passive versions with various functionalities. The Attack stat improves their abilities in various ways.
+-Passive weapon: Stun gun: Fires a wide, short-range stunning blast. The Attack stat increases the stun time.
+-Passive weapon: Impact Machinegun: Fires a single staggering bullet that interrupts enemy attacks. The Attack stat increases the range of the projectile.
+-Passive weapon: Impulse launcher: Fires an impulse rocket that knocks enemies flying without damaging them. The Attack stat increases the projectile speed, making it more difficult to dodge or reflect.
+-Passive weapon: MPFB Neutralizer: Stuns all enemies in a 15 meter area around the user at the cost of 3 MPFB ammo. The Attack stat increases the stun time.
+-Passive weapon: Resonance disruptor: Nullifies rockets and other projectiles. The Attack stat increases the active time of the disruptor field.
+-Passive weapon: Pulse linker: Harmlessly drains Nano from enemies. While extremely ammunition hungry, it drains more Nano per second the more powerful the Nanofield it targets, but bosses are immune. The Attack stat increases the projectile speed and range.
+-Passive weapon: Shock barrier: Sets up a barrier that nullifies rockets and other projectiles, plus Machinegun and Pulse cannon fire. The Attack stat increases the active time of the barrier.
+-Passive weapon: Chain Fractal Injection Shell: Instantly and successfully cracks things from a distance, provided you have a high enough Crack stat to do the job manually, at the cost of 3 CFIS ammo. The Attack stat increases the range of the projectile.
+-Killing an enemy with a reflected projectile now counts as a kill again.
+-Iji walks 20% faster. Altered some areas to compensate.
+-Iji's cracking/interacting range has been extended and given a special effect to indicate it.
+-Assimilate now increases ammo capacity by 5 for each level, and Assimilate level 10 increases capacity to 99.
+-Increased Attack stat multiplier so that at level 10, Iji's weapons deal 3x damage instead of 2x. At level 1 they also deal 1x damage instead of 1.1x.
+-Combined the various Cyborg stations into a new one that lets you level all stats from the HUD.
+-Remade Weapon stations so they use the arrow keys and C to select the weapons to combine. The weapon keys can also be used like always.
+-Added expanded savefile. You can load save slots from previous versions of the game, but some story changes will not make sense if you do.
+-Failing to crack a Nanoweapon combination now has a chance (higher depending on the difficulty level) to reduce ammo for the weapons involved in the attempt by 5.
+-Enemies can no longer be killed by cracking them, not even when their HP is halved.
+-Cracking Tasen Scouts now disables their Machineguns instead of killing them.
+-Cracking a Beast now stuns it for 20 seconds instead of killing it.
+-Firing the Plasma Cannon in the Sector 5 boss room no longer breaks the collision.
+-Removed time penalty for Vateilika killing Krotera.
+-Fixed being able to activate lifts while dead and being resurrected by a checkpoint.
+-The Explosive Shotgun, Explosive Buster Gun, Banana Gun and Retribution now award kills correctly.
+-Krotera's boss room no longer starts you with 3 Jump and 3 Armor in the Single Sector Play and Sudden Death Sector modes.
+-Shocksplinter shards now check whether they belong to Iji correctly.
+-Activated Assassins are correctly removed when Iji dies.
+-The Sector 5 end lift now comes down correctly when resurrecting at the checkpoint.
+-Nanomirror is now a high-tier overload effect, so only non-pacifist players can get it.
+-Less enemies are now in Sector 4 when Iji is below the neutral kill count, and that kill requirement now matches the 5 kills per Sector rule.
+
+MINOR/COSMETIC
+-Overhauled all text.
+-Overhauled a lot of graphics.
+-Halved the volume of all sound and music, so it no longer clips whenever a sound plays.
+-Added more passive and berserk modifiers to Iji's dialogues.
+-There is now red blood for Iji and some other human characters. This can be turned off in the options menu.
+-Iji now leaves a body behind when dying, and bloodstains on the wall if she was killed by a bladed weapon.
+-The game keeps track of every individual Iji kills and how she did it, displaying it in a certain pair of logbooks. Individuals who have written logbooks are usually found near their logs.
+-Some enemies are no longer slower on Normal difficulty.
+-Added pop-in descriptions for difficulty levels in the main menu.
+-Iji no longer breaks the truce when brushing against Tasen in Sector 3, but she will break it if she attempts to crack them.
+-Iji no longer takes contact damage from enemies during the truce in sector 3.
+-Kicking enemies with insufficient Strength now harmlessly staggers them, if they can be staggered.
+-Reload times of Resonance detonator and Resonance reflector reduced from 5 to 4 seconds.
+-Increased Soldiers' speed to 3.
+-Increased Commanders' speed to 3.
+-Increased Elites' speed to 4.
+-Increased Soldiers' and Commanders' range for safely firing rockets.
+-Slightly reduced Commanders' Rocket launcher charge times.
+-Tasen Shredders now take correct damage from MPFB Devastator and Velocithor V2-10.
+-Skysmashers now briefly charge their Shocksplinter before firing.
+-Tasen Scouts now enter a "scared" pose instead of firing when facing a berserk Iji, facing a Berserker, or when their weapon is malfunctioning.
+-Tightened the Shotgun and Buster gun pellet spread.
+-Reduced Assassins' HP by 1 across all difficulties.
+-Sped up some of Asha's and the regular Assassins' attacks (but not Asha2).
+-Asha now drops one elecbomb per hit point lost.
+-Proxima never uses the "chase" order unless coming back from electrocution.
+-Improved Proxima's "chase" AI.
+-Proxima moves twice as fast.
+-Proxima now announces its orders in ternary, and no longer announces light damage being sustained.
+-Proxima can now use Angular shift to escape being juggled left and right by heavy weapons, indicated by a unique special effect.
+-Proxima's electropads now start disabled, but the terminals to activate them can be used right away.
+-Proxima now drops Red Nanofields when knocked into the electropads.
+-Iosa now fires Crawlers at certain HP intervals.
+-Iosa2 now jumps back a shorter distance if Iji is on the left side of the room.
+-Iosa2 is now stunned less on Normal and Hard when kicked.
+-Iosa2 will now use a standard swipe attack if she hasn't used one in her last four attacks, rather than it being entirely random.
+-Iosa2's standard slash is no longer a "fatality" attack that pierces Suppression.
+-Iosa2 now calculates her spinjump arc better.
+-Iosa2 now moves slightly faster on Normal and slightly slower on Extreme.
+-Fixed gamma issue when Iosa explodes.
+-Tor's Ultra Shotgun can now hit at ground level, but fires less shells.
+-Tweaked various timings in the Tor fight, making him faster overall.
+-Tor no longer fires a stray Chargeball when defeated while supercharging.
+-Tor now drops health pickups when hit by a reflected Chargeball rather than when he jumps away.
+-Tor's boss hint now reminds player how to switch to the Resonance reflector.
+-Can no longer walk repeatedly into Tor with Cybernetic Endurance and only take damage once.
+-Turrets now have lights showing what weapon they carry.
+-Charge times on Turrets are now the same when they detect an enemy as when they continously fire.
+-Turrets are no longer destroyed by explosions whose active frames have expired.
+-Tasen Scouts and Soldiers hit by the MPFB Devastator or Velocithor V2-10 are disintegrated.
+-Fixed Komato Troopers walking to the left more often when randomizing between left and right.
+-Shortened unskippable time of boss hint chats. 
+-The lift in the ambush room in Sector 8 now activates much faster after the Berserkers teleport in.
+-Fixed Megamissiles being possible to reflect no matter where Iji was standing.
+-The Resonance reflector, Resonance disruptor, and Shock barrier visibly and audibly explode when failing to reflect/nullify an attack. They explode one frame after being hit, so it's still possible to reflect/nullify projectiles overlapping ones that cannot be reflected/nullified.
+-Turrets, Skysmashers, Proxima and Iosa no longer generate their armor past 100 on Sudden Death Sector.
+-Elites no longer fire MPFB into walls at such close range that they damage themselves.
+-Vateilika no longer trades in Pulse ammo to prevent abuse of the Pulse linker.
+-Removed "waste of time" chat from Sector 7 since it's now trivial to reach.
+-When both power core doors are opened in Sector X, Iji will remark on it when entering the rooftop area from either side, rather than just the left side.
+-Made the Cracker's hideout easier to find.
+-Iji drops Nano and correct ammo on death.
+-Fixed some explosion offsets.
+-When poking Vateilika in Sector 9, she acknowledges whether Yukabacera lived or died.
+-Reading logbooks now stops Nano Overload and Time to live timers.
+-Added a message for skipping the last terminal in Sector 6. If you know how to do it, the Berserker will attempt to assist you by always turning to you and firing its Resonance reflector in that exact spot.
+-Added a red gamma effect to Eruption.
+-The dummied out blood behind Iosa2 when she is killed is now visible.
+-Removed the "Reload graphics" option from the pause menu, since it does nothing now.
+-Changed text on Gamma option and renamed it "Screen color FX"
+-When facing left, ejected shotgun, buster gun and machinegun shells are now drawn behind Iji.
+-Can no longer jump halfway past Vateilika's trigger in Sector 7.
+-You can now pause in the final area of Sector Z.
+-½fabrikat now stops correctly when pressing Escape in the sound test.
+-Iji now comments differently on the Proxima fight in Sudden Death Sector, or if her Health level is 5 or lower.
+-Rewrote Velocithor V2-10 related texts to note that it deals less damage per ammo than the CFIS, not more.
+-Made the Phantom Hammer more visually impressive, and made the game briefly slow down even if it misses Iji.
+-Replaced the main menu hidden message.
+-Wall blocking the Null driver now disappears correctly if entering Sector Z was the final unlockable you needed.
+-Doubled the power of Ansaksie's Massacre, as it's an actual Generation 2 Nanogun.
+-The Null driver now cuts Tor's current HP by one third on top of dealing 2 damage.
+-Traveling to Sector Y now works in Sudden Death Sector mode.
+-The Statistics screen now shows "N/A" for the poster in Sector Y.
+-Glass shards, shell casings etc. are now destroyed outside the view.
+-Changed many small things in most Sectors, such as geometry and item placement.
+-Fixed many minor things.
+-Updated the Remar Games speedrun times. Due to all the changes, speedruns from version 1.6 and earlier cannot be compared with ones done in 1.7 and above.
+
+NOT CHANGED
+-I still don't consider the Annihilators destroying themselves with their own weapons an error, since it suits their nature.
+-Troopers sometimes running the opposite way is not a bug, but their way to put more distance between themselves and their opponents, since Shocksplinter deals more damage but can't be fired in close quarters.
+
+
+
+1.6 (6 March 2010)
+
+SERIOUS
+-Added a "special effects" option that removes lines, polygons and stretched sprites as much as possible, plus lowers effects like debris and smoke puffs, to prevent slowdown on some computers. This greatly degrades the apperance of some graphics, in particular the bosses.
+-Reflected projectiles no longer count as your kill, providing that you were not the one who fired the original projectile. In other words, the game keeps track of who initially fired the projectile rather than who last reflected it. This does not count with Elite Krotera, as pointed out in the game, to keep speedruns comparable between versions.
+-Added a pacifist modifier to Sector 4: if Vateilika killed Krotera and Iji is pacifist, she won't call for the Komato. They attack anyway, but this opens the Tasen defense base at the end of Sector 9 if you're still pacifist by then.
+-Berserkers now have a 1.5 second cooldown before they can use the Resonance detonator again.
+-Fixed pausing while using Retribution.
+-You can no longer get stuck in Sector 2 by increasing a certain door's security by failing to crack it, and then teleporting back from the Elite room. Dan will lower the security to 1 for you if the door has not been opened when you use the teleport.
+-You no longer lose cracks by repeatedly performing Nanofield Reboot and restarting a Sector.
+-Fixed the total time sometimes jumping forward one second when restarting boss rooms.
+-Timer stops correctly in Iosa battle.
+-You no longer get Jump 3 and Armor 3 when entering boss rooms in the Single Sector Play and Sudden Death Sector modes.
+-Asha2 no longer freezes when facing him for a third time.
+
+MINOR/COSMETIC
+-Enemies entering a teleporter with a trapmine will not die; the teleporter explodes as usual but without the enemy appearing. This should mean that it makes more sense why you don't get a kill during a certain in-game cutscene.
+-Massacre reloading time halved and power increased.
+-If you met Ansaksie, she appears again at the end of Sector X.
+-Tasen Elite idle animation fixed.
+-The timer displays an "x" when it's not counting, to make it easier to see when it's paused. You'll notice that time stands still for a short while after cracking something; I didn't fix this since it would make speedrun times not comparable between versions.
+-Cutscene pics updated.
+-Logbooks and chats updated. Some details of the story have been modified or further explored.
+-The boss music now restarts correctly if you reach Krotera after breaking the truce.
+-Ansaksie now uses her Massacre, and her teleportation speed is no longer dependant on the difficulty level.
+-Added Yukabacera and Ansaksie to the main menu enemy info.
+-"Killer" rank changed to "Pacifistic" to make it more clear than getting less than 50 total kills or less still counts as being pacifistic when it comes to kill-related modifiers.
+-Added an alternate startup pic that has a 1 in 3 chance of appearing.
+-Modified part of Sector 7.
+-Annihilators can no longer fire the Splintergun through walls.
+-Iji no longer says "damnit" when using the Nuke while low on health.
+-The position marker no longer permanently disappears when entering areas not shown on the map.
+-My Normal speedrun time is now listed as 27:18, a recording of which as of writing this is featured on www.speeddemosarchive.com
+
+NOT CHANGED
+-A very rare bug with unknown cause lets Iji move while cracking or riding an elevator. But does this bug exist anymore?
+-A very rare bug with unknown cause makes enemies freeze in place. But does this bug exist anymore?
+-I still don't consider the Annihilators destroying themselves with the Shocksplinter an error, since it suits their nature.
+-Troopers sometimes running the opposite way is not a bug, but their way to put more distance between themselves and their opponents, since Shocksplinter deals more damage but can't be fired in close quarters.
+-While additional ending pictures for the pacifist path were planned, they still haven't been made. Maybe for the next version.
+
+
+
+1.5 (10 July 2009)
+
+SERIOUS
+-The game can now be run in windowed mode, but you cannot change between fullscreen and windowed mode in-game. Gamma effects will not work in windowed mode. I apologize for not wanting to implement this before and saying that I couldn't do it neatly; I considered the drawbacks of windowed mode, and the inability to chance modes in-game, not to be worth it before.
+-Fixed a serious pausing bug.
+-Fixed being able to "Use" a weapon combination station and an enemy at the same time.
+-Deep Sector is not as dark as before (only applicable in fullscreen with gamma effects turned on).
+-Fixed a bug with Nanofield Reboot which prevented your total cracks from lowering while possessing cracked weapons.
+-Made it possible to toggle the Scrambler in the Extras part of the Main menu.
+
+MINOR/COSMETIC
+-If you haven't saved your game on the Sector Clear screen, the message "Go to next sector?" will be replaced by "Continue without saving?", and "Quit to main menu?" will be replaced by "Quit without saving?".
+-Fixed Annihilators dropping ammo inside walls.
+-You can no longer pause to dislocate doors when entering boss rooms.
+-Endgame screen tweaked for when gamma effects are turned off.
+-Fixed a discrepancy in a Ribbon chat and edited some other text.
+-Changed requirements for "Killer" rank to 1 kill and "Destroyer" to 51 kills, since these mark the lines of certain content at the very end of the game. Note that there are still no unlockables related to kill count, so this change is only cosmetic.
+-If the detail level lowers in the final battle when the game notices slowdown, the "black polygon explosion" will be less detailed as well.
+-Added heights to the unlockable enemy information.
+-Moved a Shield door in Sector 7 so you can't kick/destroy it through the nearby Security door.
+-Added subtitles for the voices in the Sound Test.
+-Updated the FAQ section of this manual.
+
+NOT CHANGED
+-A very rare bug with unknown cause lets Iji move while cracking or riding an elevator, but it may have been subverted in 1.3.
+-A very rare bug with unknown cause makes enemies freeze in place.
+-Saving before boss rooms is still not possible due to the fact that you can enter one with no stats, making it very hard to win, thus nearly impossible to continue if you decided to overwrite the save slot you used for the beginning of the Sector. It's unfortunate I didn't plan such situations better from the start, and I apologize for abandoning this feature after promising it in an interview.
+-I still don't consider the Annihilators destroying themselves with the Shocksplinter an error, since it suits their nature.
+
+
+
+1.4 (9 May 2009)
+
+SERIOUS
+-Fixed being able to trigger the "wrong way" message in Sector 7 if you die after opening the floor hatch, but before reaching the second Checkpoint.
+-Fixed getting stuck at Sector 5 end lift if you blow yourself up at the top. Note: some players think Sector 6 becomes unbeatable after moving the main lift out of reach, but you have never needed it to beat the Sector.
+-Being knocked down from firing the MPFB Devastator or Nuke no longer refills your armor.
+-Detail level in the final battle lowers sooner if the game notices slowdown.
+-Iji automatically switches to the Resonance reflector whenever you lose and retry the final boss.
+-Berserkers know how to destroy obstacles with the Resonance detonator again (they forgot in version 1.2).
+-Turrets no longer fire instantly when idle and shot by the Velocithor V2-10.
+-Null driver-assisted stats can no longer be reset when entering Sector 3.
+
+MINOR/COSMETIC
+-Altered the final two cutscene pictures of the "killer path" ending (over 50 kills), and the final picture on the "pacifist path" ending, to make them more different. The picture of a certain boss character's helmet remains, as his final logbook implies that he ended it himself if you managed to skip his return fight.
+-Blocked some remaining lift shafts from enemies.
+-Fixed spelling errors and altered certain logbooks and dialogues.
+-Massacre now drains 50 Armor instead of 1 HP.
+-Updated the FAQ section of this manual.
+-Null driver altered.
+
+NOT CHANGED
+-There will not be an option for windowed mode. Due to limitations in this version of Game Maker this is too difficult to implement neatly on all systems.
+-A rare bug with unknown cause lets Iji move while cracking or riding an elevator, but it may have been subverted in 1.3.
+-A very rare bug with unknown cause makes enemies freeze in place.
+-Saving before boss rooms is still not possible due to the fact that you can enter one with no stats, making it very hard to win, thus nearly impossible to continue if you decided to overwrite the save slot you used for the beginning of the Sector. It's unfortunate I didn't plan such situations better from the start, and I apologize for abandoning this feature after promising it in an interview.
+
+
+
+1.3 (25 December 2008)
+
+SERIOUS
+-Additional weapon keys customizable in the Main menu, to allow Xpadder/Joy2Key users to easily change weapons with a gamepad. By default, the A and D keys cycle the base weapons, and S changes to the currently selected weapon's super-version.
+-New pacifist modifiers. It is now possible to get 0 kills, by fulfilling certain requirements where the story previously demanded that Iji was responsible for the deaths of certain bosses. Note that there are still no post-game extras/unlockables for kill count.
+-Nearly all logbooks that were previously near enemies have been moved. If there are enemies present (other than ones that do not award kills), the logbook does not have any pacifist or other modifiers to its text, and is still intended to be reached only by players with aggressive playstyles. Logbooks explaining Hidden Skills have not been moved.
+-Fixed various kill count-related bugs; enemy pulse cannons, Iji's Plasma cannon and Tasen Shredders now count kills correctly.
+-Kicked turrets and dismounted Shredders that hit enemies only award kills within half a second of Iji kicking/dismounting them. While this may lead to intentional but unawarded kills, it's better than unintentional but awarded ones.
+-Getting hurt by a Beast now adds 1 to your damage counter.
+-Weapons no longer jam when using Retribution while they reload.
+-Stats no longer reset when entering Sector Z, and you keep the ribbon as well.
+-Suffering a warpback (due to a very rare elevator bug that may have been subverted) now resets the Ultimortal "time to live" timer.
+-Skysmashers now check collisions with explosions correctly.
+-When teching while the "bouncing on the floor" animation is playing, such as after firing the MPFB Devastator and teching another explosion as you hit the ground, Iji is no longer momentarily pushed into the floor.
+
+MINOR/COSMETIC
+-"Innocent" is once again listed as needing at least 0 kills rather than 2.
+-Some enemies removed/replaced throughout the Sectors.
+-Tweaked and rewrote many cutscene, chat and logbook texts.
+-Maximum Charge Tor now only drops one Red Nanofield.
+-Some logbooks now make it more clear that defeating regular Assassins does not increase your kill count.
+-Boss hints are now only unskippable once per boss room.
+-Ambient sounds are no longer heard in the Pause menu.
+-Fixed Iji's outfit temporarily changing back to default in a boss room.
+-The Iosa battle now has a better camera.
+-Iji now sits for a longer time after a very high fall, but the animation can still be cancelled by jumping.
+-New weapon and other secrets.
+-Moved Null driver.
+-Many graphical tweaks.
+
+NOT CHANGED
+-There will not be an option for windowed mode. Due to limitations in this version of Game Maker this is too difficult to implement neatly on all systems.
+-A rare bug with unknown cause lets Iji move while cracking or riding an elevator, but it may have been subverted.
+-A very rare bug with unknown cause makes enemies freeze in place.
+
+
+
+1.2 (10 October 2008)
+
+SERIOUS
+-Added gamma effects to Main menu options due to incompatibility with some graphics cards or drivers. The Turbo mode and Sound test unlockables have been moved to the new "Extras 3" submenu.
+-If the final boss detects consistent slowdown during the battle (some graphics cards don't like how Game Maker handles polygons and line drawing), the polygon and particle count will be automatically reduced in an attempt to make the game run faster. The threshold is at least 15% framerate drops for 10 seconds, and also applies to Turbo mode.
+-Berserkers must now briefly charge their Resonance detonators to fire them.
+-You can no longer glitch the Asha2 fight by firing certain weapons just before he appears.
+-Made Krotera slightly easier on Normal and Hard (fires less rockets, kicked Turrets deal more damage).
+-Fixed a glitched chat trigger in Sector 5.
+
+MINOR/COSMETIC
+-"Innocent" is now listed as needing at least 2 kills, not 0, since 2 is the absolute minimum.
+-Reaching Krotera with the truce intact, dying and restarting no longer causes Krotera to act is if the truce was broken.
+-Made the final boss's Rage burst weapon (tall green energy spikes) slower.
+-The explosive barrels now have yellow and red warning tape instead of just yellow.
+-Fixed an old mistake by removing the "metal butterfly" logo from the Security boxes, since they're Tasen technology and have nothing to do with the human facility.
+-Fixed some typos, triggers, chats and cutscene images.
+-Scrambler updated.
+-Null driver.
+
+NOT CHANGED
+-There is yet no option for windowed mode. Due to limitations in this version of Game Maker this may be too difficult to implement neatly.
+-There is still a rare bug where Iji can move while cracking.
+
+
+
+1.1 (10 September 2008)
+
+SERIOUS
+-Enemy Plasma cannon shots killing a Tasen no longer award Iji the kill if she attacked them first.
+-Fixed being able to fall outside the intended route in Sector Z.
+-The game now correctly gives 10 or more kills the "Killer" rank, instead of 5 or more.
+-When rebooting your Nanofield, your number of Total cracks are now decreased for every weapon combination you had. This prevents you from repeatedly rebooting in order to get a lot of Total cracks.
+-Getting killed by a Komato Trooper and being revived at the Checkpoint no longer breaks the truce in Sector 3.
+
+MINOR/COSMETIC
+-Fixed various logbooks and chats.
+-Fixed the Shredders typing numbers to the game window caption (only visible when Alt-Tabing).
+-The Enemy Information in the Pause Menu, when viewed from Sector Z, now displays correctly.
+-Added a logbook at a critical point to explain that defeating an Assassin does not increase your Kill count.
+-Fixed the spelling of Machinae Supremacy in the music text file.
+-Fixed the background color remaining blue if you fell out of the ship in Sector 7 but died, returned to the checkpoint and fell out again.
+
+NOT CHANGED
+-There is yet no option for turning gamma effects on/off or entering windowed mode. The other issues were considered more important to fix quickly.
+
+
+
+1.0 (1 September 2008)
+-Game released.

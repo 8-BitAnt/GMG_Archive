@@ -1,0 +1,114 @@
+Coldgearz
+By: Andy .E. Hamm
+
+[1] Overview:
+- Game Information.
+- System Requirements.
+- Game Story.
+ [2] Playing:
+ - Controls.
+ - Tips/Tricks.
+  [3] Final:
+  -Version Information.   
+  - Credits.
+
+[1]
+- 
+What can mankind do when it loses control? Take your stand today and fight!
+Coldgearz is a platform shooter that should be a treat for all old school gamers.
+-
+Pentium PC running Windows XP, or later. 
+A DirectX 8 compatible graphics card.
+A DirectX 8 compatible sound card.
+Approximately 12.3 MB Hard Drive space. 
+Approximately 500+ MB RAM.
+-
+This game takes place in the near future, after a major world conflict. Thankfully earth is now at peace, humans have come together as one. During this epic war intelligent robotics were invented, then used as soldiers. After the war our global government judged that they were too dangerous to keep. (Do to the fact they were all programmed killers.) The robots were abandoned on Badicit. (Badicit is an island that saw a lot of battle during the world conflict.)The military’s little toys were survivors though. They live with only one urge, finish their mission and kill until no humans are left! Somehow they have created a large energy cell to sustain themselves, and have built a large base on top of many bases (made by people) used during the war. Continuing to grow and build more of their army, these robots have become a deadly force that now threatens earth...
+You are a member of the DF Unit. (A team of special troopers from around the earth trained to wipe out these robots.) Your job is to annihilate them all. The government and your team refer to the robots as Coldgearz. They have evolved so much since the war; they are nothing like the military’s original toys.
+The only way to achieve Coldgearz destruction is by infiltrating their base, then destroying the energy cell keeping them alive. Action begins right when the helicopter containing you team lands. Continuing through the game will allow you to unlock new parts to the story.
+
+[2]
+-
+Title screen controls are:
+1 = New game.
+2 = Load game.
+3 = Credits.
+4 = Exit game.
+In game controls are:
+Up Arrow = Jump.
+Down Arrow = Interact with an object (a message at the top right of the screen will tell you the object can be interacted with.)
+Right Arrow = Run right.
+Left Arrow = Run left.
+Z = Shoot current weapon.
+X = Throw a grenade.
+1-5 = Switch weapons. (You will be lectured on the different weapons you can use in the first level of the game.)
+C = Show cheat console.
+ESC = Exit game.
+Mouse Left Click = Make a choice when allowed. (The mouse will pop up when a text menu is shown.)
+Mouse Right Click = Bring up options such as copy and paste at the cheat console.
+F9 = Take an in game snapshot.
+-
+The best tip I can give you is timing the enemy’s shots. Once you get the right feel for it dodging bullets is easy! Save your rockets for boss battles, don’t waste them on common enemies. The game will be hard at first but don’t give up! Make sure you talk to your fellow team-mates...
+If you are really poor there are cheats, but you will have to search the internet for them! I will be sure to put some pages containing cheats up here and there. (Oh if you are low on lives, there is a non-cheating way to replenish them...) Remember that there is only one save file. Whenever you hit a save block your last file will be overwritten. Be careful not to lose data!
+
+[3]
+-
+You currently are running Coldgearz version (3.2)
+If you have any technical problems please contact me. (See site for contact details.)
+-
+Thanks to help from the following:
+
+-Graphics-
+Fragment (Original player design.)
+Deadheat (Main graphics editor, character reviser.)
+Hamish (Vehicle design, secondary graphics editor.)
+
+-Music/Sounds-
+Hamish (For giving permission to use music from Commando.)
+Jared Greenwood (Music creation.)
+Daniel Oliver (Music creation.)
+Chris Hopkins (Music creation.)
+Kyle Aldrich (Music creation.)
+Nobuyuki (Music creation.)
+Mod Archive (Music resources and tracks.)
+The Game Creators (Sound effects.)
+Enterbrain (Sound effects.)
+ASCII (Sound effects.)
+Various other royalty free sound and music artists.
+A very special thanks to M. Rijks for JBFmod!
+
+-Programming-
+Deadheat (Coding help, programming tips.)
+Mat Visbeek (Original G-Trooper AI, although not used in this version I have to give him credit.)
+Smarty (Showing me were to get information on views.)
+Various others that helped me, sorry I could not name you all.
+
+-Development Environment-
+Mark Overmars (For originally developing Game Maker.)
+YoYo Games (For supporting and bringing new life to Mark Overmars' Game Maker.)
+Various other tools.
+
+Please note that YoYo Games owns parts of Coldgearz, decompiling and unauthorized 
+use is punishable by law.
+
+-Special Thanks-
+My family (They have done a lot to help.)
+All my friends (They have done a lot to help.)
+
+Alex (For giving moral support, a good buddy.)
+Deadheat (Helped me everywhere, another good buddy.)
+Fragment (Thank you so much for the original main character designs.)
+Everything Game Maker and YoYo Games. (Special thanks to the Game Maker Community!)
+Each resource contributor. (If you want to be listed, and I have failed to do so, contact me!)
+Fans and testers (Could never forget the players and fans!)
+
+Thanks also goes to you for playing!
+
+Coldgearz © 2005-2006 Some rights reserved!
+Note all primary work was done by Andy .E. Hamm. 
+Also music and sound responsibilities lie with the distributors, not Andy .E. Hamm.
+-
+
+
+
+

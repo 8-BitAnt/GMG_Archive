@@ -1,0 +1,38 @@
+IJI ALPHA DEMO 1
+
+Design, code, graphics: Daniel Remar
+
+
+
+The original Iji demo available for a short time on my homepage in 2005, it displays how much the game evolved from the starting stages. You may also recognize the test level, Alpha Labs, as Deep Sector in the finished game.
+
+Unfortunately the second test level, Beta Labs, was lost among the many different game versions and only played by a handful of people. The bottom right corner of Sector 6 in the finished game was identical to Beta Labs, which is why Iji says it looks familiar.
+
+You'll notice this is the only Scrap Pack game without a Game Maker 7 version. This is due to the work involved in converting it perfectly, coupled with how little it would matter since it's just an old demo of a finished game.
+
+
+
+CONTROLS
+
+Arrows left/right: Walk
+Arrow up: Jump / stand up
+Arrow down: Duck
+Z: Kick
+X: Fire
+C: Use
+1: Shotgun
+3: Rocket launcher
+
+Escape: Pause
+F2: Menu
+F12: Quit
+
+
+
+FAQ
+
+Q: (SPOILERS) How do you reach all the logbooks?
+A: Jump down the small shaft near the start, stand to the left of the Tasen on the left ledge, and fire a rocket into it while you're not flashing. You'll fly over the hole to the left and land near a logbook. In the lower right part of the level, do something similar or be hit by a red Tasen to reach that ledge.
+
+Q: What's with the gaint-face-menu?
+A: This was the original menu. Changing it into low-color graphics not only looked better, it saved half a Megabyte - one of the reasons for the game's graphical style was to save space, since Game Maker uses a GIF-like compression.
