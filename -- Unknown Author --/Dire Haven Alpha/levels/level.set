@@ -1,0 +1,8 @@
+[info]
+numoflevels=4
+
+[levels]
+level1=man
+level2=epic
+level3=crap
+level4=trap

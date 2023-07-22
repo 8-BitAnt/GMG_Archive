@@ -1,0 +1,11 @@
+Mouse wheel = cycle though objects
+Q and E = rotate object
+WASD = move view
+WASD + shift = move faster
+middle mouse wheel + drag = select area
+right click = delete
+left click = place object
+control + left click = place object ontop of another object
+left click in selected area = drag objects
+right click in selected area = drop down menu
+control + s = save
