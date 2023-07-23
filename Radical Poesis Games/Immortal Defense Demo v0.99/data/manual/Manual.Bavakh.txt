@@ -1,0 +1,93 @@
+FORM
+The basic troop transport of the Bavakh.  Like all Bavakh ships, it's organic.  It has no defenses, but it is large and composed of many independent capsules, so it takes a good deal of firepower to take down.
+# #The most common enemy type.
+
+DEFENDER
+An armored troop transport, similar to the Form.  It's smaller, so it has slightly less HP than the Form, but it has good armor and can withstand weak attacks.
+# #Fear Points temporarily disable the Defender's defenses.
+
+JUMPER
+A high-speed luxury craft for Bavakh officers.  Extremely fast, but has low HP and no armor.  Easily destroyed--if you can hit it before it makes it through the path.
+
+HOPPER
+A high-speed armored luxury craft for the highest-ranking Bavakh officers.  Has the highest speed of any troop transport mechanism, but like the Jumper it's small and frail.
+# #When the Hopper is hit, it activates an emergency burst of speed, pushing it past your defenses.
+
+SQUALID
+A large self-repairing armored transport.  It has a relatively low speed, but its armor increases in reaction to being hit, and it can heal itself when damaged.  When it heals, power is diverted from its engines, decreasing its speed.
+# #Fear Points temporarily disable the Squalid's healing ability.
+# #The Turning Point damages the Squalid's maximum HP, making it unable to fully heal.
+
+SQUALID PLUS
+The second-generation self-repairing armored transport.  Considered the battleship of the Bavakh Fleet.  The Squalid Plus's armor increases when it's hit.  Like the Squalid, it becomes slower when healing.
+# #Because of the Squalid Plus's high HP, the Strategist Point--with its percentage damage--is effective against it.
+
+TRIAD FLASH
+Three ships in one, all made up of tangled strings and fibers.  Invented by a famous Bavakh torturer but piloted mostly by Raberata slaves.  When threatened it can temporarily unravel to avoid being harmed.  After a few seconds it will return to its original shape.
+
+SHRIGG-III
+Bavakh attack ship designed to combat path defense.  Shrigg-III is the third experimental anti-defender ship, following two failed experiments.  Has the unique ability to fire anti-defender bullets which, when they collide with the attacks of your Points, cancel them out by destroying themselves and the attacks.  The anti-attacks of the Shrigg-III are small and only absorb a single attack, but they are quick and mobile, and seek out the attacks of your Points.
+# #Love Points can repel the anti-defender bullets of the Shrigg line.
+
+SHRIGG-IV
+Similar to the Shrigg-III, except that its anti-attack projectiles are fewer, larger, and can absorb multiple attacks before disappearing.  Unlike the Shrigg-III, the Shrigg-IV's bullets do not seek out attacks.
+# #Love Points repel the anti-defender bullets of the Shrigg line.
+
+SHRIGG-V
+A more advanced Shrigg anti-defender ship using new strategic principles.  The Shrigg-V contains five anti-attacks which rotate around the ship.  These cancel out multiple attacks before disappearing.  Designed to combat the Danmaku Point, and can cancel out most of its attack before the Shrigg shields fail.
+# #Can be harmed by firing between the Shrigg shields.
+# #The Shrigg-V's anti-defender bullets trigger splash attacks from the Cut and Ortho points.
+
+X CENTRIPETAL
+An anti-path defense ship, designed to pull all attacks into itself.  Has high HP to allow the ship to last longer while still protecting its fellow ships.  Piloted by the most fanatical Oss pilots.
+
+O CENTRIFUGAL
+Designed as a counterpart to the X Centripetal.  Exerts a frictional anti-attack field on nearby attacks, causing them to slow down and stop before they reach their targets.  Weaker and more vulnerable than the X Centripetal, but their attack slowing ability makes them more difficult to deal with.
+# #The Path Cursor can fire at the O Centrifugal from within its anti-attack field, making it more effective than most of the Points.
+
+BLAGGENTHORG
+A Zig Engine which has mutinied against its pilots.  Slow and weak, but wired by the Raberata to destroy all nearby ships and onscreen attacks when the Blaggenthorg is destroyed.
+# #Even though the Blaggenthorg is technically on your side, don't hesitate to destroy it--the Raberata count on this, and will gladly give their lives to strike back against their enslavers.
+
+ZIG ENGINE
+Designed and piloted by Raberata slaves as an external power source for nearby ships as an anti-path defense measure.  When other ships move within the range of the Zig Engine, they gain a temporary boost of speed, pushing them past your defenses.
+
+DARK SHIELD
+An anti-path defense ship, designed to shield and protect nearby ships.  Its strong frontal shields mean that it can only be harmed from the rear.  Additionally, the Dark Shield heals any Bavakh ships within its range.
+
+BROTHER BAVAKH
+The origin of the Brothers Bavakh is unknown to galactic historians, but it is commonly assumed that they were military heroes in the early conquests of the Bavakh empire.  Due to their reckless use of genetic modification and cybernetic implants, they eventually grew to monstrous size and became, for all intents and purposes, ships in and of themselves.  After their deaths, they were cloned by Corybantes and operate as a type of standard battleship for the Bavakh.
+# #They can distort the currents of pathspace, shifting the position of your Points' attacks.  Given enough time to prepare, they can unleash a destructive wave that destroys Points.
+
+GRAVESHIP
+The Graveship was first constructed by the priests of Oss as a metal vessel for Aa's body.  It has a large amount of HP, and shoots Shrigg anti-defense bullets at a fast rate.
+
+PANOPTICON
+The Panopticon, Aa's final experimental anti-path defense project, is the ultimate weapon of the Theocracy of Oss.  The Panopticon is shrouded in a cloud of energy-based "eyes" which protect the more vulnerable core from harm.  Although powerful, these eyes can only take a limited number of hits before being destroyed.
+# #The core's defenses initially make the Panopticon invulnerable.  Only a Strategist Point can counter these defenses.
+
+NOYATIES 19
+Noyaties 19 was initially a religious icon in the Bavakh Empire.  Due to the research efforts of Corybantes, the Noyaties were made into a pair of powerful anti-path defense combat vessels.  Formed of the life energy of dead Bavakh soldiers, the Noyaties 19 absorb and make use of the energy of every shot fired into them, swelling the Noyaties to gigantic size.  Once the Noyaties reaches a certain size, it can disable any Point it overlaps.
+
+COARSE
+A ship formed of the life energy of dead Bavakh soldiers.  Within a certain range, the energy field of the Coarse can temporarily disable Points, leaving them unable to fire or upgrade.  The Coarse forms the basic unit of the much more formidable Noyaties.
+
+DARK ARMOR
+A second-generation version of the Dark Shield, refined by Corybantes.  The Dark Armor has a much smaller window of vulnerability which constantly rotates around the ship, making it more difficult to destroy.  Like the Dark Shield, the Dark Armor can heal its allies.
+
+NIGHTMARE
+A modified Zig Engine which generates a burst of defensive energy around all ships within its range.  It cannot defend other Nightmares, but any ship being defended by a Nightmare cannot be harmed until the Nightmare defending it is destroyed.
+
+GARLAND
+Designed by Corybantes as an experiment in traveling through path space, rather than the more vulnerable hyperspace.  Due to its experimental nature, the Garland's movement capabilities are less formidable than Corybantes intended, allowing the ship limited teleportation capabilities along its hyperspace path.
+
+:P
+Designed by the enslaved Raberata as a high-end anti-path defense weapon.  The :P is immune to all attacks, except for a brief window of time during which the defensive shields recharge.  When the :P recharges, the ship grows massively in size and stops briefly.
+
+BLOCK
+An early experiment in high-end path defense, the Block is designed for scientific research within the context of a military fleet.  The Block is nearly invulnerable to all attacks, but can't move under its own power.  Instead, it relies on other ships to push it along the hyperspace path.
+# #Since the Block can't move under its own power, destroying all ships behind it will strand it on the hyperspace path, destroying it when the path closes.
+
+GUTEI'S FINGER
+What is Gutei?  Gutei's Finger is of infinite length--
+# #Killing segments of Gutei's Finger will draw more advanced segments back to rejoin the main body of the finger, thus delaying its advance.  But why even attempt to delay the inevitable?

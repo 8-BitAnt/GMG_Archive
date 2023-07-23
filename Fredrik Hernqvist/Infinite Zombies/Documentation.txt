@@ -1,0 +1,2 @@
+Known issues:
+Crash after a few minutes, should be solved now

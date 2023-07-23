@@ -1,0 +1,64 @@
+FEAR POINT
+- Targets the Bavakh with the highest defense in its range.
+- Stuns enemies for a short while.
+- The stun prevents some Bavakh special abilities.
+- Stunning also reduces an enemy's defense to 0.
+
+COURAGE POINT
+- Targets the nearest Bavakh within its range.
+- Its bullets pierce through enemies.
+- Gains an additional attack with each upgrade.
+- Its attacks wrap around the screen.
+
+ORTHO POINT
+- Can fire only at right angles: up, left, right, or down.
+- Does "splash" damage on all enemies close to the one it hits.
+- Relatively inexpensive to upgrade.
+
+CUT POINT
+- Lays down cutting mines around itself, which move slowly.
+- It doesn't aim at particular Bavakh, fires in a rotating pattern.
+- Best placed on the insides of curves or corners.
+
+LIMITED POINT
+- Targets the least damaged Bavakh in its range.
+- Fires rapidly, and its bullets slowly gravitate toward enemies.
+
+LOVE POINT
+- Improves the attack power and range of nearby points.
+- Bonuses from multiple numbers of them are cumulative.
+- Infinite range at its highest level.
+- Bounces Shrigg anti-attacks away.
+
+CIRCUIT POINT
+- Fires beam weapons toward other Circuit Points in its range.
+- They must be placed in the range of previous Circuit Points.
+- Damages anything touching its beam thirty times a second.
+
+PRIDE POINT
+- Targets the Bavakh with the lowest HP within its range.
+- Upgrades don't improve its attack, only its range and speed.
+- Increases attack as it slays Bavakh.
+- Can occasionally do critical hits for huge damage.
+
+STRATEGIST POINT
+- Targets the Bavakh being targeted by the Path Cursor.
+- Does a set percent damage to enemies.
+- Damages the defense rating of an enemy.
+- Directs nearby attacks to target the enemy it just hit.
+
+TURNING POINT
+- Fires in an erratic pattern.
+- Its bullets have a very short lifespan, and fly randomly.
+- It damages not only HP, but also the maximum HP.
+- Wanders around the map.
+
+DANMAKU POINT
+- Fires in patterns, different for each upgrade level.
+- Its pattern depends upon the shape of the path of the level.
+- Very large in size, needs a lot of room to place.
+
+MOTION POINT
+- It can move... it's you! Required to place and upgrade points.
+- It targets the nearest enemy, and it can also click to select targets.
+- Grows stronger with each new level and each new campaign.

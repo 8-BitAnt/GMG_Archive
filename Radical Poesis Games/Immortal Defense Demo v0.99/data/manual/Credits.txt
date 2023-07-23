@@ -1,0 +1,50 @@
+DIRECTION & DESIGN#
+PROGRAMMING#
+VISUAL DIRECTION#
+EFFECT GRAPHICS#
+ADDITIONAL WRITING#
+   Paul Eres
+
+PORTRAIT GRAPHICS#
+CUTSCENE GRAPHICS#
+ENEMY GRAPHICS#
+GUI GRAPHICS#
+HELLSPACE VOICE#
+   Harlock Hero
+
+WRITING#
+ADDITIONAL DESIGN#
+   John Thornton
+
+MUSIC COMPOSITION#
+   Walter Eres##
+MUSIC ARRANGEMENT#
+ADDITIONAL MUSIC#
+   Long Dao##
+ADDITIONAL MUSIC#
+   Crazy Mary [crazymary.com]#
+   The Public Domain
+
+ENGINE & DLLs#
+   Mark Overmars [Game Maker]#
+   Tsg1zzn [Super Sound System]#
+   Andrewmc [UltraCrypt]#
+   Localmotion34 [Screen Capture]#
+   Smarty [DigiFont]
+
+SPECIAL THANKS#
+   Ubermensch#
+   DrShizuma#
+   Adam Perry#
+   Iblis#
+   TimW#
+   TeeGee#
+   BigbossSNK#
+   Patrick Dugan#
+   Hachi-Roku#
+   Mrfredman#
+   Garth Denley#
+   Fyrewulff#
+   Orchard-L#
+   Brett Fuoco#
+   Charbile

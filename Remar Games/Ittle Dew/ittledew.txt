@@ -1,0 +1,43 @@
+ITTLE DEW
+
+Design, code, graphics: Daniel Remar
+Design, graphics, level design, story, misc: Joel Nyström
+Concept art, character design: Johannes Helgesson
+
+
+
+Like Spacenörd, this game is incredibly hard. Please don't mail me asking how to solve a room - I'm not making a game guide for it.
+
+This was a collaboration with Joel for a school project. I wrote about Game Maker as a prototyping tool, and he wrote about compact level design. We came up with the basic idea of a Zelda clone, but kept redesigning the details as we went along, working very quickly. The core idea was to have only four tools, each with a wide range of uses when combined with the others or the environment. There's a large focus on experimentation and crazy logic in solving the puzzles of this game.
+
+For example, bombs can be frozen, pushed and teleported, mirrors and frozen walls can bounce teleporter shots back at yourself or at enemies and objects, and torches can be lit from around corners with the proper combination of tools. Locked doors open when you light red torches, douse blue torches, defeat every living creature in the room, or press a combination of buttons.
+
+The level design is more open the more shortcuts you can find, or the sooner you figure optional puzzles out. There's even a secret reward for major sequence breaking. Ignore the rambling old men though, they've been stuck in that castle all their lives - but there may be hidden insight in their words.
+
+Aside from Johannes' concept art used as the title screen, graphics were the bottom priority when working on this game... you'll understand when you see the sprites.
+
+
+
+CONTROLS
+
+Arrows: Move
+Enter: confirm
+Z: Weapons
+A: Bombs
+S: Ice gun
+X: Portal wands
+F4: Toggle fullscreen
+Escape: pause menu
+
+
+
+FAQ
+
+Q: I'm stuck. What do I do?
+A: Try harder to unstick yourself. Playing some early Zelda games might help.
+
+Q: Which puzzle stumps the most players?
+A: Probably the odd fact that you can push blocks over to the other side of a spiked floor.
+
+A: There are no more rooms I can solve with the items I have.
+Q: Have you tried randomly using the items on everything around you?

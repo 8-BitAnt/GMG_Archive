@@ -1,0 +1,57 @@
+FEAR POINT
+Targets the Bavakh with the highest defense in its range.  Stuns enemies for a short period of time.  This stun effect also prevents the use of many of the special abilities of the enemies and temporarily lowers an enemy's defense to 0.
+# #At its highest level, the Fear point panics and fires in a frenzy at any random enemy in its range.
+# #Fear is the starting condition of any defense.  Without Fear that something or someone could be lost, where does the urge to defend come from?
+
+COURAGE POINT
+Targets the nearest Bavakh within its large range.  Its bullets pierce through enemies, enabling the Courage Point to hit more than one enemy per shot--though the amount of damage decreases by one-fourth with each additional enemy.  At higher levels, the Courage Point's attacks pierce through more enemies per shot.
+# #With each upgrade level, not only does the Point's attacking power increase, but the number of attacks increases.  At level six, it fires a concentrated attack toward the Path Cursor, and at its highest level, it simply keeps on firing without pause.
+# #Courage develops to counter Fear.  Where Fear breaks down, Courage pierces through, extending and invigorating a defense.
+
+ORTHO POINT
+Fires only at right angles and creates a small area of "splash" damage.  All enemies within range when the Ortho Point hits an enemy will be damaged.  The damage of this splash range decreases with distance from the center of the attack.  Fires rapidly.
+# #Much cheaper than the other Points, but only fires at enemies at right angles.  Placed optimally, it can be one of the best defenders.
+# #Courage and Fear are instincts, and as such can only take a defense so far.  Reason and logic must take over in order to make a defense more robust.
+
+CUT POINT
+Releases explosive mines around itself in a spiral pattern.  These mines are slow, but do a great deal of damage upon impact.  In addition, the Cut Point deals powerful splash damage--which doesn't diminish with distance from the point of impact.
+# #The Cut Point's mines can be directed by the Path Cursor's charging ability, which improves their chances of hitting an enemy before disappearing--but also leaves holes in your defense.
+# #Once logic and instinct combine, a powerful will is necessary to increase defense--a will which obliterates anything in its path.
+
+LIMITED POINT
+Targets the least-damaged enemy in range.  The Limited Point fires rapidly, but pauses between bursts.  Its bullets slowly gravitate toward enemies, but it can still miss if not aimed correctly.
+# #Before the Limited Point, strategy is grounded in memories of life in normal space.  The Limited Point represents the gap between the limits of normal space and the new freedoms of path space.  It is the part of your will which respects and probes the unknown.
+
+LOVE POINT
+Does not atttack enemies, but instead increases the attack power and range of nearby points.  It also increases the attack power and range of the Path Cursor.  
+# #The bonuses from multiple Love Points are cumulative.  At the highest upgrade level, the Love Point has an infinite range, improving the attack power of all the Points in the level.  It can also repel the anti-path defense powers of some enemies, most notably the Shrigg series.
+# #Love develops when a being becomes conscious of itself and of its place in Indra's Net.  Love allows even a robust defense to grow beyond itself and to become even more effective.
+
+CIRCUIT POINT
+Alone, the Circuit Point does nothing.  But when it is in the range of other Circuit Points, they combine to form an unbreakable bond, which harms any enemy that passes between them.  They attack once every thirtieth of a second.  The longer an enemy spends between the Circuit Points, the more damage it takes.
+# #If more than two Circuit Points are placed, more elaborate patterns of attack can be formed.
+# #The aspect of your will which relates to Love develops further into the Circuit Point.  The Love Point represents an awareness of the importance of support to a good defense, whereas the Circuit Point represents the growing knowledge that without connections, no defense is possible.  How could you defend without something to defend?
+
+PRIDE POINT
+Increases its attack power with each enemy that it kills.  Its attacks "home in" on enemies, following them and increasing speed over time.  Targets the weakest enemy in its range.  Occasionally performs a "critical hit", a very strong attack usually capable of killing an enemy in a single hit.  Upgrading it does not improve its attack strength, but only its speed and range.
+# #Unless the Pride Point can defeat weaker enemies earlier in a mission, it won't develop confidence in its power, and its attack will cease to be effective against increasingly stronger opponents.
+# #Pride develops once a strong defense is already in place, and once you develop confidence in your own ability to defend the path.
+
+STRATEGIST POINT
+Does damage based on a percentage of enemy HP.  Also damages enemy defense ratings.  Targets only the enemies the Path Cursor targets.  Redirects nearby attacks by other Points toward the enemy targeted by the Strategist Point, and gives a boost to the attack power of any redirected attack.
+# #Enemies with a particularly high defense can only be defeated by the Strategist Point.
+# #Once Pride is developed, the elements of defense can be fused into conscious intention.  The Strategist Point is that part of yourself which maintains its ruthlessness, but which is still capable of stepping back from the action, probing the enemy for weaknesses and making the overall defense more effective.
+
+TURNING POINT
+Fires erratically at anything within its radius.  Moves around on the path.  Its attacks ignore the enemy's defense rating, and also damages the enemy's maximum HP (which prevents the enemy from healing to some extent).
+# #However rational a defense is, it can be broken by an opposing rational force.  The Turning Point is the part of your will which resists reason and is not afraid of experimentation, of taking bizarre chances, and of trying anything in order to break an advance.  As such, it is limited in its effectiveness, but under the right circumstances, even madness has its method.
+
+DANMAKU POINT
+Fires in complex patterns based on the shape of the current level's path.  The attack pattern of the Danmaku Point changes as the Point is upgraded.  Does not directly target enemies, which allows enemies to break through the attack pattern if the Point is improperly placed.  Very expensive to place and upgrade.
+# #At its sixth upgrade level, the Danmaku Point fires its pattern in the direction of the Path Cursor.
+# #What is Danmaku?  Only those who are part of the path already can know.
+
+HATE POINT
+Repels all attacks near it, whether from a Path Cursor or from your Points.  Also diminishes the effectiveness of nearby Points, or of your Path Cursor.
+# #Attacks that bounce off of a Hate Point increase in power.
+# #You can't understand the power of Hate.  Only path defenders who have strayed from the path of defense will be able to master this aspect of their will--pray that you will never be such a defender.

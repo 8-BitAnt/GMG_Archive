@@ -1,0 +1,120 @@
+IMMORTAL DEFENSE GAME MANUAL
+# # - Quickstart Guide
+# - Backstory, I
+# - Backstory, II
+# - Characters
+# - Game Concepts, I
+# - Game Concepts, II
+# - Game Flow, I
+# - Game Flow, II
+# - Controls: The Path Cursor
+# - Controls: Placing & Upgrading Points
+# - The Points
+# - The Enemies
+# - The Path
+# - Tips & Strategy
+# - Credits
+
+QUICKSTART GUIDE
+# #Immortal Defense is a story-based tower defense game.  The goal of the game is to defend your planet by not letting too many of the enemies reach the end of the path.  Basic instructions:
+# # - Your mouse (the Path Cursor) will fire automatically at the nearest enemy in its range.
+# # - You lose one life for each enemy that reaches the end of the path.  Lose all your lives, and the game is over.  So don't let them get to the end of the path!
+# # - To order your mouse and your Points to focus on a particular enemy, left-click on it.
+# # - To use a special attack, right-click, wait until the gathering energy around the Path Cursor changes color, and then release.  You will gain additional special attacks as you complete the different campaigns, but be careful--more powerful special attacks require longer charge times.
+# # - To choose between Point types, you can click on the Point portrait, use the mouse wheel, or use the top numerical row of the keyboard.  You will gradually unlock different Points as you progress through the campaigns.
+# # - To place a Point, hold left-click on an empty space until the placing meter is full, and then release. You must have enough cache to place a Point, and Points cannot be placed too close to the path.
+# # - To upgrade a placed Point, hold left-click on it until the upgrading meter is full. You must have enough cache to upgrade the Point.
+
+BACKSTORY, I
+# #You were a member of a peaceful alliance of spacefaring races who have a small territory of several thousand planets, totaling about one hundred trillion people.  But your people were small fish in the sea compared to the Bavakh Empire, which recently appeared in your galaxy from parts unknown and began to take control by force.
+# #Shortly after the Bavakh began their invasion of your galaxy, their own galaxy was conquered by unknown forces, which severed the invaders' connection with their home galaxy.  The Bavakh lost focus on the invasion and chaotically fought among themselves for supremacy.
+# #What at first seemed an undefeatable invasion began to seem possible to defeat.  Yet the greatest change your galaxy has for success now has come from the Bavakh's slave race, the Raberata, who escaped to your side of the conflict with the basic theory for the ultimate defensive technology against hyperspace attacks: path defense.
+# #By entering hyperspace starships can be moved quickly from star system to star system, rapidly increasing the pace of interstellar war.  The fundamental idea behind path defense is to posit the existence of pathspace.  Pathspace constructs can fire on enemy starships while they move helplessly through hyperspace, eliminating entire fleets before they even become a threat to a planet in normal space.
+# #The Bavakh's technology and population far exceed those of your own galaxy, making it unlikely that a war can be won on normal terms.  It is only through the new technology of path defense that a hope of victory against the Bavakh presents itself.
+
+BACKSTORY, II
+# #For the love of your home planet, Dukis, you have volunteered to become one of the first experimental path defenders.  This will involve your leaving your body in stasis while your consciousness is converted into energy, making it able to fight effectively in pathspace.  Dukis scientists have not yet discovered how to return you to your body, but promise you that they will have a way once the war is over.
+# #The sight of your wife--pregnant with your daughter--is the last thing you see before you close your eyes.
+
+CHARACTERS
+# #You: A member of the Dukis military's experimental division, and one of the first path defenders.
+# #Pul Wat Aa was one of the first people sent into path space when the Raberata defected to your side of the war.  He is one of the few path defenders who is still fighting the Bavakh, according to all reports.  He is regarded as a hero by his home planet of Oss.
+# #The Brothers Bavakh, Crosh and Ducrosh, are currently the leaders of the Bavakh Empire in your galaxy.  Their origins are largely unknown, but it is known that they direct the war.  It is rumored that they have experimented heavily with genetic engineering and cybernetic modification.
+# #Jamesh is the leader of the Raberata slave revolution that brought path defense technology to your side of the war.  He was the first experimental path defender, and is responsible for training novice path defenders in the art of strategy.  Not much else is known about him, except that his name means "star propagandist" in the Raberata language.
+# #Corybantes is a low-ranking Bavakh.  His role in the larger war is as yet unknown, but his uncommon degree of rationality and ingenuity as an engineer--the only Bavakh who works with the Raberata on their own terms--indicates that he is destined to play some part...
+# #Your wife waits patiently for your return on Dukis, watching toward the skies.  She carries your unborn daughter.  Yet life in pathspace is long--and you must assume that the daughter will be born eventually, and that grandchildren must surely come...
+
+GAME CONCEPTS, I
+# #Pathspace: The game takes place in pathspace, which is to hyperspace what hyperspace is to our normal space.  While in pathspace, you can destroy ships travelling through hyperspace.  Currently, the only known occupants of pathspace are the path defenders, although it is rumored that other forms of life exist...
+# #Points: Points are aspects of your will within pathspace.  They have various abilities for combating the Bavakh ships.  In time, you will master all aspects of your will.
+# #Cache: When enemies are destroyed, the energy used to bind their consciousness is transmitted into path space and collected by path defenders.  This energy allows path defenders to manifest their will in Points.  (Points can also be converted back into cache, although the cache value of a Point decreases the longer the Point exists.)
+# #The Bavakh: The Bavakh Empire is a hostile spacefaring power, recently stranded in your galaxy and plotting its conquest.  The Bavakh are noted for their experimentation with genetic engineering and cloning, which allows them to reproduce asexually.  No two Bavakh look alike, and there are no female Bavakh.
+
+GAME CONCEPTS, II
+# #The Raberata: The Raberata slave race came with the Bavakh from their home galaxy, and function as their engineering corps.  They are a crafty race, and it is their defection to your side that gave your galaxy the weapon of path defense, which the Bavakh were unable to control and use.  Although they seem to prefer you to the Bavakh, their ultimate plans are unknown.
+# #Planet Dukis: Your homeworld, a vacation planet known for its lush natural beauty and its luxury items.  It has very few defensive capabilities against the Bavakh, but has been declared as a strategic target by the Bavakh due to its location.  You are the only defense against this threat.
+# #Planet Oss: Aa's homeworld.  Much of its internal politics are shrouded in mystery, but it is known that they have a powerful religious sense, and Oss temple-builders are well-regarded throughout the galaxy.
+# #Indra's Net: The net which binds all beings, according to Raberata theology.  Indra's Net pervades through not only pathspace, but through all space.  It is Indra's Net which allows people in pathspace to have contact with normal space, hypersace, and yet other spaces.  It was theological research into the nature of Indra's Net that led to the development of path defense technology.
+
+GAME FLOW, I
+# #There are two main parts of the game: the pathspace menu and the stages themselves.  On the pathspace menu you can adjust the game difficulty and other options before entering the stages.  You can unlock the stages only by beating the previous stages.  There are 96 regular missions in the game, although only the first 32 are available in the free version of the game.
+# #At the start of each mission, you'll receive an update on the game story.  You can skip the story by clicking.
+# #Before the enemies approach, you have unlimited time to place Points and decide on a basic strategy.  When you're ready to start the mission, either click the START button or press the space bar.
+# #The enemies will move from one side of the path to the other.  Enemies move faster on straight sections and slower on corners.  Each time one of them reaches the vortex at the end of the path, you will lose one life.  If you lose all your lives, you'll have to try the level again.  You can see how many lives you have remaining at the bottom of the screen--keep an eye on this throughout the fight.
+
+GAME FLOW, II
+# #The score at the end of the level is based on how much cache you have remaining multipled by the ratio of enemies that you let through the path.  If you didn't let a single enemy through, you'll keep 100% of your cache for the next level.  If you lost half of your lives, you'll only get to keep 50% of your cache in the next level.  Obviously, it's a good idea to let as few enemies through as possible to maximize your starting cache.  (If you've lost too much cache, you can always replay a mission and try to improve your strategy--the game remembers the highest total score you achieve, and will carry this score over to the next mission.)
+# #Each campaign is composed of 16 missions.  The fifteenth mission of every campaign is a "boss" mission, involving very powerful opponents with powerful counterattacks to your defense.  The sixteenth mission is an "endless" mission, which gives you infinite time to defend the path--survive as long as you can!  (You can't carry cache between campaigns, so use as much as you want on the infinite mission--the better you do, the better off you'll be when the new campaign starts.)
+# #It's rumored that there may be even more missions available--but only for the greatest path defenders...
+
+CONTROLS: THE PATH CURSOR
+# #You are a path defender, a path cursor.  You can move at arbitrary speeds throughout all of pathspace, but you are emotionally tied to those temporary patches of hyperspace which lead between the territories of the Bavakh and your people.
+# #Your instincts ensure that whenever you can fire at a Bavakh, you will.  You'll automatically fire at the closest Bavakh in range.
+# #You also have the ability to focus your attention on the Bavakh or on your points.  If you click on a selected Bavakh ship, this will give the order to all Points within range to attack that particular ship.  If you click on one of your Points, you can see its statistics or upgrade it (by clicking and holding on a Point).
+# #You also possess a charged attack.  Activate these by right-clicking, waiting for your attack to charge, and then right-clicking again (or releasing the cursor) to fire on the enemy.  You'll gain a new charged attack with each new campaign.  Some of the charged attacks alter the attack patterns of your Points--be careful!
+# #During the process of charging, you will draw the attacks of your Points toward you.  This can create holes in your defenses, true--but it also allows you to target some of your most slow-moving, dangerous attacks to the most vulnerable points on the Bavakh line.
+
+CONTROLS: PLACING & UPGRADING POINTS
+# #To place a point, highlight the type you would like to place by either clicking on its portrait at the bottom of the screen or using a hotkey (the numerical keys) or the mouse wheel to scroll through them.
+# #Left-click and hold to place a point on the screen.  Once the placement meter charges up, release the mouse button to place your point.
+# #If you can't place a Point on a particular spot, the Point's outline will appear in red.  Points cannot be placed on the path itself, nor can they overlap other towers or pathspace debris.
+# #To upgrade a Point, select it with the left mouse button and hold that button down over it.  Once the placement meter charges up, the Point will be upgraded.  (Placing and upgrading Points requires cache--you can see how much is required by left-clicking and holding on a Point, or by moving the mouse over the Point palette.)
+# #You can sell a point by pressing 'S' when that point is selected.  This allows you to regain some of the cache spent on the Point.  Near the start of a mission, you'll get nearly a full refund; near the end of a mission, you'll get very little--so sell Points in a timely manner!
+
+THE POINTS
+# #There are eleven types of Points which you will gain access to over the course of the game.  More detailed information on each will become available in the "Points" menu on the stage select screen as you unlock each Point.
+# #Points will automatically attack enemies within their range.  Each Point has its own method for selecting targets, but by left-clicking on a specific enemy ship you can force the Points to attack that ship.
+# #Each point has seven levels of power.  Higher levels will usually fire more frequently and do more damage, but they cost more cache to upgrade.  Full statistics on each Point can be found in the Points menu on the stage select screen.
+# #Although you can only place a certain number of each type of Point per mission, you can sometimes earn bonus Points--if your Points are doing enough damage to the enemy, of course.  If one type of Point is being particularly effective, you'll often get a bonus Point of that type.
+
+THE ENEMIES
+# #You'll encounter several types of enemies in your campaigns against the Bavakh.  For more detailed descriptions of each enemy, click the "Enemies" button on the stage select screen.
+# #All enemies have HP, a speed value, and a defense valuea defense value.  HP indicates the amount of damage an enemy can take before being destroyed.  Enemies with higher HP provide more cache when destroyed--but are also more difficult to destroy.
+# #All enemy ships move along the path toward the exit gate.  If too many enemies get through, your planetary defenses won't be able to hold them off, and your world will be destroyed--so don't let them through!
+# #Enemy defenses range from zero to 255.  At higher defense ratings, your shots will do significantly less damage.  Some of your Points can reduce enemy defense ratings.  If the enemy's defense drops below zero, all attacks against that enemy will do more damage.
+# #As you move through the campaigns, the enemy will become more and more worried about you, and enemy ships will start developing defensive capabilities against your Points.  The key to success is to understand those capabilities and to defeat the most strategically important enemies first.
+
+THE PATH
+# #Pathspace is the next spatial dimension beyond hyperspace.  Within pathspace, hyperspace conduits take the form of a single string from one point to another.  All objects in hyperspace are restricted to this line.
+# #The closer your Path Cursor gets to the hyperspace path, the more visible it becomes.  Occasionally, you can see the direction of the hyperspace path by watching the energy patterns that move along it from the start to the end of the path.
+# #Not all sections of the path are equal.  Yellow segments slow enemies who travel across them, while blue segments speed them up.  Some segments alternate between red and green--red segments will stop the enemies entirely, while green segments allow them to move normally.
+# #Eventually, you might encounter sections of the path with obstacles that repel your attacks.  There are other dangers rumored to exist within pathspace, but you'll have to discover these for yourself.
+# #The shape of the path is said to mirror the mental state of the path defenders, though this remains only a Raberata theory.
+
+TIPS & STRATEGY
+# # - It's important to learn the special characteristics of each Point and to place them in the position where they are the most effective.  Deciding which points to upgrade is also important: a level 3 point is often better than three level 1 points, but it also costs you much more cache.  Experiment to determine the best strategy.
+# # - Some points work well in combination.  For instance, Fear Points often work best when combined with strong points which often miss.  There are many other useful combinations as well.  Experiment!
+# # - If you're having trouble with a later mission, try going back and improving your score on an earlier one.  Since cache carries over between missions, increasing your score on earlier missions gives you a better chance to win on later ones.
+# # - If another path defender fights with you, you won't receive any cache from enemies that he destroys.  So don't let your allies do too much of the work...
+# # - You can always lower the difficulty level on the stage select screen if you simply can't beat a level.  However, lowering the difficulty level also lowers the amount of cache enemies drop--so try to fight at the highest difficulty level you can in order to maximize your cache.
+# # - For more tips and strategies, visit the RPGCreations forums at "http://studioeres.com/forums/".  You can compare your top scores with others, get news about new game patches, and suggest improvements for later versions of the game.
+
+CREDITS
+# #Designer/Director/Programmer, Basic Story, Procedural/Effect Graphics: # - Paul Eres
+# #Sprite Graphics: # - Harlock Hero
+# #Story and Text: # - John Thornton
+# #Music: # - Walter Eres, Long Dao, CrazyMary.com, and the Public Domain
+# #The universe and setting of the game is based on the novel Raberata by Robert Bisno, used with his permission.
+# #For the full list of credits and special thanks, see the data/manual/Credits.txt file--or just complete the game!
+# #(c) 2006-2007 Radical Poesis Games & Creations
+# #Website: http://ImmortalDefense.com
