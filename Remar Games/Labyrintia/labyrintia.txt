@@ -1,0 +1,34 @@
+LABYRINTIA
+
+Design, code, graphics: Daniel Remar
+
+
+
+Mostly a test of 3D collisions and platforming, this game will be extremely disorienting (and possibly nauseating) for those who're not familiar with first-person games controlled with mouse+WASD. The levels are basically huge spatial excercises. I tried making it easier to understand where to go next, but some jumps are very hard to perform, requiring you to curve around walls in mid-air and more.
+
+Remember to use the flag - it's a checkpoint you can place on solid ground. It lets you experiment more with where you can jump, or fall off a mountain without having to climb back up.
+
+The X-Ray (hold Spacebar) is very useful in locating items.
+
+The goal sequence is particularly interesting on large open levels. The concept of the "polygon tornado" was shamelessly stolen from MDK.
+
+There is an even weirder version of this game where you can flip the entire world 90 degrees along any axis. I never got around to building any levels for that version, since they are incredibly hard to make, not to mention solve!
+
+
+
+CONTROLS
+
+WASD: Move, strafe
+Mouse: Look, turn
+Left mouse button: jump (requires 5 tokens)
+Right mouse button: superjump (requires 10 tokens)
+E: Place flag
+Q: Return to flag
+F11: Skip level
+Escape: Quit
+
+
+
+KNOWN BUGS:
+-You can get stuck at the edges of short fences if you fall on top of them.
+-You can pass through walls at certain angles while falling.

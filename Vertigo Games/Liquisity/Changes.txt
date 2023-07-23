@@ -1,0 +1,15 @@
+BUG FIXES
+by Mr.Chubigans
+v1.0
+-------------------------
+
+-Fixed "Go Back" key to editor menu
+-Fixed powerups and glass bar deletion tool in editor
+-Fixed some particle problems 
+-Added 2 custom levels
+
+Known problems:
+
+-Cannon has a shooting sound, but ball was in play 
+already. Not really a priority, since it would actually 
+take quite a bit of work to fix. :)

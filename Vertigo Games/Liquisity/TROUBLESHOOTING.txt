@@ -1,0 +1,63 @@
+Liquisity TROUBLESHOOTING guide
+v 1.0
+by Mr.Chubigans
+www.vertigogaming.net
+--------------------------------
+
+Liquisity uses a new game engine (GM6) that has a lower
+compatability rate than any other game we've made. You need 
+a decent computer with Direct X 8+ installed.
+
+First off...and this should really go without saying...you
+MUST UNZIP THE FILE IN ORDER FOR LIQUISITY TO WORK PROPERLY!
+
+Here are some common problems:
+
+1. The game does not run at all.
+
+There are many things you should do if this happens. Restart
+your computer. Make sure that you kill all open applications 
+before running Liquisity, such as virus scanners, IM services,
+and anything else. Next, defrag your computer. Once you do that,
+try running Liquisity again. If it doesn't start up, you need 
+to update your drivers and your current Direct X install. If 
+still nothing, then your computer cannot handle the requirements
+of the game. Goto www.vertigogaming.net and post in the Tech
+Support forum for further help.
+
+2. The game runs, but...
+
+-It's too slow and the framerate is bad.
+
+Liquisity has a fully customizable graphics engine. Just goto 
+the options menu (in the main menu or by pressing F1) and click
+on More Options.
+Here is the list of things you should try. Once the game looks
+good, stop at that step. Otherwise, continue with the steps.
+
+	1. Turn Background Sprite Detail to very low.
+	2. Turn off Water Bubbles.
+	3. Turn off Water Splashes.
+	4. Turn off Water Trail.
+	5. Make sure the resolution is 640x480 (default) and 
+	the Fullscreen is on (default).
+	6. Switch to 16 bit color.
+	
+If its still bad, defrag and restart your computer. Turn off 
+all background apps before playing.
+
+-The music sounds weird/doesn't play/crashes the game.
+
+All the sounds are in wav format...however, the music is in 
+mp3 format. Just switch off the music in the options menu. Note
+that the music might be switched back on when playing a custom
+level, so switch it back off when playing one.
+
+
+If your computer seems perfectly capable of handling all the 
+graphics, I suggest you switch the "Background Sprite Detail" to
+Very High. Otherwise, leave it at Medium (default).
+
+
+Any more problems should be directed to Vertigo Games tech 
+support forum at www.vertigogaming.net.

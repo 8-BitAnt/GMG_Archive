@@ -1,0 +1,105 @@
+Linked
+By: Martin Crownover (FredFredrickson)
+Final Version 0.66-020309 - February 3, 2009
+
+Contents:
+1. Introduction & Features
+2. Controls
+3. Credits
+4. Troubleshooting
+5. Terms of Use
+
+
+
+
+1. Introduction & Features
+
+Welcome to Linked, a drawing tool that lets you work on solo projects and collaborations alike!  Linked combines a simple and intuitive drawing system with the power of the Reflect Account System to allow players from anywhere in the world to connect to each other and work on the same drawing, chat, and play games.
+
+Using this program, it is possible to play all sorts of games!  Hangman, tic-tac-toe, and pictionary are only a few possibilities!  The chat system allows players to view the image that is being drawn while chatting, and vice versa; the player who is drawing can see the chat unfold as he or she works.  Linked also provides the hosting player with the ability to limit the amount of new players who can enter, as well as who can draw and who cannot.
+
+Linked began as an investigation into the power of Game Maker's surface capabilities, and wound up being much more.  I truly hope some of you out there enjoy this game, and create some wonderful things with it, by yourself or with a group of friends.
+
+
+
+
+2. Controls
+
+Controlling the game is easy and is mostly mouse driven, except in the event that you're chatting with others.
+
+
+While drawing:
+
+LEFT MOUSE - Click and hold while moving the mouse to draw.  The faster your movement, the more narrow the lines drawn will be, best noticed in the medium sized pen
+
+RIGHT MOUSE or LEFT & RIGHT ARROW KEYS - Click to cycle through the 3 different pen sizes
+
+MOUSE WHEEL / UP & DOWN ARROW KEYS - Cycle forward or backward through the different ink colors
+
+SPACE BAR - Clear the canvas
+
+ENTER / F1 / MIDDLE MOUSE (multiplayer only) - Toggle the chat menu / host controls
+
+F5 - Save the canvas (in multiplayer the filename will be chosen for you, in single player you can choose what to name your work of art)
+
+F6 (single player only) - Load previously saved work onto the canvas
+
+
+While the chat window is open (multiplayer only):
+
+LEFT MOUSE (host only) - Click a player's name in the player list to toggle their drawing ability, or click on the host options below the player list to toggle them on / off
+
+RIGHT MOUSE - Click a player's name in the player list to remove them from the game
+
+KEYBOARD - Type to create a message to send to the group, press ENTER to send.  Pressing ENTER when the message box is empty will toggle the chat window / host options closed
+
+
+Chat commands, type the following commands into the chat window to activate various options in the game:
+
+/help - Displays in-game help information
+
+/topic - Displays a randomly generated topic (useful if you just can't think of what to draw!)
+
+
+Miscellaneous commands:
+
+F4 - Toggle between windowed and fullscreen modes
+
+Esc - Exit the current paint mode / screen / game
+
+
+
+
+3. Credits
+
+Created with Game Maker 6.1 by Mark Overmars
+Fox-NL - Teaching me how to use surfaces, and various multiplayer stuff
+Xot - For a great encryption script
+39ster - For the excellent 39dll
+Dracodragon, Ds, JoshuaOtt, ReliantG, Neur0n, Dregnought, CountZebra, DJKilo - Testing the game with me
+
+
+
+
+4. Troubleshooting
+
+Some players may have trouble connecting to each other.  If this is the case, and you are hosting, please make sure to configure your firewall / router to allow the game to communicate properly with others.  Linked uses TCP / UDP port 27782.  You can find more information about setting up your router at http://www.portforward.com/
+
+You can find additional help, as well as a whole community of players at http://forums.reflectgames.com
+
+
+
+
+5. Terms of Use
+
+By unzipping and using this program, you agree to the following terms:
+
+1. You, the user, claim any and all responsibility for any damages that might occur, including, physical, emotional, and / or material by using this software.
+
+2. This program is not guaranteed to run on any system.
+
+3. No part of this package may be altered or changed in any way, without prior written consent from the original author of this software.
+
+4. No part of this project shall be sold without prior written consent from the original author.
+
+5. Linked is ©2006-2009 Martin Crownover, and all work contained within that was not created by Martin Crownover should be considered copyrighted by it's respective author.

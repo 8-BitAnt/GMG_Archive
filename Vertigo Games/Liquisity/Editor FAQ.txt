@@ -1,0 +1,165 @@
+Liquisity Editor FAQ
+v 1.0
+by Mr.Chubigans
+www.vertigogaming.net
+---------------------
+
+Liquisity comes with a fully functional Level Editor
+that allows you to make your own custom levels & 
+challenges, which you can then share on our forums. 
+
+There are new custom levels every week at 
+www.vertigogaming.net!
+
+CONTENTS:
+I.) Extentions
+II.) Creating a level
+III.) Things to think about
+IV.) Test Mode
+V.) Playing & sharing levels
+VI.) FAQ
+
+
+
+
+I.) Extensions
+
+The game itself saves these files under these extentions:
+
+__________________________________________________________
+.sav- used for saving single player games and backups for 
+ingame use.
+
+.liq- used to save editible files of levels so you can work
+on them at another time.
+
+.lid- custom levels that can be played but no longer editable.
+Upload these files when posting new levels to download.
+__________________________________________________________
+
+You save liq files when in the editor mode, and lid files when
+"finalizing" the puzzle during test mode.
+
+II.) Creating a level
+
+Once your in the editor, go wild and follow the tips provided 
+on the screen. It should be a snap.
+
+Quick key reference:
+LEFT MOUSE BUTTON- select an object category or place the object
+RIGHT MOUSE BUTTON- deselect category
+MIDDLE MOUSE BUTTON- delete tool (also in menu)
+CONTROL KEY- deselect category
+SHIFT KEY- switches objects in category
+SPACE KEY- hides all menus until let go
+E KEY- goes back to editor (test mode only)
+F KEY- finalizes level (test mode only)
+
+There are some rules. No more than 1 cannon and goal allowed on 
+a level. Only 3 bubble jets of any type allowed. 
+
+I suggest you ALWAYS save the editible file before choosing the 
+finish level option, although in test mode you can always go back
+to the editor.
+
+III.) Things to think about
+
+-If you put more than 20-25 spinners/slicers (aside from the circular
+bumpers), the game will slow down on older computers due to the 
+bubbles that form from it. 
+
+-You only need one switch per type. Example: one bubble off switch
+is enough, although you can put two for whatever reason.
+
+-Be sure that if you start the game with the helicopter ball there 
+is a way to switch to another type of ball...otherwise the game 
+cannot be finished. Same goes for glass barriers...use them 
+wisely!
+
+-If your feeling extra generous, include the editible file of 
+your completed level when posting them on the internet. That way
+people can tinker with it and make it even better.
+
+IV.) Test Mode
+
+Once you select the options and select "create level," you will 
+be brought into test mode. Certain things happen here:
+
+-No glass barriers created.
+-Goal doesnt work.
+-Powerups dont work.
+-Challenges are not visible yet.
+
+Once you press F to finalize the level, everything becomes active
+again. Be sure to save the editible file first before finalizing 
+a puzzle...otherwise, you have to create it again if you want to 
+make any changes!
+
+V.) Playing & Sharing levels
+
+You can select a custom level to play through the main menu. 
+To load a custom editable level, goto the "Create new level" 
+option and load it from the editor itself.
+
+You can post them at the vertigogaming.net forums or anywhere 
+else for that matter, of course. We might even have some 
+level contests in the future, so be sure to watch our site!
+
+VI.) FAQ
+
+-I can't get the game to run well.
+See the enclosed troubleshooting guide.
+
+-When I play the game, there are 3-4 new files created...why?
+Some save the progress in your game, others unlock content, 
+and still others create in game backups of your files. Don't 
+delete them! 
+
+-I still have more questions.
+Post away at vertigogaming.net and I will help you as best as 
+possible. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(now for some easter eggs...bwahaha!)
+
+Press F12 in the main menu. Click on the fish for credits.
+
+To see what the beta version of the Liquisity balls looked 
+like, goto options and turn "Alternate Skins" off. 
+
+Score over 15 points in "Waterball" (an unlockable game) to 
+change the play area a bit. Score 25 to change it some more!
