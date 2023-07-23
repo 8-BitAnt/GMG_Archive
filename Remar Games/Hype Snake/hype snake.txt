@@ -1,0 +1,36 @@
+ï»¿HYPE SNAKE
+
+Design, code, graphics, SFX edit: Daniel Remar
+Music: Karl Flodin
+Voices: Karl Zylinski, Karl Flodin, Erik Svedäng, Daniel Remar
+
+
+
+Made in two days at No More Sweden 2013, Hype Snake is a 2-player co-operative one-button game. It's somewhat similar to Bromancing Saga 2.
+
+The game is played in four stages. In the first, keep pressing your button to hype your snake. Reach maximum hype together with the other player as fast as possible, but also with as little distance between your snakes as possible for a better sync rate.
+
+In the second stage, press your button to fire and change direction. This will speed up your snake, however, so make sure the other player doesn't lag behind, or it will really hurt your sync rate.
+
+In the third stage, simply alternate when your button presses with the other player as fast as possible. Again, making a mistake hurts your sync rate.
+
+In the fourth stage, simply mash your buttons as fast as possible. Good luck!
+
+
+
+CONTROLS
+
+A: Player 1 action
+L: Player 2 action
+F4: Toggle fullscreen
+Esc: Quit game
+
+
+
+HINTS AND SECRETS
+
+When one player pulls ahead in the first two games, both snakes will stop for a while and feel very non-hype about the whole thing.
+
+In the asteroid-shooting stage, the game will ignore anyone falling behind once the screen starts to shake a lot, so don't worry - just mash your buttons and shoot more asteroids!
+
+Erik Svedäng voiced himself in the intro, and I did the "thanks for playing" voice.
