@@ -1,0 +1,35 @@
+{
+//loads all sprites for the game when first started. is executed after obj_jelly is created.
+
+
+sprite_replace (spr_enemy1, "Enemies/spr_phytoplankton.jpg", 10, 1, 1, 1, 0, 0, 0);
+sprite_replace (spr_enemy1_alpha, "Enemies/spr_phytoplankton_alpha.jpg", 10, 1, 0, 1, 0, 0, 0);
+sprite_set_offset (spr_enemy1, (sprite_get_width(spr_enemy1)/2), (sprite_get_height(spr_enemy1)/2) );
+sprite_set_offset (spr_enemy1_alpha, (sprite_get_width(spr_enemy1_alpha)/2), (sprite_get_height(spr_enemy1_alpha)/2) );
+
+
+
+
+sprite_replace (spr_enemy2, "Enemies/spr_zooplankton.jpg", 14, 1, 1, 1, 0, 0, 0);
+sprite_replace (spr_enemy2_alpha, "Enemies/spr_zooplankton_alpha.jpg", 14, 1, 0, 1, 0, 0, 0);
+sprite_set_offset (spr_enemy2, (sprite_get_width(spr_enemy2)/2), (sprite_get_height(spr_enemy2)/2) );
+sprite_set_offset (spr_enemy2_alpha, (sprite_get_width(spr_enemy2_alpha)/2), (sprite_get_height(spr_enemy2_alpha)/2) );
+
+
+
+sprite_replace (spr_enemy3, "Enemies/spr_seahorse.jpg", 13, 1, 1, 1, 0, 0, 0);
+sprite_replace (spr_enemy3_alpha, "Enemies/spr_seahorse_alpha.jpg", 13, 1, 0, 1, 0, 0, 0);
+sprite_set_offset (spr_enemy3, (sprite_get_width(spr_enemy3)/2), (sprite_get_height(spr_enemy3)/2) );
+sprite_set_offset (spr_enemy3_alpha, (sprite_get_width(spr_enemy3_alpha)/2), (sprite_get_height(spr_enemy3_alpha)/2) );
+
+
+
+
+sprite_replace (spr_enemy4, "Enemies/spr_sundancer.jpg", 16, 1, 0, 1, 0, 0, 0);
+sprite_replace (spr_enemy4_alpha, "Enemies/spr_sundancer_alpha.jpg", 16, 1, 0, 1, 0, 0, 0);
+sprite_set_offset (spr_enemy4, (sprite_get_width(spr_enemy4)/2), (sprite_get_height(spr_enemy4)/2) );
+sprite_set_offset (spr_enemy4_alpha, (sprite_get_width(spr_enemy4_alpha)/2), (sprite_get_height(spr_enemy4_alpha)/2) );
+
+
+
+}

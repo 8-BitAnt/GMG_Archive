@@ -1,0 +1,9 @@
+{
+normalstart= 0;
+normalend = 9;
+attackstart = 10;
+attackend = 24;
+
+//sprite_set_bbox_mode (spr_boss, 2);
+//sprite_set_bbox (spr_boss,179,149,400,283);
+}

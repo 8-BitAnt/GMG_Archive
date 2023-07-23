@@ -1,0 +1,53 @@
+
+Johnny's Odyssey v1.1b
+---------------------
+
+Created by tapeworm in 2004.
+Based on the Johnny series by Kim Okkerstrøm/PG Games.
+
+---------------------
+
+
+Controls:
+
+	Use the arrow keys to move and Z to shoot.
+	If you get stuck in a wall, press UP a few times.
+
+
+Version History:
+
+	20040316	0.1	Initial test release.
+	20040316	0.2	Fixed the "ghoulcount" bug.
+
+	20040316	1.0	General release.
+				Fixed the disappearing backgrounds bug.
+	20040317	1.1a	Fixed minor snow and death issues.
+
+	20040811	1.1b	Same version; updated this text file.
+
+
+---------------------
+
+
+Q: Where did you get the music for this game?
+
+A: The first song is "Rupert & The Toymakers Party" arranged by Richard Westall
+   You can get a full-quality version (and hear the original Commodore 64 
+   SID version) at http://remix.kwed.org/
+
+   The second song is "4 Hygiene Songs" by Peter Pan Orchestra & Chorus
+   You can get a full-quality version at http://www.ubu.com/outsiders/365/
+
+
+Q: Where can I find the games this is based on?
+
+A: Look up the Johnny series by Sparlatacus (PG Games) at 
+   http://www.gamemakergames.com
+
+
+Q: How do I get past [some part]?
+
+A: Cheat. Press Ctrl + N to skip to the next scene.
+
+---------------------
+

@@ -1,0 +1,56 @@
+{
+//loads all sprites for the game when first started. found at global_vars alarm[3].
+
+
+sprite_replace (spr_enemy1, "Enemies/spr_gillian.jpg", 6, 1, 1, 1, 0, 0, 0);
+sprite_replace (spr_enemy1_alpha, "Enemies/spr_gillian_alpha.jpg", 6, 1, 0, 1, 0, 0, 0);
+sprite_set_offset (spr_enemy1, (sprite_get_width(spr_enemy1)/2), (sprite_get_height(spr_enemy1)/2) );
+sprite_set_offset (spr_enemy1_alpha, (sprite_get_width(spr_enemy1_alpha)/2), (sprite_get_height(spr_enemy1_alpha)/2) );
+
+
+
+
+sprite_replace (spr_enemy2, "Enemies/spr_zygote.jpg", 10, 1, 1, 1, 0, 0, 0);
+sprite_replace (spr_enemy2_alpha, "Enemies/spr_zygote_alpha.jpg", 10, 1, 0, 1, 0, 0, 0);
+sprite_set_offset (spr_enemy2, (sprite_get_width(spr_enemy2)/2), (sprite_get_height(spr_enemy2)/2) );
+sprite_set_offset (spr_enemy2_alpha, (sprite_get_width(spr_enemy2_alpha)/2), (sprite_get_height(spr_enemy2_alpha)/2) );
+
+
+
+
+sprite_replace (spr_enemy3, "Enemies/spr_seahorse.jpg", 13, 1, 1, 1, 0, 0, 0);
+sprite_replace (spr_enemy3_alpha, "Enemies/spr_seahorse_alpha.jpg", 13, 1, 0, 1, 0, 0, 0);
+sprite_set_offset (spr_enemy3, (sprite_get_width(spr_enemy3)/2), (sprite_get_height(spr_enemy3)/2) );
+sprite_set_offset (spr_enemy3_alpha, (sprite_get_width(spr_enemy3_alpha)/2), (sprite_get_height(spr_enemy3_alpha)/2) );
+
+
+
+
+sprite_replace (spr_enemy4, "Enemies/spr_sundancer.jpg", 16, 1, 0, 1, 0, 0, 0);
+sprite_replace (spr_enemy4_alpha, "Enemies/spr_sundancer_alpha.jpg", 16, 1, 0, 1, 0, 0, 0);
+sprite_set_offset (spr_enemy4, (sprite_get_width(spr_enemy4)/2), (sprite_get_height(spr_enemy4)/2) );
+sprite_set_offset (spr_enemy4_alpha, (sprite_get_width(spr_enemy4_alpha)/2), (sprite_get_height(spr_enemy4_alpha)/2) );
+
+
+sprite_replace (spr_enemy7, "Enemies/spr_polly.jpg", 8, 1, 1, 1, 0, 0, 0);
+sprite_replace (spr_enemy7_alpha, "Enemies/spr_polly_alpha.jpg", 8, 1, 0, 1, 0, 0, 0);
+
+sprite_set_offset (spr_enemy7, (sprite_get_width(spr_enemy7)/2), (sprite_get_height(spr_enemy7)/2) );
+sprite_set_offset (spr_enemy7_alpha, (sprite_get_width(spr_enemy7_alpha)/2), (sprite_get_height(spr_enemy7_alpha)/2) );
+
+
+
+sprite_replace (spr_enemy5, "Enemies/spr_huntersquid.jpg", 24, 1, 1, 1, 0, 0, 0);
+sprite_replace (spr_enemy5_alpha, "Enemies/spr_huntersquid_alpha.jpg", 24, 1, 0, 1, 0, 0, 0);
+
+sprite_set_offset (spr_enemy5, (sprite_get_width(spr_enemy5)/1.25), (sprite_get_height(spr_enemy5)/2) );
+sprite_set_offset (spr_enemy5_alpha, (sprite_get_width(spr_enemy5_alpha)/2), (sprite_get_height(spr_enemy5_alpha)/2) );
+
+
+sprite_replace (spr_enemy6, "Enemies/spr_bodybit.jpg", 1, 1, 1, 1, 0, 0, 0);
+sprite_replace (spr_enemy6_alpha, "Enemies/spr_bodybit_alpha.jpg", 1, 1, 0, 1, 0, 0, 0);
+
+sprite_set_offset (spr_enemy6, (sprite_get_width(spr_enemy6)/2), (sprite_get_height(spr_enemy6)/2) );
+sprite_set_offset (spr_enemy6_alpha, (sprite_get_width(spr_enemy6_alpha)/2), (sprite_get_height(spr_enemy6_alpha)/2) );
+
+}

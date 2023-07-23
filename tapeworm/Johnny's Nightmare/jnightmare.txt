@@ -1,0 +1,51 @@
+
+Johnny's Nightmare v1.3
+-----------------------
+
+Created by tapeworm in 2005 and 2006.
+Based on the Johnny series by Sparlatacus/PG Games (Kim Okkerstrøm).
+
+-----------------------
+
+
+Controls:
+
+	Use the arrow keys to move and to jump. Where applicable, 
+        press Z to shoot.
+
+
+Version History:
+
+	20060203	1.0	Pre-release.
+	20060204	1.1	Public release.
+	20060205	1.2	Minor update.
+	20060207	1.3	Minor update.
+
+
+-----------------------
+
+
+Q: Where did you get the music for this game?
+
+A: The first song is from a Commodore 64 game called "Rupert & The 
+   Toymakers Party." I don't know the composer's name.
+
+   The second song is "It's a Sin to Tell a Lie." The singing part 
+   is Brent Spiner ("Data" in Star Trek: the Next Generation). The 
+   talking part is Patrick Stewart (Captain Picard). 
+
+   And here's an unrelated song:
+   http://hjem.wanadoo.dk/~wan13237/darkmateria_the_picard_song.mp3
+
+   The third song is an excerpt from "Jack and the Beanstalk" by 
+   Sharda, from "Children's Disco Musical Stories."
+
+Q: Where can I find the games this is based on?
+
+A: Look up the Johnny series by Sparlatacus (PG Games) at 
+   http://www.gamemakergames.com
+
+   Note: The last boss is based on a drawing by Sparlatacus.
+
+
+-----------------------
