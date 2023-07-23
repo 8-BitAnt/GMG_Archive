@@ -30,5 +30,5 @@ This is an archive so what can be archived will be archived so don't be surpirse
 
 Yes, though if you expierence issues please let me know immediately.
 
-(Keep in mind that Anti Viruses detect false positives with games like Dark Caves 1 & 2 by Hellbound and some others.)
+(Keep in mind that Anti Viruses may detect false positives with games like Dark Caves 1 & 2 by Hellbound and some others.)
 
