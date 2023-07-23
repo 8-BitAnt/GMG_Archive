@@ -1,0 +1,49 @@
+==========================
+Globules Changes 1.0 - 1.1
+==========================
+
+[3 new maps added!]
+
+Several menu options added.
+Resources no longer carry over between rounds.
+Several minor bug fixes.
+
+==========================
+Globules Changes 1.1 - 1.2
+==========================
+
+[Introducing 'Powers'. Can choose from 3 powers to use on the battlefield!]
+[Online and LAN Multiplayer functionality added!]
+
+Added trail effect for globules and missiles.
+Bullets fade and face correct direction now.
+Added custom fade system to avoid surface issues with room transitions.
+Turrets shoot quicker.
+Globules have more HP.
+Globules change direction on a curve now for smoother movement.
+Altered offence AI fighting style a little.
+AI now makes decisions quicker.
+New loading screen.
+High quality icon added.
+
+==========================
+Globules Changes 1.2 - 1.3
+==========================
+
+[Game rebalanced!]
+
+Delay between placing a building and when you can destroy it (to fix a bug in multiplayer).
+Fixed an error-throwing bug with the Globules unit on game end.
+Globules spawned by Missile Pods no longer go at fast speeds.
+Turrets shoot slower and are cheaper to build.
+Globule production building has more health.
+Globules and missiles do more damage.
+
+==========================
+Globules Changes 1.3 - 1.4
+==========================
+
+[Introducing Hardcore Mode. Most difficult on small maps!]
+
+Missile Pods have double the HP.
+New effect when Powers are cast.

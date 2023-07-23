@@ -1,0 +1,55 @@
+GARDEN GNOME TACTICS?
+
+Design, code, graphics and SFX edit: Daniel Remar
+Concept and base gameplay shamelessly stolen from: North & South
+Music: Magnus "Souleye" Pålsson
+Thanks to: Christian Holmberg, Andreas Wilhelmsson
+
+
+
+I strongly recommend using a program like Joy2Key or Xpadder and play this with gamepads, since the game doesn't natively support them!
+
+In this two-player game you are two opposing armies, each controlling three types of units: elves, sleighs and cannons. Think of them as infantry, cavalry and cannons. Press the Change button to select which unit type you'll control - you will then control ALL of these at once, including their Fire and Special commands!
+
+Eliminate the enemy army or their HQ to win. The HQ gradually loses health over time, but this cannot destroy it. Please see the in-game instructions for more info.
+
+Originally made for my school's arcade machine (a Windows computer inside a cabinet), the in-game graphics will refer to buttons rather than the keyboard. Some arcade-only features were removed.
+
+
+
+CONTROLS
+
+Arrow keys: Move player 1 units
+I,O,P: Player 1 Change, Fire, Special
+
+W,A,S,D: Move player 2 units
+C,V,B: Player 2 Change, Fire, Special
+
+F4: Toggle fullscreen
+Escape: Quit to menu, or quit game
+
+
+
+HINTS AND SECRETS
+
+The main way to win is attacking units your opponent isn't watching. The elves and sleighs can defeat a huge number of enemies in seconds.
+
+To properly use the sleighs, keep pressing the Attack button or they won't do any good.
+
+Your sleighs can only be sent out after they have all returned to position from the frontlines. Make sure there's not a cannon blocking their entry.
+
+Press Change while charging the cannons, and they'll keep their charge. When you change back to the cannons, they'll fire unless you are holding the fire button.
+
+Taunt: With only one elf left, after your elves' special command has been used, press the Special button again and the elf will taunt.
+
+Draw / double victory: Taunt with an elf standing immediately in front of an enemy elf. Make love, not war!
+
+Princess Pitch's Revenge: Hover the menu marker over "Quit" and press A. This secret level will appear at the bottom of the menu.
+
+In the main menu, press Up, Up, Down, Down, Left, Right, Left, Right to see a stats page. You can also view it directly by opening stats.txt which the game generates. Some things in the stat page are unused since they were arcade-only, such as anything referring to "eggs".
+
+Ownage: Win by army defeat in less than 20 seconds.
+
+Rainbow ownage: Win by army defeat in less than 10 seconds.
+
+The highest number of mine bounces I've managed is 7.

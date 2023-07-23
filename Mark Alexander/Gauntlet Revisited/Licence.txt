@@ -1,0 +1,56 @@
+>>>>>>>>>LICENSE AGREEMENT
+
+YOU SHOULD CAREFULLY READ THE FOLLOWING END USER LICENSE AGREEMENT BEFORE USING "Gauntlet Revisited",
+YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT
+SIMPLY TERMINATE OR DELETE THE PROGRAM.
+
+
+"Gauntlet Revisited" and all copies, derivative works, and materials are the copyrighted work of
+Nocturne Games. All rights reserved, except as expressly stated herein. This program is solely for
+use by end users according to the terms of the License Agreement. Any use, reproduction, or
+redistribution of the Program not in accordance with the terms of the License Agreement is expressly
+prohibited.
+
+
+END USER LICENSE AGREEMENT
+
+1.  Limited Use License - Nocturne Games hereby grants, and by installing, downloading, or using
+"Gauntlet Revisited" you thereby accept, a limited, non-exclusive license and right to install or use
+one (1) copy of "Gauntlet Revisited."
+  
+2.  Ownership - All title, ownership rights and intellectual property rights to Gauntlet Revisited and
+all copies thereof including but not limited to any titles, computer code, themes, objects, characters,
+character names, stories, dialog, locations, concepts, artwork, animations, sounds, musical compositions,
+audio-visual effects, methods of operation, and any related documentation whether residing in the program
+or online are owned by Nocturne Games unless otherwise stated. The Program is protected by the copyright
+laws of the United States, international copyright treaties, and other laws. All rights are reserved. 
+
+3.    Responsibilities of End User Listed A, B, C.
+
+3.A.  Subject to the grant of license hereinabove, you may not, in whole or in part, copy, photocopy,
+      reproduce, translate, reverse engineer, derive source code, modify, disassemble, decompile, create
+      derivative works based on the Program, or remove any proprietary notices or labels on the Program
+      without the prior consent, in writing, of Nocturne Games.
+       
+3.B.  "Gauntlet Revisited" is licensed to you as a single product. Its component parts may not be separated
+      for use on more than one computer. 
+
+3.C.  You are entitled to use the Program for your own personal use, but you are not entitled to sell, rent,
+      lease or license "Gauntlet Revisited" to others without the prior written consent of Nocturne Games.
+
+4.    Termination - This License Agreement is effective until terminated. You may terminate the License
+      Agreement at any time by terminating or deleting "Gauntlet Revisited". 
+
+5.    Limitation of Liability - NOCTURNE GAMES SHALL BE NOT LIABLE IN ANY WAY FOR LOSS OR DAMAGE OF ANY
+      KIND RESULTING FROM THE USE OF "Gauntlet Revisited" INCLUDING, BUT NOT LIMITED TO, LOSS OF GOODWILL,
+      WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES. I
+      UNDERSTAND AND ACKNOWLEDGE THAT NOCTURNE GAMES CANNOT AND WILL NOT BE RESPONSIBLE FOR ANY SOFTWARE OR
+      HARDWARE FAILURES OR ANY OTHER EVENT WHICH MAY RESULT IN A LOSS OF DATA OR DISRUPTION OF SERVICE.
+
+
+I hereby acknowledge that I have read and understand the foregoing License Agreement and agree that the
+action of installing, downloading, or using Gauntlet Revisited is an acknowledgment of my agreement to be
+bound by the terms and conditions of the license agreement contained herein. I also acknowledge and agree
+that this License Agreement is the complete and exclusive statement of the agreement between Nocturne Games
+and I and that the license agreement supersedes any prior or contemporaneous agreement, either oral or written,
+and any other communications between Nocturne Games and myself.

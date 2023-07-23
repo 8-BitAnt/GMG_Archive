@@ -1,0 +1,56 @@
+
+                          Falcon
+
+**************************************************************
+                         Story
+
+         You find yourself sitting in prison.
+                  What have you done?
+                   Why are you there?
+                       
+            Find out by playing the game!
+
+**************************************************************
+                        Secrets
+
+     After beating the game you can collect secrets.
+           Collect Papers to get Artwork.
+            Collect Notes to get Music.
+            Collect Disc to get Minigame.
+       Collect them all and see what happens...
+
+**************************************************************
+                      Controls
+
+                     In game
+
+                    Controls are:
+                   Left: left arrow
+                  Right: right arrow
+                 Aim Up: up arrow
+               Aim Down: down arrow
+                   Jump: shift
+                  Shoot: control
+                   Quit: Esc
+ 
+                     In menu
+
+                 select: enter
+                     Up: up arrow
+                   Down: down arrow
+                   Quit: Esc
+
+**************************************************************
+                      Credits
+
+                   Everything by
+
+                 Tuukka Virtanen                
+
+ PS: Don't worry about my crazy name; I am from Finland.
+
+**************************************************************
+
+                    Enjoy playing!
+
+if you have any questions, email us tuukkav@cedunet.com

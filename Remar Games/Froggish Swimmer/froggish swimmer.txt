@@ -1,0 +1,26 @@
+FROGGISH SWIMMER
+
+Design, code, "graphics": Daniel Remar
+
+
+
+This is the original Game Maker prototype for Froggish Swimmer and Frozen Swimmer found on Ludosity's homepage, www.ludosity.com.
+
+Use the left mouse button to swim and jump through 25 levels, avoiding electric seaweed and spikes. Use the right mouse button to extend your tongue or drop bombs you're carrying. Click and hold the restart button in the lower left of the screen to restart a level.
+
+
+
+CONTROLS
+
+Left click: swim/jump
+Right click: tongue
+
+Escape: Quit
+F2: Restart game
+F4: Fullscreen/windowed setting
+
+
+
+HINTS AND SECRETS
+
+Press F3 to skip a level. Press F10 to add a hat (normally you only get one additional hat every time you beat the game).

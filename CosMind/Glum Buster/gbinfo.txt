@@ -1,0 +1,24 @@
+Glum Buster (v1.3)
+Created by CosMind (cosmind@glumbuster.com)
+Music by Lonekiewie
+
+--------------------------------------------------------------------------
+
+If you encounter any bugs, game crashes, or other problems; please report them to:
+
+	bugs@glumbuster.com
+
+If a game errors log is generated (in the same folder as this document), please copy the text and paste it in the report email.
+
+--------------------------------------------------------------------------
+
+Thanks a ton!
+	CosMind
+
+--------------------------------------------------------------------------
+Changes in version 1.3:
+Moderate
+- Slightly modified level design in the second area of cleansed Venom to prevent getting the Buster stuck inside one of the red stone guard gates.
+- Thickened up some thin collision boundaries near the top-left of the final area of cleansed Venom so the grassbronco can't jump up through the roots.
+- Added functionality to the glass chest so that the Buster can't get stuck inside of one that "poofs into existence" during play.
+(For a full list of changes across all previous versions of the game, download http://www.glumbuster.com/GlumBuster/gbinfohistory.txt).

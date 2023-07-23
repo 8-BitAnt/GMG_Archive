@@ -1,0 +1,1159 @@
+==============================================================================
+Final Columbus - Updates				Game (C) Yal 2010,2011
+==============================================================================
+
+==============================================================================
+
+I've put a lot of passion and time into this game. Do not steal its resources,
+do not reverse engineer the executable. If you ask me nicely and give me
+proper credit (my username Yal and a link often suffices), I may share the
+things with you. If I find you worthy, that is.
+
+==============================================================================
+
+Note note note! Save files from version 1.2.x are NOT compatible with version
+1.1.x save files! Same vice versa! Sorry about that, but version 1.2.0
+required a lot of extra data to be saved in the file. Trying to open files
+that ain't compatible will MESS UP YOUR DATA. Not reccomended.
+
+Do not hack the save files until you've beaten the game at least once - 
+it may ruin the fun. Save files are not encrypted or hex-coded; this is
+intentional; I like to hack savefiles myself.
+
+==============================================================================
+
+======================================================================
+What is new in version 1.2.15?
+======================================================================
+
+ - Did multiple cutscene changes; many of them quite small pieces of
+   dialogue polish, but I also removed some of the bLAM potential in
+   the first Smith battle by removing some of Crys' unnecessary lines
+   and making Crys show up in the short sequence where you play as
+   Smith.
+
+ - Added a new enemy type: Ribbon Whirr. Also known as OMG LAZORS WHIRR!!
+   Have fun!
+
+ - Added a new enemy type: Rotoshark Cannon. Remember the enemies in the
+   first dungeon? Have you seen any improved version of them since back
+   then?
+   ...Guess why you haven't? Because I've saved the best enemies for the
+   end of the game!
+
+ - Blood drops now has a special variable for how much HP they restore
+   when absorbed, meaning that now some enemies' (or friends'?) blood
+   will restore more HP than normal blood will. Might be useful on
+   Hardcore where blood restores 0.01 HP per drop normally?
+
+ - The cutscene where Smith and Crys show up in the subway will now work
+   properly even if you save Ashley - I've removed the trigger to the old
+   cutscene that didn't work and totally screwed up the new cutscene.
+
+ - Finally drew a facepic for Jennifer. Better brag about it here so
+   I won't forget that when I fix up that W-i-P dialogue sequence.
+
+ - Added some more rooms to the Base, and now the hidden switch
+   actually does something.
+
+ - Added some more rooms to the Base. Now, the Oilnuke upgrade actually
+   gives you a bit of challenge, with the combination "precise flap-jumps"
+   and "BLAZING LAZ0RS!" filling a large room. Oh, and did I mention
+   that the entire room is filled with Green Waste, too?
+
+ - There's now a new hidden area called the Canal Junglira.
+   Meta-Jungliras will show up during Jennifer's Story, too, but the
+   canal area? Perhaps it's just a normal secret area for people
+   who love to explore.
+
+ - Or perhaps not.
+
+ - Added 2 more rooms to the Canal Junglira, one being the main room
+   of the Meta-Junglira Core Zone.
+
+ - Added some decorative waterfalls in the Water Tower. They will also
+   flush you downwards mid-jump, so beware. And have fun climbing.
+
+ - Added a new weapon called "M Launcher", where M is an abbreviation
+   which will be revealed once you get it. Invented by Tallie, requires
+   a certain event to unlock. Haven't coded the event yet, but if you use
+   to hack the save file as much as my friends, you'll get it for sure.
+
+
+======================================================================
+What is new in version 1.2.14?
+======================================================================
+
+ - Wasp Swarm ammo recovery items now look like the missiles fired from
+   said gun. Might edit the standart-style missile items for all other
+   guns too if the update should fall into rime soil (aka you guys like it).
+
+ - Added some big hearts outside the Skull Eater boss room to allow
+   players to stock up on HP if took too much damage in the corridor.
+
+ - The new boss battle against Smith is done! It is actually harder
+   than the original one, but I'll tone the original one up a bit :D
+
+ - The cutscene after Smith crashes the subway is vastly improved,
+   so is the one WHEN he crashes it. Well, I've changed some dialogue
+   to reflect the new plot changes, too.
+
+ - Added some more Voice-shading.
+
+ - Fixed some glitches with Engrish Mode, in particular now every single
+   occurence of changed strings are changed instead of just the first one.
+
+ - After Simaster's feedback on the reward for beating TOL, moved TOL
+   to a completely secret place somewhere else and intend to replace
+   it with a Lite-TOL desert area with a different reward.
+
+   The real TOL is still available, but I will NOT tell anyone where
+   it is. THE FIRST 3 PEOPLE WHO FIND IT WILL GET STATUES IN TOL.
+   PM me a screenshot of where the entrance is and tell me roughly how
+   you look / how you want your statue to be.
+
+   I will give you ONE SINGLE TIP to where the TOL entrance is:
+
+    - It's near a save point.
+
+ - Optionettes now will stay more close to you, meaning that whoever's
+   last in line won't get her bullets deactivated when you're going
+   forward at high speed.
+
+ - Going to the Sleeper Bay won't trap you anymore; moved some tiles
+   blocking your way up quite efficently.
+
+ - Vital Information I signpost in Heart Of The City won't infinitely
+   loop anymore (accidentaly placed a collision trigger instead of a 
+   survey trigger at the signpost)
+
+ - Fixed some dialogue things in Water Tower to avoid fridge-logic
+   moments erupting.
+
+ - TOL:Escort Maze is now an actual maze, of gargatuan proportions and
+   filled to the brim with hell's finest. And yup, you STILL have to
+   escort two low-HP girls trough the maze.
+
+ - Oh, and the copter landing zones in said maze will now vanish after
+   one use.
+
+ - Smiley Cog will now chase you when you ride a copter, and normal
+   rats will too.
+
+ - Coin Rats will now drop more money, especially on higher difficulties.
+
+ - Added obscure art references.
+
+ - Finally begun working on changes in the scene where Smith destroys
+   the ceiling.
+
+ - Bauta Snake will now hopefully stay inside the screen and not get
+   deactivated when just the head is outside.
+
+ - Added Thunderblocks for no reason at all other than to make it look
+   like there's more hidden areas than there are. Or did I?
+
+ - Fixed BoltBlocks not being solid (facepalm!)
+
+
+
+======================================================================
+What is new in version 1.2.12?
+======================================================================
+
+ - Fixed SUPER FATAL minor glitch with Tallie disappearing from Fungi
+   Cave if you didn't talk to her post-shopkeeper. Would block you off
+   from entire plot from that point on!
+
+   If Tallie won't show up properly, enter the last room in the Cave
+   (final fungibrain room, the one which needs fireblocks to enter and
+   has those snakes in it) and leave; she'll show up at the exit now.
+
+ - Added some more enemies and rooms to the Heart Of The City.
+   Yup, for the sole purpose of making it easier to get lost.
+
+ - Added some new stuff around Sunshine's hidden room so that it's now
+   not that obvious where to look after her. Most notably, there's an
+   obvious hidden area full of lava that actually has a new room to
+   access; you won't find the lava suspicious anymore and likely miss
+   out on the hole in the wall... unless you have sharp eyes.
+
+
+
+
+======================================================================
+What is new in version 1.2.11?
+======================================================================
+
+ - Added the reward(s) at the end of That One Level.
+
+ - Killing an enemy with your wings gives you twice the normal XP
+   it would give you. Risk vs reward.
+
+ - Smiley Gears now die in a more satisfying way to reward you for
+   grinding down 20 000 HPs without getting hit even once.
+
+ - Fixed a minor glitch with Skull Eater not fading out boss music
+   properly (since it fades out the OLD boss music and not the new one)
+
+ - Added a new room to That One Level: "Boss Run - Special Skull"
+   Special Skull has 50 000 HP and rewards you with over 9 000 XP when killed.
+   And you will have to fight it every time you enter That One Level!
+
+   Good luck on finding out its weak point. And good luck surviving all
+   the anti-blood, too!
+
+ - Added the possibility to chicken out of That One Level. Literally.
+
+ - Thunderbee splash damage now deals a lot more damage.
+
+ - Fixed graphical glitch with laser beam in TOL: House Of Awesome.
+
+ - Added some blocks in the first part of TOL: House Of Awesome to
+   make it easier for players without infinite wing flaps to survive
+   the first few Smiley Gears.
+
+ - Added some blocks in TOL: Escort Maze ot make it possible to get to
+   one of the landing sites after getting out of the copter.
+
+ - Added a door I'd forgotten about in That One Level. Whew.
+
+ - Fixed Vanessa chat showing the wrong face.
+
+ - Fairy Heart shots now have higher attack power (I forgot to double
+   it before...) and as well the shots will now fire water triangles in
+   two directions when they burst.
+
+ - As well, the bubbles should now cover you better verically.
+
+ - Different clothes will now change Mario's face in dialogue boxes
+   instead of displaying the standard one.
+
+ - Drew sunshades on the sprite accompanying Zeddidragon in Special Thanks
+   in the credits.
+
+ - Added some more rooms to the Military Base (hidden street) to depthize
+   the plot a bit more. Go check them out, will ya?
+
+ - Removed getting the Thunderbee early leading to you missing out on the
+   Cain & Emily hovercoptering scene, since I feel too lazy to code the
+   SPECIAL CUTSCENE STUFF that'd lead to later (at the sub-tsunami)
+   with having Fox there right now... might be in a later version, though.
+
+======================================================================
+What is new in version 1.2.10?
+======================================================================
+
+ - Used my newly acquired knowledge about subtractive blend modes
+   (thanks again, IMP!) to create shade effects that "cool down" the
+   Misty Cave (Basement / Haunted Cave), "heat up" the Thermal Plant, 
+   and some other places too.
+
+ - Made invisible blocks a lot easier to trigger.
+
+ - Recolored MoonBlocks to make them more visible in dark areas.
+
+ - Made some design changes in the one big area that uses invisible
+   blocks, making it actually possible to get the Chain Core before
+   you get wings and double-jumping (there were ceilings obstructing
+   some jumps; these have been shortened).
+
+ - Added some more rooms to the hidden Drain area (the one with the
+   subtle secret arrow and 4 signposts mentioning other hidden areas).
+   There's now also something to obtain in the end. Want to get it?
+   Lots of frustration guaranteed! :)
+
+ - The shopkeeper won't laugh anymore when you buy Cryo Sphere or
+   Fairy Pistol ammo, saving you time and allowing you to spend money
+   on large quantities of ammo for these guns without going through a
+   timely and annoying process.
+
+ - Added a newline in "MISSILE DEPARTMENT" to make the word "department"
+   appear correctly since my add-newlines system apparently has beef
+   with it.
+
+ - Renamed "Golden bee" to "Thunderbee", which sounds cooler.
+
+ - There's now an upgrade that lets your Fairy Pistol charge up ammo
+   from air dampness, meaning that you get unlimited ammo for it.
+   The Fairy Heart benefits from this upgrade too, obviously, and
+   recharges its ammo twice as fast.
+
+ - Golden blocks won't dissipate Hellbreath shots anymore. Same with
+   Lichin blocks.
+
+ - Desert Hornet missiles now create splash damage effects, even moreso
+   with the Thunderbee missiles, which creates a bigger splash that
+   also deals four times more damage. Enjoy sudden improvement!
+
+ - Added tons of extra enemies in the third room of That One Level to
+   make the room easier to die in. FWAHAHA!
+
+   It might be worth pointing out that I'm not giving any thought to
+   whether the level is possible to get trough or not. I make all the
+   jumps possible to pull off so that the level is not impossible per se,
+   but that's it.
+
+ - Added two more rooms to That One Level, House Of Radical and
+   Breather Hell respectively.
+
+ - When riding the hovercopter and dropping the girls or something, they
+   will now create a splash damage when exploding. Mainly for looks, but
+   it also allows you to kill monsters with them.
+
+ - Added some blocks in the Canal outside the Missile Department so that
+   it's a lot easier to get out if you got to the area without the girls.
+
+ - Added a big subtle arrow pointing out the secret area leading to the Drain
+   since nobody has said they've found it yet.
+
+ - Added Raccoon. Tip: Raccoon is in room #192. There's a hidden signpost you
+   can only access once (drop girls on breakable blocks during the 2nd
+   hovercopter ride in a place where you won't expect breakable blocks but see
+   that the blocks are breakable if you look closely) that points out exactly
+   where this place is, and you can also notice an enemy placed in a seemingly
+   out-of-reach area if you look around the area just before the secret area.
+
+ - Added the Sky Tower area after finally making up my mind about how to access it.
+   Tip: you've done this before.
+   Currently I haven't placed Vanessa, though. Read on and see if she's available
+   in the version you have!
+
+ - Added Vanessa.
+
+ - Added the reward Sunshine gives you after meeting all the protagonists.
+   It's actually two rewards, one being cosmetic and the other one being
+   game-breaking and highly useful.
+
+ - Patched the hole Smith jumps trough in the Subway so that it's impossible to
+   get into the "Fake Secret Area" up there. Since the cutscene are in a separate
+   identical room, this shouldn't affect it (but you never know ;))
+
+ - Fixed a glitch about having different clothes would prevent your upgraded guns
+   to show up properly, and also making ammo refill non-properly when picking up
+   ammo-rockets.
+
+ - Fixed similar glitch with blood.
+
+ - Fixed Misty being stuck in ground in the truck.
+
+ - Smiley Gears now give 1 337 experience points instead of 800, and Big Special
+   Rats give 480 instead of 360. 
+
+ - Increased Desert Hornet/Thunderbee ammo acquired from pickups on the higher
+   difficulties a small bit (most noticeable on Hardcore).
+
+ - Added some new That One Level areas: Math Lie Puzzle and Escort Maze.
+   You'll totally hate me forever for them.
+
+   ...Yeah, you really will. Just gave it a shot.
+
+ - There's a new door in the place where you fall down after the Tower Incident.
+   It leads to "Drain Access", which is impossible to get into without the right
+   item and without knowing the trick.
+
+ - Copter-basket damage in TOL:EM is lowered and less random compared to Canal
+   ditto, to give one-life-runners a bit more fair challenge.
+
+======================================================================
+What is new in version 1.2.9?
+======================================================================
+
+ - Redrew Sunshine's sprite and face to reflect changes made when I started
+   with GEAR-Princess.
+
+ - Added a secret area in the Canal. It's accessible from the second
+   hovercopter ride and onward.
+
+ - Placed the Desert Hornet upgrade in a hidden area somewhere.
+
+ - Also renamed said upgrade from "Thunderwasp" to "Golden Bee" as a
+   not-really-subtle reference to a certain forum member's liking for bees.
+   And explosions. (And build-ups ;))
+
+ - Improved how the Engrishfy Engine handles the word "she", which is indeed
+   not really a "he" with a "s" appended in front (leading to some funny
+   mistranslations with the s getting sticken to the front of a word that
+   shouldn't have an s in front of it).
+
+ - Added two more rooms to That One Level and decided what reward you should
+   get if you manage to finish it. (There's two levels of it depending on
+   how well you finished the level - more on that in-game if you finish it.)
+
+ - Fixed a glitch about player object getting deactivated when riding a
+   hovercopter and getting outside the room.
+
+ - Getting the Golden Bee early should "take time", meaning you miss out on
+   meeting Cain and Emily when you've set up the Sandplant. This should
+   change some other things too, but I haven't worked with them just yet.
+
+ - Made some changes in the Tomb Of Barukarubu so that it's possible to get
+   the Boardgun before you get the double jump (if you manage to survive
+   Lv 30 monsters that early on ;)), as soon as you get the Keygun in fact.
+
+ - Made some changes in the place where the Chain Core is hidden so that
+   you can upgrade your Handgun as soon as you reach the entrance of that
+   place (which is VERY early in the game). Good luck with game-breaking!
+   Navigating the invisible block ladder without double jumping will give
+   you *l*o*t*s* *o*f* *f*u*n*, I'm sure...
+
+ - Healthbars of you, bosses and Dive Suit girls will now have a blue
+   "ghost", letting you see visually exactly how much damage was just
+   dealt with that attack.
+
+ - To balance it a bit, now you can buy Fairy Pistol ammo in the shops.
+   (-Ammo for a gun you reload in water WTF???) -Um, yeah, you actually buy
+   bottles of plain bottled water to pour into it when reloading... Ehm. -_'*
+
+   Obviously, to put the Fairy Heart to any use you need to buy copious
+   amounts of water bottles. But they're cheap!
+
+======================================================================
+What is new in version 1.2.8?
+======================================================================
+
+ - Fixed EXTREMELY PAINFUL glitch with Motion Gun upgrade station thinking
+   you had already visited it even if you hadn't, and also added a save point,
+   some hearts and ammo, and a notebook with more Ancestor notes in the room.
+
+ - Also added a halfway point save point in the first hidden room on the
+   way to the Motion Gun upgrade.
+
+ - Fixed a very visible glitch with sunlight in the third room of the
+   Grass Dungeon being cut off by a sunflower.
+
+ - Some minor tinkering to make Rockbabies less unfair (especially the
+   projectiles they fire when killed, they do not longer look exactly
+   the same as the Rockbabies)
+
+ - Removed some Rockpapas in the tomb to lessen the complete overwhelmeness
+   that comes on you in the second room of the dungeon.
+
+   It should now actually be possible to get trough it again. Haven't managed
+   to yet due to those damn snakes, but it's fully possible. If you get the
+   snakes first.
+
+ - Keygun and Boardgun bullets will now push enemies when hitting them.
+   Does not apply to stationary enemies; ememies' speed simply gets
+   reflected so that they move in the direction of the bullet.
+
+ - Shooting the Boardgun or Keygun downwards in mid-air now gives you a
+   recoil boost upwards. Feel free to abuse!
+
+ - Fairy Pistol shots now uses the Pro-only image_alpha variable to
+   simulate the rotation rather than by using an animation;
+   this looks smoother and also enabled me to give it a liquiddy animation
+   that makes it look more like a focused triangle of water.
+
+ - Increased the chance that a rat turns into a coinrat from one-in-50 to
+   one-in-40.
+
+ - The first room of That One Level is now accessible.
+
+ - Made a change in the room preceeding the Skull Eater battle. A save point
+   alcove by the door should make you save AFTER the cutscene all the time,
+   meaning that you won't see it multiple times. Also added some more goodies
+   at the upper path there, to make you stray away from Cain instead of
+   running into the scene before he gets to the door.
+
+ - A certain Mr.McFungi doesn't show Ninja's face when talking anymore.
+
+ - Improved Oil Nuke traction; now the big bullet won't always bounce
+   backwards as soon as it hits the floor. Why that was a feature instead
+   of a glitch boggles my mind a lot.
+
+ - Oil bullets should now linger a while when hitting floors/walls and
+   actually be able to hit something.
+
+ - Changed the depth of oil bullets to make said lingering look better.
+
+ - Removed having the Oil Nuke drawing 5 ammo per hit to make it less
+   underpowered compared to the other Super weapons.
+
+ - Also made the Oil Nuke bullet heavier than the normal Oilgun shots
+   since it is, actually, roughly twenty times their size.
+
+
+======================================================================
+What is new in version 1.2.7?
+======================================================================
+
+ - Added internal time-keeping, so that you can see how much time you've
+   spent playing on your savefile (it doesn't take time spent dying into
+   account, of course - so you'll need to double it manually ;)
+
+ - Added Coinrats, something Simaster has suggested for ages. These are normal
+   rats that will steal your coins. Every single rat in the entire game has a
+   2% chance of spawning as a coinrat, but there's some that will always be
+   coinrats. Can you find them all? ;)
+
+ - Removed the henzious grinding exploit in the Hidden Desert Area where you
+   could exploit Wingsnake collision detection to get a bunch of defenceless
+   snakes stuck in a wall, then kill them all with your wings.
+
+ - Keygun will now have knockback, which might be useful when fighting some
+   enemies. And on top of that it makes it feel more like a proper shotgun.
+
+ - Oil Nuke will now only drain 5 ammos per shot instead of 10. It should
+   now actually be useful.
+
+   Main reason: killing multiple enemies with one shot spouts one Level Up
+   message for each, even though you maybe only levelled twice, which will
+   freeze the game for a long, long time if you killed thousands of snakes.
+
+ - Hearts dropped by enemies will move with the same speed as everything
+   else during the subway train ride.
+
+ - Tallie will now show up in the windshield of said subway train.
+
+ - The wagon will now clearly stick to the engine with the help of magnetism.
+
+ - The background during the subway train ride has been improved, now sporting
+   a slightly better perspective to boot. The train isn't "made outta paper"
+   anymore. Oh, and the old background had actually sticken around since the
+   VERY FIRST versions of Final COlumbus without getting its much deserved
+   update.
+
+ - Reworked the tileset even more, reducing the amount of colors and
+   making the metal blocks even sharper (and thus prettier). Also
+   added shading to the grass, remade some tiles like cross-bar box
+   that are part of all level tilesets and have been around unchanged
+   since 1.0.0.
+   A.k.a; REDREW THE ENTIRE FUCKING THING FROM SCRATCH. Hopefully the
+   result further enhances the gameplay and all that stuff.
+   It'd better do... or I'll know it.
+
+ - Redrew Mario's face and also updated the icon.
+
+ - Spent tons of additional time to make the Truck Interior prettier.
+   Hopefully pays off in the end.
+
+ - Also started to work on the backgrounds, making them sharper and less
+   blurry-1.0.0-screenshotty.
+
+ - REPLACED THE BLOODY SUCKISH DAMN BOSS FANFARE THAT I'VE MISSED FOR AGES.
+   Sorry about any inconvenience/ear aches it may have caused.
+
+ - Reworked more character graphics. Jack, Ninja, Garland and Emily now
+   have new sprites. Cain's odd haircut issue has been solved.
+
+ - Minor improvements in hanging Tallie/Fox/Emily dive suit sprites.
+   In particular, Tallie now has stuff on her shoulders and the strange
+   dark gray things has been removed - I think that was originally the
+   air bottles worn on the backs, but I'm not sure. Anyway, it's gone.
+
+ - Al's coffee machine should now show up properly when he wakes up Mario
+   after he eavesdrops on Voice/Ninja after killing the skull eater.
+
+ - Reworked the intro flashback graphics. Blurrier, slurrier and more
+   dithershadowing has been added - and George's eyes, in fact!
+
+ - Redrew the background of the Heart Of The City; it's now the 3rd largest
+   background after the sky background and the cityscapes.
+
+ - Skull Eater now wears a skull, walks towards you, shoots fireballs,
+   and his cohorts are slower and more possible to actually evade. As well,
+   his HP is doubled and he is a bit smaller and with lower gravity.
+
+ - Small birds, Roosters and Flying Roosters have gotten new sprites,
+   making them more detailed and more evil-looking.
+
+ - Reworked Ninja's face. Apart from making his scar look better, he's now
+   also looking more asian as a bonus!
+
+ - Reworked Albert's (Coffee's) face a lot. Most important, added eyebrows.
+   Also did tons of other random stuff, like making him look a bit older
+   and wrinkly, improving the shading blah blah blah etc.
+
+ - Reworked Tanuki. Now looks better.
+
+ - Skull Eater's room now has a few more platforms you can stand on during
+   the battle, making it less "spam and hope you survive". As well, the
+   rats that fall from the ceiling now won't get deactivated and then fall
+   down at you in obscene numbers; and they move a bit slower. As well, they
+   have lower ATK and drop more gore when shot.
+
+ - Adjusted dialogue faces a bit, too. In particular Ninja's face.
+
+ - Improved sprites of Electric Ball and the Cave-Turret thingie that's the
+   first enemy you run into who use them.
+
+ - Homing Thunderwasp missiles won't home Tanuki anymore since they
+   got seriously messed up when the Tanuki warped around.
+
+ - Minor changes in drum layout at Outside Truck to enable cover-shooting at
+   the rats. Needs some testing to see if their jumping can work unhindered.
+   Also added two more rats and aligned some rats to the drums properly.
+
+ - Added/moved some nice stuff to encourage player to get it while Cain goes
+   ahead, into doors. Makes you don't ask yourself the question: "How did he
+   get here ahead of me when I walked trough the door first???"
+
+ - Added some more rooms in the Fungi Cave. Both are duplicates apart from the
+   enemy/item layout. One is there to give you some variation from the vertical
+   rooms the cave is mostly based on, another is there to make the path to the
+   Motion Gun upgrade a bit longer (previously it was a mere room, now it's a
+   two-room hell filled with antiblood and homing roosters!).
+
+ - Redrew the Spinshield Turret thingie in the Haunted Cave, and also gave it
+   a blue palette: same as the tiles. It should stand out a bit due to its
+   electric pulse thingie though.
+
+ - Redrew the Stray Dog (aka "Polar Bear"), it's now a lot more wolflike.
+   ...Um, well, or more bandicoon-like to be precise. -__-*
+   Heck, it just looks better. OK?
+
+ - Redrew the Gatling Gun. Once I realized that just because it shoots 5
+   bullets at once it doesn't need to have 5 barrels, I managed to give it
+   a much, MUCH nicer design in a jiffy. Give it a shot! [/badpun]
+
+ - Redrew our little friends Smugla and Mr.DROP, a.k.a obj_pillar and
+   obj_pillardispenser. More mean, but most important more clean.
+
+ - Redrew the Big Toxic Rat, too. Restretched the Small Toxic Rat sprite,
+   added scars and stuff, and also stayed more true to the palette this time.
+
+ - Redrew the "bullet bills" and the "blasters", making the former more sharklike
+   and the latter more cool in general. Both have retained their red-eyed look.
+
+ - Redrew the backgrounds of the Water Tower, making nice brickwall pixel-art
+   for them, with uber delicious missing bricks and stuff!
+
+ - When hovercoptering and Tallie or Fox dies, their corpse will now appear where
+   they smashed into a wall instead of at their normal hang-at-copter position.
+   As well, they now create more blood drops when crushed against a wall.
+
+ - Foam Shell now creates more bubbles, they may move faster, and they have higher
+   gravity. All of these should make the Foam Shell a better weapon, and it's also
+   more balanced with the Gatling Gun and the Revolver.
+
+ - The revolver now does more damage, and the description is improved.
+   "Shoots in straight a pattern" replaced with "Shoots straight".
+
+ - Epic Whirr is now dubbed "Epic Whirr" when defeated the first time, it will
+   move around faster and sooner, and its shot will create a tail.
+
+ - Improved some dialogue. Tallie and Fox at the Tower, Smith's debrief #2,
+   Ninja's badass tips in the Truck.
+
+ - Improved lines in the scene where Emily is about to be crushed by a wall.
+
+ - Fungeroids (butterflies surrounding Fungers) now have a much smaller
+   collision mask, so when they get stuck in the floor they won't be able to hurt
+   your feet unfairly anymore.
+
+ - Changed the font from Palatino Linotype to Garamond after discovering that
+   my new computer displayed Palatino Linotype differently, looking uglier AND
+   messing up message boxes at the same time! It was quite annoying indeed.
+
+ - Emily's improved sprite now has proper images for looking up and down.
+
+ - Balanced Epic Whirr some more, now its bullet has a tail making it easier to
+   see where you can slip under it. As well, its shields deal less damage, and
+   they are closer to Epic so that you won't always get hit by them when jumping
+   over bullets on the right-hand side of the boss room.
+   (And remember, the shields only show up on Intended and Hardcore)
+
+ - Redrew Mario's face AGAIN, this time managing to get the face sprites in the
+   same style as the other faces, making dialogue look better. But didn't update
+   the icon this time around.
+
+ - Added "Engrish Mode" as a little bonus. Uses scrambling on text to make
+   it broken, some parts (i.e., menu text) are also remade by hand.
+
+   Until the "Extras" menu are up and running, perform the Konami Code on
+   the title screen to unlock Engrish Mode for the duration of temporary.
+   (Use "A" and "B" letter keys, not the F.C. "Accept" and "Decline" keys)
+
+ - The BGM/SFX Volume options new uses a new symbol for the value bars.
+   This is due to me changing fonts.
+
+ - Lessened the max speed when swimming, in particular the falling terminal
+   velocity. The girls also have a lower max speed, making them a lot easier to
+   get with you and removing the annoying bounce thing when trying to get into
+   a tunnel. They also won't just stop in mid-water and start to bleed for no
+   reason anymore.
+
+ - Scarred Bream now has more HP and moves around more. It should now feel more
+   like a boss, even though it's a lot easier than Epic Whirr.
+
+ - Fixed a small collision checking issue.
+
+ - Palm Trees now have an unique trunk tile.
+
+ - Roosters will now home in on you even if you're riding a Hovercopter.
+
+
+
+ - Put short, TONS OF STUFF has been improved.
+
+
+======================================================================
+What is new in version 1.2.6?
+======================================================================
+
+ - Fixed serious door bug with x values messed up in the subway.
+   If you got trapped, you know which one I'm talking about. Gone now,
+   so just load your file and go left like you intended.
+
+ - Fixed more spriting. In particular, most people are now taller
+   than Mario.
+
+ - Albert ("Coffee") now has a new sprite: he's a lot taller and also
+   has more facial details. 
+
+======================================================================
+What is new in version 1.2.5?
+======================================================================
+
+ - Mario now has a new sprite and hopefully doesn't "look like an
+   octopus" anymore. Mainly reworked his hair. Oh, and now his scarf
+   is indeed green, just as his mugshot suggests.
+
+ - Cain's sprites has also been reworked. Fun fact: Cain has about
+   twice as many sprites as Mario.
+
+ - Also updated Tallie's sprites (luckily, just three of them this time
+   -_-*). Perhaps I'll get around to draw new sprites for everyone
+   sooner or later, but the three most important characters deserved
+   new sprites this instant! Oh, and yeah, George's sprite got perfect
+   the first time I drew it, so he won't get a new one.
+
+ - Updated Fox's and Voice's sprites too. Voice now looks fatter and
+   has her hair in a haircut that matches her updated facepic, Fox
+   has better face shading in general and wears her whitecoat open
+   so that her belly is visible.
+
+ - New music for the subway: "Escalation".
+
+ - Reworked some parts of the Fire Pipes. More space, more corridors...
+   more filler, to an extent. But as always, pretty fun filler.
+
+ - Added a long corridor in the Subway, to make the long distance you
+   actually travel inside it seem longer. This also makes the area a
+   bit harder because of the antiblood. Players will have a good
+   opportunity to master the strategy pacing themselves and snipe down
+   enemies from a safe distance. Or farm Birds to get healing blood.
+
+ - Redrew the subway train sprites. Gosh, the improvement is staggering.
+   You really don't even want to know how the old ones looked, I
+   tell ya!
+
+ - Added a secret area in the Fungi Cave. Now it's possible to go there
+   and get the Motiongun upgrade legally. As soon as you find it. It's
+   hidden real well...
+
+ - Fixed some minor issues in secret areas. In particular pits where
+   you could get stuck, tiles not being solid or being solid where they
+   shouldn't be, and doors leading to the wrong places (such as the
+   insides of walls).
+
+ - Tinkered with the text skipping system: sometimes it skipped
+   cutscenes/dialogue for no apparent reason. Hopefully resolved, but
+   since I don't know what triggers it...
+
+======================================================================
+What is new in version 1.2.4?
+======================================================================
+
+ - When killing multiple enemies with the same shot, LEVEL UP!!
+   messages won't pop up multiple times in a row anymore.
+
+ - Tried to avert the "get stuck in ceiling" glitch. Need to test it a
+   bit to see if my fix actually fixes something. I also hope my fix
+   won't ruin the improved one-hole-running; the ceiling glitch was
+   an unexpected side-effect from that.
+
+ - When coming back from the scene where Smith wakes up in the Tank,
+   your equipped weapon now changes to Handgun instead of still being
+   the Fairy Pistol you haven't got yet.
+
+ - Jellyfish now move around and look more vivid.
+
+ - Hopefully the girls won't be able to get stuck inside walls during
+   the swimming scene anymore; now they move outside walls when
+   discovered.
+
+ - Added multiple parts of the Hidden Lab. Including the room where you
+   upgrade your Oilgun and the GIGANT LASERS!
+
+======================================================================
+What is new in version 1.2.3?
+======================================================================
+
+ - Enemy bullets now won't take your Defence into account as much as
+   enemy contact damage do. Used to balance out HP/DEF, right now DEF
+   even wins over ATK as the best stat, breaking the game since you
+   can easily get a DEF that renders even the Triangles and the
+   Death Hands unable to deal any significant damage.
+
+   Casual uses a different formula for this, 50% of your defence value
+   is taken into account. Other game modes ignores your defence.
+
+   This has also more or less made it impossible to get to Tomb Of
+   Barukarubu prematurely except on Casual - which is a good thing
+   since you won't be able to progress very far in there without the
+   wings anyway.
+
+ - Nearly the same for Enemy Shields: these just use 25% of your DEF
+   to calculate the damage they incur.
+
+ - I've gone trough enemy stats and lowered some of them to balance
+   these changes.
+
+ - All the final bosses are now immune to the Hellbreath. Otherwise
+   the battles would last only a few seconds. And that ain't epic.
+
+   The first two phases of Smith are also immune against your meelee
+   wing attack now. It was waaaay overpowered.
+
+ - When reflecting an enemy projectile, it will now get a higher ATK.
+   Reason for this is that Mario has around 30-40 HP while most enemies
+   available when you've got the wings has at least 250. This should
+   make reflected projectiles actually able to pish out some damage.
+   The projectile will also move a bit faster and get vertical momentum
+   reflected: thus it will move back the way it came, being more
+   versatile.
+
+ - Updated chatter and debrief scenes that occur just before going to
+   the Water Tower.
+
+ - Minor changes in entrace to one secret area. TOO well hidden <_<.
+
+ - There is now a hidden conversation with Ninja if you go to the Drain
+   prematurely using Damage Jumping. Also added a few more Roosters to
+   facilitate (if not encourage!) Damage Jumping in said area.
+
+ - There's now a few tile blocks that should make it possible to
+   leave the drain without your wings - they are removed when you come
+   to the drain after the swimming scene.
+
+======================================================================
+What is new in version 1.2.2?
+======================================================================
+
+Now it's time to fill the game with various extra content, like bonus
+dungeons, hidden weapon updates, and two more hidden endings. Guess if
+I've waited for this moment... ^_^
+
+ - Replaced "Golden", the 2nd try of bonus room music, with a new one
+   called "Golden Battery, after trying with "Sneak" as the theme.
+   Still not 100% sure...
+
+ - Added a secret area that require you to "walk on top of the ceiling"
+   in a certain underground or tunnel area. Has hints to other secrets,
+   as well as another secret area, that leads to ANOTHER secret area!
+
+ - Added a room between the tunnel leading to the water tower and the
+   inside of the water tower: the OUTSIDE of the water tower. You can
+   now see for yourself how damn immense the place is before going
+   inside it.
+
+ - Fixed a glitch with "unknown variable showmoney" error popping up
+   with the Epic Whirr cutscene.
+
+ - Fixed a glitch with a wall at the Secret Stree not being solid.
+
+ - Fixed a glitch with the game crashing if you were at the same x
+   value as a Zombie when colliding with it (image_xscale zero error).
+
+======================================================================
+What is new in version 1.2.1?
+======================================================================
+
+PATCH TO 1.2.0, MORE OR LESS:
+
+ - On Hardcore difficulty, Jars and Cash Piles will still never show up,
+   but now there's XP crystals in their places. Picking these up will
+   increase your XP a bit. This will make all the previously useless
+   areas that only had stat boosts get a little less useless, even if
+   the XP gain from these crystals won't be THAT much.
+   (It's based on how much points/$ the Intended item would give, so
+   they drop more the further into the game you are. Hopefully the
+   formula won't break the game nor still make the pickup zones useless)
+
+ - Mario now actually enters the door when the Voice Scene starts.
+
+ - Hopefully Mario won't get "stuck on the ground" when you manage to
+   pull off a jump ON THE PIXEL (literary), I've replaced a certain "> 0"
+   with a ">= 0" to prevent this.
+
+ - It should now be a lot easier to run over 1-tile-wide gaps.
+
+ - To prevent extreme spammability of ATG Laser and Desert Hornet, now
+   only the Revolver will go to "can shoot" mode when the fire key is
+   released, as opposed to all of the weapons in 1.2.0.
+
+ - Now you can get the Fairy Pistol upgrade even if you have the Super
+   ATG Laser. I had mixed up ammo flag values. The music in the lab with
+   the upgrade machine has also been changed to Petra instead of the
+   music from the Flooded Cave.
+
+ - During the Smith's Perspective scene, now the sprite and name should
+   work correctly instead of instantly reverting to Mario.
+
+ - New icon! Close up of Mario's face replaces the old image that was a
+   bit inspired by Cave Story's icon.
+
+ - Removed unnecessary reference to Iji. Not subtle enough.
+
+ - Added a new area called the Secret Street. Accessible from the
+   subway exit building, and requires you to get multiple weapons in
+   succession to get further and further until you've gotten to the
+   last secret it has... fufufu...
+
+ - When you and the girls are going to use the Hovercopter for the
+   first time, they won't change back into their normal clothes if you
+   go inside the Save Point after they've changed into the Dive Suits.
+   As well, Mario will jump out of the hovercopter once Tallie finishes
+   the monologue about how to control it: this should allow you to save
+   the game if you don't want to hear it again and aren't confident in
+   your copter skills (or just want to paint the canal red).
+
+ - Fixed the ugly background issue in the Shop Window. Happened when I
+   replaced the old, pixelated gradient with a smoother one.
+
+ - Hopefully skipping cutscenes won't always spawn the Syspause menu
+   directly afterwards anymore.
+
+ - Hopefully opening the Syspause menu won't always make you skip the
+   next cutscene you enter. (I think those two glitches are linked <_<)
+
+
+======================================================================
+What is new in version 1.2.0?
+======================================================================
+
+Version 1.2 has new stuff. Version 1.1.2 and 1.1.1 just had glitch fixes.
+
+ - Added a new scene where you play as Emily right after the rat-busting
+   sequence. This partially replaces the long chitchat scene, which has
+   been a pet peeve of many of my test players (especially a certain
+   Angry Video Game Nerd wannabe that uploaded a "Let's play" video which
+   contains more or less silence interrupted by occasional commentary.)
+
+ - Replaced the long and tedious chitchat scene with a shorter one, which
+   also has "big sprites" (close-ups) of the characters. Makes it more
+   visually appealing.
+
+ - Mecha-Turrets will now shoot gatling gun bullets instead of being the
+   most useless flamethrowers in existence. This likely makes them as
+   over-powerful as they were intended. So when you find one, you'll go
+   ^_________^ - as intended. (Mecha-turrets are on your side, remember?)
+
+ - Fixed critical glitch: if you try to shoot with a gun that has run
+   out on ammo, then you will not be able to shoot again until after
+   going trough a door, no matter if you change weapons or not.
+   (Side effect from code changes when coding weapon upgrades)
+
+ - New title screen, replacing the old black one with white text.
+   Now there's backgrounds and big sprites and whatnot.
+
+ - New "Options" screen, allowing you to set preferred screen scale, volume
+   settings, and other nifty things.
+
+ - Now ESC won't quit the game immediately; it opens the Syspause screen.
+   From Syspause you've now got the option to end the game, and the key
+   layout on Syspause screen has been changed too.
+
+ - Now it's possible to skip DIALOGUE by pressing ESC while in a message.
+   This will skip all dialogue for the rest of the cutscene, but non-dialogue
+   things will still happen. Easier for me to code. Imagine what would happen
+   if the entire cutscene code was skipped, including weapon obtaination and
+   flag set code. Better having people moving and stuff still available rather
+   than risking to lose the imporant stuff.
+
+ - New "How to play" screen, renamed "Primer". Contains 4 pages with
+   animated images (yeah, images in general) that explains how to
+   play, gives gameplay hints (know thy enemy! Restore HP! Save!)
+   and other nifty stuffies. Beats the old one twice or more, took
+   about 20 times longer to make.
+
+ - Redrew tons of graphics. In particular the first underground background
+   and the Subway background, and most of the "Duh, sharpen and repeat" art
+   has been replaced with proper pixel art. My skillz have improved a lot
+   since I begun with the game.
+   Oh - the tileset has gotten a revamp, too. And Tallie's and Cain's faces.
+   And Emily's faces. And some tinkering on other faces, too.
+
+ - Shortened restart delay after dying.
+
+ - Multiple save files. Lore %, HP and some other stuff are shown at
+   the file select screen to help you keep track of what file is what.
+
+ - Tinkered some more with the stat boosts. After consulting my TI-82
+   it appeared like players would get a total stat boost of 60.75 pts
+   (wtf omg 0_o) when they reached Lv.45 - meaning that all stats'd
+   be about twice as high as previously!!! Sorry about that oversight.
+   Now stuff are balanced so the game won't be too easy; the new
+   formula would give you 0.2 + 0.5 + 1 + 1.5 + 1 = 4.2 extra points.
+   In each stat, so the total boost is 12.6 points - a bit better.
+
+ - There's now dungeons to visit and collect upgrades for Cryo Sphere,
+   ATG Laser, Keygun.
+   Upgrades of most weapons will work properly (or at least AT ALL) now.
+
+ - Added a block to enable you to get out of Therm Plant's right-hand
+   parts if you somehow manage to enter them too early and save.
+
+ - New music for the title screen, boss battles, swimming scenes and
+   boss victory.
+
+======================================================================
+What is new in version 1.1.2?
+======================================================================
+
+Note: a v1.1.x save file CAN be opened by a v1.2.x game, and actually
+the other way around as well. But since v1.2 will be a better game, I
+don't recommend doing that. Oh, and since some new rooms have been
+added, EVERY v1.2 savefile won't work with v1.1. Just most of them.
+
+Also realize that you may have to rename your save files: v1 may only
+open a file called "lc_save.yal" while v1.2 will recognize "lc_save",
+"lc_save2", "lc_save3" and "lc_save4". And monitor your progress in
+those games in the file select screen as well.
+
+======================================================================
+
+Version 1.2 has various 1.1 glitches fixed and provides a slightly
+easier and less annoying experience due to some minor tinkering in
+obscure formulas. More ammo and more stat points are there to help you
+finish your quest, but just slightly.
+
+ - Tinkered with stat boosts after levelling up. Now you gain more
+   points for DEF and ATK, 0.03*level and 0.06*level instead of the
+   old values 0.02*level and  0.05*level. As well you get 0.01 points
+   in every stat every time you level up. Minor but will stack up.
+
+ - Unique ammunition for each weapon, color coded as well. Should make
+   the weapons more useful. Previously ammo restored ammo to your
+   equipped weapon which made ammo farming tedious.
+
+ - Enemies drop ammo in the same rate as before, but each item gives
+   you more ammo than before (10, 20 and 50 compared to the old values
+   5, 10 and 30). Missiles won't be recovered in the numbers 1, 2, 3
+   anymore but rather in different numbers depending on difficulty
+   setting (1, 3, 5 on Hardcore, 2, 8, 20 on Casual, something in
+   between on Intended - 1, 5, 10)
+
+ - Half of the updated weapons now work as they shall (Handgun, ATGL, 
+   Keygun, Wavegun). Try to find them all!
+
+ - Various minor graphical glitches destroyed with utmost violence.
+
+ - Fixed glitch with cutscene hangup in Water Tower. Now something
+   about Cain's past is revealed properly.
+
+======================================================================
+What is new in version 1.1.1?
+======================================================================
+
+Version 1.1 has a bunch of patches on the stuff that was bad since I
+was so inexperienced when I did it, particularily the intro which
+more or less sucked. Especially my spelling back when I did it was
+aeons from my current ability. Praise Mozilla Firefox's spell check
+and my high activity at the Game Maker Community for the improvements.
+
+ - New intro sequence that gives you more "Early Gameplay" and some
+   more backstory about Mario Norris.
+
+ - Revised script in the beginning of the game, spelling errors and
+   similiar stuff has been grieviously destroyed.
+
+ - To give Ashley "Voice" Sunset more personality, her face sprite
+   has been improved (makeup, more contrast, different hair color) and
+   as you'll notice she suddenly has hidden motives (cutscenes has, in
+   other words, been added and/or made more visible).
+
+ - Mario's traction has been improved; in particular he won't hover
+   one pixel above the ground all the time anymore.
+
+ - Palm Trees in the ending has been even more improved than they got
+   the last time I improved them. I also added palm trees in the new
+   into sequence. Campfires rule.
+
+ - NPCs will now, after walking, return to their standing image rather
+   than just stopping at whatever image they had when reaching their
+   destination. This seems to work fine but I haven't tested it 100%
+   yet (it lead to a big glitch with NPCs having a sprite with images
+   of multiple characters, but I've hopefully solved that by now).
+
+ - Gun-wielding NPCs aren't able to jump in mid-air anymore. That was
+   a bug, not a feature.
+
+ - Every time you close a message, Mario won't directly jump anymore.
+   This bug appeared since you close messages and jump with the same
+   key. Now you have to release it after closing a message to jump.
+   This avoids a lot of "loss off immercity" where you jump right
+   after an epic moment... it kinda ruins the feelings a cutscene gave
+   off.
+
+ - Sound test now allows you to browse Mute Mountain, Petra, and a
+   couple of other songs. I've removed the "Bonus Songs" and replaced
+   them with some new BGM for new areas that I've added (or will add)
+   and as well reordered the list a bit, bringing songs I don't like
+   very much to the back and just making a better mix.
+
+ - Added a system that allows you to update your weapons by finding
+   hidden items in special areas. Each weapon has a stronger form
+   with a cooler skin and name... and improved performance. As you
+   may think, I'm gonna add a secret bonus dungeon where the extra
+   powerful guns are required to survive... HA HA HAAA!!!
+
+ - Fixed some minor leftover glitches in the last Fungi area.
+
+ - Added some more Jars to buy in the shop (including the Super Jar!)
+
+ - Tinkered with coin's physics to make the code more effective and
+   thus reduce lag when tons of them are on-screen simultaneously.
+
+ - Fixed glitch with looping intro conversation.
+
+ - Fixed glitch with one of Voice's cutscenes messing up due to a
+   misspelling in the code.
+
+======================================================================
+Have fun playing. 						// Yal
+======================================================================
+
+
+===========================================================================
+Version History
+===========================================================================
+
+ - Final Columbus 1.1.2 was released in january 2011.
+
+ - Final Columbus 1.1.1 was released in january 2011.
+   Version 1.1 has a bunch of patches on the stuff that was bad since I
+   was so inexperienced when I did it, particularily the intro which
+   more or less sucked. Especially my spelling back when I did it was
+   aeons from my current ability. Praise Mozilla Firefox's spell check
+   and my high activity at the Game Maker Community for the improvements.
+
+
+
+ - Final Columbus 1.0 was released the day before the comp06 deadline.
+   It was complete - a feat in itself - even though I had to cut off
+   some parts that'd take too much time to implement. And I didn't
+   have time to fix all glitches that had been found. Features 8
+   weapons, and a bunch of minor secrets. There's three different
+   endings, and the difficulty levels Casual/Intended/Hardcore.
+
+   Oh, and before I forget: Final Columbus 1.0 was made entirely in
+   Gm8 *LITE* - this is hard to believe, says some. But you don't need
+   Pro to make professional games ;)
+
+   Yal's favourite glitch/exploit in version 1.0:
+     While swimming in the Canal after Epic Whirr floods it, in the
+     room before the boss, try getting Tallie and Fox caught by some
+     jellyfish, and then run for the boss room. (You'll need to pick
+     up every single Big Heart you pass to keep the girls from dying)
+
+==============================================================================
+
+I've put a lot of passion and time into this game. Do not steal its resources,
+do not reverse engineer the executable. If you ask me nicely and give me
+proper credit (my username Yal and a link often suffices), I may share the
+things with you. If I find you worthy, that is.
+
+==============================================================================

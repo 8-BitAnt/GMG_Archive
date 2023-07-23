@@ -1,0 +1,6 @@
+FROZZD README
+
+Please extract the files correctly, and never play from the zipfile itself.
+The music files should be in a subfolder called "music".
+
+Thank you for trying Frozzd!

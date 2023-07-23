@@ -1,0 +1,17 @@
+FALLING
+
+Design, code, graphics: Daniel Remar
+
+
+
+I made this single-button game for a course in experimental game design. The goal is to get the cube to hit the goal at the bottom, but it will decay and explode if it falls too far without hitting a platform. So, press Spacebar to create platforms where your moving marker indicates, slowly leading the cube to the goal.
+
+If the cube hits a wall from the side, it bounces and the wall crumbles. You get more points the farther the cube travels. After placing all the platforms, the game speeds up so you won't have to wait too long for the cube to fall.
+
+
+
+CONTROLS
+
+Spacebar: Create platform and move your marker down
+Hold spacebar: Quit
+Escape: Quit

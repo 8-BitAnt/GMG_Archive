@@ -1,0 +1,18 @@
+HAIRWALKER
+
+Design, code, graphics: Daniel Remar
+
+
+
+Hairwalker was made for the No More Sweden three-hour game compo in 2008. The words we were all given to work with were "hair" and "freeze", and this was my entry.
+
+Basically, use the arrow keys to walk, jump and descend along the strands of hair. Grab hair tonics to extend the hair while avoiding the read lice. See how long you can survive (you get one point every second).
+
+Recognize the background? It was taken from the Iji trailer graphics.
+
+
+
+CONTROLS
+
+Arrows: Move
+Escape: Quit

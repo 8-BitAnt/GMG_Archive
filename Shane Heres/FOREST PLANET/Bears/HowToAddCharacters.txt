@@ -1,0 +1,18 @@
+Duplicate a save file..
+Figure out what to edit (it should be super easy).
+Make sure your character is a .gif and that he is in the right folder.
+Start the game up and Load your Character.
+
+B O N U S
+C H E A T S
+control+
+	Q=100 points for you
+	W=100 points for enemy
+	E=100 health for you
+	R=100 health for enemy
+	A=-100 points for you
+	S=-100 points for enemy
+	D=-100 health for you
+	F=-100 health for enemy
+	M=Go back to main menu
+	R=Restart whole game

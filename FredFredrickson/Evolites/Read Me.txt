@@ -1,0 +1,120 @@
+Evolites
+By: Martin Crownover (FredFredrickson)
+Final Version 1.6 -  March 6, 2010
+
+Contents:
+1. Change Log
+2. Introduction & Features
+3. Controls
+4. Credits
+5. Terms of Use
+6. Game Maker 8 EULA
+
+
+
+
+1. Change Log
+
+Version 1.6 - March 6, 2010
+
+- Fixed error in web configuration menu, text boxes are now fully clickable
+- Added many minor graphical improvements, including shadows behind menus
+- Changed some partical effects
+- Added Reflect Games splash screen
+- Evolites is now Windows Vista and Windows 7 compatible
+
+
+
+
+2. Introduction & Features
+
+Welcome to Evolites, a simple life simulation where you indirectly control the fates of a countless number of tiny, unique creatures, known as Evolites. As the Evolites evolve naturally, various tools are at your disposal to save, destroy, create, and interact with them. You may let things run their course, or you may directly intervene, and make sure that only your chosen strain of Evolites survives!
+
+Partially inspired by the opening sequence of the upcoming game Spore, and partially a pet project that just seemed fun to make, Evolites was created to interest, entertain, and relax all types of gamers, casual and up. The game features a mouse-only control setup, and large, colorful graphics. Online functionality via the Reflect Acocunt System is also built-in, and a handful of options put you at full control of how you want to play the game.
+
+
+
+
+3. Controls
+
+Controlling the game is simple, especially if you have a wheel mouse. If you do not use a wheel mouse, the up and down arrows may be substituted at the necessary times.
+
+LEFT MOUSE - Click to open menu boxes, press buttons, select Evolites, and activate selected tools. Click and drag Evolites from the catalog to copy them, save them, or upload them
+
+RIGHT MOUSE - Click to deselect Evolites or delete Evolites from the catalog
+
+MOUSE WHEEL / UP & DOWN ARROW KEYS - Interact with variable buttons or attract the selected Evolite to the current mouse location
+
+F1 - Restart the game (warning: all unsaved data will be lost)
+
+F4 - Toggle between windowed and fullscreen modes
+
+
+
+
+4. Credits
+
+Martin Crownover (FredFredrickson)
+Wilco Schoneveld (Fox-NL)
+Kasper
+Xot
+39ster
+Eyeguy
+
+Created with Game Maker 8 by Mark Overmars and YoYo Games
+
+
+
+
+5. Terms of Use
+
+By using this program (Evolites), you agree to the following terms:
+
+  1. You, the user, claim any and all responsibility for any damages that might occur, including, physical, emotional, and / or material by using this software.
+  2. This program is not guaranteed to run on any system.  If you are experiencing problems, please refer to the system requirements section in this file.
+  3. No part of this package may be altered or changed in any way, without prior written consent from the original author of this software.
+  4. No part of this project shall be sold without prior written consent from the original author.
+  5. Evolites is © 2010 Martin Crownover, and all work contained within that was not created by Martin Crownover should be considered copyrighted by it's respective author.
+
+
+
+
+6. Game Maker 8 EULA
+
+THIS GAME WAS MADE USING GAMEMAKER 8.0 - THIS END USER LICENSE AGREEMENT APPLIES TO ALL USE OF IT
+
+  1. Scope
+
+  You may:
+
+  * Use this Game for personal use.
+  * Copy, distribute, and share the Game with others, free of charge, for their personal use.
+
+  You must not:
+
+  * Modify, adapt, merge, translate, decompile, disassemble, or reverse engineer the Game.
+  * Use, copy, transfer, or distribute the Game or part of it except as expressly permitted by this License.
+  * Remove, modify, or tamper with any copyright, trademark, or other notice.
+  * use the Game for any illegal, unlawful or immoral purposes.
+
+  2. Term
+
+  * This License will end automatically if you breach any of the terms.
+  * When this License ends you must stop all use of the Game and destroy and erase any copies you have. 
+
+  3. Liability
+
+  * YoYo Games Limited ("YoYo Games") was not involved in the creation of this Game except only that it was made using GameMaker 8.0. YoYo Games warrants only that GameMaker 8.0 will function satisfactorily if used properly and on the correct operating system.
+  * YoYo Games does not warrant that the operation of the Game will be uninterrupted or error free or that errors can be corrected. You use the Game at your own risk and in no event will YoYo Games be liable to you for any loss or damage of any kind (except personal injury or death arising from YoYo Games' negligence) including lost profits or other consequential loss arising from the use of or inability to use the Game or from errors or deficiencies in it whether caused by negligence or otherwise.
+  * To the maximum extent permitted by law, YoYo Games Limited excludes liability for all warranties, conditions, and other terms which, but for this notice, would have effect. 
+
+  4. General
+
+  * All copyright and other intellectual property rights in GameMaker 8.0 and parts of it included in the Game belong to and vest in YoYo Games. All rights of YoYo Games are hereby asserted and reserved.
+  * All trade marks are the property of their respective owners and YoYo Games makes no warranty or representation in respect of and has no responsibility and excludes all liability for any trade mark or third party content.
+  * The rights granted in this License are non-exclusive.
+  * This License does not affect your statutory rights as a consumer.
+  * This License is governed by English Law and the parties submit to the exclusive jurisdiction of the English Courts.
+  * If you have a problem with this Game please contact the person who made it - YoYo Games cannot help.
+
+  If you do not accept these terms you may not use or run this software on this or any other computer.

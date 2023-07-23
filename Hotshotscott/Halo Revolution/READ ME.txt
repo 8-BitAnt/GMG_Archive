@@ -1,0 +1,63 @@
+-----------------IMPORTANT----------------
+
+Do not delete 'checkpoint.sav' - If you do, your checkpoint will be lost and you will have to restart the level.
+Do not delete 'IMPORTANT.Halo' - If you do, you will lose all of your progress and will have to start from scrath.
+
+
+
+-----------------CONTROLS-----------------
+
+       <<<<<Masterchief Controls>>>>>
+
+A - Move Left
+D - Move Right
+W - Jump
+S - Crouch
+R - Reload
+E - Swap Weapon (hold)
+F - Switch Between grenades
+Q - Switch Between Weapons
+TAB - Secondry Switch Between Weapons
+Left Mouse Button - Shoot Current Weapon (hold to lock on for rocket launcher - Some enemies only)
+Right Mouse Button - Throw Grenade
+Mouse Wheel Up - Zoom In
+Mouse Wheel Down - Zoom Out
+Page Up - Zoom In
+Page Down - Zoom Out
+Space - Action Button (enter/exit vehicle/turret)
+Shift - Use flashlight (Only in some rooms - conditions apply)
+
+
+         <<<<<Vehicle Controls>>>>>
+
+A - Drive Left
+D - Drive Right
+Left/Right Mouse Button - Use vehicles turret
+
+
+         <<<<<Controling Marines>>>>>
+
+C - Folow/Stay when aimed at.
+CTRL + C - Make marine come to you (No matter where he is)/ Make marine stay (No matter where he is)
+
+
+
+-----------------CONTROLS-----------------
+
+The controls are also in the game, just go to the main menu, and click on 'Help'.
+
+
+
+
+-----------------LEVEL SAVING-------------
+
+By going to 'Level Select' from the 'Campaign' menu, you are able to re-play any current missions that you have completed.
+
+
+
+
+Thankyou for playing Halo Revolution!
+
+hotshotscott - Scott Strickland (Maker of Halo Revolution)
+
+

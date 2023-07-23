@@ -1,0 +1,107 @@
+WARNING-Troubleshooting guide for Explodin' Crapola: Helicopter Cacophony 2
+------------------------------
+by David Galindo aka Mr.Chubigans
+
+
+I. MP3/Sound Problems
+II. Other Errors
+III. Game Errors
+IV. FAQ
+
+
+Hopefully you are having a "blast" (snicker) with EC:HC2! But if your having 
+problems with the game, this is the file to read. 
+
+----------------------
+I. MP3/Sound Problems
+----------------------
+
+Q: I hear sound effects, but no music or voices...whats wrong?
+A: This game uses MP3 effects for all music and voice effects. If your 
+computer does not support mp3, download a newer version of your media
+player, or dowload Winamp for free at www.winamp.com. Having the music
+in this game is a BIG part of it, and you will lose the "full effect"
+of the game if you choose not to fix the mp3 problem. TRUST ME.
+
+Q: The game pauses frequently to load sounds.
+A: A defragging of your computer needs to be done. Clean out any temp
+files afterwards, and you should be good to go.
+
+Q: I hear the music, but no sound effects (like explosions)!
+A: This happens when you run separate applications when the game is 
+running. Close the game, then try playing the game again. Restart your
+computer if the problem persists.
+
+Q: I hear the music and sound effects, but no voices.
+A: Your media player needs to be updated. It does not support the 
+different mp3 file types. Before you update, try restarting your 
+computer.
+
+Q: I've tried everything...EVERYTHING...and I can't get the music to
+work, or the voices.
+A: Get a new computer. Or make sure your media player is up to date 
+(Windows Media Player 9)
+
+
+----------------------
+II. Other Errors
+----------------------
+
+Q: I get a weird "kernel" dll error when I try to start the game.
+A: This is the fault of your computer, and not the game. Restart your
+computer and try again.
+
+Q: The game crashes when I try to load it.
+A: Try shutting down your system, and restarting it. If it still crashes,
+see if your computer supports mp3, and update your media player.
+
+Q: The game runs slowly.
+A: There are multiple ways of fixing this. If you use a NVIDA driver, update
+it to a version 44.03 driver. The game now runs fast. Be sure your computer
+is not running anything over 16-bit color by going to Display-Settings.
+Don't run the game in 24 or 32 bit color. If it still runs slow, defragment
+your hard drive. Make sure no other programs, like a virus application,
+is running while the game is running.
+
+----------------------
+III. Game Errors
+----------------------
+
+Q: There is an error that asks me to abort or ignore...
+A: Impossible! If this happens, email me at chubigans2@yahoo.com. This game
+has been tested many times by different people. 
+
+Q: Can I start a new game without deleting my old game?
+A: Just find the file "menusave" in your EC:HC2 folder, and copy it somewhere
+else (must be another folder). Then start a new game. If you ever want to play
+your old game, move the new menusave file somewhere else and put your old save
+file back in the EC:HC2 folder. 
+
+Q: I had a saved game, but I started a new one accidentaly! 
+A: Too bad. You should be more careful! There was a warning before you started
+a new game...did you pay attention?
+
+Q: How do I pause?
+A: F1 key.
+
+Q: How do I save my game?
+A: The game saves after every important action, such as a new level unlocked
+or when you spend some tokens/earn tokens. Don't worry, the game takes care of 
+saving :)
+
+----------------------
+IV. FAQ
+----------------------
+
+Q: Where can I find more of your games?
+A: http://vertigogaming.cjb.net
+
+Q: Can I have the GMD edible file of this game?
+A: chubigans2@yahoo.com
+
+Q: How did you make this game?
+A: http://www.gamemaker.nl
+
+
+
+Special thanks to Him for the graphic designs! 

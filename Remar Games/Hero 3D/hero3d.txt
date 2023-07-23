@@ -1,0 +1,33 @@
+HERO 3D
+
+Design, code, graphics: Daniel Remar
+Music: Captain Goodnight covering Machinae Supremacy's "Hero"
+
+
+
+A minigame included in Iji, people have requested a way to play it separately (as well as some instructions). It's a spinoff of Hero and a reference to the old game The Sentinel, but isn't 3D at all.
+
+The aim is to destroy the circle-like Generator in each level, which removes the barriers blocking the exit. You can also collect flags to gain extra lives. When you lose all lives, you descend one level and regain two lives, rather than restarting the whole game.
+
+The gaze of the sentinel in the background sweeps across the world. If you're not hiding behind a background block when it flashes across the screen, the sentinel will fire a megamissile at you. If you're not hiding behind a background block when it hits, you die.
+
+There are 9 levels, and every time the game is completed the enemies' HP increases, up to 242 times. After beating the game at least once, the sentinel spins considerably faster.
+
+Due to using nothing but line and polygon drawing, this game has a high chance of slowing down or not working correctly on certain computers.
+
+
+
+CONTROLS
+
+Arrow keys: Move
+1: Fire left
+2: Fire right
+F4: Toggle fullscreen
+Escape: Quit
+
+
+
+FAQ
+
+Q: Why 9 levels and 242 difficulties?
+A: It's 3^2 and 3^5 (minus one), which references the fact that Tasen and Komato numbers and computers in Iji are ternary-based. The level number in the corner of the screen also uses their ternary system.

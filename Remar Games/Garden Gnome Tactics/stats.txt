@@ -1,0 +1,200 @@
+game boots
+2
+rounds played BD
+0
+rounds played AD
+0
+rounds played with friendly fire
+0
+rounds played without friendly fire
+0
+surprise eggs (any)
+0
+start eggs (any)
+0
+sound eggs
+0
+menu selection eggs
+0
+
+0
+ingame time (full minutes)
+0
+info screen views
+0
+p1 victories
+0
+p2 victories
+0
+draws (no victory)
+0
+resets to title screen
+0
+victories by army destruction
+0
+victories by HQ destruction
+0
+credit screen views
+0
+peace mon
+0
+
+0
+elves killed (not drowned)
+0
+sleighs killed
+0
+cannons killed
+0
+HQs killed
+0
+bridges destroyed
+0
+mines placed
+0
+mines stepped on
+0
+mines shot down
+0
+elves run over with cannons
+0
+elves drowned
+0
+elf special button used
+0
+sleigh special button used
+0
+cannon shots stored (unified)
+0
+most mine bounces
+0
+elf taunts (unified)
+0
+
+0
+
+0
+
+0
+
+0
+level 1 played
+0
+level 2 played
+0
+level 3 played
+0
+level 4 played
+0
+level 5 played
+0
+level 6 played
+0
+level 7 played
+0
+level 8 played
+0
+level 9 played
+0
+level 10 played
+0
+level 11 played
+0
+ownage (20 sec rout, not FD)
+0
+megaownage (10 sec rout, not FD)
+0
+level ?? played
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+faith in humanity
+0

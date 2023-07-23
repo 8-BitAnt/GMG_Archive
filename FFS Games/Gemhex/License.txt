@@ -1,0 +1,30 @@
+Far From Sleep Games Warranty and End User License Agreement
+
+
+IMPORTANT-READ CAREFULLY
+
+This End-User License Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and Jay Griffin/FFS Games, for the Software. By installing, copying, or otherwise using the Software and or service, you agree to be bound by the terms of this EULA. If you do not agree to the terms of this EULA, do not install or use the Software or service.
+
+"Software" means only the FFS Games software program(s), supplied by FFS Games herewith, and corresponding documentation, associated media, and online or electronic documentation. 
+
+
+Software License Agreement
+
+The Software is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.
+
+You may not sell, license or otherwise distribute the application files contained within the Software on a stand-alone basis or as part of any collection, or as part of any product or service for resale except where such files are protected by the GNU or public domain.
+
+
+COPYRIGHT
+ 
+All title and copyrights in and to the Software (including but not limited to any images, photographs, animations, video, audio, music, text, and "applets" incorporated into the Software), the accompanying printed materials, and any copies of the Software are owned by FFS Games.
+
+
+LIMITED WARRANTY (Disclaimer of Warranty)
+
+THIS SOFTWARE PACKAGE, SERVICE AND THE ACCOMPANYING FILES ARE SOLD "AS IS" AND WITHOUT WARRANTIES AS TO PERFORMANCE OF MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER EXPRESSED OR IMPLIED. ADDITIONALLY, NO WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE IS OFFERED. ANY LIABILITY OF THE SELLER WILL BE LIMITED EXCLUSIVELY TO PRODUCT REPLACEMENT OR REFUND OF PURCHASE PRICE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, FFS GAMES DISCLAIMS ALL OTHER WARRANTIES AND CONDITIONS, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, WITH REGARD TO THE SOFTWARE, AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES. THIS LIMITED WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS. YOU MAY HAVE OTHERS, WHICH VARY FROM COUNTRY/JURISDICTION TO COUNTRY/JURISDICTION. 
+
+
+LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL FFS GAMES BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE OR THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES, EVEN IF FFS GAMES HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN ANY CASE, FFS GAMES' ENTIRE LIABILITY UNDER ANY PROVISION OF THIS EULA SHALL BE LIMITED TO THE GREATER OF THE AMOUNT ACTUALLY PAID BY YOU FOR THE SOFTWARE. BECAUSE SOME COUNTRIES AND JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY, THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
