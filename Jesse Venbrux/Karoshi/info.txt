@@ -1,0 +1,11 @@
+Controls:
+Arrow keys = walk
+Z = jump
+X = weapon
+Esc = quit
+
+"Karoshi" is a freeware game by Jesse Venbrux.
+Music track "Phunq" created by Madcow.
+Blood particle made by Macxthegamer.
+
+For more games and my online portfolio check out www.venbrux.com

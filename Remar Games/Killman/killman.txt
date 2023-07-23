@@ -1,0 +1,32 @@
+KILLMAN MASTER
+
+Design, code, graphics: Daniel Remar
+Music: Chris Laviolette AKA Captain Goodnight
+Sound effects from Doom, Unreal Tournament and Death Drome
+
+
+
+Like Hero, the tongue-in-cheek Killman was originally made in Klik'n'Play around 2004, then remade in Game Maker using drag and drop code and a heavily modified platform game example. It was enhanced up to this "Master" version, with original retro Doom-like music by Captain Goodnight. It's one of my first Game Maker games.
+
+Iji was originally a direct sequel to this game - there are many similarities, from gameplay to graphical effects. To get the absolute highest rank, you need a lot of skill, planning and dedication. It's about equally difficult in both level A and B. The game will tell you how to get a better rank when you beat it.
+
+Make sure to read the in-game info by pressing F1!
+
+
+
+CONTROLS
+
+Arrows: Move
+Control: Fire
+Shift: Fire rocket when available
+Enter: Menu selection
+F2: Back to main menu
+F4: Toggle fullscreen
+Escape: Quit
+
+
+
+FAQ
+
+Q: Why is the music MIDI but encoded as MP3?
+A: Probably because the computer I used while making the Master version couldn't play MIDIs properly.
